@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư viện Cây & Vị Thuốc Việt Nam</title>
+  <meta name="description" content="Thư viện tra cứu cây thuốc và vị thuốc Việt Nam – tra cứu theo tên, chứng bệnh, xem hình ảnh thực tế và hình ảnh trong sách.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="#" onclick="return false;">
+      <div class="logo-icon">🌿</div>
+      <div class="logo-text">
+        <span class="logo-title">Cây Thuốc Việt Nam</span>
+        <span class="logo-subtitle">Vietnamese Medicinal Plants Library</span>
+      </div>
+    </a>
+
+    <div class="header-search">
+      <input type="text" id="header-search" placeholder="Tìm kiếm tên cây, tên khoa học..." autocomplete="off">
+      <button class="search-btn" id="search-btn" title="Tìm kiếm">🔍</button>
+      <div id="search-suggestions"></div>
+    </div>
+
+    <nav class="header-nav">
+      <button class="nav-tab active" data-page="home">🏠 Trang chủ</button>
+      <button class="nav-tab" data-page="catalog">📚 Danh mục</button>
+      <button class="nav-tab" data-page="disease">🩺 Tra bệnh</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== MAIN APP ===== -->
+<main id="app">
+
+  <!-- HOME PAGE -->
+  <section id="page-home" class="page-view active">
+    <div class="home-hero">
+      <div class="hero-badge">📖 Sách Cây Thuốc Việt Nam</div>
+      <h1 class="hero-title">Thư viện <em>Cây & Vị Thuốc</em><br>Việt Nam</h1>
+      <p class="hero-desc">
+        Tra cứu đầy đủ các loại cây thuốc và vị thuốc trong y học cổ truyền Việt Nam.
+        Xem hình ảnh thực tế, hình ảnh trong sách, tìm thuốc theo chứng bệnh.
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong id="hero-total">655</strong>
+          <span>Loại cây &amp; vị thuốc</span>
+        </div>
+        <div class="hero-stat">
+          <strong id="hero-chapters">23</strong>
+          <span>Chương bệnh</span>
+        </div>
+        <div class="hero-stat">
+          <strong>1,000+</strong>
+          <span>Trang sách</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-heading">
+      <h2>Tra cứu theo chương bệnh</h2>
+      <span class="count-badge" id="chapter-count-badge">23 chương</span>
+    </div>
+    <div class="chapter-grid" id="chapter-grid"></div>
+  </section>
+
+  <!-- CATALOG PAGE -->
+  <section id="page-catalog" class="page-view">
+    <div class="section-heading" id="catalog-heading">
+      <h2>Danh mục cây thuốc</h2>
+    </div>
+    <div id="catalog-filters" class="catalog-toolbar"></div>
+    <div class="plant-list" id="plant-list"></div>
+    <div class="pagination" id="catalog-pagination"></div>
+  </section>
+
+  <!-- DISEASE SEARCH PAGE -->
+  <section id="page-disease" class="page-view">
+    <div class="disease-search-box">
+      <h2>🩺 Tra cây thuốc theo chứng bệnh</h2>
+      <p>Nhập tên chứng bệnh, triệu chứng hoặc tác dụng để tìm các loại cây thuốc phù hợp.</p>
+      <div class="disease-input-row">
+        <input type="text" class="disease-input" id="disease-input"
+          placeholder="Ví dụ: ho, sốt, đau dạ dày, huyết áp cao, mụn nhọt...">
+        <button class="btn-search-disease" id="btn-search-disease">🔍 Tìm kiếm</button>
+      </div>
+      <div class="quick-filters-title">Tìm nhanh theo chứng bệnh phổ biến:</div>
+      <div class="quick-filters" id="quick-filter-buttons"></div>
+    </div>
+
+    <div id="disease-results-header" class="disease-results-header"></div>
+    <div class="disease-plant-list" id="disease-results-list"></div>
+  </section>
+
+  <!-- DETAIL PAGE -->
+  <section id="page-detail" class="page-view"></section>
+
+</main>
+
+<!-- ===== FLOATING WIKI BUTTON ===== -->
+<button class="floating-wiki-btn" id="floating-wiki-btn" title="Xem hình ảnh thực tế (Wikipedia)">
+  📸
+</button>
+
+<!-- ===== LIGHTBOX ===== -->
+<div id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Hình ảnh cây thuốc">
+  <div class="lightbox-inner">
+    <div class="lightbox-header">
+      <span class="lightbox-title" id="lb-title"></span>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Đóng">✕</button>
+    </div>
+    <div class="lightbox-body">
+      <div class="lightbox-slide">
+        <img id="lb-img" src="" alt="Hình ảnh cây thuốc">
+        <div class="lightbox-caption" id="lb-caption"></div>
+      </div>
+    </div>
+    <div class="lightbox-dots" id="lb-dots"></div>
+    <div class="lightbox-nav">
+      <button class="lb-nav-btn" id="lb-prev" aria-label="Ảnh trước">◀</button>
+      <span class="lb-counter" id="lb-counter">1 / 1</span>
+      <button class="lb-nav-btn" id="lb-next" aria-label="Ảnh tiếp theo">▶</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SCRIPTS (separate files — no inline script) ===== -->
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

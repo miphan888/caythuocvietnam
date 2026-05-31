@@ -1,0 +1,10812 @@
+const CAY_THUOC_DATA = [
+  {
+    "ten_co_dau": "Ích mẫu",
+    "ten_khong_dau": "Ich mau",
+    "ten_anh": "Motherwort",
+    "ten_khoa_hoc": "Leonurus japonicus Houtt.",
+    "tac_dung": "Điều kinh, hoạt huyết; chữa kinh nguyệt không đều, đau bụng kinh, hậu sản ứ huyết; lợi tiểu; hạ huyết áp nhẹ; kháng khuẩn",
+    "tac_dung_list": [
+      "Điều kinh, hoạt huyết",
+      "chữa kinh nguyệt không đều, đau bụng kinh, hậu sản ứ huyết",
+      "lợi tiểu",
+      "hạ huyết áp nhẹ",
+      "kháng khuẩn"
+    ],
+    "page_start": 30,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 33
+  },
+  {
+    "ten_co_dau": "Hương phụ",
+    "ten_khong_dau": "Huong phu",
+    "ten_anh": "Nutgrass / Cyperus",
+    "ten_khoa_hoc": "Cyperus rotundus L.",
+    "tac_dung": "Điều kinh, giảm đau bụng kinh; hành khí giải uất; chữa kinh nguyệt không đều, đau vùng bụng dưới, buồn nôn; tiêu hóa kém",
+    "tac_dung_list": [
+      "Điều kinh, giảm đau bụng kinh",
+      "hành khí giải uất",
+      "chữa kinh nguyệt không đều, đau vùng bụng dưới, buồn nôn",
+      "tiêu hóa kém"
+    ],
+    "page_start": 33,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 36
+  },
+  {
+    "ten_co_dau": "Ngải cứu",
+    "ten_khong_dau": "Ngai cuu",
+    "ten_anh": "Mugwort / Moxa",
+    "ten_khoa_hoc": "Artemisia vulgaris L.",
+    "tac_dung": "Điều kinh, cầm máu tử cung; an thai; chữa đau bụng kinh, rong kinh, động thai; kháng khuẩn, kháng viêm; trừ hàn, giảm đau",
+    "tac_dung_list": [
+      "Điều kinh, cầm máu tử cung",
+      "an thai",
+      "chữa đau bụng kinh, rong kinh, động thai",
+      "kháng khuẩn, kháng viêm",
+      "trừ hàn, giảm đau"
+    ],
+    "page_start": 36,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 37
+  },
+  {
+    "ten_co_dau": "Bạch đồng nữ",
+    "ten_khong_dau": "Bach dong nu",
+    "ten_anh": "Clerodendrum / White glory bower",
+    "ten_khoa_hoc": "Clerodendrum chinense (Osbeck) Mabb.",
+    "tac_dung": "Chữa bạch đới, khí hư; viêm âm đạo; điều kinh; kháng khuẩn; chữa mụn nhọt",
+    "tac_dung_list": [
+      "Chữa bạch đới, khí hư",
+      "viêm âm đạo",
+      "điều kinh",
+      "kháng khuẩn",
+      "chữa mụn nhọt"
+    ],
+    "page_start": 37,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 40
+  },
+  {
+    "ten_co_dau": "Cây diếp cá",
+    "ten_khong_dau": "Cay diep ca",
+    "ten_anh": "Fish mint / Heartleaf houttuynia",
+    "ten_khoa_hoc": "Houttuynia cordata Thunb.",
+    "tac_dung": "Kháng khuẩn mạnh; chữa viêm phổi, viêm phế quản; lợi tiểu; giải độc; trị mụn nhọt, áp xe; chống viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh",
+      "chữa viêm phổi, viêm phế quản",
+      "lợi tiểu",
+      "giải độc",
+      "trị mụn nhọt, áp xe",
+      "chống viêm"
+    ],
+    "page_start": 40,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 41
+  },
+  {
+    "ten_co_dau": "Cây hồng hoa",
+    "ten_khong_dau": "Cay hong hoa",
+    "ten_anh": "Safflower",
+    "ten_khoa_hoc": "Carthamus tinctorius L.",
+    "tac_dung": "Hoạt huyết, phá ứ; chữa kinh nguyệt không đều, bế kinh, đau bụng kinh; chống huyết khối; hạ mỡ máu",
+    "tac_dung_list": [
+      "Hoạt huyết, phá ứ",
+      "chữa kinh nguyệt không đều, bế kinh, đau bụng kinh",
+      "chống huyết khối",
+      "hạ mỡ máu"
+    ],
+    "page_start": 41,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 42
+  },
+  {
+    "ten_co_dau": "Cây gai",
+    "ten_khong_dau": "Cay gai",
+    "ten_anh": "Ramie / China grass",
+    "ten_khoa_hoc": "Boehmeria nivea (L.) Gaudich.",
+    "tac_dung": "An thai, cầm máu; chữa động thai, rong kinh; lợi tiểu; kháng khuẩn; giải nhiệt",
+    "tac_dung_list": [
+      "An thai, cầm máu",
+      "chữa động thai, rong kinh",
+      "lợi tiểu",
+      "kháng khuẩn",
+      "giải nhiệt"
+    ],
+    "page_start": 42,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 43
+  },
+  {
+    "ten_co_dau": "Cây hoa cứt lợn",
+    "ten_khong_dau": "Cay hoa cut lon",
+    "ten_anh": "Billy goat weed / Ageratum",
+    "ten_khoa_hoc": "Ageratum conyzoides L.",
+    "tac_dung": "Cầm máu; điều kinh; chữa viêm xoang mũi dị ứng; kháng khuẩn; trị ngoại thương chảy máu",
+    "tac_dung_list": [
+      "Cầm máu",
+      "điều kinh",
+      "chữa viêm xoang mũi dị ứng",
+      "kháng khuẩn",
+      "trị ngoại thương chảy máu"
+    ],
+    "page_start": 43,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 44
+  },
+  {
+    "ten_co_dau": "Bán hạ",
+    "ten_khong_dau": "Ban ha",
+    "ten_anh": "Pinellia / Half-summer",
+    "ten_khoa_hoc": "Pinellia ternata (Thunb.) Makino",
+    "tac_dung": "Trừ đàm thấp; chống nôn mửa; chữa thai nghén buồn nôn; chữa ho có đờm; tiêu tụ tán kết",
+    "tac_dung_list": [
+      "Trừ đàm thấp",
+      "chống nôn mửa",
+      "chữa thai nghén buồn nôn",
+      "chữa ho có đờm",
+      "tiêu tụ tán kết"
+    ],
+    "page_start": 44,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 47
+  },
+  {
+    "ten_co_dau": "Cây bông",
+    "ten_khong_dau": "Cay bong",
+    "ten_anh": "Cotton plant",
+    "ten_khoa_hoc": "Gossypium hirsutum L.",
+    "tac_dung": "Hạt bông: thông sữa; rễ bông: điều kinh, cầm máu; chữa bạch đới; kháng khuẩn",
+    "tac_dung_list": [
+      "Hạt bông: thông sữa",
+      "rễ bông: điều kinh, cầm máu",
+      "chữa bạch đới",
+      "kháng khuẩn"
+    ],
+    "page_start": 47,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 48
+  },
+  {
+    "ten_co_dau": "Hạt bông",
+    "ten_khong_dau": "Hat bong",
+    "ten_anh": "Cotton seed",
+    "ten_khoa_hoc": "Gossypium hirsutum L.",
+    "tac_dung": "Thông sữa cho phụ nữ sau sinh; bổ dương; chữa liệt dương; tăng sinh tinh",
+    "tac_dung_list": [
+      "Thông sữa cho phụ nữ sau sinh",
+      "bổ dương",
+      "chữa liệt dương",
+      "tăng sinh tinh"
+    ],
+    "page_start": 48,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 48
+  },
+  {
+    "ten_co_dau": "Cây ngưu tất",
+    "ten_khong_dau": "Cay nguu tat",
+    "ten_anh": "Achyranthes / Ox-knee",
+    "ten_khoa_hoc": "Achyranthes bidentata Blume",
+    "tac_dung": "Hoạt huyết thông kinh; chữa kinh nguyệt không đều, bế kinh; lợi tiểu; hạ huyết áp; bổ can thận; chữa đau lưng mỏi gối",
+    "tac_dung_list": [
+      "Hoạt huyết thông kinh",
+      "chữa kinh nguyệt không đều, bế kinh",
+      "lợi tiểu",
+      "hạ huyết áp",
+      "bổ can thận",
+      "chữa đau lưng mỏi gối"
+    ],
+    "page_start": 48,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 50
+  },
+  {
+    "ten_co_dau": "Cây tô mộc",
+    "ten_khong_dau": "Cay to moc",
+    "ten_anh": "Sappanwood",
+    "ten_khoa_hoc": "Caesalpinia sappan L.",
+    "tac_dung": "Hoạt huyết, phá ứ huyết; chữa kinh nguyệt không đều, bế kinh, đau bụng kinh; tiêu sưng; kháng khuẩn",
+    "tac_dung_list": [
+      "Hoạt huyết, phá ứ huyết",
+      "chữa kinh nguyệt không đều, bế kinh, đau bụng kinh",
+      "tiêu sưng",
+      "kháng khuẩn"
+    ],
+    "page_start": 50,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 52
+  },
+  {
+    "ten_co_dau": "Cây rau ngót",
+    "ten_khong_dau": "Cay rau ngot",
+    "ten_anh": "Sweet leaf / Katuk",
+    "ten_khoa_hoc": "Sauropus androgynus (L.) Merr.",
+    "tac_dung": "Thông sữa; cầm máu; chữa sốt; táo bón; suy dinh dưỡng trẻ em; bổ dưỡng",
+    "tac_dung_list": [
+      "Thông sữa",
+      "cầm máu",
+      "chữa sốt",
+      "táo bón",
+      "suy dinh dưỡng trẻ em",
+      "bổ dưỡng"
+    ],
+    "page_start": 52,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 53
+  },
+  {
+    "ten_co_dau": "Đài hái",
+    "ten_khong_dau": "Dai hai",
+    "ten_anh": "Roselle calyx",
+    "ten_khoa_hoc": "Hibiscus sabdariffa L.",
+    "tac_dung": "Điều kinh; lợi tiểu; hạ huyết áp; bổ dưỡng; chữa táo bón; chống oxy hóa",
+    "tac_dung_list": [
+      "Điều kinh",
+      "lợi tiểu",
+      "hạ huyết áp",
+      "bổ dưỡng",
+      "chữa táo bón",
+      "chống oxy hóa"
+    ],
+    "page_start": 53,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 54
+  },
+  {
+    "ten_co_dau": "Cỏ đuôi lươn",
+    "ten_khong_dau": "Co duoi luon",
+    "ten_anh": "Blady grass / Cogon grass root",
+    "ten_khoa_hoc": "Imperata cylindrica (L.) P.Beauv.",
+    "tac_dung": "Cầm máu; lợi tiểu; chữa rong kinh, tiểu ra máu; giải nhiệt; tiêu viêm",
+    "tac_dung_list": [
+      "Cầm máu",
+      "lợi tiểu",
+      "chữa rong kinh, tiểu ra máu",
+      "giải nhiệt",
+      "tiêu viêm"
+    ],
+    "page_start": 54,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 55
+  },
+  {
+    "ten_co_dau": "Đương quy",
+    "ten_khong_dau": "Duong quy",
+    "ten_anh": "Chinese angelica / Dong quai",
+    "ten_khoa_hoc": "Angelica sinensis (Oliv.) Diels",
+    "tac_dung": "Bổ huyết, hoạt huyết; điều kinh; chữa thiếu máu, kinh nguyệt không đều, đau bụng kinh; dưỡng da; chống oxy hóa",
+    "tac_dung_list": [
+      "Bổ huyết, hoạt huyết",
+      "điều kinh",
+      "chữa thiếu máu, kinh nguyệt không đều, đau bụng kinh",
+      "dưỡng da",
+      "chống oxy hóa"
+    ],
+    "page_start": 55,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 59
+  },
+  {
+    "ten_co_dau": "Huyết giác",
+    "ten_khong_dau": "Huyet giac",
+    "ten_anh": "Dragon blood tree / Dracaena",
+    "ten_khoa_hoc": "Dracaena cochinchinensis (Lour.) S.C.Chen",
+    "tac_dung": "Hoạt huyết, cầm máu; chữa chấn thương, bầm tím; giảm đau; phụ nữ sau sinh ứ huyết",
+    "tac_dung_list": [
+      "Hoạt huyết, cầm máu",
+      "chữa chấn thương, bầm tím",
+      "giảm đau",
+      "phụ nữ sau sinh ứ huyết"
+    ],
+    "page_start": 59,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 60
+  },
+  {
+    "ten_co_dau": "Mướp",
+    "ten_khong_dau": "Muop",
+    "ten_anh": "Luffa / Sponge gourd",
+    "ten_khoa_hoc": "Luffa cylindrica (L.) M.Roem.",
+    "tac_dung": "Thông sữa; thông kinh lạc; lợi tiểu; chữa đau khớp; tiêu phù; kháng viêm",
+    "tac_dung_list": [
+      "Thông sữa",
+      "thông kinh lạc",
+      "lợi tiểu",
+      "chữa đau khớp",
+      "tiêu phù",
+      "kháng viêm"
+    ],
+    "page_start": 60,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 61
+  },
+  {
+    "ten_co_dau": "Nhội",
+    "ten_khong_dau": "Nhoi",
+    "ten_anh": "Java olive / Bischofia",
+    "ten_khoa_hoc": "Bischofia javanica Blume",
+    "tac_dung": "Chữa kinh nguyệt không đều; hoạt huyết; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Chữa kinh nguyệt không đều",
+      "hoạt huyết",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 61,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 63
+  },
+  {
+    "ten_co_dau": "Ổ rô",
+    "ten_khong_dau": "O ro",
+    "ten_anh": "Holly-leaved acanthus",
+    "ten_khoa_hoc": "Acanthus ilicifolius L.",
+    "tac_dung": "Hoạt huyết; lợi tiểu; giải độc; chữa phù nề; kháng khuẩn; chữa viêm gan",
+    "tac_dung_list": [
+      "Hoạt huyết",
+      "lợi tiểu",
+      "giải độc",
+      "chữa phù nề",
+      "kháng khuẩn",
+      "chữa viêm gan"
+    ],
+    "page_start": 63,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 64
+  },
+  {
+    "ten_co_dau": "Thiên lý",
+    "ten_khong_dau": "Thien ly",
+    "ten_anh": "Tonkin jasmine / Cowslip creeper",
+    "ten_khoa_hoc": "Telosma cordata (Burm.f.) Merr.",
+    "tac_dung": "Thông sữa; thanh nhiệt; tiêu viêm; chữa mẩn ngứa; bổ dưỡng",
+    "tac_dung_list": [
+      "Thông sữa",
+      "thanh nhiệt",
+      "tiêu viêm",
+      "chữa mẩn ngứa",
+      "bổ dưỡng"
+    ],
+    "page_start": 64,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 65
+  },
+  {
+    "ten_co_dau": "Thược dược",
+    "ten_khong_dau": "Thuoc duoc",
+    "ten_anh": "Chinese peony / Peony",
+    "ten_khoa_hoc": "Paeonia lactiflora Pall.",
+    "tac_dung": "Dưỡng huyết, điều kinh; chữa kinh nguyệt không đều; giảm đau; chống viêm; chống co thắt",
+    "tac_dung_list": [
+      "Dưỡng huyết, điều kinh",
+      "chữa kinh nguyệt không đều",
+      "giảm đau",
+      "chống viêm",
+      "chống co thắt"
+    ],
+    "page_start": 65,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 65
+  },
+  {
+    "ten_co_dau": "Bạch thược",
+    "ten_khong_dau": "Bach thuoc",
+    "ten_anh": "White peony root",
+    "ten_khoa_hoc": "Paeonia lactiflora Pall.",
+    "tac_dung": "Dưỡng huyết, liễm âm; chữa kinh nguyệt không đều, đau bụng kinh; giảm đau co thắt; hạ huyết áp",
+    "tac_dung_list": [
+      "Dưỡng huyết, liễm âm",
+      "chữa kinh nguyệt không đều, đau bụng kinh",
+      "giảm đau co thắt",
+      "hạ huyết áp"
+    ],
+    "page_start": 65,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 66
+  },
+  {
+    "ten_co_dau": "Xích thược",
+    "ten_khong_dau": "Xich thuoc",
+    "ten_anh": "Red peony root",
+    "ten_khoa_hoc": "Paeonia lactiflora Pall.",
+    "tac_dung": "Hoạt huyết, phá ứ; chữa kinh bế, đau bụng; tiêu sưng viêm; kháng khuẩn; hạ sốt",
+    "tac_dung_list": [
+      "Hoạt huyết, phá ứ",
+      "chữa kinh bế, đau bụng",
+      "tiêu sưng viêm",
+      "kháng khuẩn",
+      "hạ sốt"
+    ],
+    "page_start": 66,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 67
+  },
+  {
+    "ten_co_dau": "Bo mẩy",
+    "ten_khong_dau": "Bo may",
+    "ten_anh": "Callicarpa / Beautyberry",
+    "ten_khoa_hoc": "Callicarpa macrophylla Vahl",
+    "tac_dung": "Hoạt huyết; cầm máu; kháng khuẩn; chữa kinh nguyệt không đều",
+    "tac_dung_list": [
+      "Hoạt huyết",
+      "cầm máu",
+      "kháng khuẩn",
+      "chữa kinh nguyệt không đều"
+    ],
+    "page_start": 67,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 68
+  },
+  {
+    "ten_co_dau": "Mít",
+    "ten_khong_dau": "Mit",
+    "ten_anh": "Jackfruit",
+    "ten_khoa_hoc": "Artocarpus heterophyllus Lam.",
+    "tac_dung": "Lá mít: chữa tiểu đường; hạt mít: bổ dưỡng; nhựa mít: cầm máu; hoa mít: thông sữa",
+    "tac_dung_list": [
+      "Lá mít: chữa tiểu đường",
+      "hạt mít: bổ dưỡng",
+      "nhựa mít: cầm máu",
+      "hoa mít: thông sữa"
+    ],
+    "page_start": 68,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 69
+  },
+  {
+    "ten_co_dau": "Cửu lý hương",
+    "ten_khong_dau": "Cuu ly huong",
+    "ten_anh": "Nine-mile fragrant / Murraya",
+    "ten_khoa_hoc": "Murraya exotica L.",
+    "tac_dung": "Hoạt huyết; chữa kinh nguyệt không đều; tiêu viêm; giảm đau; kháng khuẩn",
+    "tac_dung_list": [
+      "Hoạt huyết",
+      "chữa kinh nguyệt không đều",
+      "tiêu viêm",
+      "giảm đau",
+      "kháng khuẩn"
+    ],
+    "page_start": 69,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 70
+  },
+  {
+    "ten_co_dau": "Duyên hồ sách",
+    "ten_khong_dau": "Duyen ho sach",
+    "ten_anh": "Corydalis / Yan Hu Suo",
+    "ten_khoa_hoc": "Corydalis yanhusuo (Y.H.Chou & Chun C.Hsu) W.T.Wang ex Z.Y.Su & C.Y.Wu",
+    "tac_dung": "Hoạt huyết, giảm đau mạnh; chữa đau bụng kinh, đau dạ dày, đau do chấn thương; an thần nhẹ",
+    "tac_dung_list": [
+      "Hoạt huyết, giảm đau mạnh",
+      "chữa đau bụng kinh, đau dạ dày, đau do chấn thương",
+      "an thần nhẹ"
+    ],
+    "page_start": 70,
+    "chuong": "I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ",
+    "page_end": 72
+  },
+  {
+    "ten_co_dau": "Bồ công anh",
+    "ten_khong_dau": "Bo cong anh",
+    "ten_anh": "Dandelion",
+    "ten_khoa_hoc": "Taraxacum officinale F.H.Wigg.",
+    "tac_dung": "Kháng khuẩn, tiêu viêm; chữa mụn nhọt, áp xe vú; lợi sữa; lợi gan mật; lợi tiểu; chống oxy hóa",
+    "tac_dung_list": [
+      "Kháng khuẩn, tiêu viêm",
+      "chữa mụn nhọt, áp xe vú",
+      "lợi sữa",
+      "lợi gan mật",
+      "lợi tiểu",
+      "chống oxy hóa"
+    ],
+    "page_start": 72,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 72
+  },
+  {
+    "ten_co_dau": "Bồ công anh Việt Nam",
+    "ten_khong_dau": "Bo cong anh Viet Nam",
+    "ten_anh": "Vietnamese dandelion",
+    "ten_khoa_hoc": "Lactuca indica L.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, nhọt vú; lợi sữa; giải nhiệt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, nhọt vú",
+      "lợi sữa",
+      "giải nhiệt"
+    ],
+    "page_start": 72,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 73
+  },
+  {
+    "ten_co_dau": "Bồ công anh Trung Quốc",
+    "ten_khong_dau": "Bo cong anh Trung Quoc",
+    "ten_anh": "Chinese dandelion",
+    "ten_khoa_hoc": "Taraxacum mongolicum Hand.-Mazz.",
+    "tac_dung": "Kháng khuẩn mạnh; tiêu viêm; chữa nhiễm trùng da, mụn nhọt; lợi gan; lợi tiểu; thanh nhiệt",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh",
+      "tiêu viêm",
+      "chữa nhiễm trùng da, mụn nhọt",
+      "lợi gan",
+      "lợi tiểu",
+      "thanh nhiệt"
+    ],
+    "page_start": 73,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 75
+  },
+  {
+    "ten_co_dau": "Chỉ thiên",
+    "ten_khong_dau": "Chi thien",
+    "ten_anh": "Emilia / Cupid's shaving brush",
+    "ten_khoa_hoc": "Emilia sonchifolia (L.) DC.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, lở loét; lợi tiểu; tiêu độc",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, lở loét",
+      "lợi tiểu",
+      "tiêu độc"
+    ],
+    "page_start": 75,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 75
+  },
+  {
+    "ten_co_dau": "Kim ngân",
+    "ten_khong_dau": "Kim ngan",
+    "ten_anh": "Honeysuckle",
+    "ten_khoa_hoc": "Lonicera japonica Thunb.",
+    "tac_dung": "Kháng khuẩn phổ rộng; tiêu viêm mạnh; chữa mụn nhọt, nhọt độc; hạ sốt; chống virus; kháng viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn phổ rộng",
+      "tiêu viêm mạnh",
+      "chữa mụn nhọt, nhọt độc",
+      "hạ sốt",
+      "chống virus",
+      "kháng viêm"
+    ],
+    "page_start": 75,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 78
+  },
+  {
+    "ten_co_dau": "Cây ké đầu ngựa",
+    "ten_khong_dau": "Cay ke dau ngua",
+    "ten_anh": "Cocklebur / Xanthium",
+    "ten_khoa_hoc": "Xanthium strumarium L.",
+    "tac_dung": "Kháng khuẩn; chữa viêm xoang mũi, mẩn ngứa, phong thấp; trị mụn nhọt; trừ phong giải độc",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa viêm xoang mũi, mẩn ngứa, phong thấp",
+      "trị mụn nhọt",
+      "trừ phong giải độc"
+    ],
+    "page_start": 78,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 79
+  },
+  {
+    "ten_co_dau": "Hạ khô thảo",
+    "ten_khong_dau": "Ha kho thao",
+    "ten_anh": "Self-heal / Prunella",
+    "ten_khoa_hoc": "Prunella vulgaris L.",
+    "tac_dung": "Thanh nhiệt, tiêu viêm; chữa viêm hạch bạch huyết, bướu cổ; hạ huyết áp; kháng khuẩn; chống oxy hóa",
+    "tac_dung_list": [
+      "Thanh nhiệt, tiêu viêm",
+      "chữa viêm hạch bạch huyết, bướu cổ",
+      "hạ huyết áp",
+      "kháng khuẩn",
+      "chống oxy hóa"
+    ],
+    "page_start": 79,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 82
+  },
+  {
+    "ten_co_dau": "Cây xà sàng",
+    "ten_khong_dau": "Cay xa sang",
+    "ten_anh": "Cnidium / Snake bed seeds",
+    "ten_khoa_hoc": "Cnidium monnieri (L.) Cusson",
+    "tac_dung": "Kháng khuẩn, kháng nấm; chữa ngứa âm hộ, ngoài da; bổ dương; chữa liệt dương; trừ phong thấp",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng nấm",
+      "chữa ngứa âm hộ, ngoài da",
+      "bổ dương",
+      "chữa liệt dương",
+      "trừ phong thấp"
+    ],
+    "page_start": 82,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 83
+  },
+  {
+    "ten_co_dau": "Bưởi bung",
+    "ten_khong_dau": "Buoi bung",
+    "ten_anh": "Acronychia / Malay acronychia",
+    "ten_khoa_hoc": "Acronychia pedunculata (L.) Miq.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; phong thấp đau nhức; giảm đau",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "phong thấp đau nhức",
+      "giảm đau"
+    ],
+    "page_start": 83,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 84
+  },
+  {
+    "ten_co_dau": "Cây mã tiền thảo",
+    "ten_khong_dau": "Cay ma tien thao",
+    "ten_anh": "Strychnos / Nux vomica herb",
+    "ten_khoa_hoc": "Strychnos nux-vomica L.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt ngoài da (dùng ngoài); cẩn thận độc tính cao",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt ngoài da (dùng ngoài)",
+      "cẩn thận độc tính cao"
+    ],
+    "page_start": 84,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 85
+  },
+  {
+    "ten_co_dau": "Con rết",
+    "ten_khong_dau": "Con ret",
+    "ten_anh": "Centipede / Scolopendra",
+    "ten_khoa_hoc": "Scolopendra subspinipes Leach (động vật)",
+    "tac_dung": "Giải độc, tiêu sưng; chữa mụn nhọt độc, nhọt ác tính; trừ phong; chống co giật; kháng khuẩn",
+    "tac_dung_list": [
+      "Giải độc, tiêu sưng",
+      "chữa mụn nhọt độc, nhọt ác tính",
+      "trừ phong",
+      "chống co giật",
+      "kháng khuẩn"
+    ],
+    "page_start": 85,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 86
+  },
+  {
+    "ten_co_dau": "Sài đất",
+    "ten_khong_dau": "Sai dat",
+    "ten_anh": "Wedelia / Singapore daisy",
+    "ten_khoa_hoc": "Sphagneticola trilobata (L.) Pruski",
+    "tac_dung": "Kháng khuẩn, kháng viêm; chữa mụn nhọt, viêm da; chữa ho; giải nhiệt; hạ sốt",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng viêm",
+      "chữa mụn nhọt, viêm da",
+      "chữa ho",
+      "giải nhiệt",
+      "hạ sốt"
+    ],
+    "page_start": 86,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 88
+  },
+  {
+    "ten_co_dau": "Bạch hạc",
+    "ten_khong_dau": "Bach hac",
+    "ten_anh": "White crane flower / Rhinacanthus",
+    "ten_khoa_hoc": "Rhinacanthus nasutus (L.) Kurz",
+    "tac_dung": "Kháng nấm mạnh; chữa nấm da, hắc lào, lang ben; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Kháng nấm mạnh",
+      "chữa nấm da, hắc lào, lang ben",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 88,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 89
+  },
+  {
+    "ten_co_dau": "Bạch hoa xà",
+    "ten_khong_dau": "Bach hoa xa",
+    "ten_anh": "Chinese ground ivy / Hedyotis",
+    "ten_khoa_hoc": "Hedyotis diffusa Willd.",
+    "tac_dung": "Tiêu viêm, giải độc; chữa ung thư (hỗ trợ); mụn nhọt; viêm ruột thừa; viêm gan",
+    "tac_dung_list": [
+      "Tiêu viêm, giải độc",
+      "chữa ung thư (hỗ trợ)",
+      "mụn nhọt",
+      "viêm ruột thừa",
+      "viêm gan"
+    ],
+    "page_start": 89,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 90
+  },
+  {
+    "ten_co_dau": "Bảy lá một hoa",
+    "ten_khong_dau": "Bay la mot hoa",
+    "ten_anh": "Paris herb / Seven-leaf one-flower",
+    "ten_khoa_hoc": "Paris polyphylla Sm.",
+    "tac_dung": "Giải độc rắn cắn; tiêu viêm mạnh; chữa mụn nhọt độc; kháng khuẩn; chống ung thư (nghiên cứu)",
+    "tac_dung_list": [
+      "Giải độc rắn cắn",
+      "tiêu viêm mạnh",
+      "chữa mụn nhọt độc",
+      "kháng khuẩn",
+      "chống ung thư (nghiên cứu)"
+    ],
+    "page_start": 90,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 92
+  },
+  {
+    "ten_co_dau": "Bèo cái",
+    "ten_khong_dau": "Beo cai",
+    "ten_anh": "Water lettuce / Pistia",
+    "ten_khoa_hoc": "Pistia stratiotes L.",
+    "tac_dung": "Giải nhiệt; lợi tiểu; chữa mẩn ngứa, phù nề; tiêu viêm",
+    "tac_dung_list": [
+      "Giải nhiệt",
+      "lợi tiểu",
+      "chữa mẩn ngứa, phù nề",
+      "tiêu viêm"
+    ],
+    "page_start": 92,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 93
+  },
+  {
+    "ten_co_dau": "Bố cu vẽ",
+    "ten_khong_dau": "Bo cu ve",
+    "ten_anh": "Breynia / Coffee bush",
+    "ten_khoa_hoc": "Breynia fruticosa (L.) Hook.f.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; giảm đau",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "giảm đau"
+    ],
+    "page_start": 93,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 94
+  },
+  {
+    "ten_co_dau": "Bùng bục",
+    "ten_khong_dau": "Bung buc",
+    "ten_anh": "Mallotus / Kamala tree",
+    "ten_khoa_hoc": "Mallotus paniculatus (Lam.) Müll.Arg.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt, lở loét",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt, lở loét"
+    ],
+    "page_start": 94,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 95
+  },
+  {
+    "ten_co_dau": "Cà đại hoa vàng",
+    "ten_khong_dau": "Ca dai hoa vang",
+    "ten_anh": "Yellow-flowered nightshade",
+    "ten_khoa_hoc": "Solanum xanthocarpum Schrad. & H.Wendl.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, phù nề; lợi tiểu",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, phù nề",
+      "lợi tiểu"
+    ],
+    "page_start": 95,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 95
+  },
+  {
+    "ten_co_dau": "Cào bản",
+    "ten_khong_dau": "Cao ban",
+    "ten_anh": "Rubus / Raspberry leaf",
+    "ten_khoa_hoc": "Rubus alceaefolius Poir.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt, vết thương; cầm máu",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt, vết thương",
+      "cầm máu"
+    ],
+    "page_start": 95,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 97
+  },
+  {
+    "ten_co_dau": "Chó đẻ răng cưa",
+    "ten_khong_dau": "Cho de rang cua",
+    "ten_anh": "Phyllanthus / Stone breaker",
+    "ten_khoa_hoc": "Phyllanthus urinaria L.",
+    "tac_dung": "Kháng virus viêm gan B; lợi tiểu; tan sỏi; tiêu viêm; hạ sốt; chữa mụn nhọt",
+    "tac_dung_list": [
+      "Kháng virus viêm gan B",
+      "lợi tiểu",
+      "tan sỏi",
+      "tiêu viêm",
+      "hạ sốt",
+      "chữa mụn nhọt"
+    ],
+    "page_start": 97,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 98
+  },
+  {
+    "ten_co_dau": "Cúc liên chi đại",
+    "ten_khong_dau": "Cuc lien chi dai",
+    "ten_anh": "Chrysanthemum / Pyrethrum",
+    "ten_khoa_hoc": "Chrysanthemum indicum L.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; hạ sốt; chữa mắt đỏ",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "hạ sốt",
+      "chữa mắt đỏ"
+    ],
+    "page_start": 98,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 99
+  },
+  {
+    "ten_co_dau": "Dâm bụt",
+    "ten_khong_dau": "Dam but",
+    "ten_anh": "Hibiscus / Rosemallow",
+    "ten_khoa_hoc": "Hibiscus rosa-sinensis L.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt, viêm da; lợi tiểu; hạ sốt",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt, viêm da",
+      "lợi tiểu",
+      "hạ sốt"
+    ],
+    "page_start": 99,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 99
+  },
+  {
+    "ten_co_dau": "Ké hoa đào",
+    "ten_khong_dau": "Ke hoa dao",
+    "ten_anh": "Urena / Pink burr",
+    "ten_khoa_hoc": "Urena lobata L.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt; điều kinh; lợi tiểu",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt",
+      "điều kinh",
+      "lợi tiểu"
+    ],
+    "page_start": 99,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 100
+  },
+  {
+    "ten_co_dau": "Ké hoa vàng",
+    "ten_khong_dau": "Ke hoa vang",
+    "ten_anh": "Yellow burr mallow / Triumfetta",
+    "ten_khoa_hoc": "Triumfetta rhomboidea Jacq.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, lở loét; lợi tiểu",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, lở loét",
+      "lợi tiểu"
+    ],
+    "page_start": 100,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 102
+  },
+  {
+    "ten_co_dau": "Khế",
+    "ten_khong_dau": "Khe",
+    "ten_anh": "Starfruit / Carambola",
+    "ten_khoa_hoc": "Averrhoa carambola L.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt, viêm họng; lợi tiểu; hạ sốt; thanh nhiệt",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt, viêm họng",
+      "lợi tiểu",
+      "hạ sốt",
+      "thanh nhiệt"
+    ],
+    "page_start": 102,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 102
+  },
+  {
+    "ten_co_dau": "Liên kiều",
+    "ten_khong_dau": "Lien kieu",
+    "ten_anh": "Forsythia fruit",
+    "ten_khoa_hoc": "Forsythia suspensa (Thunb.) Vahl",
+    "tac_dung": "Kháng khuẩn phổ rộng; tiêu viêm mạnh; chữa mụn nhọt, nhiễm khuẩn; hạ sốt; giải độc",
+    "tac_dung_list": [
+      "Kháng khuẩn phổ rộng",
+      "tiêu viêm mạnh",
+      "chữa mụn nhọt, nhiễm khuẩn",
+      "hạ sốt",
+      "giải độc"
+    ],
+    "page_start": 102,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 104
+  },
+  {
+    "ten_co_dau": "Máu chó",
+    "ten_khong_dau": "Mau cho",
+    "ten_anh": "Horsfieldia / Myristica",
+    "ten_khoa_hoc": "Horsfieldia amygdalina (Wall.) Warb.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt, lở loét; cầm máu",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt, lở loét",
+      "cầm máu"
+    ],
+    "page_start": 104,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 105
+  },
+  {
+    "ten_co_dau": "Lá móng tay",
+    "ten_khong_dau": "La mong tay",
+    "ten_anh": "Henna",
+    "ten_khoa_hoc": "Lawsonia inermis L.",
+    "tac_dung": "Kháng nấm, kháng khuẩn; chữa nấm da, hắc lào; tiêu viêm; làm lành vết thương",
+    "tac_dung_list": [
+      "Kháng nấm, kháng khuẩn",
+      "chữa nấm da, hắc lào",
+      "tiêu viêm",
+      "làm lành vết thương"
+    ],
+    "page_start": 105,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 106
+  },
+  {
+    "ten_co_dau": "Mù u",
+    "ten_khong_dau": "Mu u",
+    "ten_anh": "Alexandrian laurel / Tamanu",
+    "ten_khoa_hoc": "Calophyllum inophyllum L.",
+    "tac_dung": "Kháng khuẩn, kháng nấm; chữa ghẻ, hắc lào, lở loét; dầu mù u: dưỡng da, lành vết thương",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng nấm",
+      "chữa ghẻ, hắc lào, lở loét",
+      "dầu mù u: dưỡng da, lành vết thương"
+    ],
+    "page_start": 106,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 107
+  },
+  {
+    "ten_co_dau": "Niệt gió",
+    "ten_khong_dau": "Niet gio",
+    "ten_anh": "Wikstroemia / Indian stringbush",
+    "ten_khoa_hoc": "Wikstroemia indica (L.) C.A.Mey.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt; chú ý độc tính",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt",
+      "chú ý độc tính"
+    ],
+    "page_start": 107,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 108
+  },
+  {
+    "ten_co_dau": "Phù dung",
+    "ten_khong_dau": "Phu dung",
+    "ten_anh": "Cotton rose / Confederate rose",
+    "ten_khoa_hoc": "Hibiscus mutabilis L.",
+    "tac_dung": "Tiêu viêm, giải độc; chữa mụn nhọt, áp xe; làm dịu bỏng; kháng khuẩn",
+    "tac_dung_list": [
+      "Tiêu viêm, giải độc",
+      "chữa mụn nhọt, áp xe",
+      "làm dịu bỏng",
+      "kháng khuẩn"
+    ],
+    "page_start": 108,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 109
+  },
+  {
+    "ten_co_dau": "Dầu rái trắng",
+    "ten_khong_dau": "Dau rai trang",
+    "ten_anh": "White resin tree / Dipterocarpus",
+    "ten_khoa_hoc": "Dipterocarpus alatus Roxb. ex G.Don",
+    "tac_dung": "Kháng khuẩn; chữa mụn nhọt, lở loét; chữa bệnh ngoài da; bảo vệ da",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa mụn nhọt, lở loét",
+      "chữa bệnh ngoài da",
+      "bảo vệ da"
+    ],
+    "page_start": 109,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 111
+  },
+  {
+    "ten_co_dau": "Cây rau má lá rau muống",
+    "ten_khong_dau": "Cay rau ma la rau muong",
+    "ten_anh": "Centella / Asiatic pennywort variant",
+    "ten_khoa_hoc": "Centella asiatica (L.) Urb.",
+    "tac_dung": "Tiêu viêm; cầm máu; làm lành vết thương; kháng khuẩn; trợ giúp trí nhớ",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "cầm máu",
+      "làm lành vết thương",
+      "kháng khuẩn",
+      "trợ giúp trí nhớ"
+    ],
+    "page_start": 111,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 111
+  },
+  {
+    "ten_co_dau": "Rau má ngọ",
+    "ten_khong_dau": "Rau ma ngo",
+    "ten_anh": "Hydrocotyle / Marsh pennywort",
+    "ten_khoa_hoc": "Hydrocotyle sibthorpioides Lam.",
+    "tac_dung": "Tiêu viêm; lợi tiểu; chữa mụn nhọt; thanh nhiệt; kháng khuẩn",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "lợi tiểu",
+      "chữa mụn nhọt",
+      "thanh nhiệt",
+      "kháng khuẩn"
+    ],
+    "page_start": 111,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 112
+  },
+  {
+    "ten_co_dau": "Tán cửu (Thanh táo)",
+    "ten_khong_dau": "Tan cuu (Thanh tao)",
+    "ten_anh": "Blue indigo / Isatis herb",
+    "ten_khoa_hoc": "Isatis indigotica Fortune",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; giải độc; chữa viêm họng, nhiễm trùng; hạ sốt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "giải độc",
+      "chữa viêm họng, nhiễm trùng",
+      "hạ sốt"
+    ],
+    "page_start": 112,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 113
+  },
+  {
+    "ten_co_dau": "Thanh đại",
+    "ten_khong_dau": "Thanh dai",
+    "ten_anh": "Indigo naturalis",
+    "ten_khoa_hoc": "Indigofera tinctoria L.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; thanh nhiệt giải độc; chữa viêm họng, mụn nhọt; hạ sốt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "thanh nhiệt giải độc",
+      "chữa viêm họng, mụn nhọt",
+      "hạ sốt"
+    ],
+    "page_start": 113,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 116
+  },
+  {
+    "ten_co_dau": "Thuốc bỏng",
+    "ten_khong_dau": "Thuoc bong",
+    "ten_anh": "Air plant / Miracle leaf",
+    "ten_khoa_hoc": "Bryophyllum pinnatum (Lam.) Oken",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa bỏng, mụn nhọt, vết thương; hạ sốt; lợi tiểu",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa bỏng, mụn nhọt, vết thương",
+      "hạ sốt",
+      "lợi tiểu"
+    ],
+    "page_start": 116,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 117
+  },
+  {
+    "ten_co_dau": "Thuốc giấu",
+    "ten_khong_dau": "Thuoc giau",
+    "ten_anh": "Murdannia",
+    "ten_khoa_hoc": "Murdannia loriformis (Hassk.) R.S.Rao & Kammathy",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt; lợi tiểu; giải nhiệt",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt",
+      "lợi tiểu",
+      "giải nhiệt"
+    ],
+    "page_start": 117,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 118
+  },
+  {
+    "ten_co_dau": "Trâu không",
+    "ten_khong_dau": "Trau khong",
+    "ten_anh": "Lannea / Clammy cherry",
+    "ten_khoa_hoc": "Lannea coromandelica (Houtt.) Merr.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, lở loét; vỏ cây dùng chữa viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, lở loét",
+      "vỏ cây dùng chữa viêm"
+    ],
+    "page_start": 118,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 119
+  },
+  {
+    "ten_co_dau": "Thơm lốm",
+    "ten_khong_dau": "Thom lom",
+    "ten_anh": "Chromolaena / Siam weed",
+    "ten_khoa_hoc": "Chromolaena odorata (L.) R.M.King & H.Rob.",
+    "tac_dung": "Cầm máu; kháng khuẩn; chữa vết thương, mụn nhọt; tiêu viêm",
+    "tac_dung_list": [
+      "Cầm máu",
+      "kháng khuẩn",
+      "chữa vết thương, mụn nhọt",
+      "tiêu viêm"
+    ],
+    "page_start": 119,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 120
+  },
+  {
+    "ten_co_dau": "Đơn buốt",
+    "ten_khong_dau": "Don buot",
+    "ten_anh": "Bidens / Beggartick",
+    "ten_khoa_hoc": "Bidens pilosa L.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, viêm da; lợi tiểu; hạ sốt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, viêm da",
+      "lợi tiểu",
+      "hạ sốt"
+    ],
+    "page_start": 120,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 121
+  },
+  {
+    "ten_co_dau": "Chè vằng",
+    "ten_khong_dau": "Che vang",
+    "ten_anh": "Jasminum / Wild jasmine",
+    "ten_khoa_hoc": "Jasminum subtriplinerve Blume",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt; lợi sữa sau sinh; hạ sốt",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt",
+      "lợi sữa sau sinh",
+      "hạ sốt"
+    ],
+    "page_start": 121,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 122
+  },
+  {
+    "ten_co_dau": "Cây rẩy",
+    "ten_khong_dau": "Cay ray",
+    "ten_anh": "Macaranga / Coral tree",
+    "ten_khoa_hoc": "Macaranga denticulata (Blume) Müll.Arg.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt, lở loét",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt, lở loét"
+    ],
+    "page_start": 122,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 123
+  },
+  {
+    "ten_co_dau": "Ba chạc",
+    "ten_khong_dau": "Ba chac",
+    "ten_anh": "Euodia / Three-leaf evodia",
+    "ten_khoa_hoc": "Euodia lepta (Spreng.) Merr.",
+    "tac_dung": "Kháng khuẩn; kháng nấm; chữa mụn nhọt, ghẻ, mẩn ngứa; tiêu viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "kháng nấm",
+      "chữa mụn nhọt, ghẻ, mẩn ngứa",
+      "tiêu viêm"
+    ],
+    "page_start": 123,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 123
+  },
+  {
+    "ten_co_dau": "Bạc thau",
+    "ten_khong_dau": "Bac thau",
+    "ten_anh": "Argyreia / Silver morning glory",
+    "ten_khoa_hoc": "Argyreia acuta Lour.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; lợi tiểu",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "lợi tiểu"
+    ],
+    "page_start": 123,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 124
+  },
+  {
+    "ten_co_dau": "Bèo tây",
+    "ten_khong_dau": "Beo tay",
+    "ten_anh": "Water hyacinth",
+    "ten_khoa_hoc": "Eichhornia crassipes (Mart.) Solms",
+    "tac_dung": "Tiêu viêm; lợi tiểu; chữa mẩn ngứa, bệnh ngoài da",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "lợi tiểu",
+      "chữa mẩn ngứa, bệnh ngoài da"
+    ],
+    "page_start": 124,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 125
+  },
+  {
+    "ten_co_dau": "Bứa",
+    "ten_khong_dau": "Bua",
+    "ten_anh": "Garcinia / Gamboge tree",
+    "ten_khoa_hoc": "Garcinia oblongifolia Champ. ex Benth.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; vỏ cây chữa viêm; hạ mỡ máu",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "vỏ cây chữa viêm",
+      "hạ mỡ máu"
+    ],
+    "page_start": 125,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 126
+  },
+  {
+    "ten_co_dau": "Dây đòn gánh",
+    "ten_khong_dau": "Day don ganh",
+    "ten_anh": "Gouania / Chewing stick",
+    "ten_khoa_hoc": "Gouania leptostachya DC.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt"
+    ],
+    "page_start": 126,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 126
+  },
+  {
+    "ten_co_dau": "Đại phong tử",
+    "ten_khong_dau": "Dai phong tu",
+    "ten_anh": "Chaulmoogra / Hydnocarpus",
+    "ten_khoa_hoc": "Hydnocarpus anthelminthicus Pierre ex Laness.",
+    "tac_dung": "Kháng khuẩn mạnh; chữa phong hủi (Hansen); điều trị ngoài da nhiễm khuẩn",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh",
+      "chữa phong hủi (Hansen)",
+      "điều trị ngoài da nhiễm khuẩn"
+    ],
+    "page_start": 126,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 129
+  },
+  {
+    "ten_co_dau": "Đơn răng cưa",
+    "ten_khong_dau": "Don rang cua",
+    "ten_anh": "Pluchea indica / Indian fleabane",
+    "ten_khoa_hoc": "Pluchea indica (L.) Less.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; lợi tiểu; hạ sốt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "lợi tiểu",
+      "hạ sốt"
+    ],
+    "page_start": 129,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 130
+  },
+  {
+    "ten_co_dau": "Đơn tướng quân",
+    "ten_khong_dau": "Don tuong quan",
+    "ten_anh": "Syzygium / Wax apple bark",
+    "ten_khoa_hoc": "Syzygium formosum Wall.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, nhiễm trùng da",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, nhiễm trùng da"
+    ],
+    "page_start": 130,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 131
+  },
+  {
+    "ten_co_dau": "Găng tu hú",
+    "ten_khong_dau": "Gang tu hu",
+    "ten_anh": "Randia / White gardenia",
+    "ten_khoa_hoc": "Randia spinosa (Thunb.) Poir.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt, lở loét",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt, lở loét"
+    ],
+    "page_start": 131,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 132
+  },
+  {
+    "ten_co_dau": "Huyết kiệt",
+    "ten_khong_dau": "Huyet kiet",
+    "ten_anh": "Dragon's blood resin",
+    "ten_khoa_hoc": "Daemonorops draco (Willd.) Blume",
+    "tac_dung": "Cầm máu, hoạt huyết; chữa vết thương, mụn nhọt; kháng khuẩn; giảm đau",
+    "tac_dung_list": [
+      "Cầm máu, hoạt huyết",
+      "chữa vết thương, mụn nhọt",
+      "kháng khuẩn",
+      "giảm đau"
+    ],
+    "page_start": 132,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 133
+  },
+  {
+    "ten_co_dau": "Hương điệp",
+    "ten_khong_dau": "Huong diep",
+    "ten_anh": "Acacia / Mimosa tree",
+    "ten_khoa_hoc": "Acacia farnesiana (L.) Willd.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; chữa tiêu chảy",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "chữa tiêu chảy"
+    ],
+    "page_start": 133,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 135
+  },
+  {
+    "ten_co_dau": "Keo nước hoa",
+    "ten_khong_dau": "Keo nuoc hoa",
+    "ten_anh": "Melaleuca / Paperbark",
+    "ten_khoa_hoc": "Melaleuca leucadendra (L.) L.",
+    "tac_dung": "Kháng khuẩn, kháng nấm; chữa bệnh ngoài da, mụn nhọt; tiêu viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng nấm",
+      "chữa bệnh ngoài da, mụn nhọt",
+      "tiêu viêm"
+    ],
+    "page_start": 135,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 136
+  },
+  {
+    "ten_co_dau": "Khoai nưa",
+    "ten_khong_dau": "Khoai nua",
+    "ten_anh": "Konjac / Amorphophallus",
+    "ten_khoa_hoc": "Amorphophallus paeoniifolius (Dennst.) Nicolson",
+    "tac_dung": "Tiêu viêm; chữa mụn nhọt; kháng khuẩn; hạ mỡ máu; trị táo bón",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "chữa mụn nhọt",
+      "kháng khuẩn",
+      "hạ mỡ máu",
+      "trị táo bón"
+    ],
+    "page_start": 136,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 137
+  },
+  {
+    "ten_co_dau": "Cây la",
+    "ten_khong_dau": "Cay la",
+    "ten_anh": "Maranta / Arrowroot",
+    "ten_khoa_hoc": "Maranta arundinacea L.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt; bổ dưỡng",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt",
+      "bổ dưỡng"
+    ],
+    "page_start": 137,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 138
+  },
+  {
+    "ten_co_dau": "Cà tàu",
+    "ten_khong_dau": "Ca tau",
+    "ten_anh": "Wild eggplant / Solanum",
+    "ten_khoa_hoc": "Solanum torvum Sw.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, viêm da; lợi tiểu",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, viêm da",
+      "lợi tiểu"
+    ],
+    "page_start": 138,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 138
+  },
+  {
+    "ten_co_dau": "Lăn tơ uyn",
+    "ten_khong_dau": "Lan to uyn",
+    "ten_anh": "Lantana",
+    "ten_khoa_hoc": "Lantana camara L.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa ghẻ, ngoài da; hạ sốt; chú ý độc tính với động vật",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa ghẻ, ngoài da",
+      "hạ sốt",
+      "chú ý độc tính với động vật"
+    ],
+    "page_start": 138,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 140
+  },
+  {
+    "ten_co_dau": "Lu lu đực",
+    "ten_khong_dau": "Lu lu duc",
+    "ten_anh": "Black nightshade",
+    "ten_khoa_hoc": "Solanum americanum Mill.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; lợi tiểu; thanh nhiệt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "lợi tiểu",
+      "thanh nhiệt"
+    ],
+    "page_start": 140,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 141
+  },
+  {
+    "ten_co_dau": "Mật quý",
+    "ten_khong_dau": "Mat quy",
+    "ten_anh": "Pouzolzia / Velvet plant",
+    "ten_khoa_hoc": "Pouzolzia zeylanica (L.) Benn.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, viêm da; lợi tiểu",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, viêm da",
+      "lợi tiểu"
+    ],
+    "page_start": 141,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 141
+  },
+  {
+    "ten_co_dau": "Muồng trường",
+    "ten_khong_dau": "Muong truong",
+    "ten_anh": "Cassia / Long cassia",
+    "ten_khoa_hoc": "Senna timoriensis (DC.) H.S.Irwin & Barneby",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, ghẻ ngứa",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, ghẻ ngứa"
+    ],
+    "page_start": 141,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 142
+  },
+  {
+    "ten_co_dau": "Rong mơ",
+    "ten_khong_dau": "Rong mo",
+    "ten_anh": "Sargassum / Brown seaweed",
+    "ten_khoa_hoc": "Sargassum fusiforme (Harv.) Setch.",
+    "tac_dung": "Tiêu đàm, tiêu sưng; chữa bướu cổ; kháng khuẩn; hạ huyết áp; chống ung thư (hỗ trợ)",
+    "tac_dung_list": [
+      "Tiêu đàm, tiêu sưng",
+      "chữa bướu cổ",
+      "kháng khuẩn",
+      "hạ huyết áp",
+      "chống ung thư (hỗ trợ)"
+    ],
+    "page_start": 142,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 143
+  },
+  {
+    "ten_co_dau": "Sắn thuyền",
+    "ten_khong_dau": "San thuyen",
+    "ten_anh": "Plumbago / Leadwort",
+    "ten_khoa_hoc": "Plumbago indica L.",
+    "tac_dung": "Kháng khuẩn, kháng nấm; chữa ghẻ, hắc lào, mụn nhọt; tiêu viêm; chú ý kích ứng da",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng nấm",
+      "chữa ghẻ, hắc lào, mụn nhọt",
+      "tiêu viêm",
+      "chú ý kích ứng da"
+    ],
+    "page_start": 143,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 144
+  },
+  {
+    "ten_co_dau": "Thóc lép",
+    "ten_khong_dau": "Thoc lep",
+    "ten_anh": "Vitex / Chaste tree berry",
+    "ten_khoa_hoc": "Vitex trifolia L.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, cảm sốt; hạ huyết áp",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, cảm sốt",
+      "hạ huyết áp"
+    ],
+    "page_start": 144,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 145
+  },
+  {
+    "ten_co_dau": "Tỏi đỏ",
+    "ten_khong_dau": "Toi do",
+    "ten_anh": "Wild garlic / Tulbaghia",
+    "ten_khoa_hoc": "Tulbaghia violacea Harv.",
+    "tac_dung": "Kháng khuẩn, kháng nấm; chữa ghẻ, mụn nhọt; tiêu viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng nấm",
+      "chữa ghẻ, mụn nhọt",
+      "tiêu viêm"
+    ],
+    "page_start": 145,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 146
+  },
+  {
+    "ten_co_dau": "Tùng hương",
+    "ten_khong_dau": "Tung huong",
+    "ten_anh": "Rosin / Pine resin",
+    "ten_khoa_hoc": "Pinus massoniana D.Don",
+    "tac_dung": "Kháng khuẩn; chữa mụn nhọt, lở loét mãn tính; dán vết thương; tiêu viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa mụn nhọt, lở loét mãn tính",
+      "dán vết thương",
+      "tiêu viêm"
+    ],
+    "page_start": 146,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 148
+  },
+  {
+    "ten_co_dau": "Vạn niên thanh",
+    "ten_khong_dau": "Van nien thanh",
+    "ten_anh": "Cast-iron plant / Aspidistra",
+    "ten_khoa_hoc": "Aspidistra elatior Blume",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; lợi tiểu; thanh nhiệt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "lợi tiểu",
+      "thanh nhiệt"
+    ],
+    "page_start": 148,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 149
+  },
+  {
+    "ten_co_dau": "Táo rừng",
+    "ten_khong_dau": "Tao rung",
+    "ten_anh": "Wild jujube / Ziziphus",
+    "ten_khoa_hoc": "Ziziphus oenoplia (L.) Mill.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa mụn nhọt; cầm máu",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa mụn nhọt",
+      "cầm máu"
+    ],
+    "page_start": 149,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 150
+  },
+  {
+    "ten_co_dau": "Sáng",
+    "ten_khong_dau": "Sang",
+    "ten_anh": "Zanthoxylum / Prickly ash",
+    "ten_khoa_hoc": "Zanthoxylum nitidum (Roxb.) DC.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; giảm đau; chữa đau răng, mụn nhọt; phong thấp",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "giảm đau",
+      "chữa đau răng, mụn nhọt",
+      "phong thấp"
+    ],
+    "page_start": 150,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 151
+  },
+  {
+    "ten_co_dau": "Hàn the",
+    "ten_khong_dau": "Han the",
+    "ten_anh": "Borax",
+    "ten_khoa_hoc": "Na₂B₄O₇·10H₂O (khoáng vật)",
+    "tac_dung": "Kháng khuẩn nhẹ; tiêu viêm; chữa viêm miệng, lở loét; dùng ngoài (chú ý độc tính khi uống)",
+    "tac_dung_list": [
+      "Kháng khuẩn nhẹ",
+      "tiêu viêm",
+      "chữa viêm miệng, lở loét",
+      "dùng ngoài (chú ý độc tính khi uống)"
+    ],
+    "page_start": 151,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 151
+  },
+  {
+    "ten_co_dau": "Cà chua",
+    "ten_khong_dau": "Ca chua",
+    "ten_anh": "Tomato",
+    "ten_khoa_hoc": "Solanum lycopersicum L.",
+    "tac_dung": "Kháng khuẩn nhẹ; chống oxy hóa; phòng ung thư (lycopene); chữa mụn nhọt; bổ dưỡng",
+    "tac_dung_list": [
+      "Kháng khuẩn nhẹ",
+      "chống oxy hóa",
+      "phòng ung thư (lycopene)",
+      "chữa mụn nhọt",
+      "bổ dưỡng"
+    ],
+    "page_start": 151,
+    "chuong": "II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa",
+    "page_end": 153
+  },
+  {
+    "ten_co_dau": "Cây dầu giun",
+    "ten_khong_dau": "Cay dau giun",
+    "ten_anh": "American wormseed / Epazote",
+    "ten_khoa_hoc": "Dysphania ambrosioides (L.) Mosyakin & Clemants",
+    "tac_dung": "Tẩy giun đũa, giun móc; kháng khuẩn; tiêu hóa; chú ý độc tính cao khi dùng nhiều",
+    "tac_dung_list": [
+      "Tẩy giun đũa, giun móc",
+      "kháng khuẩn",
+      "tiêu hóa",
+      "chú ý độc tính cao khi dùng nhiều"
+    ],
+    "page_start": 153,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 156
+  },
+  {
+    "ten_co_dau": "Sử quân tử",
+    "ten_khong_dau": "Su quan tu",
+    "ten_anh": "Quisqualis / Rangoon creeper",
+    "ten_khoa_hoc": "Quisqualis indica L.",
+    "tac_dung": "Tẩy giun đũa, giun kim hiệu quả; tiêu tích; bổ tỳ vị",
+    "tac_dung_list": [
+      "Tẩy giun đũa, giun kim hiệu quả",
+      "tiêu tích",
+      "bổ tỳ vị"
+    ],
+    "page_start": 156,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 158
+  },
+  {
+    "ten_co_dau": "Cây keo đậu",
+    "ten_khong_dau": "Cay keo dau",
+    "ten_anh": "Leucaena / White lead tree",
+    "ten_khoa_hoc": "Leucaena leucocephala (Lam.) de Wit",
+    "tac_dung": "Tẩy giun; hạt chứa mimosine diệt giun; chú ý: ức chế hấp thu iod",
+    "tac_dung_list": [
+      "Tẩy giun",
+      "hạt chứa mimosine diệt giun",
+      "chú ý: ức chế hấp thu iod"
+    ],
+    "page_start": 158,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 160
+  },
+  {
+    "ten_co_dau": "Cây bách bộ",
+    "ten_khong_dau": "Cay bach bo",
+    "ten_anh": "Stemona root",
+    "ten_khoa_hoc": "Stemona tuberosa Lour.",
+    "tac_dung": "Tẩy giun kim, giun đũa; điều trị ho lâu ngày; kháng khuẩn lao; trị ghẻ ngoài da",
+    "tac_dung_list": [
+      "Tẩy giun kim, giun đũa",
+      "điều trị ho lâu ngày",
+      "kháng khuẩn lao",
+      "trị ghẻ ngoài da"
+    ],
+    "page_start": 160,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 161
+  },
+  {
+    "ten_co_dau": "Xoan",
+    "ten_khong_dau": "Xoan",
+    "ten_anh": "Chinaberry / Melia",
+    "ten_khoa_hoc": "Melia azedarach L.",
+    "tac_dung": "Tẩy giun sán; kháng khuẩn; vỏ rễ chữa giun đũa; chú ý độc tính",
+    "tac_dung_list": [
+      "Tẩy giun sán",
+      "kháng khuẩn",
+      "vỏ rễ chữa giun đũa",
+      "chú ý độc tính"
+    ],
+    "page_start": 161,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 167
+  },
+  {
+    "ten_co_dau": "Cây thùn mùn",
+    "ten_khong_dau": "Cay thun mun",
+    "ten_anh": "Embelia / False black pepper",
+    "ten_khoa_hoc": "Embelia ribes Burm.f.",
+    "tac_dung": "Tẩy sán dây; tẩy giun; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Tẩy sán dây",
+      "tẩy giun",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 167,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 168
+  },
+  {
+    "ten_co_dau": "Hạt bí ngô",
+    "ten_khong_dau": "Hat bi ngo",
+    "ten_anh": "Pumpkin seeds",
+    "ten_khoa_hoc": "Cucurbita pepo L.",
+    "tac_dung": "Tẩy sán dây; giun kim; tăng cường tiền liệt tuyến; bổ dưỡng; chống ký sinh trùng",
+    "tac_dung_list": [
+      "Tẩy sán dây",
+      "giun kim",
+      "tăng cường tiền liệt tuyến",
+      "bổ dưỡng",
+      "chống ký sinh trùng"
+    ],
+    "page_start": 168,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 169
+  },
+  {
+    "ten_co_dau": "Cây chân hẩu",
+    "ten_khong_dau": "Cay chan hau",
+    "ten_anh": "Quassia / Bitterwood",
+    "ten_khoa_hoc": "Quassia amara L.",
+    "tac_dung": "Tẩy giun; kháng khuẩn; thanh nhiệt; bổ tỳ vị; chữa sốt rét",
+    "tac_dung_list": [
+      "Tẩy giun",
+      "kháng khuẩn",
+      "thanh nhiệt",
+      "bổ tỳ vị",
+      "chữa sốt rét"
+    ],
+    "page_start": 169,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 170
+  },
+  {
+    "ten_co_dau": "Cây thạch lựu",
+    "ten_khong_dau": "Cay thach luu",
+    "ten_anh": "Pomegranate",
+    "ten_khoa_hoc": "Punica granatum L.",
+    "tac_dung": "Tẩy sán dây (vỏ rễ); chữa tiêu chảy; kháng khuẩn; cầm máu; chống oxy hóa mạnh",
+    "tac_dung_list": [
+      "Tẩy sán dây (vỏ rễ)",
+      "chữa tiêu chảy",
+      "kháng khuẩn",
+      "cầm máu",
+      "chống oxy hóa mạnh"
+    ],
+    "page_start": 170,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 172
+  },
+  {
+    "ten_co_dau": "Cây cau",
+    "ten_khong_dau": "Cay cau",
+    "ten_anh": "Areca palm / Betel nut",
+    "ten_khoa_hoc": "Areca catechu L.",
+    "tac_dung": "Tẩy sán dây mạnh; tẩy giun; tiêu tích trệ; hành khí; lợi tiểu",
+    "tac_dung_list": [
+      "Tẩy sán dây mạnh",
+      "tẩy giun",
+      "tiêu tích trệ",
+      "hành khí",
+      "lợi tiểu"
+    ],
+    "page_start": 172,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 174
+  },
+  {
+    "ten_co_dau": "Cây rùm nao",
+    "ten_khong_dau": "Cay rum nao",
+    "ten_anh": "Careya / Ceylon oak",
+    "ten_khoa_hoc": "Careya arborea Roxb.",
+    "tac_dung": "Tẩy giun; kháng khuẩn; tiêu viêm; chữa tiêu chảy",
+    "tac_dung_list": [
+      "Tẩy giun",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa tiêu chảy"
+    ],
+    "page_start": 174,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 175
+  },
+  {
+    "ten_co_dau": "Quán chúng",
+    "ten_khong_dau": "Quan chung",
+    "ten_anh": "Male fern / Dryopteris",
+    "ten_khoa_hoc": "Dryopteris crassirhizoma Nakai",
+    "tac_dung": "Tẩy sán dây, giun móc; kháng virus; kháng khuẩn; chú ý độc tính",
+    "tac_dung_list": [
+      "Tẩy sán dây, giun móc",
+      "kháng virus",
+      "kháng khuẩn",
+      "chú ý độc tính"
+    ],
+    "page_start": 175,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 177
+  },
+  {
+    "ten_co_dau": "Mặc nưa",
+    "ten_khong_dau": "Mac nua",
+    "ten_anh": "Diospyros / Black persimmon",
+    "ten_khoa_hoc": "Diospyros mollis Griff.",
+    "tac_dung": "Tẩy giun đũa; kháng khuẩn; tiêu viêm; chữa bệnh ngoài da",
+    "tac_dung_list": [
+      "Tẩy giun đũa",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa bệnh ngoài da"
+    ],
+    "page_start": 177,
+    "chuong": "III. Các cây thuốc và vị thuốc trị giun sán",
+    "page_end": 179
+  },
+  {
+    "ten_co_dau": "Cây sầu đâu rừng",
+    "ten_khong_dau": "Cay sau dau rung",
+    "ten_anh": "Brucea / Java brucea",
+    "ten_khoa_hoc": "Brucea javanica (L.) Merr.",
+    "tac_dung": "Chữa lỵ amip mạnh; kháng khuẩn; chống ký sinh trùng; tiêu viêm; chú ý độc tính",
+    "tac_dung_list": [
+      "Chữa lỵ amip mạnh",
+      "kháng khuẩn",
+      "chống ký sinh trùng",
+      "tiêu viêm",
+      "chú ý độc tính"
+    ],
+    "page_start": 179,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - A. Chữa lỵ amip",
+    "page_end": 181
+  },
+  {
+    "ten_co_dau": "Tỏi",
+    "ten_khong_dau": "Toi",
+    "ten_anh": "Garlic",
+    "ten_khoa_hoc": "Allium sativum L.",
+    "tac_dung": "Kháng khuẩn phổ rộng; chữa lỵ amip; diệt ký sinh trùng; hạ mỡ máu, hạ huyết áp; chống ung thư; tăng miễn dịch",
+    "tac_dung_list": [
+      "Kháng khuẩn phổ rộng",
+      "chữa lỵ amip",
+      "diệt ký sinh trùng",
+      "hạ mỡ máu, hạ huyết áp",
+      "chống ung thư",
+      "tăng miễn dịch"
+    ],
+    "page_start": 181,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - A. Chữa lỵ amip",
+    "page_end": 182
+  },
+  {
+    "ten_co_dau": "Mộc hoa trắng",
+    "ten_khong_dau": "Moc hoa trang",
+    "ten_anh": "Holarrhena / Kurchi bark",
+    "ten_khoa_hoc": "Holarrhena pubescens Wall. ex G.Don",
+    "tac_dung": "Chữa lỵ amip; kháng khuẩn; chống ký sinh trùng đường ruột; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa lỵ amip",
+      "kháng khuẩn",
+      "chống ký sinh trùng đường ruột",
+      "tiêu viêm"
+    ],
+    "page_start": 182,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - A. Chữa lỵ amip",
+    "page_end": 184
+  },
+  {
+    "ten_co_dau": "Rau sam",
+    "ten_khong_dau": "Rau sam",
+    "ten_anh": "Common purslane",
+    "ten_khoa_hoc": "Portulaca oleracea L.",
+    "tac_dung": "Chữa lỵ trực trùng; kháng khuẩn; lợi tiểu; thanh nhiệt giải độc; giàu omega-3",
+    "tac_dung_list": [
+      "Chữa lỵ trực trùng",
+      "kháng khuẩn",
+      "lợi tiểu",
+      "thanh nhiệt giải độc",
+      "giàu omega-3"
+    ],
+    "page_start": 184,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 186
+  },
+  {
+    "ten_co_dau": "Mơ tam thể",
+    "ten_khong_dau": "Mo tam the",
+    "ten_anh": "Paederia / Skunkvine",
+    "ten_khoa_hoc": "Paederia lanuginosa Wall.",
+    "tac_dung": "Chữa lỵ trực trùng; kháng khuẩn; chữa đầy hơi, tiêu hóa kém; trị giun",
+    "tac_dung_list": [
+      "Chữa lỵ trực trùng",
+      "kháng khuẩn",
+      "chữa đầy hơi, tiêu hóa kém",
+      "trị giun"
+    ],
+    "page_start": 186,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 187
+  },
+  {
+    "ten_co_dau": "Cây chè",
+    "ten_khong_dau": "Cay che",
+    "ten_anh": "Tea plant",
+    "ten_khoa_hoc": "Camellia sinensis (L.) Kuntze",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; chống oxy hóa mạnh (catechin); phòng ung thư; hạ mỡ máu; tăng tỉnh táo",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "chống oxy hóa mạnh (catechin)",
+      "phòng ung thư",
+      "hạ mỡ máu",
+      "tăng tỉnh táo"
+    ],
+    "page_start": 187,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 188
+  },
+  {
+    "ten_co_dau": "Vô lựu",
+    "ten_khong_dau": "Vo luu",
+    "ten_anh": "Pomegranate rind",
+    "ten_khoa_hoc": "Punica granatum L.",
+    "tac_dung": "Chữa lỵ trực trùng; cầm tiêu chảy; kháng khuẩn; tiêu viêm ruột",
+    "tac_dung_list": [
+      "Chữa lỵ trực trùng",
+      "cầm tiêu chảy",
+      "kháng khuẩn",
+      "tiêu viêm ruột"
+    ],
+    "page_start": 188,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 189
+  },
+  {
+    "ten_co_dau": "Hoàng liên",
+    "ten_khong_dau": "Hoang lien",
+    "ten_anh": "Chinese goldthread / Coptis",
+    "ten_khoa_hoc": "Coptis chinensis Franch.",
+    "tac_dung": "Kháng khuẩn mạnh (berberine); chữa lỵ trực trùng, tiêu chảy nhiễm khuẩn; viêm ruột; hạ sốt; chống viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh (berberine)",
+      "chữa lỵ trực trùng, tiêu chảy nhiễm khuẩn",
+      "viêm ruột",
+      "hạ sốt",
+      "chống viêm"
+    ],
+    "page_start": 189,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 191
+  },
+  {
+    "ten_co_dau": "Hoàng liên gai",
+    "ten_khong_dau": "Hoang lien gai",
+    "ten_anh": "Berberis / Barberry",
+    "ten_khoa_hoc": "Berberis wallichiana DC.",
+    "tac_dung": "Kháng khuẩn (berberine); chữa lỵ; tiêu viêm; hạ sốt; hạ đường huyết",
+    "tac_dung_list": [
+      "Kháng khuẩn (berberine)",
+      "chữa lỵ",
+      "tiêu viêm",
+      "hạ sốt",
+      "hạ đường huyết"
+    ],
+    "page_start": 191,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 192
+  },
+  {
+    "ten_co_dau": "Hoàng liên ô rô",
+    "ten_khong_dau": "Hoang lien o ro",
+    "ten_anh": "Mahonia / Oregon grape",
+    "ten_khoa_hoc": "Mahonia bealei (Fortune) Pynaert",
+    "tac_dung": "Kháng khuẩn (berberine); chữa lỵ, tiêu chảy; tiêu viêm; hạ sốt",
+    "tac_dung_list": [
+      "Kháng khuẩn (berberine)",
+      "chữa lỵ, tiêu chảy",
+      "tiêu viêm",
+      "hạ sốt"
+    ],
+    "page_start": 192,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 193
+  },
+  {
+    "ten_co_dau": "Hoàng đằng",
+    "ten_khong_dau": "Hoang dang",
+    "ten_anh": "Fibraurea / Yellow vine",
+    "ten_khoa_hoc": "Fibraurea tinctoria Lour.",
+    "tac_dung": "Kháng khuẩn mạnh (berberin, palmatin); chữa lỵ, tiêu chảy; hạ sốt; tiêu viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh (berberin, palmatin)",
+      "chữa lỵ, tiêu chảy",
+      "hạ sốt",
+      "tiêu viêm"
+    ],
+    "page_start": 193,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 194
+  },
+  {
+    "ten_co_dau": "Hoàng đằng chân vịt",
+    "ten_khong_dau": "Hoang dang chan vit",
+    "ten_anh": "Duck-foot yellow vine",
+    "ten_khoa_hoc": "Arcangelisia flava (L.) Merr.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; tiêu viêm; hạ sốt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "tiêu viêm",
+      "hạ sốt"
+    ],
+    "page_start": 194,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 195
+  },
+  {
+    "ten_co_dau": "Vàng đắng",
+    "ten_khong_dau": "Vang dang",
+    "ten_anh": "Yellow bitter vine / Coscinium",
+    "ten_khoa_hoc": "Coscinium fenestratum (Gaertn.) Colebr.",
+    "tac_dung": "Kháng khuẩn (berberine); chữa lỵ trực trùng; tiêu viêm; hạ đường huyết",
+    "tac_dung_list": [
+      "Kháng khuẩn (berberine)",
+      "chữa lỵ trực trùng",
+      "tiêu viêm",
+      "hạ đường huyết"
+    ],
+    "page_start": 195,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 195
+  },
+  {
+    "ten_co_dau": "Thổ hoàng liên",
+    "ten_khong_dau": "Tho hoang lien",
+    "ten_anh": "Vietnamese goldthread",
+    "ten_khoa_hoc": "Thalictrum foliolosum DC.",
+    "tac_dung": "Kháng khuẩn (berberine); chữa lỵ; tiêu viêm; hạ sốt",
+    "tac_dung_list": [
+      "Kháng khuẩn (berberine)",
+      "chữa lỵ",
+      "tiêu viêm",
+      "hạ sốt"
+    ],
+    "page_start": 195,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 197
+  },
+  {
+    "ten_co_dau": "Hoàng đằng loong trơn",
+    "ten_khong_dau": "Hoang dang loong tron",
+    "ten_anh": "Smooth yellow vine",
+    "ten_khoa_hoc": "Stephania japonica (Thunb.) Miers",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; giảm đau; an thần nhẹ",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "giảm đau",
+      "an thần nhẹ"
+    ],
+    "page_start": 197,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 197
+  },
+  {
+    "ten_co_dau": "Hoàng bá",
+    "ten_khong_dau": "Hoang ba",
+    "ten_anh": "Phellodendron / Amur cork tree",
+    "ten_khoa_hoc": "Phellodendron amurense Rupr.",
+    "tac_dung": "Kháng khuẩn mạnh (berberine); chữa lỵ trực trùng; tiêu viêm; hạ đường huyết; thanh nhiệt táo thấp",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh (berberine)",
+      "chữa lỵ trực trùng",
+      "tiêu viêm",
+      "hạ đường huyết",
+      "thanh nhiệt táo thấp"
+    ],
+    "page_start": 197,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 199
+  },
+  {
+    "ten_co_dau": "Cỏ sữa nhỏ lá",
+    "ten_khong_dau": "Co sua nho la",
+    "ten_anh": "Small-leaf spurge / Euphorbia thymifolia",
+    "ten_khoa_hoc": "Euphorbia thymifolia L.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; tiêu viêm; lợi tiểu; cầm máu",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "tiêu viêm",
+      "lợi tiểu",
+      "cầm máu"
+    ],
+    "page_start": 199,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 200
+  },
+  {
+    "ten_co_dau": "Ba chẽ",
+    "ten_khong_dau": "Ba che",
+    "ten_anh": "Desmodium / Tick trefoil",
+    "ten_khoa_hoc": "Desmodium triangulare (Retz.) Merr.",
+    "tac_dung": "Chữa lỵ; kháng khuẩn; lợi tiểu; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa lỵ",
+      "kháng khuẩn",
+      "lợi tiểu",
+      "tiêu viêm"
+    ],
+    "page_start": 200,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 201
+  },
+  {
+    "ten_co_dau": "Bàng",
+    "ten_khong_dau": "Bang",
+    "ten_anh": "Tropical almond / Indian almond",
+    "ten_khoa_hoc": "Terminalia catappa L.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ, tiêu chảy; tiêu viêm; cầm máu; lá chữa bệnh gan",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ, tiêu chảy",
+      "tiêu viêm",
+      "cầm máu",
+      "lá chữa bệnh gan"
+    ],
+    "page_start": 201,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 202
+  },
+  {
+    "ten_co_dau": "Cẩm xà lạc",
+    "ten_khong_dau": "Cam xa lac",
+    "ten_anh": "Chaetocarpus / Bischofia variant",
+    "ten_khoa_hoc": "Antidesma acidum Retz.",
+    "tac_dung": "Chữa lỵ; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa lỵ",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 202,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 203
+  },
+  {
+    "ten_co_dau": "Điều nhuộm",
+    "ten_khong_dau": "Dieu nhuom",
+    "ten_anh": "Bixa / Annatto",
+    "ten_khoa_hoc": "Bixa orellana L.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; hạ sốt; lợi tiểu; chống oxy hóa (bixin)",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "hạ sốt",
+      "lợi tiểu",
+      "chống oxy hóa (bixin)"
+    ],
+    "page_start": 203,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 204
+  },
+  {
+    "ten_co_dau": "Đơn đỏ",
+    "ten_khong_dau": "Don do",
+    "ten_anh": "Red-leaf Ixora",
+    "ten_khoa_hoc": "Ixora coccinea L.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ, tiêu chảy; tiêu viêm; cầm máu",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ, tiêu chảy",
+      "tiêu viêm",
+      "cầm máu"
+    ],
+    "page_start": 204,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 205
+  },
+  {
+    "ten_co_dau": "Đơn trắng (Hé mọ)",
+    "ten_khong_dau": "Don trang (He mo)",
+    "ten_anh": "White-bark tree / Bridelia",
+    "ten_khoa_hoc": "Bridelia tomentosa Blume",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; tiêu viêm; vỏ chữa tiêu chảy",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "tiêu viêm",
+      "vỏ chữa tiêu chảy"
+    ],
+    "page_start": 205,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 206
+  },
+  {
+    "ten_co_dau": "Mộc nhĩ",
+    "ten_khong_dau": "Moc nhi",
+    "ten_anh": "Wood ear mushroom / Black fungus",
+    "ten_khoa_hoc": "Auricularia auricula-judae (Bull.) Quél.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ nhẹ; hạ mỡ máu; chống đông máu; bổ dưỡng; tăng miễn dịch",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ nhẹ",
+      "hạ mỡ máu",
+      "chống đông máu",
+      "bổ dưỡng",
+      "tăng miễn dịch"
+    ],
+    "page_start": 206,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 206
+  },
+  {
+    "ten_co_dau": "Phượng nhỡn thảo",
+    "ten_khong_dau": "Phuong nhon thao",
+    "ten_anh": "Euphrasia / Eyebright",
+    "ten_khoa_hoc": "Oldenlandia corymbosa L.",
+    "tac_dung": "Chữa lỵ; kháng khuẩn; tiêu viêm; lợi tiểu; hạ sốt",
+    "tac_dung_list": [
+      "Chữa lỵ",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "lợi tiểu",
+      "hạ sốt"
+    ],
+    "page_start": 206,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 207
+  },
+  {
+    "ten_co_dau": "Sun sư cỏ",
+    "ten_khong_dau": "Sun su co",
+    "ten_anh": "Leucas / Thumbai",
+    "ten_khoa_hoc": "Leucas aspera (Willd.) Link",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; hạ sốt; tiêu viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "hạ sốt",
+      "tiêu viêm"
+    ],
+    "page_start": 207,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 208
+  },
+  {
+    "ten_co_dau": "Seo gà",
+    "ten_khong_dau": "Seo ga",
+    "ten_anh": "Pteris / Brake fern",
+    "ten_khoa_hoc": "Pteris vittata L.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; tiêu viêm; lợi tiểu",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "tiêu viêm",
+      "lợi tiểu"
+    ],
+    "page_start": 208,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 209
+  },
+  {
+    "ten_co_dau": "Vọng cách",
+    "ten_khong_dau": "Vong cach",
+    "ten_anh": "Premna / Headache tree",
+    "ten_khoa_hoc": "Premna serratifolia L.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ, tiêu chảy; tiêu viêm; hạ sốt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ, tiêu chảy",
+      "tiêu viêm",
+      "hạ sốt"
+    ],
+    "page_start": 209,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 210
+  },
+  {
+    "ten_co_dau": "Đậu rựa",
+    "ten_khong_dau": "Dau rua",
+    "ten_anh": "Sword bean / Jack bean",
+    "ten_khoa_hoc": "Canavalia gladiata (Jacq.) DC.",
+    "tac_dung": "Kháng khuẩn nhẹ; chữa lỵ; tiêu viêm; bổ dưỡng",
+    "tac_dung_list": [
+      "Kháng khuẩn nhẹ",
+      "chữa lỵ",
+      "tiêu viêm",
+      "bổ dưỡng"
+    ],
+    "page_start": 210,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 211
+  },
+  {
+    "ten_co_dau": "Gừng đại",
+    "ten_khong_dau": "Gung dai",
+    "ten_anh": "Alpinia / Shell ginger",
+    "ten_khoa_hoc": "Alpinia zerumbet (Pers.) B.L.Burtt & R.M.Sm.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; tiêu hóa; hạ huyết áp; chống oxy hóa",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "tiêu hóa",
+      "hạ huyết áp",
+      "chống oxy hóa"
+    ],
+    "page_start": 211,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 212
+  },
+  {
+    "ten_co_dau": "Sảng lẻ",
+    "ten_khong_dau": "Sang le",
+    "ten_anh": "Lagerstroemia / Crape myrtle",
+    "ten_khoa_hoc": "Lagerstroemia speciosa (L.) Pers.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ, tiêu chảy; hạ đường huyết; tiêu viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ, tiêu chảy",
+      "hạ đường huyết",
+      "tiêu viêm"
+    ],
+    "page_start": 212,
+    "chuong": "IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng",
+    "page_end": 215
+  },
+  {
+    "ten_co_dau": "Mã đề",
+    "ten_khong_dau": "Ma de",
+    "ten_anh": "Plantain / Ribwort",
+    "ten_khoa_hoc": "Plantago major L.",
+    "tac_dung": "Lợi tiểu; chữa sỏi thận, viêm đường tiết niệu; long đờm; hạ huyết áp; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "chữa sỏi thận, viêm đường tiết niệu",
+      "long đờm",
+      "hạ huyết áp",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 215,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 217
+  },
+  {
+    "ten_co_dau": "Cây trạch tả",
+    "ten_khong_dau": "Cay trach ta",
+    "ten_anh": "Water plantain / Alisma",
+    "ten_khoa_hoc": "Alisma plantago-aquatica L.",
+    "tac_dung": "Lợi tiểu mạnh; chữa phù nề, sỏi tiết niệu; hạ mỡ máu; hạ huyết áp; hạ đường huyết",
+    "tac_dung_list": [
+      "Lợi tiểu mạnh",
+      "chữa phù nề, sỏi tiết niệu",
+      "hạ mỡ máu",
+      "hạ huyết áp",
+      "hạ đường huyết"
+    ],
+    "page_start": 217,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 218
+  },
+  {
+    "ten_co_dau": "Đại phục bì",
+    "ten_khong_dau": "Dai phuc bi",
+    "ten_anh": "Betel palm husk / Areca husk",
+    "ten_khoa_hoc": "Areca catechu L.",
+    "tac_dung": "Lợi tiểu; hành khí; tiêu phù; chữa phù nề, bí tiểu",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "hành khí",
+      "tiêu phù",
+      "chữa phù nề, bí tiểu"
+    ],
+    "page_start": 218,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 218
+  },
+  {
+    "ten_co_dau": "Cỏ chỉ",
+    "ten_khong_dau": "Co chi",
+    "ten_anh": "Bermuda grass",
+    "ten_khoa_hoc": "Cynodon dactylon (L.) Pers.",
+    "tac_dung": "Lợi tiểu; cầm máu; hạ sốt; chữa viêm đường tiết niệu; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "cầm máu",
+      "hạ sốt",
+      "chữa viêm đường tiết niệu",
+      "kháng khuẩn"
+    ],
+    "page_start": 218,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 219
+  },
+  {
+    "ten_co_dau": "Cỏ tranh",
+    "ten_khong_dau": "Co tranh",
+    "ten_anh": "Cogon grass / Lalang",
+    "ten_khoa_hoc": "Imperata cylindrica (L.) P.Beauv.",
+    "tac_dung": "Lợi tiểu; cầm máu; hạ sốt; chữa sỏi tiết niệu, tiểu ra máu; thanh nhiệt",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "cầm máu",
+      "hạ sốt",
+      "chữa sỏi tiết niệu, tiểu ra máu",
+      "thanh nhiệt"
+    ],
+    "page_start": 219,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 219
+  },
+  {
+    "ten_co_dau": "Cây râu mèo",
+    "ten_khong_dau": "Cay rau meo",
+    "ten_anh": "Cat's whiskers / Java tea",
+    "ten_khoa_hoc": "Orthosiphon aristatus (Blume) Miq.",
+    "tac_dung": "Lợi tiểu mạnh; chữa sỏi thận, sỏi mật; viêm đường tiết niệu; hạ huyết áp; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu mạnh",
+      "chữa sỏi thận, sỏi mật",
+      "viêm đường tiết niệu",
+      "hạ huyết áp",
+      "kháng khuẩn"
+    ],
+    "page_start": 219,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 220
+  },
+  {
+    "ten_co_dau": "Rau ngổ",
+    "ten_khong_dau": "Rau ngo",
+    "ten_anh": "Limnophila / Ambulia",
+    "ten_khoa_hoc": "Limnophila aromatica (Lam.) Merr.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; chữa viêm đường tiết niệu; lợi mật; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "chữa viêm đường tiết niệu",
+      "lợi mật",
+      "kháng khuẩn"
+    ],
+    "page_start": 220,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 221
+  },
+  {
+    "ten_co_dau": "Cây áctisô",
+    "ten_khong_dau": "Cay actiso",
+    "ten_anh": "Artichoke",
+    "ten_khoa_hoc": "Cynara scolymus L.",
+    "tac_dung": "Lợi mật mạnh; bảo vệ gan; hạ mỡ máu, hạ cholesterol; lợi tiểu; chống oxy hóa; bổ gan",
+    "tac_dung_list": [
+      "Lợi mật mạnh",
+      "bảo vệ gan",
+      "hạ mỡ máu, hạ cholesterol",
+      "lợi tiểu",
+      "chống oxy hóa",
+      "bổ gan"
+    ],
+    "page_start": 221,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 222
+  },
+  {
+    "ten_co_dau": "Phục linh",
+    "ten_khong_dau": "Phuc linh",
+    "ten_anh": "Poria / Tuckahoe / Fu Ling",
+    "ten_khoa_hoc": "Wolfiporia cocos (F.A.Wolf) Ryvarden & Gilb.",
+    "tac_dung": "Lợi tiểu; an thần; bổ tỳ vị; tăng miễn dịch; chống ung thư (hỗ trợ); hạ đường huyết",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "an thần",
+      "bổ tỳ vị",
+      "tăng miễn dịch",
+      "chống ung thư (hỗ trợ)",
+      "hạ đường huyết"
+    ],
+    "page_start": 222,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 223
+  },
+  {
+    "ten_co_dau": "Bắc đen",
+    "ten_khong_dau": "Bac den",
+    "ten_anh": "Sparganium / Bur reed",
+    "ten_khoa_hoc": "Sparganium stoloniferum (Buch.-Ham. ex Graebn.) Buch.-Ham. ex Juz.",
+    "tac_dung": "Hoạt huyết; lợi tiểu; tiêu sưng; chữa bế kinh, đau vùng bụng",
+    "tac_dung_list": [
+      "Hoạt huyết",
+      "lợi tiểu",
+      "tiêu sưng",
+      "chữa bế kinh, đau vùng bụng"
+    ],
+    "page_start": 223,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 224
+  },
+  {
+    "ten_co_dau": "Cây thông thảo",
+    "ten_khong_dau": "Cay thong thao",
+    "ten_anh": "Rice paper plant / Tetrapanax",
+    "ten_khoa_hoc": "Tetrapanax papyrifer (Hook.) K.Koch",
+    "tac_dung": "Lợi tiểu; thông sữa; tiêu viêm; chữa bí tiểu, phù nề",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "thông sữa",
+      "tiêu viêm",
+      "chữa bí tiểu, phù nề"
+    ],
+    "page_start": 224,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 225
+  },
+  {
+    "ten_co_dau": "Dành dành",
+    "ten_khong_dau": "Danh danh",
+    "ten_anh": "Gardenia / Cape jasmine",
+    "ten_khoa_hoc": "Gardenia jasminoides J.Ellis",
+    "tac_dung": "Lợi mật; thanh nhiệt; cầm máu; tiêu viêm; chữa vàng da, viêm gan; hạ sốt",
+    "tac_dung_list": [
+      "Lợi mật",
+      "thanh nhiệt",
+      "cầm máu",
+      "tiêu viêm",
+      "chữa vàng da, viêm gan",
+      "hạ sốt"
+    ],
+    "page_start": 225,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 227
+  },
+  {
+    "ten_co_dau": "Nghề",
+    "ten_khong_dau": "Nghe",
+    "ten_anh": "Caesalpinia / Brazilwood",
+    "ten_khoa_hoc": "Caesalpinia crista L.",
+    "tac_dung": "Lợi mật; tiêu viêm; kháng khuẩn; chữa sốt rét; giảm đau",
+    "tac_dung_list": [
+      "Lợi mật",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa sốt rét",
+      "giảm đau"
+    ],
+    "page_start": 227,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 230
+  },
+  {
+    "ten_co_dau": "Mật động vật - Đởm",
+    "ten_khong_dau": "Mat dong vat - Dom",
+    "ten_anh": "Animal bile",
+    "ten_khoa_hoc": "N/A (động vật - animal product)",
+    "tac_dung": "Lợi mật; tiêu viêm; hạ sốt; giải độc; chữa đau mắt",
+    "tac_dung_list": [
+      "Lợi mật",
+      "tiêu viêm",
+      "hạ sốt",
+      "giải độc",
+      "chữa đau mắt"
+    ],
+    "page_start": 230,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 230
+  },
+  {
+    "ten_co_dau": "Mật lợn mật bò",
+    "ten_khong_dau": "Mat lon mat bo",
+    "ten_anh": "Pig bile / Ox bile",
+    "ten_khoa_hoc": "Sus scrofa / Bos taurus (động vật)",
+    "tac_dung": "Lợi mật; tiêu viêm; hạ sốt; thanh nhiệt; chữa đau mắt, viêm gan",
+    "tac_dung_list": [
+      "Lợi mật",
+      "tiêu viêm",
+      "hạ sốt",
+      "thanh nhiệt",
+      "chữa đau mắt, viêm gan"
+    ],
+    "page_start": 230,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 232
+  },
+  {
+    "ten_co_dau": "Bòn bọt",
+    "ten_khong_dau": "Bon bot",
+    "ten_anh": "Glochidion / Cheese wood",
+    "ten_khoa_hoc": "Glochidion eriocarpum Champ.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn; chữa viêm đường tiết niệu",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa viêm đường tiết niệu"
+    ],
+    "page_start": 232,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 233
+  },
+  {
+    "ten_co_dau": "Chỉ thiên",
+    "ten_khong_dau": "Chi thien",
+    "ten_anh": "Emilia / Cupid's shaving brush",
+    "ten_khoa_hoc": "Emilia sonchifolia (L.) DC.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt, lở loét; lợi tiểu; tiêu độc",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt, lở loét",
+      "lợi tiểu",
+      "tiêu độc"
+    ],
+    "page_start": 233,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 235
+  },
+  {
+    "ten_co_dau": "Dưa chuột",
+    "ten_khong_dau": "Dua chuot",
+    "ten_anh": "Cucumber",
+    "ten_khoa_hoc": "Cucumis sativus L.",
+    "tac_dung": "Lợi tiểu; thanh nhiệt; hạ sốt; làm dịu da; chống oxy hóa; hạ huyết áp nhẹ",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "thanh nhiệt",
+      "hạ sốt",
+      "làm dịu da",
+      "chống oxy hóa",
+      "hạ huyết áp nhẹ"
+    ],
+    "page_start": 235,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 236
+  },
+  {
+    "ten_co_dau": "Chua me đất hoa vàng",
+    "ten_khong_dau": "Chua me dat hoa vang",
+    "ten_anh": "Yellow wood sorrel / Oxalis",
+    "ten_khoa_hoc": "Oxalis corniculata L.",
+    "tac_dung": "Lợi tiểu; thanh nhiệt; tiêu viêm; kháng khuẩn; chữa sỏi tiết niệu",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "thanh nhiệt",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa sỏi tiết niệu"
+    ],
+    "page_start": 236,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 237
+  },
+  {
+    "ten_co_dau": "Cây chua me lá me",
+    "ten_khong_dau": "Cay chua me la me",
+    "ten_anh": "Tamarind-leaf sorrel / Oxalis",
+    "ten_khoa_hoc": "Oxalis barrelieri L.",
+    "tac_dung": "Lợi tiểu; thanh nhiệt; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "thanh nhiệt",
+      "tiêu viêm"
+    ],
+    "page_start": 237,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 238
+  },
+  {
+    "ten_co_dau": "Cỏ bợ",
+    "ten_khong_dau": "Co bo",
+    "ten_anh": "Water clover / Marsilea",
+    "ten_khoa_hoc": "Marsilea quadrifolia L.",
+    "tac_dung": "Lợi tiểu; an thần; hạ sốt; chữa mất ngủ nhẹ",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "an thần",
+      "hạ sốt",
+      "chữa mất ngủ nhẹ"
+    ],
+    "page_start": 238,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 238
+  },
+  {
+    "ten_co_dau": "Cỏ may",
+    "ten_khong_dau": "Co may",
+    "ten_anh": "Sporobolus / Rattail grass",
+    "ten_khoa_hoc": "Chrysopogon aciculatus (Retz.) Trin.",
+    "tac_dung": "Lợi tiểu; cầm máu; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "cầm máu",
+      "tiêu viêm"
+    ],
+    "page_start": 238,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 239
+  },
+  {
+    "ten_co_dau": "Đậu đen",
+    "ten_khong_dau": "Dau den",
+    "ten_anh": "Black soybean",
+    "ten_khoa_hoc": "Glycine max (L.) Merr.",
+    "tac_dung": "Lợi tiểu; bổ thận; giải độc; hạ sốt; thanh nhiệt; bổ dưỡng",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "bổ thận",
+      "giải độc",
+      "hạ sốt",
+      "thanh nhiệt",
+      "bổ dưỡng"
+    ],
+    "page_start": 239,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 240
+  },
+  {
+    "ten_co_dau": "Hoa hiên",
+    "ten_khong_dau": "Hoa hien",
+    "ten_anh": "Daylily / Hemerocallis",
+    "ten_khoa_hoc": "Hemerocallis fulva (L.) L.",
+    "tac_dung": "Lợi tiểu; an thần; chữa phù nề; hạ sốt; thanh nhiệt",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "an thần",
+      "chữa phù nề",
+      "hạ sốt",
+      "thanh nhiệt"
+    ],
+    "page_start": 240,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 241
+  },
+  {
+    "ten_co_dau": "Lồi tiền",
+    "ten_khong_dau": "Loi tien",
+    "ten_anh": "Glechoma / Ground ivy",
+    "ten_khoa_hoc": "Glechoma hederacea L.",
+    "tac_dung": "Lợi tiểu; tan sỏi; tiêu viêm; kháng khuẩn; chữa sỏi thận, sỏi mật",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tan sỏi",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa sỏi thận, sỏi mật"
+    ],
+    "page_start": 241,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 242
+  },
+  {
+    "ten_co_dau": "Mộc tặc",
+    "ten_khong_dau": "Moc tac",
+    "ten_anh": "Horsetail / Scouring rush",
+    "ten_khoa_hoc": "Equisetum hyemale L.",
+    "tac_dung": "Lợi tiểu; cầm máu; tiêu viêm; chữa viêm đường tiết niệu, sỏi thận",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "cầm máu",
+      "tiêu viêm",
+      "chữa viêm đường tiết niệu, sỏi thận"
+    ],
+    "page_start": 242,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 243
+  },
+  {
+    "ten_co_dau": "Mộc thông",
+    "ten_khong_dau": "Moc thong",
+    "ten_anh": "Akebia vine / Clematis stem",
+    "ten_khoa_hoc": "Akebia quinata (Houtt.) Decne.",
+    "tac_dung": "Lợi tiểu mạnh; thông sữa; tiêu viêm; chữa bí tiểu, phù nề, viêm đường tiết niệu",
+    "tac_dung_list": [
+      "Lợi tiểu mạnh",
+      "thông sữa",
+      "tiêu viêm",
+      "chữa bí tiểu, phù nề, viêm đường tiết niệu"
+    ],
+    "page_start": 243,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 246
+  },
+  {
+    "ten_co_dau": "Sỏi",
+    "ten_khong_dau": "Soi",
+    "ten_anh": "Gravel root / Joe-Pye weed",
+    "ten_khoa_hoc": "Eupatorium fortunei Turcz.",
+    "tac_dung": "Lợi tiểu; tan sỏi; chữa sỏi tiết niệu; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tan sỏi",
+      "chữa sỏi tiết niệu",
+      "tiêu viêm"
+    ],
+    "page_start": 246,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 248
+  },
+  {
+    "ten_co_dau": "Tai chuột",
+    "ten_khong_dau": "Tai chuot",
+    "ten_anh": "Gynostemma / Five-leaf ginseng",
+    "ten_khoa_hoc": "Gynostemma pentaphyllum (Thunb.) Makino",
+    "tac_dung": "Lợi tiểu; hạ mỡ máu; hạ huyết áp; chống oxy hóa; tăng miễn dịch; bổ dưỡng",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "hạ mỡ máu",
+      "hạ huyết áp",
+      "chống oxy hóa",
+      "tăng miễn dịch",
+      "bổ dưỡng"
+    ],
+    "page_start": 248,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 249
+  },
+  {
+    "ten_co_dau": "Thạch vĩ",
+    "ten_khong_dau": "Thach vi",
+    "ten_anh": "Pyrrosia / Felt fern",
+    "ten_khoa_hoc": "Pyrrosia lingua (Thunb.) Farw.",
+    "tac_dung": "Lợi tiểu; tan sỏi; cầm máu; chữa sỏi tiết niệu, tiểu ra máu; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tan sỏi",
+      "cầm máu",
+      "chữa sỏi tiết niệu, tiểu ra máu",
+      "tiêu viêm"
+    ],
+    "page_start": 249,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 250
+  },
+  {
+    "ten_co_dau": "Lưỡi rắn",
+    "ten_khong_dau": "Luoi ran",
+    "ten_anh": "Snake tongue / Hedyotis",
+    "ten_khoa_hoc": "Hedyotis diffusa Willd.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn; chữa viêm đường tiết niệu; giải độc",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa viêm đường tiết niệu",
+      "giải độc"
+    ],
+    "page_start": 250,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 251
+  },
+  {
+    "ten_co_dau": "Dây chạc chìu",
+    "ten_khong_dau": "Day chac chiu",
+    "ten_anh": "Tetracera / Bindweed vine",
+    "ten_khoa_hoc": "Tetracera scandens (L.) Merr.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; chữa viêm đường tiết niệu",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "chữa viêm đường tiết niệu"
+    ],
+    "page_start": 251,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 252
+  },
+  {
+    "ten_co_dau": "Thông bong",
+    "ten_khong_dau": "Thong bong",
+    "ten_anh": "Pittosporum / Mock orange",
+    "ten_khoa_hoc": "Pittosporum glabrum Hook. & Arn.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 252,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 252
+  },
+  {
+    "ten_co_dau": "Mần tươi",
+    "ten_khong_dau": "Man tuoi",
+    "ten_anh": "Lygodium / Climbing fern",
+    "ten_khoa_hoc": "Lygodium japonicum (Thunb.) Sw.",
+    "tac_dung": "Lợi tiểu; tan sỏi; tiêu viêm; chữa sỏi tiết niệu",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tan sỏi",
+      "tiêu viêm",
+      "chữa sỏi tiết niệu"
+    ],
+    "page_start": 252,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 254
+  },
+  {
+    "ten_co_dau": "Cà dái dê tím",
+    "ten_khong_dau": "Ca dai de tim",
+    "ten_anh": "Purple eggplant / Brinjal",
+    "ten_khoa_hoc": "Solanum melongena L.",
+    "tac_dung": "Lợi tiểu; kháng khuẩn; chống oxy hóa; hạ cholesterol; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "kháng khuẩn",
+      "chống oxy hóa",
+      "hạ cholesterol",
+      "tiêu viêm"
+    ],
+    "page_start": 254,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 254
+  },
+  {
+    "ten_co_dau": "Cây cam xúng",
+    "ten_khong_dau": "Cay cam xung",
+    "ten_anh": "Nymphaea / Water lily",
+    "ten_khoa_hoc": "Nymphaea pubescens Willd.",
+    "tac_dung": "Lợi tiểu; an thần; tiêu viêm; giải nhiệt",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "an thần",
+      "tiêu viêm",
+      "giải nhiệt"
+    ],
+    "page_start": 254,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 255
+  },
+  {
+    "ten_co_dau": "Chanh trường",
+    "ten_khong_dau": "Chanh truong",
+    "ten_anh": "Citrus / Lime variant",
+    "ten_khoa_hoc": "Citrus hystrix DC.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn; thơm hương",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "thơm hương"
+    ],
+    "page_start": 255,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 255
+  },
+  {
+    "ten_co_dau": "Cối z",
+    "ten_khong_dau": "Coi z",
+    "ten_anh": "Zizia / Golden Alexander herb",
+    "ten_khoa_hoc": "Aporusa villosa (Wall.) Baill.",
+    "tac_dung": "Lợi tiểu; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm"
+    ],
+    "page_start": 255,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 256
+  },
+  {
+    "ten_co_dau": "Còn bọ",
+    "ten_khong_dau": "Con bo",
+    "ten_anh": "Microcos / Grewia",
+    "ten_khoa_hoc": "Microcos paniculata L.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 256,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 257
+  },
+  {
+    "ten_co_dau": "Cây cơm cháy",
+    "ten_khong_dau": "Cay com chay",
+    "ten_anh": "Elderberry / Sambucus",
+    "ten_khoa_hoc": "Sambucus javanica Reinw. ex Blume",
+    "tac_dung": "Lợi tiểu; tiêu sưng; chữa phong thấp; kháng khuẩn; hạ sốt",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu sưng",
+      "chữa phong thấp",
+      "kháng khuẩn",
+      "hạ sốt"
+    ],
+    "page_start": 257,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 258
+  },
+  {
+    "ten_co_dau": "Rau dừa nước",
+    "ten_khong_dau": "Rau dua nuoc",
+    "ten_anh": "Water primrose / Ludwigia",
+    "ten_khoa_hoc": "Ludwigia adscendens (L.) H.Hara",
+    "tac_dung": "Lợi tiểu; tiêu viêm; hạ sốt; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "hạ sốt",
+      "kháng khuẩn"
+    ],
+    "page_start": 258,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 259
+  },
+  {
+    "ten_co_dau": "Dứa",
+    "ten_khong_dau": "Dua",
+    "ten_anh": "Pineapple",
+    "ten_khoa_hoc": "Ananas comosus (L.) Merr.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; tiêu hóa (bromelain); hạ sốt; kháng khuẩn nhẹ; chống đông máu",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "tiêu hóa (bromelain)",
+      "hạ sốt",
+      "kháng khuẩn nhẹ",
+      "chống đông máu"
+    ],
+    "page_start": 259,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 261
+  },
+  {
+    "ten_co_dau": "Dứa đại",
+    "ten_khong_dau": "Dua dai",
+    "ten_anh": "Pandanus / Screwpine",
+    "ten_khoa_hoc": "Pandanus amaryllifolius Roxb.",
+    "tac_dung": "Lợi tiểu; giải nhiệt; thơm hương; hạ đường huyết nhẹ",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "giải nhiệt",
+      "thơm hương",
+      "hạ đường huyết nhẹ"
+    ],
+    "page_start": 261,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 261
+  },
+  {
+    "ten_co_dau": "Cây đa",
+    "ten_khong_dau": "Cay da",
+    "ten_anh": "Banyan fig",
+    "ten_khoa_hoc": "Ficus benghalensis L.",
+    "tac_dung": "Lợi tiểu; kháng khuẩn; tiêu viêm; hạ đường huyết; chữa phong thấp",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ đường huyết",
+      "chữa phong thấp"
+    ],
+    "page_start": 261,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 262
+  },
+  {
+    "ten_co_dau": "Đậu chiều",
+    "ten_khong_dau": "Dau chieu",
+    "ten_anh": "Pigeon pea / Cajanus",
+    "ten_khoa_hoc": "Cajanus cajan (L.) Huth",
+    "tac_dung": "Lợi tiểu; bổ dưỡng; giảm đau; kháng khuẩn; hạ mỡ máu",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "bổ dưỡng",
+      "giảm đau",
+      "kháng khuẩn",
+      "hạ mỡ máu"
+    ],
+    "page_start": 262,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 263
+  },
+  {
+    "ten_co_dau": "Đậu đỏ nhỏ",
+    "ten_khong_dau": "Dau do nho",
+    "ten_anh": "Adzuki bean",
+    "ten_khoa_hoc": "Vigna angularis (Willd.) Ohwi & H.Ohashi",
+    "tac_dung": "Lợi tiểu; giải độc; tiêu phù; bổ dưỡng; trị phù nề",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "giải độc",
+      "tiêu phù",
+      "bổ dưỡng",
+      "trị phù nề"
+    ],
+    "page_start": 263,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 264
+  },
+  {
+    "ten_co_dau": "Gừng",
+    "ten_khong_dau": "Gung",
+    "ten_anh": "Alpinia / Shell ginger",
+    "ten_khoa_hoc": "Alpinia zerumbet (Pers.) B.L.Burtt & R.M.Sm.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; tiêu hóa; hạ huyết áp; chống oxy hóa",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "tiêu hóa",
+      "hạ huyết áp",
+      "chống oxy hóa"
+    ],
+    "page_start": 264,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 265
+  },
+  {
+    "ten_co_dau": "Cây xương sáo",
+    "ten_khong_dau": "Cay xuong sao",
+    "ten_anh": "Chinese mesona / Grass jelly",
+    "ten_khoa_hoc": "Platostoma palustre (Blume) A.J.Paton",
+    "tac_dung": "Lợi tiểu; thanh nhiệt; giải nhiệt; hạ sốt; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "thanh nhiệt",
+      "giải nhiệt",
+      "hạ sốt",
+      "tiêu viêm"
+    ],
+    "page_start": 265,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 265
+  },
+  {
+    "ten_co_dau": "Thối nốt",
+    "ten_khong_dau": "Thoi not",
+    "ten_anh": "Stink-wood / Morinda",
+    "ten_khoa_hoc": "Morinda angustifolia Roxb.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 265,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 266
+  },
+  {
+    "ten_co_dau": "Mía",
+    "ten_khong_dau": "Mia",
+    "ten_anh": "Sugarcane",
+    "ten_khoa_hoc": "Saccharum officinarum L.",
+    "tac_dung": "Lợi tiểu; thanh nhiệt; bổ dưỡng; giải nhiệt; nhuận tràng; chữa khô họng",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "thanh nhiệt",
+      "bổ dưỡng",
+      "giải nhiệt",
+      "nhuận tràng",
+      "chữa khô họng"
+    ],
+    "page_start": 266,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 267
+  },
+  {
+    "ten_co_dau": "Kim tiền thảo",
+    "ten_khong_dau": "Kim tien thao",
+    "ten_anh": "Coin grass / Desmodium",
+    "ten_khoa_hoc": "Desmodium styracifolium (Osbeck) Merr.",
+    "tac_dung": "Lợi tiểu mạnh; tan sỏi thận, sỏi mật; tiêu viêm; kháng khuẩn; hạ acid uric",
+    "tac_dung_list": [
+      "Lợi tiểu mạnh",
+      "tan sỏi thận, sỏi mật",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "hạ acid uric"
+    ],
+    "page_start": 267,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 268
+  },
+  {
+    "ten_co_dau": "Rau ơm",
+    "ten_khong_dau": "Rau om",
+    "ten_anh": "Rice paddy herb / Limnophila",
+    "ten_khoa_hoc": "Limnophila aromaticoides Yang & Yen",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 268,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 269
+  },
+  {
+    "ten_co_dau": "Móng lưng rồng",
+    "ten_khong_dau": "Mong lung rong",
+    "ten_anh": "Dragon claw / Selaginella",
+    "ten_khoa_hoc": "Selaginella tamariscina (P.Beauv.) Spring",
+    "tac_dung": "Lợi tiểu; cầm máu; tiêu viêm; chữa viêm đường tiết niệu",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "cầm máu",
+      "tiêu viêm",
+      "chữa viêm đường tiết niệu"
+    ],
+    "page_start": 269,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 270
+  },
+  {
+    "ten_co_dau": "Nàng nàng",
+    "ten_khong_dau": "Nang nang",
+    "ten_anh": "Cleome / Spider flower",
+    "ten_khoa_hoc": "Cleome viscosa L.",
+    "tac_dung": "Lợi tiểu; kháng khuẩn; tiêu viêm; chữa sốt",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa sốt"
+    ],
+    "page_start": 270,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 271
+  },
+  {
+    "ten_co_dau": "Rau đắng",
+    "ten_khong_dau": "Rau dang",
+    "ten_anh": "Bacopa / Bitter herb",
+    "ten_khoa_hoc": "Bacopa monnieri (L.) Wettst.",
+    "tac_dung": "Lợi tiểu; bổ não, tăng trí nhớ; an thần; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "bổ não, tăng trí nhớ",
+      "an thần",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 271,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 272
+  },
+  {
+    "ten_co_dau": "Cây lá tiết dê",
+    "ten_khong_dau": "Cay la tiet de",
+    "ten_anh": "Cissus / Grape ivy",
+    "ten_khoa_hoc": "Cissus repens Lam.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn; chữa phong thấp",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa phong thấp"
+    ],
+    "page_start": 272,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 273
+  },
+  {
+    "ten_co_dau": "Khế rừng",
+    "ten_khong_dau": "Khe rung",
+    "ten_anh": "Wild starfruit / Dillenia",
+    "ten_khoa_hoc": "Dillenia indica L.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; thanh nhiệt; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "thanh nhiệt",
+      "kháng khuẩn"
+    ],
+    "page_start": 273,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 274
+  },
+  {
+    "ten_co_dau": "Mã thầy",
+    "ten_khong_dau": "Ma thay",
+    "ten_anh": "Water chestnut / Eleocharis",
+    "ten_khoa_hoc": "Eleocharis dulcis (Burm.f.) Trin. ex Hensch.",
+    "tac_dung": "Lợi tiểu; thanh nhiệt; tiêu viêm; hạ sốt; bổ dưỡng",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "thanh nhiệt",
+      "tiêu viêm",
+      "hạ sốt",
+      "bổ dưỡng"
+    ],
+    "page_start": 274,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 275
+  },
+  {
+    "ten_co_dau": "Mùi tây",
+    "ten_khong_dau": "Mui tay",
+    "ten_anh": "Parsley",
+    "ten_khoa_hoc": "Petroselinum crispum (Mill.) Fuss",
+    "tac_dung": "Lợi tiểu mạnh; tiêu viêm; kháng khuẩn; hạ huyết áp; bổ dưỡng",
+    "tac_dung_list": [
+      "Lợi tiểu mạnh",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "hạ huyết áp",
+      "bổ dưỡng"
+    ],
+    "page_start": 275,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 276
+  },
+  {
+    "ten_co_dau": "Thương lục",
+    "ten_khong_dau": "Thuong luc",
+    "ten_anh": "Pokeweed / Phytolacca",
+    "ten_khoa_hoc": "Phytolacca acinosa Roxb.",
+    "tac_dung": "Lợi tiểu mạnh; tiêu phù; chú ý độc tính cao",
+    "tac_dung_list": [
+      "Lợi tiểu mạnh",
+      "tiêu phù",
+      "chú ý độc tính cao"
+    ],
+    "page_start": 276,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 277
+  },
+  {
+    "ten_co_dau": "Cỏ thiên thảo",
+    "ten_khong_dau": "Co thien thao",
+    "ten_anh": "Murdannia / Aneilema",
+    "ten_khoa_hoc": "Murdannia nudiflora (L.) Brenan",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 277,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 278
+  },
+  {
+    "ten_co_dau": "Dừa bà",
+    "ten_khong_dau": "Dua ba",
+    "ten_anh": "Corypha / Buri palm",
+    "ten_khoa_hoc": "Corypha lecomtei Becc.",
+    "tac_dung": "Lợi tiểu; bổ dưỡng; giải nhiệt",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "bổ dưỡng",
+      "giải nhiệt"
+    ],
+    "page_start": 278,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 280
+  },
+  {
+    "ten_co_dau": "Lục lạc ba lá tròn",
+    "ten_khong_dau": "Luc lac ba la tron",
+    "ten_anh": "Crotalaria / Rattlebox",
+    "ten_khoa_hoc": "Crotalaria pallida Aiton",
+    "tac_dung": "Lợi tiểu; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 280,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 281
+  },
+  {
+    "ten_co_dau": "Rau muống",
+    "ten_khong_dau": "Rau muong",
+    "ten_anh": "Water spinach / Morning glory",
+    "ten_khoa_hoc": "Ipomoea aquatica Forssk.",
+    "tac_dung": "Lợi tiểu; thanh nhiệt; chữa tiểu đường nhẹ; giải độc; bổ dưỡng; nhuận tràng",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "thanh nhiệt",
+      "chữa tiểu đường nhẹ",
+      "giải độc",
+      "bổ dưỡng",
+      "nhuận tràng"
+    ],
+    "page_start": 281,
+    "chuong": "V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật",
+    "page_end": 282
+  },
+  {
+    "ten_co_dau": "Cỏ nhọ nồi",
+    "ten_khong_dau": "Co nho noi",
+    "ten_anh": "False daisy / Eclipta",
+    "ten_khoa_hoc": "Eclipta prostrata (L.) L.",
+    "tac_dung": "Cầm máu nội và ngoại; bổ can thận; chữa rong kinh, tiểu ra máu, chảy máu cam; kháng khuẩn; bảo vệ gan",
+    "tac_dung_list": [
+      "Cầm máu nội và ngoại",
+      "bổ can thận",
+      "chữa rong kinh, tiểu ra máu, chảy máu cam",
+      "kháng khuẩn",
+      "bảo vệ gan"
+    ],
+    "page_start": 282,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 283
+  },
+  {
+    "ten_co_dau": "Cây nghệ",
+    "ten_khong_dau": "Cay nghe",
+    "ten_anh": "Turmeric",
+    "ten_khoa_hoc": "Curcuma longa L.",
+    "tac_dung": "Cầm máu; chống viêm mạnh; bảo vệ gan; kháng khuẩn; kháng ung thư (curcumin); chữa loét dạ dày; tiêu hóa",
+    "tac_dung_list": [
+      "Cầm máu",
+      "chống viêm mạnh",
+      "bảo vệ gan",
+      "kháng khuẩn",
+      "kháng ung thư (curcumin)",
+      "chữa loét dạ dày",
+      "tiêu hóa"
+    ],
+    "page_start": 283,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 284
+  },
+  {
+    "ten_co_dau": "Cỏ nến",
+    "ten_khong_dau": "Co nen",
+    "ten_anh": "Cattail / Bulrush",
+    "ten_khoa_hoc": "Typha orientalis C.Presl",
+    "tac_dung": "Cầm máu; hoạt huyết; lợi tiểu; chữa rong kinh, tiểu ra máu",
+    "tac_dung_list": [
+      "Cầm máu",
+      "hoạt huyết",
+      "lợi tiểu",
+      "chữa rong kinh, tiểu ra máu"
+    ],
+    "page_start": 284,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 285
+  },
+  {
+    "ten_co_dau": "Long nhã thảo",
+    "ten_khong_dau": "Long nha thao",
+    "ten_anh": "Agrimony",
+    "ten_khoa_hoc": "Agrimonia pilosa Ledeb.",
+    "tac_dung": "Cầm máu; kháng khuẩn; tiêu viêm; chữa tiêu chảy, rong kinh; lợi mật",
+    "tac_dung_list": [
+      "Cầm máu",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa tiêu chảy, rong kinh",
+      "lợi mật"
+    ],
+    "page_start": 285,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 287
+  },
+  {
+    "ten_co_dau": "Cây huyết dụ",
+    "ten_khong_dau": "Cay huyet du",
+    "ten_anh": "Dracaena / Ti plant",
+    "ten_khoa_hoc": "Cordyline fruticosa (L.) A.Chev.",
+    "tac_dung": "Cầm máu nội và ngoại; chữa rong kinh, tiểu ra máu, ho ra máu; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Cầm máu nội và ngoại",
+      "chữa rong kinh, tiểu ra máu, ho ra máu",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 287,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 287
+  },
+  {
+    "ten_co_dau": "Cây trắc bách diệp",
+    "ten_khong_dau": "Cay trac bach diep",
+    "ten_anh": "Oriental arborvitae / Thuja",
+    "ten_khoa_hoc": "Platycladus orientalis (L.) Franco",
+    "tac_dung": "Cầm máu mạnh; chữa rong kinh, ho ra máu, nôn ra máu; kháng khuẩn; an thần nhẹ",
+    "tac_dung_list": [
+      "Cầm máu mạnh",
+      "chữa rong kinh, ho ra máu, nôn ra máu",
+      "kháng khuẩn",
+      "an thần nhẹ"
+    ],
+    "page_start": 287,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 289
+  },
+  {
+    "ten_co_dau": "Cây tam thất",
+    "ten_khong_dau": "Cay tam that",
+    "ten_anh": "Notoginseng / Tienchi ginseng",
+    "ten_khoa_hoc": "Panax notoginseng (Burkill) F.H.Chen ex C.H.Chow",
+    "tac_dung": "Cầm máu mạnh; hoạt huyết, hóa ứ; giảm đau; bổ dưỡng; chữa chấn thương, xuất huyết nội",
+    "tac_dung_list": [
+      "Cầm máu mạnh",
+      "hoạt huyết, hóa ứ",
+      "giảm đau",
+      "bổ dưỡng",
+      "chữa chấn thương, xuất huyết nội"
+    ],
+    "page_start": 289,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 291
+  },
+  {
+    "ten_co_dau": "Cây mào gà trắng",
+    "ten_khong_dau": "Cay mao ga trang",
+    "ten_anh": "White cockscomb",
+    "ten_khoa_hoc": "Celosia argentea L.",
+    "tac_dung": "Cầm máu; chữa rong kinh, tiêu chảy có máu; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Cầm máu",
+      "chữa rong kinh, tiêu chảy có máu",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 291,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 292
+  },
+  {
+    "ten_co_dau": "Cây mào gà đỏ",
+    "ten_khong_dau": "Cay mao ga do",
+    "ten_anh": "Red cockscomb",
+    "ten_khoa_hoc": "Celosia cristata L.",
+    "tac_dung": "Cầm máu; chữa rong kinh, băng huyết; kháng khuẩn; tiêu viêm; trị lỵ",
+    "tac_dung_list": [
+      "Cầm máu",
+      "chữa rong kinh, băng huyết",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "trị lỵ"
+    ],
+    "page_start": 292,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 293
+  },
+  {
+    "ten_co_dau": "Bách thảo sương",
+    "ten_khong_dau": "Bach thao suong",
+    "ten_anh": "Moss / Club moss",
+    "ten_khoa_hoc": "Lycopodium cernuum L.",
+    "tac_dung": "Cầm máu; tiêu viêm; chữa vết thương chảy máu; kháng khuẩn",
+    "tac_dung_list": [
+      "Cầm máu",
+      "tiêu viêm",
+      "chữa vết thương chảy máu",
+      "kháng khuẩn"
+    ],
+    "page_start": 293,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 293
+  },
+  {
+    "ten_co_dau": "Rau ngổ",
+    "ten_khong_dau": "Rau ngo",
+    "ten_anh": "Limnophila / Ambulia",
+    "ten_khoa_hoc": "Limnophila aromatica (Lam.) Merr.",
+    "tac_dung": "Lợi tiểu; tiêu viêm; chữa viêm đường tiết niệu; lợi mật; kháng khuẩn",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "tiêu viêm",
+      "chữa viêm đường tiết niệu",
+      "lợi mật",
+      "kháng khuẩn"
+    ],
+    "page_start": 293,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 294
+  },
+  {
+    "ten_co_dau": "Thiên thảo",
+    "ten_khong_dau": "Thien thao",
+    "ten_anh": "Madder / Rubia",
+    "ten_khoa_hoc": "Rubia cordifolia L.",
+    "tac_dung": "Cầm máu; hoạt huyết; chữa rong kinh, tiểu ra máu; kháng khuẩn; tiêu viêm; chống ung thư (hỗ trợ)",
+    "tac_dung_list": [
+      "Cầm máu",
+      "hoạt huyết",
+      "chữa rong kinh, tiểu ra máu",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chống ung thư (hỗ trợ)"
+    ],
+    "page_start": 294,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 295
+  },
+  {
+    "ten_co_dau": "Vạn tuế",
+    "ten_khong_dau": "Van tue",
+    "ten_anh": "Cycas / Sago palm",
+    "ten_khoa_hoc": "Cycas revoluta Thunb.",
+    "tac_dung": "Cầm máu; chữa rong kinh, băng huyết; tiêu viêm; chú ý: hạt và thân có độc",
+    "tac_dung_list": [
+      "Cầm máu",
+      "chữa rong kinh, băng huyết",
+      "tiêu viêm",
+      "chú ý: hạt và thân có độc"
+    ],
+    "page_start": 295,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 297
+  },
+  {
+    "ten_co_dau": "Địa du",
+    "ten_khong_dau": "Dia du",
+    "ten_anh": "Burnet root / Sanguisorba",
+    "ten_khoa_hoc": "Sanguisorba officinalis L.",
+    "tac_dung": "Cầm máu mạnh; chữa tiêu chảy có máu, rong kinh; tiêu viêm; kháng khuẩn; chữa bỏng",
+    "tac_dung_list": [
+      "Cầm máu mạnh",
+      "chữa tiêu chảy có máu, rong kinh",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa bỏng"
+    ],
+    "page_start": 297,
+    "chuong": "VI. Các cây thuốc và vị thuốc cầm máu",
+    "page_end": 298
+  },
+  {
+    "ten_co_dau": "Cây hoa hòe",
+    "ten_khong_dau": "Cay hoa hoe",
+    "ten_anh": "Japanese pagoda tree / Scholar tree",
+    "ten_khoa_hoc": "Styphnolobium japonicum (L.) Schott",
+    "tac_dung": "Hạ huyết áp; tăng bền vững thành mạch (rutin); cầm máu; chống xơ vữa động mạch; kháng khuẩn",
+    "tac_dung_list": [
+      "Hạ huyết áp",
+      "tăng bền vững thành mạch (rutin)",
+      "cầm máu",
+      "chống xơ vữa động mạch",
+      "kháng khuẩn"
+    ],
+    "page_start": 298,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 300
+  },
+  {
+    "ten_co_dau": "Mạch ba góc",
+    "ten_khong_dau": "Mach ba goc",
+    "ten_anh": "Buckwheat",
+    "ten_khoa_hoc": "Fagopyrum esculentum Moench",
+    "tac_dung": "Hạ huyết áp; tăng bền vững thành mạch (rutin); hạ mỡ máu; hạ đường huyết; bổ dưỡng",
+    "tac_dung_list": [
+      "Hạ huyết áp",
+      "tăng bền vững thành mạch (rutin)",
+      "hạ mỡ máu",
+      "hạ đường huyết",
+      "bổ dưỡng"
+    ],
+    "page_start": 300,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 301
+  },
+  {
+    "ten_co_dau": "Cây ba gạc",
+    "ten_khong_dau": "Cay ba gac",
+    "ten_anh": "Rauvolfia / Indian snakeroot",
+    "ten_khoa_hoc": "Rauvolfia serpentina (L.) Benth. ex Kurz",
+    "tac_dung": "Hạ huyết áp mạnh (reserpine); an thần; điều trị tăng huyết áp; chú ý tác dụng phụ",
+    "tac_dung_list": [
+      "Hạ huyết áp mạnh (reserpine)",
+      "an thần",
+      "điều trị tăng huyết áp",
+      "chú ý tác dụng phụ"
+    ],
+    "page_start": 301,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 302
+  },
+  {
+    "ten_co_dau": "Cây ba gạc Ấn Độ",
+    "ten_khong_dau": "Cay ba gac An Do",
+    "ten_anh": "Indian rauvolfia",
+    "ten_khoa_hoc": "Rauvolfia serpentina (L.) Benth. ex Kurz",
+    "tac_dung": "Hạ huyết áp (reserpine); an thần; trị cao huyết áp",
+    "tac_dung_list": [
+      "Hạ huyết áp (reserpine)",
+      "an thần",
+      "trị cao huyết áp"
+    ],
+    "page_start": 302,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 303
+  },
+  {
+    "ten_co_dau": "Cây ba kích",
+    "ten_khong_dau": "Cay ba kich",
+    "ten_anh": "Indian mulberry root / Morinda root",
+    "ten_khoa_hoc": "Morinda officinalis F.C.How",
+    "tac_dung": "Bổ thận, tráng dương; hạ huyết áp nhẹ; tăng sức đề kháng; chữa đau lưng mỏi gối, liệt dương",
+    "tac_dung_list": [
+      "Bổ thận, tráng dương",
+      "hạ huyết áp nhẹ",
+      "tăng sức đề kháng",
+      "chữa đau lưng mỏi gối, liệt dương"
+    ],
+    "page_start": 303,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 305
+  },
+  {
+    "ten_co_dau": "Cây câu đằng",
+    "ten_khong_dau": "Cay cau dang",
+    "ten_anh": "Gambir / Uncaria",
+    "ten_khoa_hoc": "Uncaria rhynchophylla (Miq.) Miq. ex Havil.",
+    "tac_dung": "Hạ huyết áp; chống co giật; an thần; chữa tăng huyết áp; trấn kinh giải co",
+    "tac_dung_list": [
+      "Hạ huyết áp",
+      "chống co giật",
+      "an thần",
+      "chữa tăng huyết áp",
+      "trấn kinh giải co"
+    ],
+    "page_start": 305,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 306
+  },
+  {
+    "ten_co_dau": "Cây nhàu",
+    "ten_khong_dau": "Cay nhau",
+    "ten_anh": "Noni / Indian mulberry",
+    "ten_khoa_hoc": "Morinda citrifolia L.",
+    "tac_dung": "Hạ huyết áp; tăng miễn dịch; kháng khuẩn; kháng ung thư (hỗ trợ); chống oxy hóa; bổ dưỡng",
+    "tac_dung_list": [
+      "Hạ huyết áp",
+      "tăng miễn dịch",
+      "kháng khuẩn",
+      "kháng ung thư (hỗ trợ)",
+      "chống oxy hóa",
+      "bổ dưỡng"
+    ],
+    "page_start": 306,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 307
+  },
+  {
+    "ten_co_dau": "Cây dừa cạn",
+    "ten_khong_dau": "Cay dua can",
+    "ten_anh": "Madagascar periwinkle / Vinca",
+    "ten_khoa_hoc": "Catharanthus roseus (L.) G.Don",
+    "tac_dung": "Hạ huyết áp; hạ đường huyết; kháng ung thư (vincristine, vinblastine); kháng khuẩn",
+    "tac_dung_list": [
+      "Hạ huyết áp",
+      "hạ đường huyết",
+      "kháng ung thư (vincristine, vinblastine)",
+      "kháng khuẩn"
+    ],
+    "page_start": 307,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 309
+  },
+  {
+    "ten_co_dau": "Đỗ trọng",
+    "ten_khong_dau": "Do trong",
+    "ten_anh": "Eucommia / Hardy rubber tree",
+    "ten_khoa_hoc": "Eucommia ulmoides Oliv.",
+    "tac_dung": "Hạ huyết áp; bổ can thận; chữa đau lưng mỏi gối; an thai; kháng viêm; tăng cường xương khớp",
+    "tac_dung_list": [
+      "Hạ huyết áp",
+      "bổ can thận",
+      "chữa đau lưng mỏi gối",
+      "an thai",
+      "kháng viêm",
+      "tăng cường xương khớp"
+    ],
+    "page_start": 309,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 311
+  },
+  {
+    "ten_co_dau": "Hoàng cầm",
+    "ten_khong_dau": "Hoang cam",
+    "ten_anh": "Chinese skullcap / Baical skullcap",
+    "ten_khoa_hoc": "Scutellaria baicalensis Georgi",
+    "tac_dung": "Hạ huyết áp; kháng khuẩn, kháng virus mạnh; tiêu viêm; hạ sốt; chống oxy hóa; bảo vệ gan",
+    "tac_dung_list": [
+      "Hạ huyết áp",
+      "kháng khuẩn, kháng virus mạnh",
+      "tiêu viêm",
+      "hạ sốt",
+      "chống oxy hóa",
+      "bảo vệ gan"
+    ],
+    "page_start": 311,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 314
+  },
+  {
+    "ten_co_dau": "Hồi đầu thảo",
+    "ten_khong_dau": "Hoi dau thao",
+    "ten_anh": "Stemona / Tu Bei Mu",
+    "ten_khoa_hoc": "Stemona sessilifolia (Miq.) Miq.",
+    "tac_dung": "Hạ huyết áp nhẹ; an thần; chữa ho; kháng khuẩn",
+    "tac_dung_list": [
+      "Hạ huyết áp nhẹ",
+      "an thần",
+      "chữa ho",
+      "kháng khuẩn"
+    ],
+    "page_start": 314,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 314
+  },
+  {
+    "ten_co_dau": "Rau cần tây",
+    "ten_khong_dau": "Rau can tay",
+    "ten_anh": "Celery",
+    "ten_khoa_hoc": "Apium graveolens L.",
+    "tac_dung": "Hạ huyết áp; lợi tiểu; kháng viêm; chống oxy hóa; giảm đau; hạ acid uric",
+    "tac_dung_list": [
+      "Hạ huyết áp",
+      "lợi tiểu",
+      "kháng viêm",
+      "chống oxy hóa",
+      "giảm đau",
+      "hạ acid uric"
+    ],
+    "page_start": 314,
+    "chuong": "VII. Các cây thuốc và vị thuốc hạ huyết áp",
+    "page_end": 316
+  },
+  {
+    "ten_co_dau": "Cây chẹo",
+    "ten_khong_dau": "Cay cheo",
+    "ten_anh": "Engelhardtia / Asian walnut",
+    "ten_khoa_hoc": "Engelhardtia roxburghiana Wall.",
+    "tac_dung": "Dùng làm thuốc độc diệt côn trùng; vỏ có tannin kháng khuẩn; dùng cẩn thận",
+    "tac_dung_list": [
+      "Dùng làm thuốc độc diệt côn trùng",
+      "vỏ có tannin kháng khuẩn",
+      "dùng cẩn thận"
+    ],
+    "page_start": 316,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 316
+  },
+  {
+    "ten_co_dau": "Cây củ đậu",
+    "ten_khong_dau": "Cay cu dau",
+    "ten_anh": "Jicama / Yam bean",
+    "ten_khoa_hoc": "Pachyrhizus erosus (L.) Urb.",
+    "tac_dung": "Hạt và lá độc; củ ăn được; hạt diệt côn trùng; giải nhiệt (củ)",
+    "tac_dung_list": [
+      "Hạt và lá độc",
+      "củ ăn được",
+      "hạt diệt côn trùng",
+      "giải nhiệt (củ)"
+    ],
+    "page_start": 316,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 318
+  },
+  {
+    "ten_co_dau": "Cây hột mát",
+    "ten_khong_dau": "Cay hot mat",
+    "ten_anh": "Millettia / Tephrosia",
+    "ten_khoa_hoc": "Tephrosia vogelii Hook.f.",
+    "tac_dung": "Chứa rotenone diệt côn trùng, cá; độc với động vật máu lạnh; dùng cẩn thận",
+    "tac_dung_list": [
+      "Chứa rotenone diệt côn trùng, cá",
+      "độc với động vật máu lạnh",
+      "dùng cẩn thận"
+    ],
+    "page_start": 318,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 318
+  },
+  {
+    "ten_co_dau": "Cây lá ngón",
+    "ten_khong_dau": "Cay la ngon",
+    "ten_anh": "Gelsemium / Heartbreak grass",
+    "ten_khoa_hoc": "Gelsemium elegans (Gardner & Champ.) Benth.",
+    "tac_dung": "Cực độc; có thể dùng ngoài giảm đau; cẩm thận nghiêm ngặt; KHÔNG dùng đường uống",
+    "tac_dung_list": [
+      "Cực độc",
+      "có thể dùng ngoài giảm đau",
+      "cẩm thận nghiêm ngặt",
+      "KHÔNG dùng đường uống"
+    ],
+    "page_start": 318,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 321
+  },
+  {
+    "ten_co_dau": "Cây sui",
+    "ten_khong_dau": "Cay sui",
+    "ten_anh": "Antiaris / Upas tree",
+    "ten_khoa_hoc": "Antiaris toxicaria (Pers.) Lesch.",
+    "tac_dung": "Nhựa cực độc (antiarin); truyền thống dùng tẩm tên độc; y học: nghiên cứu điều trị ung thư",
+    "tac_dung_list": [
+      "Nhựa cực độc (antiarin)",
+      "truyền thống dùng tẩm tên độc",
+      "y học: nghiên cứu điều trị ung thư"
+    ],
+    "page_start": 321,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 322
+  },
+  {
+    "ten_co_dau": "Thàn mát",
+    "ten_khong_dau": "Than mat",
+    "ten_anh": "Millettia / Fish poison tree",
+    "ten_khoa_hoc": "Millettia pachycarpa Benth.",
+    "tac_dung": "Chứa rotenone; diệt côn trùng; độc với cá; dùng ngoài trị ghẻ; cẩn thận",
+    "tac_dung_list": [
+      "Chứa rotenone",
+      "diệt côn trùng",
+      "độc với cá",
+      "dùng ngoài trị ghẻ",
+      "cẩn thận"
+    ],
+    "page_start": 322,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 323
+  },
+  {
+    "ten_co_dau": "Hồi núi",
+    "ten_khong_dau": "Hoi nui",
+    "ten_anh": "Illicium / Mountain anise",
+    "ten_khoa_hoc": "Illicium griffithii Hook.f. & Thomson",
+    "tac_dung": "Cực độc (anisatin); KHÔNG nhầm với hồi thường; gây co giật, tử vong",
+    "tac_dung_list": [
+      "Cực độc (anisatin)",
+      "KHÔNG nhầm với hồi thường",
+      "gây co giật, tử vong"
+    ],
+    "page_start": 323,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 324
+  },
+  {
+    "ten_co_dau": "Hương bài",
+    "ten_khong_dau": "Huong bai",
+    "ten_anh": "Vetiver / Khus grass",
+    "ten_khoa_hoc": "Chrysopogon zizanioides (L.) Roberty",
+    "tac_dung": "Tinh dầu thơm; kháng khuẩn, kháng nấm nhẹ; làm mát, giải nhiệt; dùng ngoài",
+    "tac_dung_list": [
+      "Tinh dầu thơm",
+      "kháng khuẩn, kháng nấm nhẹ",
+      "làm mát, giải nhiệt",
+      "dùng ngoài"
+    ],
+    "page_start": 324,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 325
+  },
+  {
+    "ten_co_dau": "Hương lau",
+    "ten_khong_dau": "Huong lau",
+    "ten_anh": "Cymbopogon / Citronella grass",
+    "ten_khoa_hoc": "Cymbopogon nardus (L.) Rendle",
+    "tac_dung": "Đuổi côn trùng; kháng khuẩn, kháng nấm; tinh dầu citronella; giảm đau nhẹ",
+    "tac_dung_list": [
+      "Đuổi côn trùng",
+      "kháng khuẩn, kháng nấm",
+      "tinh dầu citronella",
+      "giảm đau nhẹ"
+    ],
+    "page_start": 325,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 326
+  },
+  {
+    "ten_co_dau": "Cỏ giải",
+    "ten_khong_dau": "Co giai",
+    "ten_anh": "Cyperus / Sedge",
+    "ten_khoa_hoc": "Cyperus digitatus Roxb.",
+    "tac_dung": "Tiêu viêm; lợi tiểu; dùng ngoài trị ghẻ",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "lợi tiểu",
+      "dùng ngoài trị ghẻ"
+    ],
+    "page_start": 326,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 327
+  },
+  {
+    "ten_co_dau": "Cúc trừ sâu",
+    "ten_khong_dau": "Cuc tru sau",
+    "ten_anh": "Pyrethrum / Dalmatian chrysanthemum",
+    "ten_khoa_hoc": "Tanacetum cinerariifolium (Trevir.) Sch.Bip.",
+    "tac_dung": "Diệt côn trùng tự nhiên (pyrethrin); kháng khuẩn; chú ý dị ứng",
+    "tac_dung_list": [
+      "Diệt côn trùng tự nhiên (pyrethrin)",
+      "kháng khuẩn",
+      "chú ý dị ứng"
+    ],
+    "page_start": 327,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 331
+  },
+  {
+    "ten_co_dau": "Tỏi độc",
+    "ten_khong_dau": "Toi doc",
+    "ten_anh": "Squill / Sea onion",
+    "ten_khoa_hoc": "Drimia maritima (L.) Stearn",
+    "tac_dung": "Tim mạch (scillaren); lợi tiểu; diệt chuột; cực độc, cẩn thận",
+    "tac_dung_list": [
+      "Tim mạch (scillaren)",
+      "lợi tiểu",
+      "diệt chuột",
+      "cực độc, cẩn thận"
+    ],
+    "page_start": 331,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 334
+  },
+  {
+    "ten_co_dau": "Cây ngọt nghẹo",
+    "ten_khong_dau": "Cay ngot ngheo",
+    "ten_anh": "Cerbera / Sea mango",
+    "ten_khoa_hoc": "Cerbera manghas L.",
+    "tac_dung": "Cực độc (cerberin); y học nghiên cứu điều trị ung thư; KHÔNG tự dùng",
+    "tac_dung_list": [
+      "Cực độc (cerberin)",
+      "y học nghiên cứu điều trị ung thư",
+      "KHÔNG tự dùng"
+    ],
+    "page_start": 334,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 336
+  },
+  {
+    "ten_co_dau": "Cây cho curaro",
+    "ten_khong_dau": "Cay cho curaro",
+    "ten_anh": "Curare plant / Strychnos",
+    "ten_khoa_hoc": "Strychnos toxifera Schomb.",
+    "tac_dung": "Curare độc cơ; y học: giãn cơ trong phẫu thuật (tubocurarine); KHÔNG tự dùng",
+    "tac_dung_list": [
+      "Curare độc cơ",
+      "y học: giãn cơ trong phẫu thuật (tubocurarine)",
+      "KHÔNG tự dùng"
+    ],
+    "page_start": 336,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 338
+  },
+  {
+    "ten_co_dau": "Sở",
+    "ten_khong_dau": "So",
+    "ten_anh": "Camellia oil plant / Tea oil",
+    "ten_khoa_hoc": "Camellia oleifera C.Abel",
+    "tac_dung": "Dầu sở: dưỡng da, thực phẩm; kháng khuẩn nhẹ; hạ mỡ máu",
+    "tac_dung_list": [
+      "Dầu sở: dưỡng da, thực phẩm",
+      "kháng khuẩn nhẹ",
+      "hạ mỡ máu"
+    ],
+    "page_start": 338,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 340
+  },
+  {
+    "ten_co_dau": "Trẩu",
+    "ten_khong_dau": "Trau",
+    "ten_anh": "Tung oil tree",
+    "ten_khoa_hoc": "Vernicia fordii (Hemsl.) Airy Shaw",
+    "tac_dung": "Dầu trẩu dùng sơn, công nghiệp; độc khi uống; ngoài da: trị ghẻ, hắc lào",
+    "tac_dung_list": [
+      "Dầu trẩu dùng sơn, công nghiệp",
+      "độc khi uống",
+      "ngoài da: trị ghẻ, hắc lào"
+    ],
+    "page_start": 340,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 341
+  },
+  {
+    "ten_co_dau": "Cây lim",
+    "ten_khong_dau": "Cay lim",
+    "ten_anh": "Erythrophleum / Ordeal tree",
+    "ten_khoa_hoc": "Erythrophleum fordii Oliv.",
+    "tac_dung": "Cực độc (cassaine); nghiên cứu điều trị tim mạch; KHÔNG tự dùng",
+    "tac_dung_list": [
+      "Cực độc (cassaine)",
+      "nghiên cứu điều trị tim mạch",
+      "KHÔNG tự dùng"
+    ],
+    "page_start": 341,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 343
+  },
+  {
+    "ten_co_dau": "Mắc kẹn",
+    "ten_khong_dau": "Mac ken",
+    "ten_anh": "Zanthoxylum / Sichuan pepper",
+    "ten_khoa_hoc": "Zanthoxylum avicennae (Lam.) DC.",
+    "tac_dung": "Kháng khuẩn; giảm đau; tê liệt nhẹ; chữa đau răng; tiêu hóa",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "giảm đau",
+      "tê liệt nhẹ",
+      "chữa đau răng",
+      "tiêu hóa"
+    ],
+    "page_start": 343,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 344
+  },
+  {
+    "ten_co_dau": "Thuốc lá",
+    "ten_khong_dau": "Thuoc la",
+    "ten_anh": "Tobacco",
+    "ten_khoa_hoc": "Nicotiana tabacum L.",
+    "tac_dung": "Nicotine: kháng khuẩn ngoài da; diệt côn trùng; trị ghẻ (ngoài); KHÔNG hút: gây ung thư, tim mạch",
+    "tac_dung_list": [
+      "Nicotine: kháng khuẩn ngoài da",
+      "diệt côn trùng",
+      "trị ghẻ (ngoài)",
+      "KHÔNG hút: gây ung thư, tim mạch"
+    ],
+    "page_start": 344,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 346
+  },
+  {
+    "ten_co_dau": "Gai dầu",
+    "ten_khong_dau": "Gai dau",
+    "ten_anh": "Cannabis / Hemp",
+    "ten_khoa_hoc": "Cannabis sativa L.",
+    "tac_dung": "An thần; giảm đau (cannabinoids); chữa tăng nhãn áp; buồn nôn hóa trị; cẩn thận pháp lý",
+    "tac_dung_list": [
+      "An thần",
+      "giảm đau (cannabinoids)",
+      "chữa tăng nhãn áp",
+      "buồn nôn hóa trị",
+      "cẩn thận pháp lý"
+    ],
+    "page_start": 346,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 350
+  },
+  {
+    "ten_co_dau": "Cây sơn",
+    "ten_khong_dau": "Cay son",
+    "ten_anh": "Lacquer tree / Toxicodendron",
+    "ten_khoa_hoc": "Toxicodendron succedaneum (L.) Kuntze",
+    "tac_dung": "Nhựa sơn: cầm máu; tiêu tích; chú ý gây dị ứng nặng; dùng cẩn thận",
+    "tac_dung_list": [
+      "Nhựa sơn: cầm máu",
+      "tiêu tích",
+      "chú ý gây dị ứng nặng",
+      "dùng cẩn thận"
+    ],
+    "page_start": 350,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 351
+  },
+  {
+    "ten_co_dau": "Dây thuốc cá",
+    "ten_khong_dau": "Day thuoc ca",
+    "ten_anh": "Derris / Tuba root",
+    "ten_khoa_hoc": "Derris elliptica (Wall.) Benth.",
+    "tac_dung": "Chứa rotenone; diệt cá, côn trùng; dùng ngoài trị ghẻ, hắc lào; độc khi uống",
+    "tac_dung_list": [
+      "Chứa rotenone",
+      "diệt cá, côn trùng",
+      "dùng ngoài trị ghẻ, hắc lào",
+      "độc khi uống"
+    ],
+    "page_start": 351,
+    "chuong": "VIII. Các cây và vị thuốc có chất độc",
+    "page_end": 355
+  },
+  {
+    "ten_co_dau": "Sơn tra",
+    "ten_khong_dau": "Son tra",
+    "ten_anh": "Chinese hawthorn / Crataegus",
+    "ten_khoa_hoc": "Crataegus pinnatifida Bunge",
+    "tac_dung": "Tiêu hóa thức ăn (đặc biệt thịt); hạ mỡ máu; hạ huyết áp; bổ tim mạch; kháng khuẩn",
+    "tac_dung_list": [
+      "Tiêu hóa thức ăn (đặc biệt thịt)",
+      "hạ mỡ máu",
+      "hạ huyết áp",
+      "bổ tim mạch",
+      "kháng khuẩn"
+    ],
+    "page_start": 355,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 357
+  },
+  {
+    "ten_co_dau": "Mạch nha",
+    "ten_khong_dau": "Mach nha",
+    "ten_anh": "Malt / Barley malt",
+    "ten_khoa_hoc": "Hordeum vulgare L.",
+    "tac_dung": "Tiêu hóa tinh bột; hỗ trợ cai sữa; bổ tỳ vị; an thần nhẹ; bổ dưỡng",
+    "tac_dung_list": [
+      "Tiêu hóa tinh bột",
+      "hỗ trợ cai sữa",
+      "bổ tỳ vị",
+      "an thần nhẹ",
+      "bổ dưỡng"
+    ],
+    "page_start": 357,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 358
+  },
+  {
+    "ten_co_dau": "Thần khúc",
+    "ten_khong_dau": "Than khuc",
+    "ten_anh": "Massa medicata fermentata / Medicated leaven",
+    "ten_khoa_hoc": "Hỗn hợp lên men (fermented mixture)",
+    "tac_dung": "Tiêu hóa; kích thích tiêu hóa; trị đầy hơi, khó tiêu; bổ tỳ vị",
+    "tac_dung_list": [
+      "Tiêu hóa",
+      "kích thích tiêu hóa",
+      "trị đầy hơi, khó tiêu",
+      "bổ tỳ vị"
+    ],
+    "page_start": 358,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 360
+  },
+  {
+    "ten_co_dau": "Đu đủ",
+    "ten_khong_dau": "Du du",
+    "ten_anh": "Papaya",
+    "ten_khoa_hoc": "Carica papaya L.",
+    "tac_dung": "Tiêu hóa protein (papain); tẩy giun; kháng khuẩn; chống ung thư (hỗ trợ); lợi tiểu; chữa táo bón",
+    "tac_dung_list": [
+      "Tiêu hóa protein (papain)",
+      "tẩy giun",
+      "kháng khuẩn",
+      "chống ung thư (hỗ trợ)",
+      "lợi tiểu",
+      "chữa táo bón"
+    ],
+    "page_start": 360,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 363
+  },
+  {
+    "ten_co_dau": "Kê nội kim",
+    "ten_khong_dau": "Ke noi kim",
+    "ten_anh": "Chicken gizzard lining / Ji Nei Jin",
+    "ten_khoa_hoc": "Gallus gallus domesticus (động vật)",
+    "tac_dung": "Tiêu hóa; tiêu tích thực; chữa khó tiêu, đầy bụng; tan sỏi mật, sỏi thận nhẹ",
+    "tac_dung_list": [
+      "Tiêu hóa",
+      "tiêu tích thực",
+      "chữa khó tiêu, đầy bụng",
+      "tan sỏi mật, sỏi thận nhẹ"
+    ],
+    "page_start": 363,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 363
+  },
+  {
+    "ten_co_dau": "Chỉ thực",
+    "ten_khong_dau": "Chi thuc",
+    "ten_anh": "Immature bitter orange / Zhi Shi",
+    "ten_khoa_hoc": "Citrus aurantium L.",
+    "tac_dung": "Kích thích tiêu hóa; hành khí tiêu đầy; tăng nhu động ruột; chữa đầy hơi, táo bón; tăng huyết áp nhẹ",
+    "tac_dung_list": [
+      "Kích thích tiêu hóa",
+      "hành khí tiêu đầy",
+      "tăng nhu động ruột",
+      "chữa đầy hơi, táo bón",
+      "tăng huyết áp nhẹ"
+    ],
+    "page_start": 363,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 365
+  },
+  {
+    "ten_co_dau": "Địa liền",
+    "ten_khong_dau": "Dia lien",
+    "ten_anh": "Kaempferia / Resurrection lily",
+    "ten_khoa_hoc": "Kaempferia galanga L.",
+    "tac_dung": "Kích thích tiêu hóa; hành khí; chữa đầy bụng, đau dạ dày; kháng khuẩn; giảm đau",
+    "tac_dung_list": [
+      "Kích thích tiêu hóa",
+      "hành khí",
+      "chữa đầy bụng, đau dạ dày",
+      "kháng khuẩn",
+      "giảm đau"
+    ],
+    "page_start": 365,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 366
+  },
+  {
+    "ten_co_dau": "Gừng",
+    "ten_khong_dau": "Gung",
+    "ten_anh": "Alpinia / Shell ginger",
+    "ten_khoa_hoc": "Alpinia zerumbet (Pers.) B.L.Burtt & R.M.Sm.",
+    "tac_dung": "Kháng khuẩn; chữa lỵ; tiêu hóa; hạ huyết áp; chống oxy hóa",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa lỵ",
+      "tiêu hóa",
+      "hạ huyết áp",
+      "chống oxy hóa"
+    ],
+    "page_start": 366,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 368
+  },
+  {
+    "ten_co_dau": "Gừng gió",
+    "ten_khong_dau": "Gung gio",
+    "ten_anh": "Zingiber zerumbet / Shampoo ginger",
+    "ten_khoa_hoc": "Zingiber zerumbet (L.) Roscoe ex Sm.",
+    "tac_dung": "Kích thích tiêu hóa; kháng khuẩn; tiêu viêm; chữa đau dạ dày; tẩy giun",
+    "tac_dung_list": [
+      "Kích thích tiêu hóa",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa đau dạ dày",
+      "tẩy giun"
+    ],
+    "page_start": 368,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 369
+  },
+  {
+    "ten_co_dau": "Hạt sen",
+    "ten_khong_dau": "Hat sen",
+    "ten_anh": "Lotus seed",
+    "ten_khoa_hoc": "Nelumbo nucifera Gaertn.",
+    "tac_dung": "Bổ tỳ vị; an thần; cầm tiêu chảy; bổ thận, ích tinh; giảm đau; chống oxy hóa",
+    "tac_dung_list": [
+      "Bổ tỳ vị",
+      "an thần",
+      "cầm tiêu chảy",
+      "bổ thận, ích tinh",
+      "giảm đau",
+      "chống oxy hóa"
+    ],
+    "page_start": 369,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 370
+  },
+  {
+    "ten_co_dau": "Hạt tiêu",
+    "ten_khong_dau": "Hat tieu",
+    "ten_anh": "Black pepper",
+    "ten_khoa_hoc": "Piper nigrum L.",
+    "tac_dung": "Kích thích tiêu hóa; kháng khuẩn; chống oxy hóa (piperine); tăng hấp thu dưỡng chất; giảm đau nhẹ; tiêu hàn",
+    "tac_dung_list": [
+      "Kích thích tiêu hóa",
+      "kháng khuẩn",
+      "chống oxy hóa (piperine)",
+      "tăng hấp thu dưỡng chất",
+      "giảm đau nhẹ",
+      "tiêu hàn"
+    ],
+    "page_start": 370,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 372
+  },
+  {
+    "ten_co_dau": "Hậu phác",
+    "ten_khong_dau": "Hau phac",
+    "ten_anh": "Magnolia bark / Houpo",
+    "ten_khoa_hoc": "Magnolia officinalis Rehder & E.H.Wilson",
+    "tac_dung": "Tiêu hóa; hành khí tiêu đầy; chữa đầy hơi, táo bón; an thần (honokiol); kháng khuẩn",
+    "tac_dung_list": [
+      "Tiêu hóa",
+      "hành khí tiêu đầy",
+      "chữa đầy hơi, táo bón",
+      "an thần (honokiol)",
+      "kháng khuẩn"
+    ],
+    "page_start": 372,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 374
+  },
+  {
+    "ten_co_dau": "Hoắc hương",
+    "ten_khong_dau": "Hoac huong",
+    "ten_anh": "Patchouli / Agastache",
+    "ten_khoa_hoc": "Pogostemon cablin (Blanco) Benth.",
+    "tac_dung": "Kích thích tiêu hóa; chữa buồn nôn, nôn mửa; hành khí; kháng khuẩn; chữa đầy bụng",
+    "tac_dung_list": [
+      "Kích thích tiêu hóa",
+      "chữa buồn nôn, nôn mửa",
+      "hành khí",
+      "kháng khuẩn",
+      "chữa đầy bụng"
+    ],
+    "page_start": 374,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 375
+  },
+  {
+    "ten_co_dau": "Long đởm thảo",
+    "ten_khong_dau": "Long dom thao",
+    "ten_anh": "Chinese gentian / Gentiana",
+    "ten_khoa_hoc": "Gentiana scabra Bunge",
+    "tac_dung": "Kích thích tiêu hóa; lợi mật; kháng khuẩn; tiêu viêm; hạ sốt",
+    "tac_dung_list": [
+      "Kích thích tiêu hóa",
+      "lợi mật",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ sốt"
+    ],
+    "page_start": 375,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 377
+  },
+  {
+    "ten_co_dau": "Nga truật",
+    "ten_khong_dau": "Nga truat",
+    "ten_anh": "Zedoary / White turmeric",
+    "ten_khoa_hoc": "Curcuma zedoaria (Christm.) Roscoe",
+    "tac_dung": "Hành khí phá ứ; tiêu tích thực; chữa đau dạ dày, đầy hơi; kháng khuẩn; chống ung thư (hỗ trợ)",
+    "tac_dung_list": [
+      "Hành khí phá ứ",
+      "tiêu tích thực",
+      "chữa đau dạ dày, đầy hơi",
+      "kháng khuẩn",
+      "chống ung thư (hỗ trợ)"
+    ],
+    "page_start": 377,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 378
+  },
+  {
+    "ten_co_dau": "Ngô thù du",
+    "ten_khong_dau": "Ngo thu du",
+    "ten_anh": "Evodia / Wu Zhu Yu",
+    "ten_khoa_hoc": "Tetradium ruticarpum (A.Juss.) T.G.Hartley",
+    "tac_dung": "Tiêu hàn; giảm đau; chữa đau dạ dày, nôn mửa; hạ huyết áp; kháng khuẩn",
+    "tac_dung_list": [
+      "Tiêu hàn",
+      "giảm đau",
+      "chữa đau dạ dày, nôn mửa",
+      "hạ huyết áp",
+      "kháng khuẩn"
+    ],
+    "page_start": 378,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 379
+  },
+  {
+    "ten_co_dau": "Ngũ gia bì",
+    "ten_khong_dau": "Ngu gia bi",
+    "ten_anh": "Acanthopanax / Eleutherococcus",
+    "ten_khoa_hoc": "Eleutherococcus senticosus (Rupr. ex Maxim.) Maxim.",
+    "tac_dung": "Bổ khí; tăng sức đề kháng; chống mệt mỏi; kháng viêm; hỗ trợ tiêu hóa; bổ dưỡng",
+    "tac_dung_list": [
+      "Bổ khí",
+      "tăng sức đề kháng",
+      "chống mệt mỏi",
+      "kháng viêm",
+      "hỗ trợ tiêu hóa",
+      "bổ dưỡng"
+    ],
+    "page_start": 379,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 382
+  },
+  {
+    "ten_co_dau": "Ớt",
+    "ten_khong_dau": "Ot",
+    "ten_anh": "Chili pepper / Capsicum",
+    "ten_khoa_hoc": "Capsicum annuum L.",
+    "tac_dung": "Kích thích tiêu hóa; giảm đau ngoài da (capsaicin); kháng khuẩn; tăng trao đổi chất; chống oxy hóa",
+    "tac_dung_list": [
+      "Kích thích tiêu hóa",
+      "giảm đau ngoài da (capsaicin)",
+      "kháng khuẩn",
+      "tăng trao đổi chất",
+      "chống oxy hóa"
+    ],
+    "page_start": 382,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 384
+  },
+  {
+    "ten_co_dau": "Quít - Trần bì",
+    "ten_khong_dau": "Quit - Tran bi",
+    "ten_anh": "Mandarin orange peel / Chen Pi",
+    "ten_khoa_hoc": "Citrus reticulata Blanco",
+    "tac_dung": "Hành khí, kiện tỳ; chữa đầy hơi, buồn nôn; long đờm; kháng khuẩn; tiêu hóa",
+    "tac_dung_list": [
+      "Hành khí, kiện tỳ",
+      "chữa đầy hơi, buồn nôn",
+      "long đờm",
+      "kháng khuẩn",
+      "tiêu hóa"
+    ],
+    "page_start": 384,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 385
+  },
+  {
+    "ten_co_dau": "Riềng",
+    "ten_khong_dau": "Rieng",
+    "ten_anh": "Galangal / Lesser galangal",
+    "ten_khoa_hoc": "Alpinia officinarum Hance",
+    "tac_dung": "Tiêu hàn; kích thích tiêu hóa; giảm đau dạ dày; kháng khuẩn; chống nấm; chống buồn nôn",
+    "tac_dung_list": [
+      "Tiêu hàn",
+      "kích thích tiêu hóa",
+      "giảm đau dạ dày",
+      "kháng khuẩn",
+      "chống nấm",
+      "chống buồn nôn"
+    ],
+    "page_start": 385,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 387
+  },
+  {
+    "ten_co_dau": "Xương bồ",
+    "ten_khong_dau": "Xuong bo",
+    "ten_anh": "Sweet flag / Acorus",
+    "ten_khoa_hoc": "Acorus calamus L.",
+    "tac_dung": "Khai khiếu; kiện tỳ; an thần; kháng khuẩn; tiêu hóa; chữa động kinh, mất trí nhớ",
+    "tac_dung_list": [
+      "Khai khiếu",
+      "kiện tỳ",
+      "an thần",
+      "kháng khuẩn",
+      "tiêu hóa",
+      "chữa động kinh, mất trí nhớ"
+    ],
+    "page_start": 387,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 389
+  },
+  {
+    "ten_co_dau": "Bạch biển đậu",
+    "ten_khong_dau": "Bach bien dau",
+    "ten_anh": "Hyacinth bean / Lablab",
+    "ten_khoa_hoc": "Lablab purpureus (L.) Sweet",
+    "tac_dung": "Kiện tỳ, tiêu thấp; chữa tiêu chảy, đầy bụng; giải nắng say; bổ dưỡng",
+    "tac_dung_list": [
+      "Kiện tỳ, tiêu thấp",
+      "chữa tiêu chảy, đầy bụng",
+      "giải nắng say",
+      "bổ dưỡng"
+    ],
+    "page_start": 389,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 391
+  },
+  {
+    "ten_co_dau": "Bạch truật",
+    "ten_khong_dau": "Bach truat",
+    "ten_anh": "White atractylodes / Bai Zhu",
+    "ten_khoa_hoc": "Atractylodes macrocephala Koidz.",
+    "tac_dung": "Kiện tỳ ích khí; chữa tiêu hóa kém, tiêu chảy; lợi tiểu; an thai; bổ khí",
+    "tac_dung_list": [
+      "Kiện tỳ ích khí",
+      "chữa tiêu hóa kém, tiêu chảy",
+      "lợi tiểu",
+      "an thai",
+      "bổ khí"
+    ],
+    "page_start": 391,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 392
+  },
+  {
+    "ten_co_dau": "Thương truật",
+    "ten_khong_dau": "Thuong truat",
+    "ten_anh": "Black atractylodes / Cang Zhu",
+    "ten_khoa_hoc": "Atractylodes lancea (Thunb.) DC.",
+    "tac_dung": "Kiện tỳ; tiêu thấp; hành khí; kháng khuẩn; chữa đầy bụng, tiêu chảy",
+    "tac_dung_list": [
+      "Kiện tỳ",
+      "tiêu thấp",
+      "hành khí",
+      "kháng khuẩn",
+      "chữa đầy bụng, tiêu chảy"
+    ],
+    "page_start": 392,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 394
+  },
+  {
+    "ten_co_dau": "Đơn lá đỏ",
+    "ten_khong_dau": "Don la do",
+    "ten_anh": "Excoecaria / Buta-buta",
+    "ten_khoa_hoc": "Excoecaria cochinchinensis Lour.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa bệnh tiêu hóa",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa bệnh tiêu hóa"
+    ],
+    "page_start": 394,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 395
+  },
+  {
+    "ten_co_dau": "Dùm dùm",
+    "ten_khong_dau": "Dum dum",
+    "ten_anh": "Macaranga",
+    "ten_khoa_hoc": "Macaranga gigantea (Rchb.f. & Zoll.) Müll.Arg.",
+    "tac_dung": "Tiêu hóa; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Tiêu hóa",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 395,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 395
+  },
+  {
+    "ten_co_dau": "Màm xôi",
+    "ten_khong_dau": "Mam xoi",
+    "ten_anh": "Ficus / Fig tree",
+    "ten_khoa_hoc": "Ficus hispida L.f.",
+    "tac_dung": "Tiêu hóa; kháng khuẩn; chữa tiêu chảy; lợi sữa",
+    "tac_dung_list": [
+      "Tiêu hóa",
+      "kháng khuẩn",
+      "chữa tiêu chảy",
+      "lợi sữa"
+    ],
+    "page_start": 395,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 396
+  },
+  {
+    "ten_co_dau": "Mộc hương",
+    "ten_khong_dau": "Moc huong",
+    "ten_anh": "Costus root / Saussurea / Aucklandia",
+    "ten_khoa_hoc": "Saussurea costus (Falc.) Lipsch.",
+    "tac_dung": "Hành khí giảm đau; chữa đau dạ dày, đầy hơi; kháng khuẩn; bổ tỳ vị",
+    "tac_dung_list": [
+      "Hành khí giảm đau",
+      "chữa đau dạ dày, đầy hơi",
+      "kháng khuẩn",
+      "bổ tỳ vị"
+    ],
+    "page_start": 396,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 398
+  },
+  {
+    "ten_co_dau": "Rau dây",
+    "ten_khong_dau": "Rau day",
+    "ten_anh": "Gynura / Purple velvet plant",
+    "ten_khoa_hoc": "Gynura divaricata (L.) DC.",
+    "tac_dung": "Tiêu hóa; tiêu viêm; kháng khuẩn; giải nhiệt",
+    "tac_dung_list": [
+      "Tiêu hóa",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "giải nhiệt"
+    ],
+    "page_start": 398,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 400
+  },
+  {
+    "ten_co_dau": "Sa nhân - Đậu khấu",
+    "ten_khong_dau": "Sa nhan - Dau khau",
+    "ten_anh": "Amomum / Cardamom seed",
+    "ten_khoa_hoc": "Amomum xanthioides Wall. ex Baker",
+    "tac_dung": "Hành khí; kiện tỳ; chữa đầy bụng, buồn nôn, tiêu chảy; an thai; kháng khuẩn",
+    "tac_dung_list": [
+      "Hành khí",
+      "kiện tỳ",
+      "chữa đầy bụng, buồn nôn, tiêu chảy",
+      "an thai",
+      "kháng khuẩn"
+    ],
+    "page_start": 400,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 400
+  },
+  {
+    "ten_co_dau": "Dương xuân sa",
+    "ten_khong_dau": "Duong xuan sa",
+    "ten_anh": "Spring sand / Amomum",
+    "ten_khoa_hoc": "Amomum villosum Lour.",
+    "tac_dung": "Hành khí; kiện tỳ; chữa đầy bụng, buồn nôn; kháng khuẩn; lợi tiểu",
+    "tac_dung_list": [
+      "Hành khí",
+      "kiện tỳ",
+      "chữa đầy bụng, buồn nôn",
+      "kháng khuẩn",
+      "lợi tiểu"
+    ],
+    "page_start": 400,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 401
+  },
+  {
+    "ten_co_dau": "Sa nhân",
+    "ten_khong_dau": "Sa nhan",
+    "ten_anh": "Amomum / Cardamom seed",
+    "ten_khoa_hoc": "Amomum xanthioides Wall. ex Baker",
+    "tac_dung": "Hành khí; kiện tỳ; chữa đầy bụng, buồn nôn, tiêu chảy; an thai; kháng khuẩn",
+    "tac_dung_list": [
+      "Hành khí",
+      "kiện tỳ",
+      "chữa đầy bụng, buồn nôn, tiêu chảy",
+      "an thai",
+      "kháng khuẩn"
+    ],
+    "page_start": 401,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 402
+  },
+  {
+    "ten_co_dau": "Đậu khấu",
+    "ten_khong_dau": "Dau khau",
+    "ten_anh": "Nutmeg / Myristica",
+    "ten_khoa_hoc": "Myristica fragrans Houtt.",
+    "tac_dung": "Tiêu hàn; kiện tỳ; cầm tiêu chảy; kháng khuẩn; thơm hương; giảm đau",
+    "tac_dung_list": [
+      "Tiêu hàn",
+      "kiện tỳ",
+      "cầm tiêu chảy",
+      "kháng khuẩn",
+      "thơm hương",
+      "giảm đau"
+    ],
+    "page_start": 402,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 404
+  },
+  {
+    "ten_co_dau": "Thảo đậu khấu",
+    "ten_khong_dau": "Thao dau khau",
+    "ten_anh": "Alpinia katsumadai / Katsumada's galangal",
+    "ten_khoa_hoc": "Alpinia katsumadai Hayata",
+    "tac_dung": "Hành khí; kiện tỳ; chữa đầy bụng; kháng khuẩn",
+    "tac_dung_list": [
+      "Hành khí",
+      "kiện tỳ",
+      "chữa đầy bụng",
+      "kháng khuẩn"
+    ],
+    "page_start": 404,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 404
+  },
+  {
+    "ten_co_dau": "Hồng đậu khấu",
+    "ten_khong_dau": "Hong dau khau",
+    "ten_anh": "Galangal seed / Alpinia galanga",
+    "ten_khoa_hoc": "Alpinia galanga (L.) Willd.",
+    "tac_dung": "Hành khí; tiêu hàn; kháng khuẩn; kháng nấm; chữa đau dạ dày, đầy bụng",
+    "tac_dung_list": [
+      "Hành khí",
+      "tiêu hàn",
+      "kháng khuẩn",
+      "kháng nấm",
+      "chữa đau dạ dày, đầy bụng"
+    ],
+    "page_start": 404,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 405
+  },
+  {
+    "ten_co_dau": "Ích trí nhân",
+    "ten_khong_dau": "Ich tri nhan",
+    "ten_anh": "Alpinia oxyphylla / Sharp-leaf galangal",
+    "ten_khoa_hoc": "Alpinia oxyphylla Miq.",
+    "tac_dung": "Bổ thận; ích tinh; chữa tiểu nhiều, di tinh; kiện tỳ; ấm bụng",
+    "tac_dung_list": [
+      "Bổ thận",
+      "ích tinh",
+      "chữa tiểu nhiều, di tinh",
+      "kiện tỳ",
+      "ấm bụng"
+    ],
+    "page_start": 405,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 406
+  },
+  {
+    "ten_co_dau": "Nhục đậu khấu",
+    "ten_khong_dau": "Nhuc dau khau",
+    "ten_anh": "Nutmeg",
+    "ten_khoa_hoc": "Myristica fragrans Houtt.",
+    "tac_dung": "Cầm tiêu chảy; kiện tỳ; tiêu hàn; kháng khuẩn; thơm; giảm đau",
+    "tac_dung_list": [
+      "Cầm tiêu chảy",
+      "kiện tỳ",
+      "tiêu hàn",
+      "kháng khuẩn",
+      "thơm",
+      "giảm đau"
+    ],
+    "page_start": 406,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 408
+  },
+  {
+    "ten_co_dau": "Thành ngạnh",
+    "ten_khong_dau": "Thanh nganh",
+    "ten_anh": "Hypericum / St John's wort",
+    "ten_khoa_hoc": "Hypericum japonicum Thunb.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa tiêu hóa kém; kháng virus",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa tiêu hóa kém",
+      "kháng virus"
+    ],
+    "page_start": 408,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 409
+  },
+  {
+    "ten_co_dau": "Thảo quả",
+    "ten_khong_dau": "Thao qua",
+    "ten_anh": "Black cardamom / Amomum tsaoko",
+    "ten_khoa_hoc": "Amomum tsao-ko Crevost & Lemarié",
+    "tac_dung": "Hành khí; tiêu hàn; chữa đầy bụng, buồn nôn; kháng khuẩn; trị sốt rét",
+    "tac_dung_list": [
+      "Hành khí",
+      "tiêu hàn",
+      "chữa đầy bụng, buồn nôn",
+      "kháng khuẩn",
+      "trị sốt rét"
+    ],
+    "page_start": 409,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 410
+  },
+  {
+    "ten_co_dau": "Thị",
+    "ten_khong_dau": "Thi",
+    "ten_anh": "Diospyros / Japanese persimmon",
+    "ten_khoa_hoc": "Diospyros kaki Thunb.",
+    "tac_dung": "Cầm tiêu chảy; chữa táo bón (quả chín); lợi tiểu; bổ dưỡng; chống oxy hóa",
+    "tac_dung_list": [
+      "Cầm tiêu chảy",
+      "chữa táo bón (quả chín)",
+      "lợi tiểu",
+      "bổ dưỡng",
+      "chống oxy hóa"
+    ],
+    "page_start": 410,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 412
+  },
+  {
+    "ten_co_dau": "Bách bệnh",
+    "ten_khong_dau": "Bach benh",
+    "ten_anh": "Tongkat ali / Eurycoma",
+    "ten_khoa_hoc": "Eurycoma longifolia Jack",
+    "tac_dung": "Bổ dương; tăng sinh lý; tăng cơ bắp; kháng khuẩn; chống sốt rét; chống oxy hóa",
+    "tac_dung_list": [
+      "Bổ dương",
+      "tăng sinh lý",
+      "tăng cơ bắp",
+      "kháng khuẩn",
+      "chống sốt rét",
+      "chống oxy hóa"
+    ],
+    "page_start": 412,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 413
+  },
+  {
+    "ten_co_dau": "Hublông",
+    "ten_khong_dau": "Hublong",
+    "ten_anh": "Hops",
+    "ten_khoa_hoc": "Humulus lupulus L.",
+    "tac_dung": "An thần, gây ngủ; kháng khuẩn; tiêu hóa; giảm đau; chữa mất ngủ; kháng viêm",
+    "tac_dung_list": [
+      "An thần, gây ngủ",
+      "kháng khuẩn",
+      "tiêu hóa",
+      "giảm đau",
+      "chữa mất ngủ",
+      "kháng viêm"
+    ],
+    "page_start": 413,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 415
+  },
+  {
+    "ten_co_dau": "Cây dung",
+    "ten_khong_dau": "Cay dung",
+    "ten_anh": "Symplocos / Sweetleaf",
+    "ten_khoa_hoc": "Symplocos racemosa Roxb.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa tiêu chảy; cầm máu",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa tiêu chảy",
+      "cầm máu"
+    ],
+    "page_start": 415,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 416
+  },
+  {
+    "ten_co_dau": "Hoa tiên",
+    "ten_khong_dau": "Hoa tien",
+    "ten_anh": "Asarum / Wild ginger",
+    "ten_khoa_hoc": "Asarum caudigerum C.F.Liang & C.S.Yang",
+    "tac_dung": "Tiêu hàn; giảm đau; kháng khuẩn; chữa đau dạ dày",
+    "tac_dung_list": [
+      "Tiêu hàn",
+      "giảm đau",
+      "kháng khuẩn",
+      "chữa đau dạ dày"
+    ],
+    "page_start": 416,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 416
+  },
+  {
+    "ten_co_dau": "Màng tang",
+    "ten_khong_dau": "Mang tang",
+    "ten_anh": "Litsea / May chang",
+    "ten_khoa_hoc": "Litsea cubeba (Lour.) Pers.",
+    "tac_dung": "Kháng khuẩn, kháng nấm; kích thích tiêu hóa; giảm đau; tinh dầu trị côn trùng",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng nấm",
+      "kích thích tiêu hóa",
+      "giảm đau",
+      "tinh dầu trị côn trùng"
+    ],
+    "page_start": 416,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 417
+  },
+  {
+    "ten_co_dau": "Rau mùi",
+    "ten_khong_dau": "Rau mui",
+    "ten_anh": "Coriander / Cilantro",
+    "ten_khoa_hoc": "Coriandrum sativum L.",
+    "tac_dung": "Kháng khuẩn; kích thích tiêu hóa; giảm đầy hơi; chống buồn nôn; chống oxy hóa",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "kích thích tiêu hóa",
+      "giảm đầy hơi",
+      "chống buồn nôn",
+      "chống oxy hóa"
+    ],
+    "page_start": 417,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 418
+  },
+  {
+    "ten_co_dau": "Nấm hương",
+    "ten_khong_dau": "Nam huong",
+    "ten_anh": "Shiitake mushroom",
+    "ten_khoa_hoc": "Lentinula edodes (Berk.) Pegler",
+    "tac_dung": "Tăng miễn dịch (lentinan); chống ung thư (hỗ trợ); hạ mỡ máu; kháng virus; bổ dưỡng",
+    "tac_dung_list": [
+      "Tăng miễn dịch (lentinan)",
+      "chống ung thư (hỗ trợ)",
+      "hạ mỡ máu",
+      "kháng virus",
+      "bổ dưỡng"
+    ],
+    "page_start": 418,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 420
+  },
+  {
+    "ten_co_dau": "Thiên đầu thống",
+    "ten_khong_dau": "Thien dau thong",
+    "ten_anh": "Cornus / Dogwood fruit",
+    "ten_khoa_hoc": "Cornus officinalis Siebold & Zucc.",
+    "tac_dung": "Bổ can thận; chữa tiểu nhiều, di tinh; cầm máu; kháng khuẩn; hạ đường huyết",
+    "tac_dung_list": [
+      "Bổ can thận",
+      "chữa tiểu nhiều, di tinh",
+      "cầm máu",
+      "kháng khuẩn",
+      "hạ đường huyết"
+    ],
+    "page_start": 420,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 421
+  },
+  {
+    "ten_co_dau": "Tai chua",
+    "ten_khong_dau": "Tai chua",
+    "ten_anh": "Garcinia cowa / Sour garcinia",
+    "ten_khoa_hoc": "Garcinia cowa Roxb.",
+    "tac_dung": "Tiêu hóa; kháng khuẩn; hạ mỡ máu; giải nhiệt",
+    "tac_dung_list": [
+      "Tiêu hóa",
+      "kháng khuẩn",
+      "hạ mỡ máu",
+      "giải nhiệt"
+    ],
+    "page_start": 421,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 422
+  },
+  {
+    "ten_co_dau": "Thìa là",
+    "ten_khong_dau": "Thia la",
+    "ten_anh": "Dill",
+    "ten_khoa_hoc": "Anethum graveolens L.",
+    "tac_dung": "Kháng khuẩn; tiêu hóa; giảm đầy hơi; chống co thắt; kháng nấm; tăng sữa",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu hóa",
+      "giảm đầy hơi",
+      "chống co thắt",
+      "kháng nấm",
+      "tăng sữa"
+    ],
+    "page_start": 422,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 423
+  },
+  {
+    "ten_co_dau": "Vối",
+    "ten_khong_dau": "Voi",
+    "ten_anh": "Cleistocalyx / Syzygium nervosum",
+    "ten_khoa_hoc": "Cleistocalyx operculatus (Roxb.) Merr. & L.M.Perry",
+    "tac_dung": "Kháng khuẩn; tiêu hóa; chữa tiêu chảy; lá vối uống tiêu hóa; chống nấm",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu hóa",
+      "chữa tiêu chảy",
+      "lá vối uống tiêu hóa",
+      "chống nấm"
+    ],
+    "page_start": 423,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 423
+  },
+  {
+    "ten_co_dau": "Cây lá men",
+    "ten_khong_dau": "Cay la men",
+    "ten_anh": "Fermentation herb",
+    "ten_khoa_hoc": "Piper lolot C.DC.",
+    "tac_dung": "Kích thích tiêu hóa; kháng khuẩn; tiêu hàn; giảm đau",
+    "tac_dung_list": [
+      "Kích thích tiêu hóa",
+      "kháng khuẩn",
+      "tiêu hàn",
+      "giảm đau"
+    ],
+    "page_start": 423,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 424
+  },
+  {
+    "ten_co_dau": "Sổ",
+    "ten_khong_dau": "So",
+    "ten_anh": "Dillenia / Simpoh tree",
+    "ten_khoa_hoc": "Dillenia ovata (Wall. ex Hook.f. & Thomson) Hoogl.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa tiêu chảy; cầm máu",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa tiêu chảy",
+      "cầm máu"
+    ],
+    "page_start": 424,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 425
+  },
+  {
+    "ten_co_dau": "Thanh ngâm",
+    "ten_khong_dau": "Thanh ngam",
+    "ten_anh": "Swertia / Star gentian",
+    "ten_khoa_hoc": "Swertia chirayita (Roxb. ex Fleming) H.Karst.",
+    "tac_dung": "Kích thích tiêu hóa; lợi mật; kháng khuẩn; hạ sốt; tiêu viêm",
+    "tac_dung_list": [
+      "Kích thích tiêu hóa",
+      "lợi mật",
+      "kháng khuẩn",
+      "hạ sốt",
+      "tiêu viêm"
+    ],
+    "page_start": 425,
+    "chuong": "IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa",
+    "page_end": 427
+  },
+  {
+    "ten_co_dau": "Kha tử",
+    "ten_khong_dau": "Kha tu",
+    "ten_anh": "Myrobalan / Terminalia chebula",
+    "ten_khoa_hoc": "Terminalia chebula Retz.",
+    "tac_dung": "Cầm tiêu chảy; kháng khuẩn; chống oxy hóa; bổ phổi; chữa ho lâu ngày; lợi mật",
+    "tac_dung_list": [
+      "Cầm tiêu chảy",
+      "kháng khuẩn",
+      "chống oxy hóa",
+      "bổ phổi",
+      "chữa ho lâu ngày",
+      "lợi mật"
+    ],
+    "page_start": 427,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 428
+  },
+  {
+    "ten_co_dau": "Măng cụt",
+    "ten_khong_dau": "Mang cut",
+    "ten_anh": "Mangosteen",
+    "ten_khoa_hoc": "Garcinia mangostana L.",
+    "tac_dung": "Cầm tiêu chảy; kháng khuẩn mạnh (xanthone); tiêu viêm; chống oxy hóa; chống ung thư (hỗ trợ)",
+    "tac_dung_list": [
+      "Cầm tiêu chảy",
+      "kháng khuẩn mạnh (xanthone)",
+      "tiêu viêm",
+      "chống oxy hóa",
+      "chống ung thư (hỗ trợ)"
+    ],
+    "page_start": 428,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 429
+  },
+  {
+    "ten_co_dau": "Ngũ bội tử",
+    "ten_khong_dau": "Ngu boi tu",
+    "ten_anh": "Chinese gallnut / Gall of Rhus",
+    "ten_khoa_hoc": "Rhus chinensis Mill.",
+    "tac_dung": "Cầm tiêu chảy; cầm máu; kháng khuẩn; astringent mạnh (tannin); chữa mụn nhọt",
+    "tac_dung_list": [
+      "Cầm tiêu chảy",
+      "cầm máu",
+      "kháng khuẩn",
+      "astringent mạnh (tannin)",
+      "chữa mụn nhọt"
+    ],
+    "page_start": 429,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 431
+  },
+  {
+    "ten_co_dau": "Cây ổi",
+    "ten_khong_dau": "Cay oi",
+    "ten_anh": "Guava",
+    "ten_khoa_hoc": "Psidium guajava L.",
+    "tac_dung": "Cầm tiêu chảy; kháng khuẩn; tiêu viêm; hạ đường huyết; chống oxy hóa; hạ mỡ máu",
+    "tac_dung_list": [
+      "Cầm tiêu chảy",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ đường huyết",
+      "chống oxy hóa",
+      "hạ mỡ máu"
+    ],
+    "page_start": 431,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 432
+  },
+  {
+    "ten_co_dau": "Ô dược",
+    "ten_khong_dau": "O duoc",
+    "ten_anh": "Lindera / Spicebush root",
+    "ten_khoa_hoc": "Lindera aggregata (Sims) Kosterm.",
+    "tac_dung": "Hành khí giảm đau; chữa đau bụng; cầm tiêu chảy; tiêu hàn; chữa bí tiểu",
+    "tac_dung_list": [
+      "Hành khí giảm đau",
+      "chữa đau bụng",
+      "cầm tiêu chảy",
+      "tiêu hàn",
+      "chữa bí tiểu"
+    ],
+    "page_start": 432,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 434
+  },
+  {
+    "ten_co_dau": "Sim",
+    "ten_khong_dau": "Sim",
+    "ten_anh": "Rose myrtle",
+    "ten_khoa_hoc": "Rhodomyrtus tomentosa (Aiton) Hassk.",
+    "tac_dung": "Cầm tiêu chảy; kháng khuẩn; cầm máu; tiêu viêm; chống oxy hóa (anthocyanin)",
+    "tac_dung_list": [
+      "Cầm tiêu chảy",
+      "kháng khuẩn",
+      "cầm máu",
+      "tiêu viêm",
+      "chống oxy hóa (anthocyanin)"
+    ],
+    "page_start": 434,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 435
+  },
+  {
+    "ten_co_dau": "Trầm hương",
+    "ten_khong_dau": "Tram huong",
+    "ten_anh": "Agarwood / Oud",
+    "ten_khoa_hoc": "Aquilaria crassna Pierre ex Lecomte",
+    "tac_dung": "Hành khí giảm đau; chữa đau bụng; an thần; kháng khuẩn; quý hiếm",
+    "tac_dung_list": [
+      "Hành khí giảm đau",
+      "chữa đau bụng",
+      "an thần",
+      "kháng khuẩn",
+      "quý hiếm"
+    ],
+    "page_start": 435,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 436
+  },
+  {
+    "ten_co_dau": "Kiến kỳ nam",
+    "ten_khong_dau": "Kien ky nam",
+    "ten_anh": "Agarwood variant / Ki Nam",
+    "ten_khoa_hoc": "Aquilaria species",
+    "tac_dung": "Hành khí giảm đau; an thần; kháng khuẩn; chữa đau bụng",
+    "tac_dung_list": [
+      "Hành khí giảm đau",
+      "an thần",
+      "kháng khuẩn",
+      "chữa đau bụng"
+    ],
+    "page_start": 436,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 437
+  },
+  {
+    "ten_co_dau": "Cà rốt",
+    "ten_khong_dau": "Ca rot",
+    "ten_anh": "Carrot",
+    "ten_khoa_hoc": "Daucus carota L.",
+    "tac_dung": "Bổ mắt (beta-carotene); chống oxy hóa; tiêu hóa; phòng ung thư; bổ dưỡng; hạ đường huyết nhẹ",
+    "tac_dung_list": [
+      "Bổ mắt (beta-carotene)",
+      "chống oxy hóa",
+      "tiêu hóa",
+      "phòng ung thư",
+      "bổ dưỡng",
+      "hạ đường huyết nhẹ"
+    ],
+    "page_start": 437,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 439
+  },
+  {
+    "ten_co_dau": "Preah phneou",
+    "ten_khong_dau": "Preah phneou",
+    "ten_anh": "Cambodian herb",
+    "ten_khoa_hoc": "Tinospora crispa (L.) Hook.f. & Thomson",
+    "tac_dung": "Cầm tiêu chảy; kháng khuẩn; hạ đường huyết; tiêu viêm; giảm đau",
+    "tac_dung_list": [
+      "Cầm tiêu chảy",
+      "kháng khuẩn",
+      "hạ đường huyết",
+      "tiêu viêm",
+      "giảm đau"
+    ],
+    "page_start": 439,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 439
+  },
+  {
+    "ten_co_dau": "Củ nâu",
+    "ten_khong_dau": "Cu nau",
+    "ten_anh": "Wild yam / Dioscorea",
+    "ten_khoa_hoc": "Dioscorea cirrhosa Lour.",
+    "tac_dung": "Cầm tiêu chảy; cầm máu; tiêu viêm; kháng khuẩn; chữa lỵ",
+    "tac_dung_list": [
+      "Cầm tiêu chảy",
+      "cầm máu",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa lỵ"
+    ],
+    "page_start": 439,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 441
+  },
+  {
+    "ten_co_dau": "Vải",
+    "ten_khong_dau": "Vai",
+    "ten_anh": "Lychee",
+    "ten_khoa_hoc": "Litchi chinensis Sonn.",
+    "tac_dung": "Bổ dưỡng; cầm tiêu chảy (hạt); hạ đường huyết (hạt); chống oxy hóa; bổ tim",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "cầm tiêu chảy (hạt)",
+      "hạ đường huyết (hạt)",
+      "chống oxy hóa",
+      "bổ tim"
+    ],
+    "page_start": 441,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 443
+  },
+  {
+    "ten_co_dau": "Khoai riềng",
+    "ten_khong_dau": "Khoai rieng",
+    "ten_anh": "Wild ginger root / Alpinia",
+    "ten_khoa_hoc": "Alpinia conchigera Griff.",
+    "tac_dung": "Hành khí; cầm tiêu chảy; kháng khuẩn; chữa đau bụng",
+    "tac_dung_list": [
+      "Hành khí",
+      "cầm tiêu chảy",
+      "kháng khuẩn",
+      "chữa đau bụng"
+    ],
+    "page_start": 443,
+    "chuong": "X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng",
+    "page_end": 444
+  },
+  {
+    "ten_co_dau": "Khiên ngưu",
+    "ten_khong_dau": "Khien nguu",
+    "ten_anh": "Morning glory seed / Pharbitis",
+    "ten_khoa_hoc": "Ipomoea nil (L.) Roth",
+    "tac_dung": "Nhuận tràng mạnh; tẩy; lợi tiểu; tiêu phù; chú ý: liều cao độc",
+    "tac_dung_list": [
+      "Nhuận tràng mạnh",
+      "tẩy",
+      "lợi tiểu",
+      "tiêu phù",
+      "chú ý: liều cao độc"
+    ],
+    "page_start": 444,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 446
+  },
+  {
+    "ten_co_dau": "Khoai lang",
+    "ten_khong_dau": "Khoai lang",
+    "ten_anh": "Sweet potato",
+    "ten_khoa_hoc": "Ipomoea batatas (L.) Lam.",
+    "tac_dung": "Nhuận tràng; lợi tiểu; hạ đường huyết; chống oxy hóa; bổ dưỡng; phòng ung thư",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "lợi tiểu",
+      "hạ đường huyết",
+      "chống oxy hóa",
+      "bổ dưỡng",
+      "phòng ung thư"
+    ],
+    "page_start": 446,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 447
+  },
+  {
+    "ten_co_dau": "Cây đại",
+    "ten_khong_dau": "Cay dai",
+    "ten_anh": "Frangipani / Plumeria",
+    "ten_khoa_hoc": "Plumeria rubra L.",
+    "tac_dung": "Nhuận tràng; lợi mật; tiêu viêm; kháng khuẩn; nhựa cây: chữa đau nhức",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "lợi mật",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "nhựa cây: chữa đau nhức"
+    ],
+    "page_start": 447,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 448
+  },
+  {
+    "ten_co_dau": "Mang tiêu",
+    "ten_khong_dau": "Mang tieu",
+    "ten_anh": "Natrium sulfate / Mirabilite",
+    "ten_khoa_hoc": "Na₂SO₄ (khoáng vật)",
+    "tac_dung": "Nhuận tràng; hạ nhiệt; tiêu viêm; dùng ngoài chữa sưng viêm",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "hạ nhiệt",
+      "tiêu viêm",
+      "dùng ngoài chữa sưng viêm"
+    ],
+    "page_start": 448,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 449
+  },
+  {
+    "ten_co_dau": "Ba đậu",
+    "ten_khong_dau": "Ba dau",
+    "ten_anh": "Croton / Purging croton",
+    "ten_khoa_hoc": "Croton tiglium L.",
+    "tac_dung": "Tẩy mạnh; tiêu tích thực; cực độc - chỉ dùng liều cực nhỏ; kháng khuẩn",
+    "tac_dung_list": [
+      "Tẩy mạnh",
+      "tiêu tích thực",
+      "cực độc - chỉ dùng liều cực nhỏ",
+      "kháng khuẩn"
+    ],
+    "page_start": 449,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 451
+  },
+  {
+    "ten_co_dau": "Thầu dầu",
+    "ten_khong_dau": "Thau dau",
+    "ten_anh": "Castor oil plant",
+    "ten_khoa_hoc": "Ricinus communis L.",
+    "tac_dung": "Dầu thầu dầu: nhuận tràng nhẹ; làm mềm da; kháng khuẩn ngoài; hạt cực độc (ricin)",
+    "tac_dung_list": [
+      "Dầu thầu dầu: nhuận tràng nhẹ",
+      "làm mềm da",
+      "kháng khuẩn ngoài",
+      "hạt cực độc (ricin)"
+    ],
+    "page_start": 451,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 453
+  },
+  {
+    "ten_co_dau": "Chút chít",
+    "ten_khong_dau": "Chut chit",
+    "ten_anh": "Dock / Rumex",
+    "ten_khoa_hoc": "Rumex crispus L.",
+    "tac_dung": "Nhuận tràng; kháng khuẩn; cầm máu; trị ngoài da; tiêu viêm",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "kháng khuẩn",
+      "cầm máu",
+      "trị ngoài da",
+      "tiêu viêm"
+    ],
+    "page_start": 453,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 455
+  },
+  {
+    "ten_co_dau": "Đại hoàng",
+    "ten_khong_dau": "Dai hoang",
+    "ten_anh": "Rhubarb root / Da Huang",
+    "ten_khoa_hoc": "Rheum palmatum L.",
+    "tac_dung": "Nhuận tràng mạnh; kháng khuẩn; tiêu viêm; hạ mỡ máu; bổ ích; chữa táo bón, ứ nhiệt",
+    "tac_dung_list": [
+      "Nhuận tràng mạnh",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ mỡ máu",
+      "bổ ích",
+      "chữa táo bón, ứ nhiệt"
+    ],
+    "page_start": 455,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 458
+  },
+  {
+    "ten_co_dau": "Lô hội",
+    "ten_khong_dau": "Lo hoi",
+    "ten_anh": "Aloe vera",
+    "ten_khoa_hoc": "Aloe vera (L.) Burm.f.",
+    "tac_dung": "Nhuận tràng; làm lành vết bỏng, vết thương; dưỡng da; kháng khuẩn; kháng viêm; hạ đường huyết",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "làm lành vết bỏng, vết thương",
+      "dưỡng da",
+      "kháng khuẩn",
+      "kháng viêm",
+      "hạ đường huyết"
+    ],
+    "page_start": 458,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 460
+  },
+  {
+    "ten_co_dau": "Muồng trâu",
+    "ten_khong_dau": "Muong trau",
+    "ten_anh": "Senna / Wild senna",
+    "ten_khoa_hoc": "Senna alata (L.) Roxb.",
+    "tac_dung": "Nhuận tràng; kháng nấm mạnh; chữa hắc lào, nấm da; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "kháng nấm mạnh",
+      "chữa hắc lào, nấm da",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 460,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 461
+  },
+  {
+    "ten_co_dau": "Phan tả diệp",
+    "ten_khong_dau": "Phan ta diep",
+    "ten_anh": "Senna leaf / Alexandria senna",
+    "ten_khoa_hoc": "Senna alexandrina Mill.",
+    "tac_dung": "Nhuận tràng mạnh; chữa táo bón; hạ mỡ máu; kháng khuẩn",
+    "tac_dung_list": [
+      "Nhuận tràng mạnh",
+      "chữa táo bón",
+      "hạ mỡ máu",
+      "kháng khuẩn"
+    ],
+    "page_start": 461,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 463
+  },
+  {
+    "ten_co_dau": "Thảo quyết minh",
+    "ten_khong_dau": "Thao quyet minh",
+    "ten_anh": "Cassia seed / Jue Ming Zi",
+    "ten_khoa_hoc": "Senna obtusifolia (L.) H.S.Irwin & Barneby",
+    "tac_dung": "Nhuận tràng; hạ huyết áp; hạ mỡ máu; sáng mắt; kháng khuẩn; chống oxy hóa",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "hạ huyết áp",
+      "hạ mỡ máu",
+      "sáng mắt",
+      "kháng khuẩn",
+      "chống oxy hóa"
+    ],
+    "page_start": 463,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 464
+  },
+  {
+    "ten_co_dau": "Vọng giang nam",
+    "ten_khong_dau": "Vong giang nam",
+    "ten_anh": "Cassia occidentalis / Coffee senna",
+    "ten_khoa_hoc": "Senna occidentalis (L.) Link",
+    "tac_dung": "Nhuận tràng; giải độc; kháng khuẩn; trị ngoài da; hạ sốt",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "giải độc",
+      "kháng khuẩn",
+      "trị ngoài da",
+      "hạ sốt"
+    ],
+    "page_start": 464,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 466
+  },
+  {
+    "ten_co_dau": "Rau móng tơi",
+    "ten_khong_dau": "Rau mong toi",
+    "ten_anh": "Malabar spinach / Basella",
+    "ten_khoa_hoc": "Basella alba L.",
+    "tac_dung": "Nhuận tràng; thanh nhiệt; bổ dưỡng; lợi tiểu; chữa táo bón; an thai",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "thanh nhiệt",
+      "bổ dưỡng",
+      "lợi tiểu",
+      "chữa táo bón",
+      "an thai"
+    ],
+    "page_start": 466,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 467
+  },
+  {
+    "ten_co_dau": "Thạch",
+    "ten_khong_dau": "Thach",
+    "ten_anh": "Agar / Jelly plant extract",
+    "ten_khoa_hoc": "Gracilaria species (tảo biển)",
+    "tac_dung": "Nhuận tràng; giảm cân; giảm cholesterol; bổ sung chất xơ",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "giảm cân",
+      "giảm cholesterol",
+      "bổ sung chất xơ"
+    ],
+    "page_start": 467,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 469
+  },
+  {
+    "ten_co_dau": "Cây hoa phấn",
+    "ten_khong_dau": "Cay hoa phan",
+    "ten_anh": "Marvel of Peru / Four o'clock",
+    "ten_khoa_hoc": "Mirabilis jalapa L.",
+    "tac_dung": "Nhuận tràng nhẹ; kháng khuẩn; tiêu viêm; chữa phù nề",
+    "tac_dung_list": [
+      "Nhuận tràng nhẹ",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa phù nề"
+    ],
+    "page_start": 469,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 470
+  },
+  {
+    "ten_co_dau": "Ba đậu tây",
+    "ten_khong_dau": "Ba dau tay",
+    "ten_anh": "Jatropha / Physic nut",
+    "ten_khoa_hoc": "Jatropha curcas L.",
+    "tac_dung": "Tẩy; kháng khuẩn; tiềm năng nhiên liệu sinh học; độc - cẩn thận",
+    "tac_dung_list": [
+      "Tẩy",
+      "kháng khuẩn",
+      "tiềm năng nhiên liệu sinh học",
+      "độc - cẩn thận"
+    ],
+    "page_start": 470,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 471
+  },
+  {
+    "ten_co_dau": "Đàng hoàng",
+    "ten_khong_dau": "Dang hoang",
+    "ten_anh": "Gamboge / Garcinia hanburyi",
+    "ten_khoa_hoc": "Garcinia hanburyi Hook.f.",
+    "tac_dung": "Tẩy mạnh; tiêu thũng; kháng khuẩn; chú ý độc tính",
+    "tac_dung_list": [
+      "Tẩy mạnh",
+      "tiêu thũng",
+      "kháng khuẩn",
+      "chú ý độc tính"
+    ],
+    "page_start": 471,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 472
+  },
+  {
+    "ten_co_dau": "Đậu cọc rào",
+    "ten_khong_dau": "Dau coc rao",
+    "ten_anh": "Gliricidia / Mother of cocoa",
+    "ten_khoa_hoc": "Gliricidia sepium (Jacq.) Kunth ex Walp.",
+    "tac_dung": "Nhuận tràng nhẹ; kháng khuẩn; diệt chuột; dùng cẩn thận",
+    "tac_dung_list": [
+      "Nhuận tràng nhẹ",
+      "kháng khuẩn",
+      "diệt chuột",
+      "dùng cẩn thận"
+    ],
+    "page_start": 472,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 473
+  },
+  {
+    "ten_co_dau": "Cây lại",
+    "ten_khong_dau": "Cay lai",
+    "ten_anh": "Bridelia / Bridewort",
+    "ten_khoa_hoc": "Bridelia retusa (L.) A.Juss.",
+    "tac_dung": "Nhuận tràng; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 473,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 474
+  },
+  {
+    "ten_co_dau": "Lộc mại",
+    "ten_khong_dau": "Loc mai",
+    "ten_anh": "Cleistanthus / Poison plant",
+    "ten_khoa_hoc": "Cleistanthus collinus (Roxb.) Benth. ex Hook.f.",
+    "tac_dung": "Cẩn thận: cực độc; dùng ngoài trị ngoài da có kiểm soát",
+    "tac_dung_list": [
+      "Cẩn thận: cực độc",
+      "dùng ngoài trị ngoài da có kiểm soát"
+    ],
+    "page_start": 474,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 475
+  },
+  {
+    "ten_co_dau": "Me",
+    "ten_khong_dau": "Me",
+    "ten_anh": "Tamarind",
+    "ten_khoa_hoc": "Tamarindus indica L.",
+    "tac_dung": "Nhuận tràng nhẹ; thanh nhiệt; kháng khuẩn; hạ sốt; bổ dưỡng; chống oxy hóa",
+    "tac_dung_list": [
+      "Nhuận tràng nhẹ",
+      "thanh nhiệt",
+      "kháng khuẩn",
+      "hạ sốt",
+      "bổ dưỡng",
+      "chống oxy hóa"
+    ],
+    "page_start": 475,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 476
+  },
+  {
+    "ten_co_dau": "Lạc",
+    "ten_khong_dau": "Lac",
+    "ten_anh": "Peanut / Groundnut",
+    "ten_khoa_hoc": "Arachis hypogaea L.",
+    "tac_dung": "Bổ dưỡng; nhuận tràng; cầm máu; hạ mỡ máu; chứa nhiều protein và chất béo có lợi",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "nhuận tràng",
+      "cầm máu",
+      "hạ mỡ máu",
+      "chứa nhiều protein và chất béo có lợi"
+    ],
+    "page_start": 476,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 478
+  },
+  {
+    "ten_co_dau": "Tục tùy tử",
+    "ten_khong_dau": "Tuc tuy tu",
+    "ten_anh": "Euphorbia seed",
+    "ten_khoa_hoc": "Euphorbia lathyris L.",
+    "tac_dung": "Tẩy mạnh; lợi tiểu; tiêu phù; chú ý độc tính",
+    "tac_dung_list": [
+      "Tẩy mạnh",
+      "lợi tiểu",
+      "tiêu phù",
+      "chú ý độc tính"
+    ],
+    "page_start": 478,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 479
+  },
+  {
+    "ten_co_dau": "Thanh long",
+    "ten_khong_dau": "Thanh long",
+    "ten_anh": "Dragon fruit / Pitaya",
+    "ten_khoa_hoc": "Selenicereus undatus (Haw.) D.R.Hunt",
+    "tac_dung": "Nhuận tràng; thanh nhiệt; lợi tiểu; chống oxy hóa; bổ dưỡng; hạ đường huyết nhẹ",
+    "tac_dung_list": [
+      "Nhuận tràng",
+      "thanh nhiệt",
+      "lợi tiểu",
+      "chống oxy hóa",
+      "bổ dưỡng",
+      "hạ đường huyết nhẹ"
+    ],
+    "page_start": 479,
+    "chuong": "XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy",
+    "page_end": 481
+  },
+  {
+    "ten_co_dau": "Cây khôi",
+    "ten_khong_dau": "Cay khoi",
+    "ten_anh": "Ardisia / Spear flower",
+    "ten_khoa_hoc": "Ardisia sylvestris Pitard",
+    "tac_dung": "Chữa loét dạ dày tá tràng; kháng khuẩn H. pylori; tiêu viêm; giảm đau",
+    "tac_dung_list": [
+      "Chữa loét dạ dày tá tràng",
+      "kháng khuẩn H. pylori",
+      "tiêu viêm",
+      "giảm đau"
+    ],
+    "page_start": 481,
+    "chuong": "XII. Các cây thuốc và vị thuốc chữa đau dạ dày",
+    "page_end": 482
+  },
+  {
+    "ten_co_dau": "Cây dạ cẩm",
+    "ten_khong_dau": "Cay da cam",
+    "ten_anh": "Hedyotis capitellata / Night jasmine herb",
+    "ten_khoa_hoc": "Oldenlandia capitellata (Wall.) DC.",
+    "tac_dung": "Chữa loét dạ dày; kháng khuẩn; tiêu viêm; giảm đau; lành vết loét",
+    "tac_dung_list": [
+      "Chữa loét dạ dày",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "giảm đau",
+      "lành vết loét"
+    ],
+    "page_start": 482,
+    "chuong": "XII. Các cây thuốc và vị thuốc chữa đau dạ dày",
+    "page_end": 483
+  },
+  {
+    "ten_co_dau": "Mẫu lệ",
+    "ten_khong_dau": "Mau le",
+    "ten_anh": "Oyster shell / Mu Li",
+    "ten_khoa_hoc": "Ostrea gigas Thunb. (động vật)",
+    "tac_dung": "Trung hòa acid dạ dày; an thần; cầm máu; bổ âm; chữa loét dạ dày, mất ngủ",
+    "tac_dung_list": [
+      "Trung hòa acid dạ dày",
+      "an thần",
+      "cầm máu",
+      "bổ âm",
+      "chữa loét dạ dày, mất ngủ"
+    ],
+    "page_start": 483,
+    "chuong": "XII. Các cây thuốc và vị thuốc chữa đau dạ dày",
+    "page_end": 485
+  },
+  {
+    "ten_co_dau": "Mai mực",
+    "ten_khong_dau": "Mai muc",
+    "ten_anh": "Cuttlefish bone / Hai Piao Xiao",
+    "ten_khoa_hoc": "Sepia officinalis L. (động vật)",
+    "tac_dung": "Trung hòa acid dạ dày; cầm máu; chữa loét dạ dày, đau dạ dày; bổ âm",
+    "tac_dung_list": [
+      "Trung hòa acid dạ dày",
+      "cầm máu",
+      "chữa loét dạ dày, đau dạ dày",
+      "bổ âm"
+    ],
+    "page_start": 485,
+    "chuong": "XII. Các cây thuốc và vị thuốc chữa đau dạ dày",
+    "page_end": 486
+  },
+  {
+    "ten_co_dau": "Thạch quyết minh",
+    "ten_khong_dau": "Thach quyet minh",
+    "ten_anh": "Abalone shell / Haliotis",
+    "ten_khoa_hoc": "Haliotis diversicolor Reeve (động vật)",
+    "tac_dung": "Trung hòa acid dạ dày; sáng mắt; hạ huyết áp; an thần; chữa đau mắt",
+    "tac_dung_list": [
+      "Trung hòa acid dạ dày",
+      "sáng mắt",
+      "hạ huyết áp",
+      "an thần",
+      "chữa đau mắt"
+    ],
+    "page_start": 486,
+    "chuong": "XII. Các cây thuốc và vị thuốc chữa đau dạ dày",
+    "page_end": 487
+  },
+  {
+    "ten_co_dau": "Cải bắp",
+    "ten_khong_dau": "Cai bap",
+    "ten_anh": "Cabbage",
+    "ten_khoa_hoc": "Brassica oleracea L.",
+    "tac_dung": "Chữa loét dạ dày (vitamin U); kháng khuẩn; chống oxy hóa; bổ dưỡng; phòng ung thư",
+    "tac_dung_list": [
+      "Chữa loét dạ dày (vitamin U)",
+      "kháng khuẩn",
+      "chống oxy hóa",
+      "bổ dưỡng",
+      "phòng ung thư"
+    ],
+    "page_start": 487,
+    "chuong": "XII. Các cây thuốc và vị thuốc chữa đau dạ dày",
+    "page_end": 490
+  },
+  {
+    "ten_co_dau": "Câu tích",
+    "ten_khong_dau": "Cau tich",
+    "ten_anh": "Cibotium / Chain fern",
+    "ten_khoa_hoc": "Cibotium barometz (L.) J.Sm.",
+    "tac_dung": "Trừ phong thấp; bổ can thận; chữa đau lưng mỏi gối; cầm máu; kháng viêm",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "bổ can thận",
+      "chữa đau lưng mỏi gối",
+      "cầm máu",
+      "kháng viêm"
+    ],
+    "page_start": 490,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 491
+  },
+  {
+    "ten_co_dau": "Cốt toái bổ",
+    "ten_khong_dau": "Cot toai bo",
+    "ten_anh": "Drynaria / Basket fern",
+    "ten_khoa_hoc": "Drynaria roosii Nakaike",
+    "tac_dung": "Bổ thận, hành huyết; chữa gãy xương, tê thấp, đau lưng; kháng viêm; liền xương",
+    "tac_dung_list": [
+      "Bổ thận, hành huyết",
+      "chữa gãy xương, tê thấp, đau lưng",
+      "kháng viêm",
+      "liền xương"
+    ],
+    "page_start": 491,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 492
+  },
+  {
+    "ten_co_dau": "Dây đau xương",
+    "ten_khong_dau": "Day dau xuong",
+    "ten_anh": "Tinospora / Guduchi",
+    "ten_khoa_hoc": "Tinospora crispa (L.) Hook.f. & Thomson",
+    "tac_dung": "Trừ phong thấp; hạ đường huyết; kháng khuẩn; tăng miễn dịch; chữa sốt",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "hạ đường huyết",
+      "kháng khuẩn",
+      "tăng miễn dịch",
+      "chữa sốt"
+    ],
+    "page_start": 492,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 493
+  },
+  {
+    "ten_co_dau": "Cây hàm ếch",
+    "ten_khong_dau": "Cay ham ech",
+    "ten_anh": "Rohdea / Sacred lily",
+    "ten_khoa_hoc": "Rohdea japonica (Thunb.) Roth",
+    "tac_dung": "Tiêu viêm; chữa thấp khớp; kháng khuẩn; tiêu sưng",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "chữa thấp khớp",
+      "kháng khuẩn",
+      "tiêu sưng"
+    ],
+    "page_start": 493,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 494
+  },
+  {
+    "ten_co_dau": "Hy thiêm",
+    "ten_khong_dau": "Hy thiem",
+    "ten_anh": "Siegesbeckia / St Paul's wort",
+    "ten_khoa_hoc": "Siegesbeckia orientalis L.",
+    "tac_dung": "Trừ phong thấp; chữa đau khớp; kháng khuẩn; tiêu viêm; hạ huyết áp",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "chữa đau khớp",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ huyết áp"
+    ],
+    "page_start": 494,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 495
+  },
+  {
+    "ten_co_dau": "Cây sung",
+    "ten_khong_dau": "Cay sung",
+    "ten_anh": "Common fig",
+    "ten_khoa_hoc": "Ficus racemosa L.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa đau khớp; lợi tiểu; bổ dưỡng",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa đau khớp",
+      "lợi tiểu",
+      "bổ dưỡng"
+    ],
+    "page_start": 495,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 496
+  },
+  {
+    "ten_co_dau": "Thiên niên kiện",
+    "ten_khong_dau": "Thien nien kien",
+    "ten_anh": "Homalomena / Giant philodendron",
+    "ten_khoa_hoc": "Homalomena occulta (Lour.) Schott",
+    "tac_dung": "Trừ phong thấp; chữa đau khớp, tê liệt chi; bổ gân cốt; kháng khuẩn",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "chữa đau khớp, tê liệt chi",
+      "bổ gân cốt",
+      "kháng khuẩn"
+    ],
+    "page_start": 496,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 498
+  },
+  {
+    "ten_co_dau": "Thổ phục linh",
+    "ten_khong_dau": "Tho phuc linh",
+    "ten_anh": "China root / Smilax",
+    "ten_khoa_hoc": "Smilax glabra Roxb.",
+    "tac_dung": "Trừ phong thấp; lợi tiểu; kháng khuẩn; chữa giang mai, thấp khớp, sỏi thận",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "lợi tiểu",
+      "kháng khuẩn",
+      "chữa giang mai, thấp khớp, sỏi thận"
+    ],
+    "page_start": 498,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 499
+  },
+  {
+    "ten_co_dau": "Cây xả xị",
+    "ten_khong_dau": "Cay xa xi",
+    "ten_anh": "Litsea / Camphor bark",
+    "ten_khoa_hoc": "Litsea glutinosa (Lour.) C.B.Rob.",
+    "tac_dung": "Trừ phong thấp; kháng khuẩn; tiêu viêm; chữa đau khớp",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa đau khớp"
+    ],
+    "page_start": 499,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 500
+  },
+  {
+    "ten_co_dau": "Tỳ giải",
+    "ten_khong_dau": "Ty giai",
+    "ten_anh": "Dioscorea / Tokoro yam",
+    "ten_khoa_hoc": "Dioscorea hypoglauca Palib.",
+    "tac_dung": "Trừ phong thấp; lợi tiểu; chữa đau khớp, sỏi tiết niệu; kháng khuẩn",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "lợi tiểu",
+      "chữa đau khớp, sỏi tiết niệu",
+      "kháng khuẩn"
+    ],
+    "page_start": 500,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 502
+  },
+  {
+    "ten_co_dau": "Cây vòi voi",
+    "ten_khong_dau": "Cay voi voi",
+    "ten_anh": "Heliotrope / Indian heliotrope",
+    "ten_khoa_hoc": "Heliotropium indicum L.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa đau khớp, mụn nhọt; hạ sốt",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa đau khớp, mụn nhọt",
+      "hạ sốt"
+    ],
+    "page_start": 502,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 503
+  },
+  {
+    "ten_co_dau": "Mắt gấu",
+    "ten_khong_dau": "Mat gau",
+    "ten_anh": "Mahonia / Bear's eye",
+    "ten_khoa_hoc": "Mahonia nepalensis DC.",
+    "tac_dung": "Trừ phong thấp; kháng khuẩn (berberine); chữa đau khớp, mụn nhọt; tiêu viêm",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "kháng khuẩn (berberine)",
+      "chữa đau khớp, mụn nhọt",
+      "tiêu viêm"
+    ],
+    "page_start": 503,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 505
+  },
+  {
+    "ten_co_dau": "Chia vôi",
+    "ten_khong_dau": "Chia voi",
+    "ten_anh": "Cissampelos / Velvet leaf",
+    "ten_khoa_hoc": "Cissampelos pareira L.",
+    "tac_dung": "Trừ phong thấp; kháng khuẩn; lợi tiểu; giảm đau; chữa đau khớp",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "kháng khuẩn",
+      "lợi tiểu",
+      "giảm đau",
+      "chữa đau khớp"
+    ],
+    "page_start": 505,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 506
+  },
+  {
+    "ten_co_dau": "Củ cốt khí",
+    "ten_khong_dau": "Cu cot khi",
+    "ten_anh": "Japanese knotweed / Hu Zhang",
+    "ten_khoa_hoc": "Reynoutria japonica Houtt.",
+    "tac_dung": "Trừ phong thấp; kháng khuẩn; tiêu viêm; hạ mỡ máu; chữa đau khớp",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ mỡ máu",
+      "chữa đau khớp"
+    ],
+    "page_start": 506,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 507
+  },
+  {
+    "ten_co_dau": "Độc hoạt",
+    "ten_khong_dau": "Doc hoat",
+    "ten_anh": "Angelica root / Du Huo",
+    "ten_khoa_hoc": "Angelica pubescens Maxim.",
+    "tac_dung": "Trừ phong thấp; giảm đau khớp; kháng khuẩn; hạ huyết áp; chữa đau đầu",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "giảm đau khớp",
+      "kháng khuẩn",
+      "hạ huyết áp",
+      "chữa đau đầu"
+    ],
+    "page_start": 507,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 509
+  },
+  {
+    "ten_co_dau": "Náng hoa trắng",
+    "ten_khong_dau": "Nang hoa trang",
+    "ten_anh": "Spider lily / Crinum",
+    "ten_khoa_hoc": "Crinum asiaticum L.",
+    "tac_dung": "Chữa phong thấp; tiêu viêm; kháng khuẩn; chú ý độc tính nhẹ",
+    "tac_dung_list": [
+      "Chữa phong thấp",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chú ý độc tính nhẹ"
+    ],
+    "page_start": 509,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 511
+  },
+  {
+    "ten_co_dau": "Trinh nữ hoàng cung",
+    "ten_khong_dau": "Trinh nu hoang cung",
+    "ten_anh": "Crinum / Noble crinum lily",
+    "ten_khoa_hoc": "Crinum latifolium L.",
+    "tac_dung": "Chữa phì đại tiền liệt tuyến; chống ung thư (hỗ trợ); kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa phì đại tiền liệt tuyến",
+      "chống ung thư (hỗ trợ)",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 511,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 512
+  },
+  {
+    "ten_co_dau": "Phòng kỷ",
+    "ten_khong_dau": "Phong ky",
+    "ten_anh": "Stephania / Fang Ji",
+    "ten_khoa_hoc": "Stephania tetrandra S.Moore",
+    "tac_dung": "Trừ phong thấp; lợi tiểu; hạ huyết áp; kháng khuẩn; chống viêm; chữa đau khớp",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "lợi tiểu",
+      "hạ huyết áp",
+      "kháng khuẩn",
+      "chống viêm",
+      "chữa đau khớp"
+    ],
+    "page_start": 512,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 512
+  },
+  {
+    "ten_co_dau": "Phấn phòng kỷ",
+    "ten_khong_dau": "Phan phong ky",
+    "ten_anh": "Stephania tetrandra",
+    "ten_khoa_hoc": "Stephania tetrandra S.Moore",
+    "tac_dung": "Trừ phong thấp; lợi tiểu; giảm đau; kháng khuẩn",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "lợi tiểu",
+      "giảm đau",
+      "kháng khuẩn"
+    ],
+    "page_start": 512,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 514
+  },
+  {
+    "ten_co_dau": "Quảng phòng kỷ",
+    "ten_khong_dau": "Quang phong ky",
+    "ten_anh": "Aristolochia / Birthwort",
+    "ten_khoa_hoc": "Aristolochia fangchi Y.C.Wu ex L.D.Chou & S.M.Hwang",
+    "tac_dung": "Trừ phong thấp; chú ý: acid aristolochic gây độc thận - cẩn thận",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "chú ý: acid aristolochic gây độc thận - cẩn thận"
+    ],
+    "page_start": 514,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 515
+  },
+  {
+    "ten_co_dau": "Mộc phòng kỷ",
+    "ten_khong_dau": "Moc phong ky",
+    "ten_anh": "Cocculus / Moonseed",
+    "ten_khoa_hoc": "Cocculus trilobus (Thunb.) DC.",
+    "tac_dung": "Trừ phong thấp; lợi tiểu; kháng khuẩn; giảm đau",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "lợi tiểu",
+      "kháng khuẩn",
+      "giảm đau"
+    ],
+    "page_start": 515,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 515
+  },
+  {
+    "ten_co_dau": "Các loại phòng kỷ dùng ở Việt Nam",
+    "ten_khong_dau": "Cac loai phong ky dung o Viet Nam",
+    "ten_anh": "Vietnamese fang ji varieties",
+    "ten_khoa_hoc": "Various Stephania / Cocculus species",
+    "tac_dung": "Trừ phong thấp; lợi tiểu; giảm đau",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "lợi tiểu",
+      "giảm đau"
+    ],
+    "page_start": 515,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 515
+  },
+  {
+    "ten_co_dau": "Tắm dượt",
+    "ten_khong_dau": "Tam duot",
+    "ten_anh": "Streptocaulon / Whorled milkweed vine",
+    "ten_khoa_hoc": "Streptocaulon juventas (Lour.) Merr.",
+    "tac_dung": "Trừ phong thấp; kháng khuẩn; tiêu viêm; giảm đau",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "giảm đau"
+    ],
+    "page_start": 515,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 516
+  },
+  {
+    "ten_co_dau": "Lá lốt",
+    "ten_khong_dau": "La lot",
+    "ten_anh": "Piper lolot / Wild pepper leaf",
+    "ten_khoa_hoc": "Piper lolot C.DC.",
+    "tac_dung": "Trừ phong thấp; giảm đau khớp; kháng khuẩn; tiêu hàn; kháng viêm",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "giảm đau khớp",
+      "kháng khuẩn",
+      "tiêu hàn",
+      "kháng viêm"
+    ],
+    "page_start": 516,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 517
+  },
+  {
+    "ten_co_dau": "Lậu",
+    "ten_khong_dau": "Lau",
+    "ten_anh": "Saussurea / Costus root variant",
+    "ten_khoa_hoc": "Saussurea lappa Clarke",
+    "tac_dung": "Trừ phong thấp; giảm đau; kháng khuẩn; hành khí",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "giảm đau",
+      "kháng khuẩn",
+      "hành khí"
+    ],
+    "page_start": 517,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 518
+  },
+  {
+    "ten_co_dau": "Trứng cuốc",
+    "ten_khong_dau": "Trung cuoc",
+    "ten_anh": "Maoutia / Urticaceae",
+    "ten_khoa_hoc": "Maoutia puya (Hook.) Wedd.",
+    "tac_dung": "Trừ phong thấp; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 518,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 519
+  },
+  {
+    "ten_co_dau": "Châu thụ",
+    "ten_khong_dau": "Chau thu",
+    "ten_anh": "Heterostemma / Hoya",
+    "ten_khoa_hoc": "Hoya carnosa (L.f.) R.Br.",
+    "tac_dung": "Trừ phong thấp; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 519,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 520
+  },
+  {
+    "ten_co_dau": "Dây toàn",
+    "ten_khong_dau": "Day toan",
+    "ten_anh": "Tinospora cordifolia / Heart-leaved moonseed",
+    "ten_khoa_hoc": "Tinospora cordifolia (Willd.) Hook.f. & Thomson",
+    "tac_dung": "Tăng miễn dịch; chữa tiểu đường; trừ phong thấp; kháng khuẩn; giảm đau",
+    "tac_dung_list": [
+      "Tăng miễn dịch",
+      "chữa tiểu đường",
+      "trừ phong thấp",
+      "kháng khuẩn",
+      "giảm đau"
+    ],
+    "page_start": 520,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 521
+  },
+  {
+    "ten_co_dau": "Cây đến",
+    "ten_khong_dau": "Cay den",
+    "ten_anh": "Clerodendrum / Bleeding heart vine",
+    "ten_khoa_hoc": "Clerodendrum serratum (L.) Moon",
+    "tac_dung": "Trừ phong thấp; tiêu viêm; kháng khuẩn; giảm đau",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "giảm đau"
+    ],
+    "page_start": 521,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 522
+  },
+  {
+    "ten_co_dau": "Gối hạc",
+    "ten_khong_dau": "Goi hac",
+    "ten_anh": "Leea / West Indian holly",
+    "ten_khoa_hoc": "Leea rubra Blume ex Spreng.",
+    "tac_dung": "Trừ phong thấp; tiêu viêm; kháng khuẩn; giảm đau",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "giảm đau"
+    ],
+    "page_start": 522,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 522
+  },
+  {
+    "ten_co_dau": "Hoàng nàn",
+    "ten_khong_dau": "Hoang nan",
+    "ten_anh": "Strychnos nux-vomica bark",
+    "ten_khoa_hoc": "Strychnos nux-vomica L.",
+    "tac_dung": "Trừ phong thấp; giảm đau; cực độc (strychnine) - chỉ dùng liều cực nhỏ",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "giảm đau",
+      "cực độc (strychnine) - chỉ dùng liều cực nhỏ"
+    ],
+    "page_start": 522,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 524
+  },
+  {
+    "ten_co_dau": "Hồi",
+    "ten_khong_dau": "Hoi",
+    "ten_anh": "Star anise",
+    "ten_khoa_hoc": "Illicium verum Hook.f.",
+    "tac_dung": "Tiêu hàn; giảm đau khớp; kháng khuẩn; kháng nấm; kháng virus (shikimic acid nguồn oseltamivir)",
+    "tac_dung_list": [
+      "Tiêu hàn",
+      "giảm đau khớp",
+      "kháng khuẩn",
+      "kháng nấm",
+      "kháng virus (shikimic acid nguồn oseltamivir)"
+    ],
+    "page_start": 524,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 525
+  },
+  {
+    "ten_co_dau": "Khoai tây",
+    "ten_khong_dau": "Khoai tay",
+    "ten_anh": "Potato",
+    "ten_khoa_hoc": "Solanum tuberosum L.",
+    "tac_dung": "Bổ dưỡng; chữa đau dạ dày (ngoài); chống viêm nhẹ; chứa vitamin C, B",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "chữa đau dạ dày (ngoài)",
+      "chống viêm nhẹ",
+      "chứa vitamin C, B"
+    ],
+    "page_start": 525,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 526
+  },
+  {
+    "ten_co_dau": "Kim sương",
+    "ten_khong_dau": "Kim suong",
+    "ten_anh": "Belamcanda / Blackberry lily",
+    "ten_khoa_hoc": "Belamcanda chinensis (L.) DC.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa viêm họng; trừ phong thấp",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa viêm họng",
+      "trừ phong thấp"
+    ],
+    "page_start": 526,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 527
+  },
+  {
+    "ten_co_dau": "Long não",
+    "ten_khong_dau": "Long nao",
+    "ten_anh": "Camphor tree",
+    "ten_khoa_hoc": "Cinnamomum camphora (L.) J.Presl",
+    "tac_dung": "Giảm đau; kháng khuẩn, kháng nấm; trừ phong thấp; thông mũi; kích thích tuần hoàn",
+    "tac_dung_list": [
+      "Giảm đau",
+      "kháng khuẩn, kháng nấm",
+      "trừ phong thấp",
+      "thông mũi",
+      "kích thích tuần hoàn"
+    ],
+    "page_start": 527,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 529
+  },
+  {
+    "ten_co_dau": "Mã tiền",
+    "ten_khong_dau": "Ma tien",
+    "ten_anh": "Nux vomica / Strychnos",
+    "ten_khoa_hoc": "Strychnos nux-vomica L.",
+    "tac_dung": "Giảm đau khớp; tăng trương lực cơ; cực độc (strychnine) - chỉ dùng dưới giám sát",
+    "tac_dung_list": [
+      "Giảm đau khớp",
+      "tăng trương lực cơ",
+      "cực độc (strychnine) - chỉ dùng dưới giám sát"
+    ],
+    "page_start": 529,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 531
+  },
+  {
+    "ten_co_dau": "Mộc qua",
+    "ten_khong_dau": "Moc qua",
+    "ten_anh": "Chinese quince / Chaenomeles",
+    "ten_khoa_hoc": "Chaenomeles sinensis (Thouin) Koehne",
+    "tac_dung": "Trừ phong thấp; giảm đau; chữa đau cơ, chuột rút; bổ tỳ vị",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "giảm đau",
+      "chữa đau cơ, chuột rút",
+      "bổ tỳ vị"
+    ],
+    "page_start": 531,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 532
+  },
+  {
+    "ten_co_dau": "Vuốt hùm",
+    "ten_khong_dau": "Vuot hum",
+    "ten_anh": "Devil's claw / Harpagophytum",
+    "ten_khoa_hoc": "Harpagophytum procumbens DC. ex Meisn.",
+    "tac_dung": "Trừ phong thấp mạnh; giảm đau khớp; kháng viêm; chữa viêm khớp",
+    "tac_dung_list": [
+      "Trừ phong thấp mạnh",
+      "giảm đau khớp",
+      "kháng viêm",
+      "chữa viêm khớp"
+    ],
+    "page_start": 532,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 533
+  },
+  {
+    "ten_co_dau": "Bướm bạc",
+    "ten_khong_dau": "Buom bac",
+    "ten_anh": "Mussaenda / Ashanti blood",
+    "ten_khoa_hoc": "Mussaenda pubescens W.T.Aiton",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; chữa thấp khớp nhẹ",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "chữa thấp khớp nhẹ"
+    ],
+    "page_start": 533,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 533
+  },
+  {
+    "ten_co_dau": "Chạy",
+    "ten_khong_dau": "Chay",
+    "ten_anh": "Smilax / Wild sarsaparilla",
+    "ten_khoa_hoc": "Smilax menispermoidea A.DC.",
+    "tac_dung": "Trừ phong thấp; lợi tiểu; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "lợi tiểu",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 533,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 534
+  },
+  {
+    "ten_co_dau": "Rung rúc",
+    "ten_khong_dau": "Rung ruc",
+    "ten_anh": "Cayratia / Bush grape",
+    "ten_khoa_hoc": "Cayratia japonica (Thunb.) Gagnep.",
+    "tac_dung": "Trừ phong thấp; tiêu viêm; kháng khuẩn; lợi tiểu",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "lợi tiểu"
+    ],
+    "page_start": 534,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 535
+  },
+  {
+    "ten_co_dau": "Giổi",
+    "ten_khong_dau": "Gioi",
+    "ten_anh": "Michelia / White champaca",
+    "ten_khoa_hoc": "Michelia mediocris Dandy",
+    "tac_dung": "Trừ phong thấp; kháng khuẩn; tiêu viêm; thơm hương",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "thơm hương"
+    ],
+    "page_start": 535,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 536
+  },
+  {
+    "ten_co_dau": "Chia vôi",
+    "ten_khong_dau": "Chia voi",
+    "ten_anh": "Cissampelos / Velvet leaf",
+    "ten_khoa_hoc": "Cissampelos pareira L.",
+    "tac_dung": "Trừ phong thấp; kháng khuẩn; lợi tiểu; giảm đau; chữa đau khớp",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "kháng khuẩn",
+      "lợi tiểu",
+      "giảm đau",
+      "chữa đau khớp"
+    ],
+    "page_start": 536,
+    "chuong": "XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức",
+    "page_end": 538
+  },
+  {
+    "ten_co_dau": "Cây ban",
+    "ten_khong_dau": "Cay ban",
+    "ten_anh": "Hypericum / St. John's wort variant",
+    "ten_khoa_hoc": "Hypericum patulum Thunb.",
+    "tac_dung": "Chữa vết thương; kháng khuẩn; tiêu viêm; chữa rắn cắn",
+    "tac_dung_list": [
+      "Chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa rắn cắn"
+    ],
+    "page_start": 538,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 539
+  },
+  {
+    "ten_co_dau": "Bồi lời nhớt",
+    "ten_khong_dau": "Boi loi nhot",
+    "ten_anh": "Actinodaphne / Toothpick laurel",
+    "ten_khoa_hoc": "Actinodaphne cochinchinensis Meisn.",
+    "tac_dung": "Chữa vết thương; kháng khuẩn; tiêu sưng; chữa rắn cắn",
+    "tac_dung_list": [
+      "Chữa vết thương",
+      "kháng khuẩn",
+      "tiêu sưng",
+      "chữa rắn cắn"
+    ],
+    "page_start": 539,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 540
+  },
+  {
+    "ten_co_dau": "Bông báo",
+    "ten_khong_dau": "Bong bao",
+    "ten_anh": "Helicteres / Screw tree",
+    "ten_khoa_hoc": "Helicteres isora L.",
+    "tac_dung": "Chữa rắn cắn; kháng khuẩn; tiêu viêm; chữa tiêu chảy",
+    "tac_dung_list": [
+      "Chữa rắn cắn",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa tiêu chảy"
+    ],
+    "page_start": 540,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 541
+  },
+  {
+    "ten_co_dau": "Cây mô quả",
+    "ten_khong_dau": "Cay mo qua",
+    "ten_anh": "Gomphia / Ochna",
+    "ten_khoa_hoc": "Ochna integerrima (Lour.) Merr.",
+    "tac_dung": "Chữa vết thương; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 541,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 542
+  },
+  {
+    "ten_co_dau": "Cà đại hoa trắng",
+    "ten_khong_dau": "Ca dai hoa trang",
+    "ten_anh": "White-flowered nightshade",
+    "ten_khoa_hoc": "Solanum torvum Sw.",
+    "tac_dung": "Chữa rắn cắn; kháng khuẩn; tiêu viêm; lợi tiểu",
+    "tac_dung_list": [
+      "Chữa rắn cắn",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "lợi tiểu"
+    ],
+    "page_start": 542,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 542
+  },
+  {
+    "ten_co_dau": "Bông ổi",
+    "ten_khong_dau": "Bong oi",
+    "ten_anh": "Lantana blossom",
+    "ten_khoa_hoc": "Lantana camara L.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa vết thương",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa vết thương"
+    ],
+    "page_start": 542,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 543
+  },
+  {
+    "ten_co_dau": "Tơ mành",
+    "ten_khong_dau": "To manh",
+    "ten_anh": "Cuscuta / Dodder",
+    "ten_khoa_hoc": "Cuscuta chinensis Lam.",
+    "tac_dung": "Bổ thận; chữa vết thương; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Bổ thận",
+      "chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 543,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 544
+  },
+  {
+    "ten_co_dau": "Bát giác liên",
+    "ten_khong_dau": "Bat giac lien",
+    "ten_anh": "Dysosma / Chinese May apple",
+    "ten_khoa_hoc": "Dysosma versipellis (Hance) M.Cheng ex Ying",
+    "tac_dung": "Giải độc rắn cắn; tiêu viêm; kháng khuẩn; chống ung thư (hỗ trợ)",
+    "tac_dung_list": [
+      "Giải độc rắn cắn",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chống ung thư (hỗ trợ)"
+    ],
+    "page_start": 544,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 545
+  },
+  {
+    "ten_co_dau": "Bông gạo",
+    "ten_khong_dau": "Bong gao",
+    "ten_anh": "Kapok / Cotton tree",
+    "ten_khoa_hoc": "Ceiba pentandra (L.) Gaertn.",
+    "tac_dung": "Chữa vết thương; kháng khuẩn; tiêu viêm; cầm máu; lợi tiểu",
+    "tac_dung_list": [
+      "Chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "cầm máu",
+      "lợi tiểu"
+    ],
+    "page_start": 545,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 546
+  },
+  {
+    "ten_co_dau": "Cà gai leo",
+    "ten_khong_dau": "Ca gai leo",
+    "ten_anh": "Solanum hainanense / Spiny nightshade vine",
+    "ten_khoa_hoc": "Solanum hainanense Hance",
+    "tac_dung": "Chữa rắn cắn; kháng khuẩn; bảo vệ gan; chống xơ hóa gan; hỗ trợ điều trị viêm gan B",
+    "tac_dung_list": [
+      "Chữa rắn cắn",
+      "kháng khuẩn",
+      "bảo vệ gan",
+      "chống xơ hóa gan",
+      "hỗ trợ điều trị viêm gan B"
+    ],
+    "page_start": 546,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 547
+  },
+  {
+    "ten_co_dau": "Rau răm",
+    "ten_khong_dau": "Rau ram",
+    "ten_anh": "Vietnamese coriander / Polygonum odoratum",
+    "ten_khoa_hoc": "Persicaria odorata (Lour.) Soják",
+    "tac_dung": "Chữa rắn cắn, côn trùng đốt; kháng khuẩn; tiêu viêm; tiêu hóa; thanh nhiệt",
+    "tac_dung_list": [
+      "Chữa rắn cắn, côn trùng đốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "tiêu hóa",
+      "thanh nhiệt"
+    ],
+    "page_start": 547,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 548
+  },
+  {
+    "ten_co_dau": "Vòng vàng",
+    "ten_khong_dau": "Vong vang",
+    "ten_anh": "Fibraurea / Yellow vine variant",
+    "ten_khoa_hoc": "Fibraurea recisa Pierre",
+    "tac_dung": "Chữa vết thương; kháng khuẩn; tiêu viêm; giải độc",
+    "tac_dung_list": [
+      "Chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "giải độc"
+    ],
+    "page_start": 548,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 549
+  },
+  {
+    "ten_co_dau": "Lá dong",
+    "ten_khong_dau": "La dong",
+    "ten_anh": "Phrynium / Wild ginger leaf",
+    "ten_khoa_hoc": "Phrynium placentarium (Lour.) Merr.",
+    "tac_dung": "Cầm máu; chữa vết thương; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Cầm máu",
+      "chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 549,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 549
+  },
+  {
+    "ten_co_dau": "Sơn từ cô",
+    "ten_khong_dau": "Son tu co",
+    "ten_anh": "Paris / Herb paris",
+    "ten_khoa_hoc": "Paris polyphylla Sm.",
+    "tac_dung": "Giải độc rắn cắn mạnh; tiêu viêm; kháng khuẩn; chống ung thư (hỗ trợ)",
+    "tac_dung_list": [
+      "Giải độc rắn cắn mạnh",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chống ung thư (hỗ trợ)"
+    ],
+    "page_start": 549,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 550
+  },
+  {
+    "ten_co_dau": "Phèn đen",
+    "ten_khong_dau": "Phen den",
+    "ten_anh": "Phyllanthus reticulatus / Black tannin plant",
+    "ten_khoa_hoc": "Phyllanthus reticulatus Poir.",
+    "tac_dung": "Cầm máu; chữa vết thương; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Cầm máu",
+      "chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 550,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 551
+  },
+  {
+    "ten_co_dau": "Ngô đồng",
+    "ten_khong_dau": "Ngo dong",
+    "ten_anh": "Chinese parasol tree / Phoenix tree",
+    "ten_khoa_hoc": "Firmiana simplex (L.) W.Wight",
+    "tac_dung": "Chữa vết thương; kháng khuẩn; tiêu viêm; lợi tiểu",
+    "tac_dung_list": [
+      "Chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "lợi tiểu"
+    ],
+    "page_start": 551,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 552
+  },
+  {
+    "ten_co_dau": "Cỏ bạc đầu",
+    "ten_khong_dau": "Co bac dau",
+    "ten_anh": "Globe amaranth / Gomphrena",
+    "ten_khoa_hoc": "Gomphrena celosioides Mart.",
+    "tac_dung": "Cầm máu; chữa vết thương; kháng khuẩn; tiêu viêm; hạ sốt",
+    "tac_dung_list": [
+      "Cầm máu",
+      "chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ sốt"
+    ],
+    "page_start": 552,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 553
+  },
+  {
+    "ten_co_dau": "Đào lộn hột",
+    "ten_khong_dau": "Dao lon hot",
+    "ten_anh": "Cashew",
+    "ten_khoa_hoc": "Anacardium occidentale L.",
+    "tac_dung": "Chữa vết thương; kháng khuẩn; tiêu viêm; bổ dưỡng (hạt điều); chú ý dị ứng vỏ",
+    "tac_dung_list": [
+      "Chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "bổ dưỡng (hạt điều)",
+      "chú ý dị ứng vỏ"
+    ],
+    "page_start": 553,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 554
+  },
+  {
+    "ten_co_dau": "Xoan nhừ",
+    "ten_khong_dau": "Xoan nhu",
+    "ten_anh": "Choerospondias / Nepali hog plum",
+    "ten_khoa_hoc": "Choerospondias axillaris (Roxb.) B.L.Burtt & A.W.Hill",
+    "tac_dung": "Chữa vết thương; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 554,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 556
+  },
+  {
+    "ten_co_dau": "Bóng nước",
+    "ten_khong_dau": "Bong nuoc",
+    "ten_anh": "Impatiens / Touch-me-not",
+    "ten_khoa_hoc": "Impatiens balsamina L.",
+    "tac_dung": "Chữa vết thương, rắn cắn; kháng khuẩn; tiêu viêm; chống nấm",
+    "tac_dung_list": [
+      "Chữa vết thương, rắn cắn",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chống nấm"
+    ],
+    "page_start": 556,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 557
+  },
+  {
+    "ten_co_dau": "Cây mẫm",
+    "ten_khong_dau": "Cay mam",
+    "ten_anh": "Toxicodendron / Wax tree",
+    "ten_khoa_hoc": "Toxicodendron succedaneum (L.) Kuntze",
+    "tac_dung": "Chữa vết thương (hạn chế); kháng khuẩn; chú ý gây dị ứng",
+    "tac_dung_list": [
+      "Chữa vết thương (hạn chế)",
+      "kháng khuẩn",
+      "chú ý gây dị ứng"
+    ],
+    "page_start": 557,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 558
+  },
+  {
+    "ten_co_dau": "Rau tàu bay",
+    "ten_khong_dau": "Rau tau bay",
+    "ten_anh": "Gynura / Purple passion",
+    "ten_khoa_hoc": "Gynura divaricata (L.) DC.",
+    "tac_dung": "Cầm máu; chữa vết thương; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Cầm máu",
+      "chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 558,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 559
+  },
+  {
+    "ten_co_dau": "Cây kim vàng",
+    "ten_khong_dau": "Cay kim vang",
+    "ten_anh": "Barleria / Porcupine flower",
+    "ten_khoa_hoc": "Barleria prionitis L.",
+    "tac_dung": "Chữa vết thương; kháng khuẩn; tiêu viêm; giảm đau",
+    "tac_dung_list": [
+      "Chữa vết thương",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "giảm đau"
+    ],
+    "page_start": 559,
+    "chuong": "XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn",
+    "page_end": 560
+  },
+  {
+    "ten_co_dau": "Cốc tinh thảo",
+    "ten_khong_dau": "Coc tinh thao",
+    "ten_anh": "Pipewort / Eriocaulon",
+    "ten_khoa_hoc": "Eriocaulon buergerianum Körn.",
+    "tac_dung": "Chữa bệnh mắt; sáng mắt; kháng khuẩn; tiêu viêm; chữa đau mắt đỏ",
+    "tac_dung_list": [
+      "Chữa bệnh mắt",
+      "sáng mắt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa đau mắt đỏ"
+    ],
+    "page_start": 560,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 561
+  },
+  {
+    "ten_co_dau": "Mật mông hoa",
+    "ten_khong_dau": "Mat mong hoa",
+    "ten_anh": "Buddleja / Butterfly bush flower",
+    "ten_khoa_hoc": "Buddleja officinalis Maxim.",
+    "tac_dung": "Sáng mắt; chữa mắt đỏ, mờ; kháng khuẩn; tiêu viêm; bổ can",
+    "tac_dung_list": [
+      "Sáng mắt",
+      "chữa mắt đỏ, mờ",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "bổ can"
+    ],
+    "page_start": 561,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 562
+  },
+  {
+    "ten_co_dau": "Cúc áo",
+    "ten_khong_dau": "Cuc ao",
+    "ten_anh": "Spilanthes / Toothache plant",
+    "ten_khoa_hoc": "Acmella oleracea (L.) R.K.Jansen",
+    "tac_dung": "Kháng khuẩn mạnh; tê liệt nhẹ; chữa đau răng; tiêu viêm; kháng nấm",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh",
+      "tê liệt nhẹ",
+      "chữa đau răng",
+      "tiêu viêm",
+      "kháng nấm"
+    ],
+    "page_start": 562,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 564
+  },
+  {
+    "ten_co_dau": "Xương khô",
+    "ten_khong_dau": "Xuong kho",
+    "ten_anh": "Aquilaria / Agarwood variant",
+    "ten_khoa_hoc": "Aquilaria crassna Pierre ex Lecomte",
+    "tac_dung": "Chữa bệnh tai mũi họng; kháng khuẩn; tiêu viêm; thơm hương",
+    "tac_dung_list": [
+      "Chữa bệnh tai mũi họng",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "thơm hương"
+    ],
+    "page_start": 564,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 565
+  },
+  {
+    "ten_co_dau": "Xương rồng",
+    "ten_khong_dau": "Xuong rong",
+    "ten_anh": "Cactus / Euphorbia tirucalli",
+    "ten_khoa_hoc": "Euphorbia tirucalli L.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; dùng ngoài chữa đau; chú ý nhựa độc",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "dùng ngoài chữa đau",
+      "chú ý nhựa độc"
+    ],
+    "page_start": 565,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 566
+  },
+  {
+    "ten_co_dau": "Tế tân",
+    "ten_khong_dau": "Te tan",
+    "ten_anh": "Asarum / Chinese wild ginger",
+    "ten_khoa_hoc": "Asarum sieboldii Miq.",
+    "tac_dung": "Chữa đau răng, viêm mũi họng; kháng khuẩn; tiêu hàn; giảm đau mạnh",
+    "tac_dung_list": [
+      "Chữa đau răng, viêm mũi họng",
+      "kháng khuẩn",
+      "tiêu hàn",
+      "giảm đau mạnh"
+    ],
+    "page_start": 566,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 568
+  },
+  {
+    "ten_co_dau": "Đơn chân châu",
+    "ten_khong_dau": "Don chan chau",
+    "ten_anh": "Phyllanthus / Pearl plant",
+    "ten_khoa_hoc": "Phyllanthus niruri L.",
+    "tac_dung": "Kháng virus (viêm gan B); lợi tiểu; tiêu viêm; kháng khuẩn; chữa bệnh mắt",
+    "tac_dung_list": [
+      "Kháng virus (viêm gan B)",
+      "lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa bệnh mắt"
+    ],
+    "page_start": 568,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 568
+  },
+  {
+    "ten_co_dau": "Mía dò",
+    "ten_khong_dau": "Mia do",
+    "ten_anh": "Costus / Spiral ginger",
+    "ten_khoa_hoc": "Costus speciosus (J.Koenig) Sm.",
+    "tac_dung": "Chữa bệnh tai mũi họng; lợi tiểu; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Chữa bệnh tai mũi họng",
+      "lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 568,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 569
+  },
+  {
+    "ten_co_dau": "Xoài",
+    "ten_khong_dau": "Xoai",
+    "ten_anh": "Mango",
+    "ten_khoa_hoc": "Mangifera indica L.",
+    "tac_dung": "Chữa viêm họng; kháng khuẩn; chống oxy hóa; bổ dưỡng; hạ đường huyết nhẹ; chống viêm",
+    "tac_dung_list": [
+      "Chữa viêm họng",
+      "kháng khuẩn",
+      "chống oxy hóa",
+      "bổ dưỡng",
+      "hạ đường huyết nhẹ",
+      "chống viêm"
+    ],
+    "page_start": 569,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 571
+  },
+  {
+    "ten_co_dau": "Nhân hương",
+    "ten_khong_dau": "Nhan huong",
+    "ten_anh": "Michelia champaca / Joy perfume tree",
+    "ten_khoa_hoc": "Michelia champaca L.",
+    "tac_dung": "Chữa tai mũi họng; kháng khuẩn; tiêu viêm; thơm hương; hạ sốt",
+    "tac_dung_list": [
+      "Chữa tai mũi họng",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "thơm hương",
+      "hạ sốt"
+    ],
+    "page_start": 571,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 573
+  },
+  {
+    "ten_co_dau": "Tật lê",
+    "ten_khong_dau": "Tat le",
+    "ten_anh": "Tribulus / Puncture vine",
+    "ten_khoa_hoc": "Tribulus terrestris L.",
+    "tac_dung": "Sáng mắt; bổ dương; hạ huyết áp; lợi tiểu; kháng viêm; cải thiện sinh lý",
+    "tac_dung_list": [
+      "Sáng mắt",
+      "bổ dương",
+      "hạ huyết áp",
+      "lợi tiểu",
+      "kháng viêm",
+      "cải thiện sinh lý"
+    ],
+    "page_start": 573,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 574
+  },
+  {
+    "ten_co_dau": "Ruối",
+    "ten_khong_dau": "Ruoi",
+    "ten_anh": "Streblus / Sesuban",
+    "ten_khoa_hoc": "Streblus asper Lour.",
+    "tac_dung": "Kháng khuẩn; chữa đau răng, viêm nướu; tiêu viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa đau răng, viêm nướu",
+      "tiêu viêm"
+    ],
+    "page_start": 574,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 575
+  },
+  {
+    "ten_co_dau": "Củ gió",
+    "ten_khong_dau": "Cu gio",
+    "ten_anh": "Arisaema / Jack-in-the-pulpit",
+    "ten_khoa_hoc": "Arisaema tortuosum (Wall.) Schott",
+    "tac_dung": "Chữa bệnh tai mũi họng; tiêu đàm; kháng khuẩn; tiêu viêm; chú ý độc tính",
+    "tac_dung_list": [
+      "Chữa bệnh tai mũi họng",
+      "tiêu đàm",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chú ý độc tính"
+    ],
+    "page_start": 575,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 576
+  },
+  {
+    "ten_co_dau": "Sao đen",
+    "ten_khong_dau": "Sao den",
+    "ten_anh": "Hopea / Dark Sal tree",
+    "ten_khoa_hoc": "Hopea odorata Roxb.",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa bệnh mắt; bảo vệ da",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa bệnh mắt",
+      "bảo vệ da"
+    ],
+    "page_start": 576,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 577
+  },
+  {
+    "ten_co_dau": "Tất bát",
+    "ten_khong_dau": "Tat bat",
+    "ten_anh": "Piper cubeba / Cubeb pepper",
+    "ten_khoa_hoc": "Piper cubeba L.f.",
+    "tac_dung": "Kháng khuẩn; chữa viêm đường hô hấp; lợi tiểu; kháng nấm; chống viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa viêm đường hô hấp",
+      "lợi tiểu",
+      "kháng nấm",
+      "chống viêm"
+    ],
+    "page_start": 577,
+    "chuong": "XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng",
+    "page_end": 579
+  },
+  {
+    "ten_co_dau": "Cây mướp sát",
+    "ten_khong_dau": "Cay muop sat",
+    "ten_anh": "Thevetia / Yellow oleander",
+    "ten_khoa_hoc": "Thevetia peruviana (Pers.) K.Schum.",
+    "tac_dung": "Trợ tim (thevetin); cực độc - chỉ dùng dưới giám sát y tế; chú ý liều độc",
+    "tac_dung_list": [
+      "Trợ tim (thevetin)",
+      "cực độc - chỉ dùng dưới giám sát y tế",
+      "chú ý liều độc"
+    ],
+    "page_start": 579,
+    "chuong": "XVI. Các cây thuốc và vị thuốc chữa bệnh tim",
+    "page_end": 580
+  },
+  {
+    "ten_co_dau": "Cây sừng dê",
+    "ten_khong_dau": "Cay sung de",
+    "ten_anh": "Strophanthus / Kombe seed",
+    "ten_khoa_hoc": "Strophanthus caudatus (Burm.f.) Kurz",
+    "tac_dung": "Trợ tim (strophanthin); cực độc - chỉ dùng dưới giám sát; kháng khuẩn",
+    "tac_dung_list": [
+      "Trợ tim (strophanthin)",
+      "cực độc - chỉ dùng dưới giám sát",
+      "kháng khuẩn"
+    ],
+    "page_start": 580,
+    "chuong": "XVI. Các cây thuốc và vị thuốc chữa bệnh tim",
+    "page_end": 583
+  },
+  {
+    "ten_co_dau": "Cây thông thiên",
+    "ten_khong_dau": "Cay thong thien",
+    "ten_anh": "Yellow oleander / Cascabela",
+    "ten_khoa_hoc": "Cascabela thevetia (L.) Lippold",
+    "tac_dung": "Trợ tim; cực độc; KHÔNG tự dùng",
+    "tac_dung_list": [
+      "Trợ tim",
+      "cực độc",
+      "KHÔNG tự dùng"
+    ],
+    "page_start": 583,
+    "chuong": "XVI. Các cây thuốc và vị thuốc chữa bệnh tim",
+    "page_end": 586
+  },
+  {
+    "ten_co_dau": "Cây trúc đào",
+    "ten_khong_dau": "Cay truc dao",
+    "ten_anh": "Oleander",
+    "ten_khoa_hoc": "Nerium oleander L.",
+    "tac_dung": "Trợ tim (neriine); cực độc; KHÔNG tự dùng; thuốc độc nguy hiểm",
+    "tac_dung_list": [
+      "Trợ tim (neriine)",
+      "cực độc",
+      "KHÔNG tự dùng",
+      "thuốc độc nguy hiểm"
+    ],
+    "page_start": 586,
+    "chuong": "XVI. Các cây thuốc và vị thuốc chữa bệnh tim",
+    "page_end": 589
+  },
+  {
+    "ten_co_dau": "Vạn niên thanh",
+    "ten_khong_dau": "Van nien thanh",
+    "ten_anh": "Cast-iron plant / Aspidistra",
+    "ten_khoa_hoc": "Aspidistra elatior Blume",
+    "tac_dung": "Kháng khuẩn; tiêu viêm; chữa mụn nhọt; lợi tiểu; thanh nhiệt",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "tiêu viêm",
+      "chữa mụn nhọt",
+      "lợi tiểu",
+      "thanh nhiệt"
+    ],
+    "page_start": 589,
+    "chuong": "XVI. Các cây thuốc và vị thuốc chữa bệnh tim",
+    "page_end": 591
+  },
+  {
+    "ten_co_dau": "Hành biển",
+    "ten_khong_dau": "Hanh bien",
+    "ten_anh": "Squill / Sea onion",
+    "ten_khoa_hoc": "Drimia maritima (L.) Stearn",
+    "tac_dung": "Trợ tim; lợi tiểu; long đờm; cực độc - cẩn thận liều dùng",
+    "tac_dung_list": [
+      "Trợ tim",
+      "lợi tiểu",
+      "long đờm",
+      "cực độc - cẩn thận liều dùng"
+    ],
+    "page_start": 591,
+    "chuong": "XVI. Các cây thuốc và vị thuốc chữa bệnh tim",
+    "page_end": 595
+  },
+  {
+    "ten_co_dau": "Bạc hà",
+    "ten_khong_dau": "Bac ha",
+    "ten_anh": "Peppermint / Spearmint",
+    "ten_khoa_hoc": "Mentha arvensis L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn, kháng virus; giảm đau đầu; tiêu hóa; thông mũi; tinh dầu menthol",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn, kháng virus",
+      "giảm đau đầu",
+      "tiêu hóa",
+      "thông mũi",
+      "tinh dầu menthol"
+    ],
+    "page_start": 595,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 598
+  },
+  {
+    "ten_co_dau": "Bạch chỉ",
+    "ten_khong_dau": "Bach chi",
+    "ten_anh": "Angelica dahurica / Bai Zhi",
+    "ten_khoa_hoc": "Angelica dahurica (Fisch. ex Hoffm.) Benth. & Hook.f. ex Franch. & Sav.",
+    "tac_dung": "Hạ sốt; giảm đau; chữa nhức đầu, đau răng; kháng khuẩn; thông mũi; chữa cảm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "giảm đau",
+      "chữa nhức đầu, đau răng",
+      "kháng khuẩn",
+      "thông mũi",
+      "chữa cảm"
+    ],
+    "page_start": 598,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 601
+  },
+  {
+    "ten_co_dau": "Cây cối xay",
+    "ten_khong_dau": "Cay coi xay",
+    "ten_anh": "Country mallow / Abutilon",
+    "ten_khoa_hoc": "Abutilon indicum (L.) Sweet",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; lợi tiểu; chữa cảm sốt",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "lợi tiểu",
+      "chữa cảm sốt"
+    ],
+    "page_start": 601,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 602
+  },
+  {
+    "ten_co_dau": "Cây cúc bách nhật",
+    "ten_khong_dau": "Cay cuc bach nhat",
+    "ten_anh": "Globe amaranth",
+    "ten_khoa_hoc": "Gomphrena globosa L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; chữa cảm; long đờm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa cảm",
+      "long đờm"
+    ],
+    "page_start": 602,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 604
+  },
+  {
+    "ten_co_dau": "Cúc hoa",
+    "ten_khong_dau": "Cuc hoa",
+    "ten_anh": "Chrysanthemum flower",
+    "ten_khoa_hoc": "Chrysanthemum morifolium (Ramat.) Tzvelev",
+    "tac_dung": "Hạ sốt; sáng mắt; hạ huyết áp; kháng khuẩn; tiêu viêm; chữa đau đầu",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "sáng mắt",
+      "hạ huyết áp",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa đau đầu"
+    ],
+    "page_start": 604,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 605
+  },
+  {
+    "ten_co_dau": "Đại bi",
+    "ten_khong_dau": "Dai bi",
+    "ten_anh": "Blumea / Camphor plant",
+    "ten_khoa_hoc": "Blumea balsamifera (L.) DC.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tinh dầu thông mũi; tiêu viêm; chữa cảm cúm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tinh dầu thông mũi",
+      "tiêu viêm",
+      "chữa cảm cúm"
+    ],
+    "page_start": 605,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 608
+  },
+  {
+    "ten_co_dau": "Đam trúc diệp",
+    "ten_khong_dau": "Dam truc diep",
+    "ten_anh": "Bamboo leaf / Dan Zhu Ye",
+    "ten_khoa_hoc": "Lophatherum gracile Brongn.",
+    "tac_dung": "Hạ sốt; thanh nhiệt; lợi tiểu; tiêu viêm; chữa sốt cao, khát nước",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "thanh nhiệt",
+      "lợi tiểu",
+      "tiêu viêm",
+      "chữa sốt cao, khát nước"
+    ],
+    "page_start": 608,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 609
+  },
+  {
+    "ten_co_dau": "Hành",
+    "ten_khong_dau": "Hanh",
+    "ten_anh": "Spring onion / Welsh onion",
+    "ten_khoa_hoc": "Allium fistulosum L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu hàn; thông mũi; chữa cảm; kháng viêm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu hàn",
+      "thông mũi",
+      "chữa cảm",
+      "kháng viêm"
+    ],
+    "page_start": 609,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 611
+  },
+  {
+    "ten_co_dau": "Kinh giới",
+    "ten_khong_dau": "Kinh gioi",
+    "ten_anh": "Vietnamese balm / Perilla frutescens",
+    "ten_khoa_hoc": "Perilla frutescens (L.) Britton",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; chữa cảm; dị ứng; chống oxy hóa",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa cảm",
+      "dị ứng",
+      "chống oxy hóa"
+    ],
+    "page_start": 611,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 613
+  },
+  {
+    "ten_co_dau": "Dây kỳ ninh",
+    "ten_khong_dau": "Day ky ninh",
+    "ten_anh": "Cinchona bark / Quinine vine",
+    "ten_khoa_hoc": "Cinchona pubescens Vahl",
+    "tac_dung": "Hạ sốt sốt rét (quinine); kháng ký sinh trùng sốt rét; tim mạch",
+    "tac_dung_list": [
+      "Hạ sốt sốt rét (quinine)",
+      "kháng ký sinh trùng sốt rét",
+      "tim mạch"
+    ],
+    "page_start": 613,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 614
+  },
+  {
+    "ten_co_dau": "Ma hoàng",
+    "ten_khong_dau": "Ma hoang",
+    "ten_anh": "Ephedra / Ma Huang",
+    "ten_khoa_hoc": "Ephedra sinica Stapf",
+    "tac_dung": "Hạ sốt; thông mũi; chống hen suyễn; kháng khuẩn; tăng huyết áp nhẹ",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "thông mũi",
+      "chống hen suyễn",
+      "kháng khuẩn",
+      "tăng huyết áp nhẹ"
+    ],
+    "page_start": 614,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 618
+  },
+  {
+    "ten_co_dau": "Màn kinh tử",
+    "ten_khong_dau": "Man kinh tu",
+    "ten_anh": "Vitex fruit / Chaste berry",
+    "ten_khoa_hoc": "Vitex trifolia L.",
+    "tac_dung": "Hạ sốt; giảm đau đầu; kháng khuẩn; tiêu viêm; chữa cảm sốt",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "giảm đau đầu",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa cảm sốt"
+    ],
+    "page_start": 618,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 619
+  },
+  {
+    "ten_co_dau": "Cỏ mán trầu",
+    "ten_khong_dau": "Co man trau",
+    "ten_anh": "Piper sarmentosum / Wild pepper",
+    "ten_khoa_hoc": "Piper sarmentosum Roxb.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu hàn; chữa cảm; tiêu hóa",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu hàn",
+      "chữa cảm",
+      "tiêu hóa"
+    ],
+    "page_start": 619,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 620
+  },
+  {
+    "ten_co_dau": "Mẫu đơn bí",
+    "ten_khong_dau": "Mau don bi",
+    "ten_anh": "Paeonia moutan / Tree peony root bark",
+    "ten_khoa_hoc": "Paeonia suffruticosa Andrews",
+    "tac_dung": "Hạ sốt; kháng khuẩn; hoạt huyết; tiêu viêm; thanh nhiệt lương huyết",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "hoạt huyết",
+      "tiêu viêm",
+      "thanh nhiệt lương huyết"
+    ],
+    "page_start": 620,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 622
+  },
+  {
+    "ten_co_dau": "Muống biển",
+    "ten_khong_dau": "Muong bien",
+    "ten_anh": "Beach morning glory / Ipomoea pes-caprae",
+    "ten_khoa_hoc": "Ipomoea pes-caprae (L.) R.Br.",
+    "tac_dung": "Hạ sốt; tiêu viêm; kháng khuẩn; chữa cảm sốt",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "tiêu viêm",
+      "kháng khuẩn",
+      "chữa cảm sốt"
+    ],
+    "page_start": 622,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 622
+  },
+  {
+    "ten_co_dau": "Na",
+    "ten_khong_dau": "Na",
+    "ten_anh": "Custard apple / Sugar apple",
+    "ten_khoa_hoc": "Annona squamosa L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; hạt diệt côn trùng; chống ký sinh trùng; bổ dưỡng",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "hạt diệt côn trùng",
+      "chống ký sinh trùng",
+      "bổ dưỡng"
+    ],
+    "page_start": 622,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 624
+  },
+  {
+    "ten_co_dau": "Ngưu bàng",
+    "ten_khong_dau": "Nguu bang",
+    "ten_anh": "Burdock root",
+    "ten_khoa_hoc": "Arctium lappa L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; lợi tiểu; chữa viêm họng; chống oxy hóa; tiêu viêm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "lợi tiểu",
+      "chữa viêm họng",
+      "chống oxy hóa",
+      "tiêu viêm"
+    ],
+    "page_start": 624,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 625
+  },
+  {
+    "ten_co_dau": "Nhân trần",
+    "ten_khong_dau": "Nhan tran",
+    "ten_anh": "Artemisia capillaris / Yin Chen",
+    "ten_khoa_hoc": "Artemisia capillaris Thunb.",
+    "tac_dung": "Lợi mật; hạ sốt; kháng khuẩn; chữa vàng da, viêm gan; tiêu viêm",
+    "tac_dung_list": [
+      "Lợi mật",
+      "hạ sốt",
+      "kháng khuẩn",
+      "chữa vàng da, viêm gan",
+      "tiêu viêm"
+    ],
+    "page_start": 625,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 629
+  },
+  {
+    "ten_co_dau": "Qua lâu nhân",
+    "ten_khong_dau": "Qua lau nhan",
+    "ten_anh": "Trichosanthes seed / Snake gourd",
+    "ten_khoa_hoc": "Trichosanthes kirilowii Maxim.",
+    "tac_dung": "Hạ sốt; long đờm; kháng khuẩn; tiêu viêm; chữa sốt, ho có đờm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "long đờm",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa sốt, ho có đờm"
+    ],
+    "page_start": 629,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 631
+  },
+  {
+    "ten_co_dau": "Cây rau má",
+    "ten_khong_dau": "Cay rau ma",
+    "ten_anh": "Asiatic pennywort / Gotu kola",
+    "ten_khoa_hoc": "Centella asiatica (L.) Urb.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; bổ não; làm lành vết thương; tiêu viêm; lợi tiểu",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "bổ não",
+      "làm lành vết thương",
+      "tiêu viêm",
+      "lợi tiểu"
+    ],
+    "page_start": 631,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 633
+  },
+  {
+    "ten_co_dau": "Sài hồ",
+    "ten_khong_dau": "Sai ho",
+    "ten_anh": "Bupleurum / Hare's ear root",
+    "ten_khoa_hoc": "Bupleurum chinense DC.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; bảo vệ gan; chữa cảm sốt lâu ngày",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "bảo vệ gan",
+      "chữa cảm sốt lâu ngày"
+    ],
+    "page_start": 633,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 635
+  },
+  {
+    "ten_co_dau": "Sắn dây",
+    "ten_khong_dau": "San day",
+    "ten_anh": "Kudzu / Pueraria root",
+    "ten_khoa_hoc": "Pueraria montana (Lour.) Merr.",
+    "tac_dung": "Hạ sốt; chữa cổ cứng đau đầu; hạ đường huyết; kháng khuẩn; giải rượu",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "chữa cổ cứng đau đầu",
+      "hạ đường huyết",
+      "kháng khuẩn",
+      "giải rượu"
+    ],
+    "page_start": 635,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 636
+  },
+  {
+    "ten_co_dau": "Tế thái",
+    "ten_khong_dau": "Te thai",
+    "ten_anh": "Capsella / Shepherd's purse",
+    "ten_khoa_hoc": "Capsella bursa-pastoris (L.) Medik.",
+    "tac_dung": "Hạ sốt; cầm máu; lợi tiểu; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "cầm máu",
+      "lợi tiểu",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 636,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 638
+  },
+  {
+    "ten_co_dau": "Thạch hộc",
+    "ten_khong_dau": "Thach hoc",
+    "ten_anh": "Dendrobium / Noble orchid",
+    "ten_khoa_hoc": "Dendrobium nobile Lindl.",
+    "tac_dung": "Bổ âm; hạ sốt; dưỡng vị; tăng miễn dịch; chống oxy hóa; bổ dưỡng quý hiếm",
+    "tac_dung_list": [
+      "Bổ âm",
+      "hạ sốt",
+      "dưỡng vị",
+      "tăng miễn dịch",
+      "chống oxy hóa",
+      "bổ dưỡng quý hiếm"
+    ],
+    "page_start": 638,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 640
+  },
+  {
+    "ten_co_dau": "Thanh cao hoa vàng",
+    "ten_khong_dau": "Thanh cao hoa vang",
+    "ten_anh": "Sweet wormwood / Qing Hao",
+    "ten_khoa_hoc": "Artemisia annua L.",
+    "tac_dung": "Hạ sốt sốt rét mạnh (artemisinin); kháng khuẩn; tiêu viêm; chống ký sinh trùng",
+    "tac_dung_list": [
+      "Hạ sốt sốt rét mạnh (artemisinin)",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chống ký sinh trùng"
+    ],
+    "page_start": 640,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 642
+  },
+  {
+    "ten_co_dau": "Thanh cao",
+    "ten_khong_dau": "Thanh cao",
+    "ten_anh": "Artemisia / Green wormwood",
+    "ten_khoa_hoc": "Artemisia carvifolia Buch.-Ham. ex Roxb.",
+    "tac_dung": "Hạ sốt; kháng ký sinh trùng; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng ký sinh trùng",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 642,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 643
+  },
+  {
+    "ten_co_dau": "Cây chổi xể",
+    "ten_khong_dau": "Cay choi xe",
+    "ten_anh": "Scoparia / Sweet broom",
+    "ten_khoa_hoc": "Scoparia dulcis L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; hạ đường huyết; tiêu viêm; lợi tiểu",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "hạ đường huyết",
+      "tiêu viêm",
+      "lợi tiểu"
+    ],
+    "page_start": 643,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 644
+  },
+  {
+    "ten_co_dau": "Thường sơn",
+    "ten_khong_dau": "Thuong son",
+    "ten_anh": "Dichroa / Chang Shan",
+    "ten_khoa_hoc": "Dichroa febrifuga Lour.",
+    "tac_dung": "Hạ sốt sốt rét; chống ký sinh trùng sốt rét; long đờm; chú ý độc tính",
+    "tac_dung_list": [
+      "Hạ sốt sốt rét",
+      "chống ký sinh trùng sốt rét",
+      "long đờm",
+      "chú ý độc tính"
+    ],
+    "page_start": 644,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 648
+  },
+  {
+    "ten_co_dau": "Tía tô",
+    "ten_khong_dau": "Tia to",
+    "ten_anh": "Perilla / Purple mint",
+    "ten_khoa_hoc": "Perilla frutescens (L.) Britton",
+    "tac_dung": "Hạ sốt; kháng khuẩn; chữa cảm cúm; an thai; tiêu hóa; kháng viêm; chống oxy hóa",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "chữa cảm cúm",
+      "an thai",
+      "tiêu hóa",
+      "kháng viêm",
+      "chống oxy hóa"
+    ],
+    "page_start": 648,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 650
+  },
+  {
+    "ten_co_dau": "Tiền hồ",
+    "ten_khong_dau": "Tien ho",
+    "ten_anh": "Peucedanum / Hog's fennel",
+    "ten_khoa_hoc": "Peucedanum praeruptorum Dunn",
+    "tac_dung": "Hạ sốt; long đờm; kháng khuẩn; tiêu viêm; chữa ho có đờm, cảm sốt",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "long đờm",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa ho có đờm, cảm sốt"
+    ],
+    "page_start": 650,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 651
+  },
+  {
+    "ten_co_dau": "Trúc như",
+    "ten_khong_dau": "Truc nhu",
+    "ten_anh": "Bamboo shavings / Zhu Ru",
+    "ten_khoa_hoc": "Phyllostachys nigra (Lodd. ex Lindl.) Munro",
+    "tac_dung": "Hạ sốt; tiêu đờm; tiêu viêm; chữa nôn mửa do nhiệt; an thần",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "tiêu đờm",
+      "tiêu viêm",
+      "chữa nôn mửa do nhiệt",
+      "an thần"
+    ],
+    "page_start": 651,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 653
+  },
+  {
+    "ten_co_dau": "Xa can",
+    "ten_khong_dau": "Xa can",
+    "ten_anh": "Belamcanda / Blackberry lily root",
+    "ten_khoa_hoc": "Belamcanda chinensis (L.) DC.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; chữa viêm họng; tiêu đờm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa viêm họng",
+      "tiêu đờm"
+    ],
+    "page_start": 653,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 654
+  },
+  {
+    "ten_co_dau": "Xuyên khung",
+    "ten_khong_dau": "Xuyen khung",
+    "ten_anh": "Ligusticum / Szechuan lovage",
+    "ten_khoa_hoc": "Ligusticum striatum DC.",
+    "tac_dung": "Hoạt huyết; giảm đau đầu; kháng khuẩn; tiêu viêm; chữa cảm đau đầu",
+    "tac_dung_list": [
+      "Hoạt huyết",
+      "giảm đau đầu",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa cảm đau đầu"
+    ],
+    "page_start": 654,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 657
+  },
+  {
+    "ten_co_dau": "Bầu đất",
+    "ten_khong_dau": "Bau dat",
+    "ten_anh": "Gynura / Longevity spinach",
+    "ten_khoa_hoc": "Gynura procumbens (Lour.) Merr.",
+    "tac_dung": "Hạ sốt; hạ đường huyết; kháng khuẩn; kháng viêm; hạ huyết áp; chống oxy hóa",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "hạ đường huyết",
+      "kháng khuẩn",
+      "kháng viêm",
+      "hạ huyết áp",
+      "chống oxy hóa"
+    ],
+    "page_start": 657,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 658
+  },
+  {
+    "ten_co_dau": "Dương",
+    "ten_khong_dau": "Duong",
+    "ten_anh": "Poplar / Willow bark",
+    "ten_khoa_hoc": "Salix babylonica L.",
+    "tac_dung": "Hạ sốt (salicin); giảm đau; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Hạ sốt (salicin)",
+      "giảm đau",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 658,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 659
+  },
+  {
+    "ten_co_dau": "Húng quế",
+    "ten_khong_dau": "Hung que",
+    "ten_anh": "Thai basil / Sweet basil",
+    "ten_khoa_hoc": "Ocimum basilicum L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu hóa; kháng viêm; chống oxy hóa; thơm hương",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu hóa",
+      "kháng viêm",
+      "chống oxy hóa",
+      "thơm hương"
+    ],
+    "page_start": 659,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 661
+  },
+  {
+    "ten_co_dau": "Trà tiên",
+    "ten_khong_dau": "Tra tien",
+    "ten_anh": "Gynostemma / Jiaogulan",
+    "ten_khoa_hoc": "Gynostemma pentaphyllum (Thunb.) Makino",
+    "tac_dung": "Hạ sốt; hạ mỡ máu; hạ huyết áp; chống oxy hóa; tăng miễn dịch; thích nghi stress",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "hạ mỡ máu",
+      "hạ huyết áp",
+      "chống oxy hóa",
+      "tăng miễn dịch",
+      "thích nghi stress"
+    ],
+    "page_start": 661,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 662
+  },
+  {
+    "ten_co_dau": "Gắm",
+    "ten_khong_dau": "Gam",
+    "ten_anh": "Gnetum / Melinjo",
+    "ten_khoa_hoc": "Gnetum gnemon L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; chữa cảm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa cảm"
+    ],
+    "page_start": 662,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 662
+  },
+  {
+    "ten_co_dau": "Hương nhu",
+    "ten_khong_dau": "Huong nhu",
+    "ten_anh": "Holy basil / Tulsi",
+    "ten_khoa_hoc": "Ocimum gratissimum L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn mạnh; tiêu viêm; chữa cảm; thông mũi; tinh dầu eugenol",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn mạnh",
+      "tiêu viêm",
+      "chữa cảm",
+      "thông mũi",
+      "tinh dầu eugenol"
+    ],
+    "page_start": 662,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 664
+  },
+  {
+    "ten_co_dau": "Khương hoạt",
+    "ten_khong_dau": "Khuong hoat",
+    "ten_anh": "Notopterygium / Qiang Huo",
+    "ten_khoa_hoc": "Notopterygium incisum K.C.Ting ex H.T.Chang",
+    "tac_dung": "Hạ sốt; giảm đau; kháng khuẩn; trừ phong thấp; chữa cảm đau đầu",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "giảm đau",
+      "kháng khuẩn",
+      "trừ phong thấp",
+      "chữa cảm đau đầu"
+    ],
+    "page_start": 664,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 665
+  },
+  {
+    "ten_co_dau": "Niềng",
+    "ten_khong_dau": "Nieng",
+    "ten_anh": "Clausena / Wampee",
+    "ten_khoa_hoc": "Clausena lansium (Lour.) Skeels",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; kháng nấm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "kháng nấm"
+    ],
+    "page_start": 665,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 666
+  },
+  {
+    "ten_co_dau": "Phòng phong",
+    "ten_khong_dau": "Phong phong",
+    "ten_anh": "Saposhnikovia / Fang Feng",
+    "ten_khoa_hoc": "Saposhnikovia divaricata (Turcz.) Schischk.",
+    "tac_dung": "Hạ sốt; giảm đau; kháng khuẩn; trừ phong thấp; chữa cảm đau đầu",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "giảm đau",
+      "kháng khuẩn",
+      "trừ phong thấp",
+      "chữa cảm đau đầu"
+    ],
+    "page_start": 666,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 668
+  },
+  {
+    "ten_co_dau": "Dây quai bị",
+    "ten_khong_dau": "Day quai bi",
+    "ten_anh": "Momordica / Bitter gourd vine",
+    "ten_khoa_hoc": "Momordica charantia L.",
+    "tac_dung": "Hạ sốt; hạ đường huyết; kháng khuẩn; kháng virus; tăng miễn dịch",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "hạ đường huyết",
+      "kháng khuẩn",
+      "kháng virus",
+      "tăng miễn dịch"
+    ],
+    "page_start": 668,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 669
+  },
+  {
+    "ten_co_dau": "Thăng ma",
+    "ten_khong_dau": "Thang ma",
+    "ten_anh": "Cimicifuga / Black cohosh",
+    "ten_khoa_hoc": "Cimicifuga foetida L.",
+    "tac_dung": "Hạ sốt; giải độc; kháng khuẩn; chữa sởi, cảm sốt; tiêu viêm",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "giải độc",
+      "kháng khuẩn",
+      "chữa sởi, cảm sốt",
+      "tiêu viêm"
+    ],
+    "page_start": 669,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 670
+  },
+  {
+    "ten_co_dau": "Canh châu",
+    "ten_khong_dau": "Canh chau",
+    "ten_anh": "Phytolacca / Pokeweed",
+    "ten_khoa_hoc": "Phytolacca americana L.",
+    "tac_dung": "Tiêu viêm; kháng khuẩn; hạ sốt; lợi tiểu; chú ý độc tính",
+    "tac_dung_list": [
+      "Tiêu viêm",
+      "kháng khuẩn",
+      "hạ sốt",
+      "lợi tiểu",
+      "chú ý độc tính"
+    ],
+    "page_start": 670,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 671
+  },
+  {
+    "ten_co_dau": "Cánh kiến đỏ",
+    "ten_khong_dau": "Canh kien do",
+    "ten_anh": "Lac / Shellac",
+    "ten_khoa_hoc": "Laccifer lacca Kerr (côn trùng)",
+    "tac_dung": "Cầm máu; bổ dưỡng; an thần; chữa sốt; chống oxy hóa; dùng trong y học Đông y",
+    "tac_dung_list": [
+      "Cầm máu",
+      "bổ dưỡng",
+      "an thần",
+      "chữa sốt",
+      "chống oxy hóa",
+      "dùng trong y học Đông y"
+    ],
+    "page_start": 671,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 674
+  },
+  {
+    "ten_co_dau": "Đinh hương",
+    "ten_khong_dau": "Dinh huong",
+    "ten_anh": "Clove",
+    "ten_khoa_hoc": "Syzygium aromaticum (L.) Merr. & L.M.Perry",
+    "tac_dung": "Kháng khuẩn mạnh; giảm đau; chữa đau răng; tiêu hóa; kháng nấm; eugenol tinh dầu",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh",
+      "giảm đau",
+      "chữa đau răng",
+      "tiêu hóa",
+      "kháng nấm",
+      "eugenol tinh dầu"
+    ],
+    "page_start": 674,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 675
+  },
+  {
+    "ten_co_dau": "Ngấu",
+    "ten_khong_dau": "Ngau",
+    "ten_anh": "Fermented herb",
+    "ten_khoa_hoc": "Polygonum hydropiper L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; cầm máu",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "cầm máu"
+    ],
+    "page_start": 675,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 676
+  },
+  {
+    "ten_co_dau": "Bàm bàm",
+    "ten_khong_dau": "Bam bam",
+    "ten_anh": "Entada / Sea bean",
+    "ten_khoa_hoc": "Entada phaseoloides (L.) Merr.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; giảm đau",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "giảm đau"
+    ],
+    "page_start": 676,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 677
+  },
+  {
+    "ten_co_dau": "Bụng báng",
+    "ten_khong_dau": "Bung bang",
+    "ten_anh": "Caryota / Fishtail palm",
+    "ten_khoa_hoc": "Caryota mitis Lour.",
+    "tac_dung": "Hạ sốt; bổ dưỡng; lợi tiểu",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "bổ dưỡng",
+      "lợi tiểu"
+    ],
+    "page_start": 677,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 678
+  },
+  {
+    "ten_co_dau": "Cánh ki na",
+    "ten_khong_dau": "Canh ki na",
+    "ten_anh": "Cinchona bark / Quinine bark",
+    "ten_khoa_hoc": "Cinchona pubescens Vahl",
+    "tac_dung": "Hạ sốt sốt rét (quinine); kháng ký sinh trùng; tim mạch; kháng khuẩn",
+    "tac_dung_list": [
+      "Hạ sốt sốt rét (quinine)",
+      "kháng ký sinh trùng",
+      "tim mạch",
+      "kháng khuẩn"
+    ],
+    "page_start": 678,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 684
+  },
+  {
+    "ten_co_dau": "Củ khỉ",
+    "ten_khong_dau": "Cu khi",
+    "ten_anh": "Dioscorea / Wild yam",
+    "ten_khoa_hoc": "Dioscorea persimilis Prain & Burkill",
+    "tac_dung": "Hạ sốt; bổ thận; trừ phong thấp; hạ đường huyết",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "bổ thận",
+      "trừ phong thấp",
+      "hạ đường huyết"
+    ],
+    "page_start": 684,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 685
+  },
+  {
+    "ten_co_dau": "Cúc mốc",
+    "ten_khong_dau": "Cuc moc",
+    "ten_anh": "Artemisia lactiflora / White mugwort",
+    "ten_khoa_hoc": "Artemisia lactiflora Wall. ex DC.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; điều kinh",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "điều kinh"
+    ],
+    "page_start": 685,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 685
+  },
+  {
+    "ten_co_dau": "Cúc tản",
+    "ten_khong_dau": "Cuc tan",
+    "ten_anh": "Wild chrysanthemum",
+    "ten_khoa_hoc": "Chrysanthemum indicum L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu viêm; chữa cảm sốt, đau đầu",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa cảm sốt, đau đầu"
+    ],
+    "page_start": 685,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 686
+  },
+  {
+    "ten_co_dau": "Đậu sị",
+    "ten_khong_dau": "Dau si",
+    "ten_anh": "Fermented soybean / Dan Dou Chi",
+    "ten_khoa_hoc": "Glycine max (L.) Merr.",
+    "tac_dung": "Hạ sốt; thanh nhiệt; tiêu viêm; chữa cảm sốt",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "thanh nhiệt",
+      "tiêu viêm",
+      "chữa cảm sốt"
+    ],
+    "page_start": 686,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 687
+  },
+  {
+    "ten_co_dau": "Rau mùi tàu",
+    "ten_khong_dau": "Rau mui tau",
+    "ten_anh": "Long coriander / Culantro",
+    "ten_khoa_hoc": "Eryngium foetidum L.",
+    "tac_dung": "Hạ sốt; kháng khuẩn; tiêu hóa; tiêu viêm; thơm hương",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "kháng khuẩn",
+      "tiêu hóa",
+      "tiêu viêm",
+      "thơm hương"
+    ],
+    "page_start": 687,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 688
+  },
+  {
+    "ten_co_dau": "Sì",
+    "ten_khong_dau": "Si",
+    "ten_anh": "Phrynium / Reed herb",
+    "ten_khoa_hoc": "Phrynium pubinerve Blume",
+    "tac_dung": "Hạ sốt; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Hạ sốt",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 688,
+    "chuong": "XVII. Các cây thuốc và vị thuốc chữa cảm sốt",
+    "page_end": 689
+  },
+  {
+    "ten_co_dau": "Xương sông",
+    "ten_khong_dau": "Xuong song",
+    "ten_anh": "Blumea lacera / Rough blumea",
+    "ten_khoa_hoc": "Blumea lacera (Burm.f.) DC.",
+    "tac_dung": "Chữa ho; long đờm; kháng khuẩn; tiêu viêm; chữa hen suyễn nhẹ",
+    "tac_dung_list": [
+      "Chữa ho",
+      "long đờm",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa hen suyễn nhẹ"
+    ],
+    "page_start": 689,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 690
+  },
+  {
+    "ten_co_dau": "Bông nổ",
+    "ten_khong_dau": "Bong no",
+    "ten_anh": "Rungia / Creeping jenny",
+    "ten_khoa_hoc": "Justicia procumbens L.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; hạ sốt",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ sốt"
+    ],
+    "page_start": 690,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 691
+  },
+  {
+    "ten_co_dau": "Bưởi",
+    "ten_khong_dau": "Buoi",
+    "ten_anh": "Pomelo / Grapefruit",
+    "ten_khoa_hoc": "Citrus grandis (L.) Osbeck",
+    "tac_dung": "Long đờm; chữa ho; hạ huyết áp; chống oxy hóa; tiêu hóa; kháng khuẩn",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "hạ huyết áp",
+      "chống oxy hóa",
+      "tiêu hóa",
+      "kháng khuẩn"
+    ],
+    "page_start": 691,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 692
+  },
+  {
+    "ten_co_dau": "Củ ấu",
+    "ten_khong_dau": "Cu au",
+    "ten_anh": "Water caltrop / Water chestnut",
+    "ten_khoa_hoc": "Trapa natans L.",
+    "tac_dung": "Chữa ho; thanh nhiệt; bổ dưỡng; tiêu viêm; lợi tiểu",
+    "tac_dung_list": [
+      "Chữa ho",
+      "thanh nhiệt",
+      "bổ dưỡng",
+      "tiêu viêm",
+      "lợi tiểu"
+    ],
+    "page_start": 692,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 692
+  },
+  {
+    "ten_co_dau": "So đũa",
+    "ten_khong_dau": "So dua",
+    "ten_anh": "Sesbania / Agati",
+    "ten_khoa_hoc": "Sesbania grandiflora (L.) Pers.",
+    "tac_dung": "Long đờm; chữa ho; kháng khuẩn; tiêu viêm; bổ dưỡng",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "bổ dưỡng"
+    ],
+    "page_start": 692,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 693
+  },
+  {
+    "ten_co_dau": "Cây gáo",
+    "ten_khong_dau": "Cay gao",
+    "ten_anh": "Nauclea / Leichhardt tree",
+    "ten_khoa_hoc": "Nauclea orientalis (L.) L.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; hạ sốt",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ sốt"
+    ],
+    "page_start": 693,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 695
+  },
+  {
+    "ten_co_dau": "Cây me rừng",
+    "ten_khong_dau": "Cay me rung",
+    "ten_anh": "Wild tamarind / Samanea",
+    "ten_khoa_hoc": "Leucaena leucocephala (Lam.) de Wit",
+    "tac_dung": "Long đờm; chữa ho; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 695,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 696
+  },
+  {
+    "ten_co_dau": "Móc mèo núi",
+    "ten_khong_dau": "Moc meo nui",
+    "ten_anh": "Mountain cat-claw / Uncaria",
+    "ten_khoa_hoc": "Uncaria macrophylla Wall.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; trừ phong thấp",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "trừ phong thấp"
+    ],
+    "page_start": 696,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 697
+  },
+  {
+    "ten_co_dau": "Cây cổ hình",
+    "ten_khong_dau": "Cay co hinh",
+    "ten_anh": "Typhonium / Crow dipper",
+    "ten_khoa_hoc": "Typhonium trilobatum (L.) Schott",
+    "tac_dung": "Long đờm; chữa ho; tiêu đàm; kháng khuẩn",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "tiêu đàm",
+      "kháng khuẩn"
+    ],
+    "page_start": 697,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 698
+  },
+  {
+    "ten_co_dau": "Tía tô đại",
+    "ten_khong_dau": "Tia to dai",
+    "ten_anh": "Tussilago / Coltsfoot",
+    "ten_khoa_hoc": "Tussilago farfara L.",
+    "tac_dung": "Chữa ho; long đờm; chống viêm phế quản; kháng khuẩn",
+    "tac_dung_list": [
+      "Chữa ho",
+      "long đờm",
+      "chống viêm phế quản",
+      "kháng khuẩn"
+    ],
+    "page_start": 698,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 699
+  },
+  {
+    "ten_co_dau": "Cây thuốc phiện",
+    "ten_khong_dau": "Cay thuoc phien",
+    "ten_anh": "Opium poppy",
+    "ten_khoa_hoc": "Papaver somniferum L.",
+    "tac_dung": "Giảm đau mạnh (morphine, codeine); chữa ho (codeine); chú ý nghiện và pháp lý",
+    "tac_dung_list": [
+      "Giảm đau mạnh (morphine, codeine)",
+      "chữa ho (codeine)",
+      "chú ý nghiện và pháp lý"
+    ],
+    "page_start": 699,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 700
+  },
+  {
+    "ten_co_dau": "Cây cà độc dược",
+    "ten_khong_dau": "Cay ca doc duoc",
+    "ten_anh": "Jimsonweed / Datura",
+    "ten_khoa_hoc": "Datura metel L.",
+    "tac_dung": "Giãn phế quản; chữa hen suyễn; giảm đau; cực độc; KHÔNG tự dùng",
+    "tac_dung_list": [
+      "Giãn phế quản",
+      "chữa hen suyễn",
+      "giảm đau",
+      "cực độc",
+      "KHÔNG tự dùng"
+    ],
+    "page_start": 700,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 702
+  },
+  {
+    "ten_co_dau": "Thiên tiên tử",
+    "ten_khong_dau": "Thien tien tu",
+    "ten_anh": "Henbane / Hyoscyamus",
+    "ten_khoa_hoc": "Hyoscyamus niger L.",
+    "tac_dung": "Giãn phế quản nhẹ; giảm đau; an thần; cực độc; KHÔNG tự dùng",
+    "tac_dung_list": [
+      "Giãn phế quản nhẹ",
+      "giảm đau",
+      "an thần",
+      "cực độc",
+      "KHÔNG tự dùng"
+    ],
+    "page_start": 702,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 703
+  },
+  {
+    "ten_co_dau": "Mơ",
+    "ten_khong_dau": "Mo",
+    "ten_anh": "Japanese apricot / Prunus mume",
+    "ten_khoa_hoc": "Prunus mume (Siebold) Siebold & Zucc.",
+    "tac_dung": "Chữa ho; cầm tiêu chảy; sát khuẩn; tạo độ chua; chống oxy hóa; kháng khuẩn",
+    "tac_dung_list": [
+      "Chữa ho",
+      "cầm tiêu chảy",
+      "sát khuẩn",
+      "tạo độ chua",
+      "chống oxy hóa",
+      "kháng khuẩn"
+    ],
+    "page_start": 703,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 706
+  },
+  {
+    "ten_co_dau": "Đào",
+    "ten_khong_dau": "Dao",
+    "ten_anh": "Peach",
+    "ten_khoa_hoc": "Prunus persica (L.) Batsch",
+    "tac_dung": "Chữa ho; nhuận tràng; hạt đào: hoạt huyết, giảm đau; bổ dưỡng",
+    "tac_dung_list": [
+      "Chữa ho",
+      "nhuận tràng",
+      "hạt đào: hoạt huyết, giảm đau",
+      "bổ dưỡng"
+    ],
+    "page_start": 706,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 707
+  },
+  {
+    "ten_co_dau": "Cỏ trói gà",
+    "ten_khong_dau": "Co troi ga",
+    "ten_anh": "Desmodium / Tick trefoil",
+    "ten_khoa_hoc": "Desmodium triflorum (L.) DC.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; long đờm",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "long đờm"
+    ],
+    "page_start": 707,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 708
+  },
+  {
+    "ten_co_dau": "Húng chanh",
+    "ten_khong_dau": "Hung chanh",
+    "ten_anh": "Indian borage / Cuban oregano",
+    "ten_khoa_hoc": "Plectranthus amboinicus (Lour.) Spreng.",
+    "tac_dung": "Chữa ho; long đờm; kháng khuẩn mạnh; tiêu viêm; chữa cảm",
+    "tac_dung_list": [
+      "Chữa ho",
+      "long đờm",
+      "kháng khuẩn mạnh",
+      "tiêu viêm",
+      "chữa cảm"
+    ],
+    "page_start": 708,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 709
+  },
+  {
+    "ten_co_dau": "Ráng trắc",
+    "ten_khong_dau": "Rang trac",
+    "ten_anh": "Gleichenia / Coral fern",
+    "ten_khoa_hoc": "Gleichenia linearis (Burm.) C.B.Clarke",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 709,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 710
+  },
+  {
+    "ten_co_dau": "Cải canh",
+    "ten_khong_dau": "Cai canh",
+    "ten_anh": "Indian mustard / Brown mustard",
+    "ten_khoa_hoc": "Brassica juncea (L.) Czern.",
+    "tac_dung": "Long đờm; chữa ho; kháng khuẩn; tiêu viêm; tinh dầu: nóng ấm",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "tinh dầu: nóng ấm"
+    ],
+    "page_start": 710,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 712
+  },
+  {
+    "ten_co_dau": "Củ cải",
+    "ten_khong_dau": "Cu cai",
+    "ten_anh": "White radish / Daikon",
+    "ten_khoa_hoc": "Raphanus sativus L.",
+    "tac_dung": "Long đờm; tiêu hóa; kháng khuẩn; hạ huyết áp; chống oxy hóa; bổ dưỡng",
+    "tac_dung_list": [
+      "Long đờm",
+      "tiêu hóa",
+      "kháng khuẩn",
+      "hạ huyết áp",
+      "chống oxy hóa",
+      "bổ dưỡng"
+    ],
+    "page_start": 712,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 713
+  },
+  {
+    "ten_co_dau": "Thiên môn đông",
+    "ten_khong_dau": "Thien mon dong",
+    "ten_anh": "Asparagus root / Tian Men Dong",
+    "ten_khoa_hoc": "Asparagus cochinchinensis (Lour.) Merr.",
+    "tac_dung": "Dưỡng âm; chữa ho khan; long đờm; bổ phổi, thận; kháng khuẩn; tăng miễn dịch",
+    "tac_dung_list": [
+      "Dưỡng âm",
+      "chữa ho khan",
+      "long đờm",
+      "bổ phổi, thận",
+      "kháng khuẩn",
+      "tăng miễn dịch"
+    ],
+    "page_start": 713,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 715
+  },
+  {
+    "ten_co_dau": "Mạch môn đông",
+    "ten_khong_dau": "Mach mon dong",
+    "ten_anh": "Ophiopogon root / Mai Men Dong",
+    "ten_khoa_hoc": "Ophiopogon japonicus (Thunb.) Ker Gawl.",
+    "tac_dung": "Dưỡng âm; chữa ho khan; bổ phổi; an thần; hạ đường huyết; kháng khuẩn",
+    "tac_dung_list": [
+      "Dưỡng âm",
+      "chữa ho khan",
+      "bổ phổi",
+      "an thần",
+      "hạ đường huyết",
+      "kháng khuẩn"
+    ],
+    "page_start": 715,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 716
+  },
+  {
+    "ten_co_dau": "Cát cánh",
+    "ten_khong_dau": "Cat canh",
+    "ten_anh": "Platycodon / Balloon flower root",
+    "ten_khoa_hoc": "Platycodon grandiflorus (Jacq.) A.DC.",
+    "tac_dung": "Long đờm; chữa ho, viêm phổi; kháng khuẩn; tiêu viêm; tăng miễn dịch",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho, viêm phổi",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "tăng miễn dịch"
+    ],
+    "page_start": 716,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 717
+  },
+  {
+    "ten_co_dau": "Cây nhót tây",
+    "ten_khong_dau": "Cay nhot tay",
+    "ten_anh": "Russian olive / Elaeagnus",
+    "ten_khoa_hoc": "Elaeagnus latifolia L.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; bổ dưỡng",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "bổ dưỡng"
+    ],
+    "page_start": 717,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 718
+  },
+  {
+    "ten_co_dau": "Cây bông bồng",
+    "ten_khong_dau": "Cay bong bong",
+    "ten_anh": "Calotropis / Crown flower",
+    "ten_khoa_hoc": "Calotropis gigantea (L.) Dryand.",
+    "tac_dung": "Long đờm; chữa ho; kháng khuẩn; tiêu viêm; nhựa cây độc - dùng cẩn thận",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "nhựa cây độc - dùng cẩn thận"
+    ],
+    "page_start": 718,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 719
+  },
+  {
+    "ten_co_dau": "Bách hợp",
+    "ten_khong_dau": "Bach hop",
+    "ten_anh": "Lily bulb / Bai He",
+    "ten_khoa_hoc": "Lilium brownii F.E.Br. ex Miellez",
+    "tac_dung": "Dưỡng âm; chữa ho khan; bổ phổi; an thần; kháng khuẩn; chống oxy hóa",
+    "tac_dung_list": [
+      "Dưỡng âm",
+      "chữa ho khan",
+      "bổ phổi",
+      "an thần",
+      "kháng khuẩn",
+      "chống oxy hóa"
+    ],
+    "page_start": 719,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 720
+  },
+  {
+    "ten_co_dau": "Cây dâu",
+    "ten_khong_dau": "Cay dau",
+    "ten_anh": "Mulberry",
+    "ten_khoa_hoc": "Morus alba L.",
+    "tac_dung": "Long đờm; chữa ho; lá dâu hạ đường huyết; bổ dưỡng (quả); kháng khuẩn; chống oxy hóa",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "lá dâu hạ đường huyết",
+      "bổ dưỡng (quả)",
+      "kháng khuẩn",
+      "chống oxy hóa"
+    ],
+    "page_start": 720,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 723
+  },
+  {
+    "ten_co_dau": "Cây bo mấm",
+    "ten_khong_dau": "Cay bo mam",
+    "ten_anh": "Elaeocarpus / Rudraksha",
+    "ten_khoa_hoc": "Elaeocarpus hygrophilus Kurz",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 723,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 724
+  },
+  {
+    "ten_co_dau": "Hẹ",
+    "ten_khong_dau": "He",
+    "ten_anh": "Chinese chive / Garlic chive",
+    "ten_khoa_hoc": "Allium tuberosum Rottler ex Spreng.",
+    "tac_dung": "Chữa ho; kháng khuẩn; bổ thận, tráng dương; tiêu hóa; chống oxy hóa",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "bổ thận, tráng dương",
+      "tiêu hóa",
+      "chống oxy hóa"
+    ],
+    "page_start": 724,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 726
+  },
+  {
+    "ten_co_dau": "Núc nác",
+    "ten_khong_dau": "Nuc nac",
+    "ten_anh": "Oroxylum / Indian trumpet tree",
+    "ten_khoa_hoc": "Oroxylum indicum (L.) Kurz",
+    "tac_dung": "Long đờm; chữa ho, viêm phổi, viêm phế quản; kháng khuẩn mạnh; tiêu viêm; hạ sốt",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho, viêm phổi, viêm phế quản",
+      "kháng khuẩn mạnh",
+      "tiêu viêm",
+      "hạ sốt"
+    ],
+    "page_start": 726,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 728
+  },
+  {
+    "ten_co_dau": "Tổ hợp hương",
+    "ten_khong_dau": "To hop huong",
+    "ten_anh": "Sweetgum / Liquidambar",
+    "ten_khoa_hoc": "Liquidambar orientalis Mill.",
+    "tac_dung": "Long đờm; kháng khuẩn; tiêu viêm; chữa ho; thơm hương",
+    "tac_dung_list": [
+      "Long đờm",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa ho",
+      "thơm hương"
+    ],
+    "page_start": 728,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 729
+  },
+  {
+    "ten_co_dau": "Cánh kiến trắng",
+    "ten_khong_dau": "Canh kien trang",
+    "ten_anh": "Benzoin / Styrax",
+    "ten_khoa_hoc": "Styrax tonkinensis (Pierre) Craib ex Hartwich",
+    "tac_dung": "Long đờm; kháng khuẩn; tiêu viêm; chữa ho; thơm hương; dẫn thuốc",
+    "tac_dung_list": [
+      "Long đờm",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa ho",
+      "thơm hương",
+      "dẫn thuốc"
+    ],
+    "page_start": 729,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 730
+  },
+  {
+    "ten_co_dau": "Viễn chí",
+    "ten_khong_dau": "Vien chi",
+    "ten_anh": "Polygala / Seneca snakeroot",
+    "ten_khoa_hoc": "Polygala tenuifolia Willd.",
+    "tac_dung": "An thần; long đờm; chữa ho; tăng trí nhớ; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "An thần",
+      "long đờm",
+      "chữa ho",
+      "tăng trí nhớ",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 730,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 732
+  },
+  {
+    "ten_co_dau": "Bồ kết",
+    "ten_khong_dau": "Bo ket",
+    "ten_anh": "Gleditsia / Honeylocust pod",
+    "ten_khoa_hoc": "Gleditsia sinensis Lam.",
+    "tac_dung": "Long đờm mạnh; kháng khuẩn; chữa ho; tiêu viêm; diệt khuẩn da",
+    "tac_dung_list": [
+      "Long đờm mạnh",
+      "kháng khuẩn",
+      "chữa ho",
+      "tiêu viêm",
+      "diệt khuẩn da"
+    ],
+    "page_start": 732,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 734
+  },
+  {
+    "ten_co_dau": "Mướp đắng",
+    "ten_khong_dau": "Muop dang",
+    "ten_anh": "Bitter melon / Bitter gourd",
+    "ten_khoa_hoc": "Momordica charantia L.",
+    "tac_dung": "Hạ đường huyết; chữa ho; kháng khuẩn; kháng virus; tăng miễn dịch; chống oxy hóa",
+    "tac_dung_list": [
+      "Hạ đường huyết",
+      "chữa ho",
+      "kháng khuẩn",
+      "kháng virus",
+      "tăng miễn dịch",
+      "chống oxy hóa"
+    ],
+    "page_start": 734,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 735
+  },
+  {
+    "ten_co_dau": "Trám",
+    "ten_khong_dau": "Tram",
+    "ten_anh": "Black plum / Canarium",
+    "ten_khoa_hoc": "Canarium album (Lour.) DC.",
+    "tac_dung": "Chữa ho; long đờm; kháng khuẩn; bổ phổi; chống oxy hóa; chữa viêm họng",
+    "tac_dung_list": [
+      "Chữa ho",
+      "long đờm",
+      "kháng khuẩn",
+      "bổ phổi",
+      "chống oxy hóa",
+      "chữa viêm họng"
+    ],
+    "page_start": 735,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 737
+  },
+  {
+    "ten_co_dau": "Thị đế",
+    "ten_khong_dau": "Thi de",
+    "ten_anh": "Persimmon calyx",
+    "ten_khoa_hoc": "Diospyros kaki Thunb.",
+    "tac_dung": "Chữa nấc; chữa ho; an thần nhẹ; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa nấc",
+      "chữa ho",
+      "an thần nhẹ",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 737,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 738
+  },
+  {
+    "ten_co_dau": "Từ uyển",
+    "ten_khong_dau": "Tu uyen",
+    "ten_anh": "Aster / Tatarian aster root",
+    "ten_khoa_hoc": "Aster tataricus L.f.",
+    "tac_dung": "Long đờm; chữa ho mãn; kháng khuẩn; tiêu viêm; bổ phổi",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho mãn",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "bổ phổi"
+    ],
+    "page_start": 738,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 740
+  },
+  {
+    "ten_co_dau": "Tràm và khuynh diệp",
+    "ten_khong_dau": "Tram va khuynh diep",
+    "ten_anh": "Cajeput and Eucalyptus",
+    "ten_khoa_hoc": "Melaleuca cajuputi Powell / Eucalyptus globulus Labill.",
+    "tac_dung": "Kháng khuẩn mạnh; long đờm; thông mũi; chữa ho; tinh dầu cineol",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh",
+      "long đờm",
+      "thông mũi",
+      "chữa ho",
+      "tinh dầu cineol"
+    ],
+    "page_start": 740,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 740
+  },
+  {
+    "ten_co_dau": "Tràm và tinh dầu tràm",
+    "ten_khong_dau": "Tram va tinh dau tram",
+    "ten_anh": "Cajeput oil / Tea tree oil",
+    "ten_khoa_hoc": "Melaleuca cajuputi Powell",
+    "tac_dung": "Kháng khuẩn, kháng nấm mạnh; long đờm; thông mũi; chữa ho; dùng ngoài da",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng nấm mạnh",
+      "long đờm",
+      "thông mũi",
+      "chữa ho",
+      "dùng ngoài da"
+    ],
+    "page_start": 740,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 742
+  },
+  {
+    "ten_co_dau": "Bạch đàn và tinh dầu bạch đàn",
+    "ten_khong_dau": "Bach dan va tinh dau bach dan",
+    "ten_anh": "Eucalyptus oil",
+    "ten_khoa_hoc": "Eucalyptus globulus Labill.",
+    "tac_dung": "Kháng khuẩn mạnh; long đờm; thông mũi; chữa ho; chống viêm",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh",
+      "long đờm",
+      "thông mũi",
+      "chữa ho",
+      "chống viêm"
+    ],
+    "page_start": 742,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 744
+  },
+  {
+    "ten_co_dau": "Cây một lá",
+    "ten_khong_dau": "Cay mot la",
+    "ten_anh": "Single-leaf orchid / Nervilia",
+    "ten_khoa_hoc": "Nervilia fordii (Hance) Schltr.",
+    "tac_dung": "Chữa ho; bổ phổi; kháng khuẩn; tiêu viêm; lành vết thương",
+    "tac_dung_list": [
+      "Chữa ho",
+      "bổ phổi",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "lành vết thương"
+    ],
+    "page_start": 744,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 746
+  },
+  {
+    "ten_co_dau": "Hồng bì",
+    "ten_khong_dau": "Hong bi",
+    "ten_anh": "Wampee / Clausena lansium",
+    "ten_khoa_hoc": "Clausena lansium (Lour.) Skeels",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; hạ sốt; tiêu hóa",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ sốt",
+      "tiêu hóa"
+    ],
+    "page_start": 746,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 746
+  },
+  {
+    "ten_co_dau": "Cóc mẳn",
+    "ten_khong_dau": "Coc man",
+    "ten_anh": "Centipeda / Sneezewort",
+    "ten_khoa_hoc": "Centipeda minima (L.) A.Braun & Asch.",
+    "tac_dung": "Long đờm; chữa ho, viêm mũi dị ứng; kháng khuẩn; kháng viêm; tiêu viêm",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho, viêm mũi dị ứng",
+      "kháng khuẩn",
+      "kháng viêm",
+      "tiêu viêm"
+    ],
+    "page_start": 746,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 748
+  },
+  {
+    "ten_co_dau": "Phật thủ",
+    "ten_khong_dau": "Phat thu",
+    "ten_anh": "Buddha's hand citron",
+    "ten_khoa_hoc": "Citrus medica L. var. sarcodactylis (Siebold ex Hoola van Nooten) Swingle",
+    "tac_dung": "Chữa ho; hành khí; kháng khuẩn; tiêu hóa; thơm hương",
+    "tac_dung_list": [
+      "Chữa ho",
+      "hành khí",
+      "kháng khuẩn",
+      "tiêu hóa",
+      "thơm hương"
+    ],
+    "page_start": 748,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 749
+  },
+  {
+    "ten_co_dau": "Gai tầm xoong",
+    "ten_khong_dau": "Gai tam xoong",
+    "ten_anh": "Elsholtzia / Vietnamese lemon balm",
+    "ten_khoa_hoc": "Elsholtzia ciliata (Thunb.) Hyl.",
+    "tac_dung": "Chữa ho; kháng khuẩn; hạ sốt; tiêu viêm; thơm hương",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "hạ sốt",
+      "tiêu viêm",
+      "thơm hương"
+    ],
+    "page_start": 749,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 749
+  },
+  {
+    "ten_co_dau": "Bạch cập",
+    "ten_khong_dau": "Bach cap",
+    "ten_anh": "Bletilla / Chinese ground orchid",
+    "ten_khoa_hoc": "Bletilla striata (Thunb.) Rchb.f.",
+    "tac_dung": "Cầm máu; chữa ho ra máu; làm lành vết thương; kháng khuẩn; bổ phổi",
+    "tac_dung_list": [
+      "Cầm máu",
+      "chữa ho ra máu",
+      "làm lành vết thương",
+      "kháng khuẩn",
+      "bổ phổi"
+    ],
+    "page_start": 749,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 751
+  },
+  {
+    "ten_co_dau": "Biến hóa",
+    "ten_khong_dau": "Bien hoa",
+    "ten_anh": "Aristolochia / Birthwort",
+    "ten_khoa_hoc": "Aristolochia indica L.",
+    "tac_dung": "Chữa ho; giảm đau; kháng khuẩn; tiêu viêm; chú ý độc thận",
+    "tac_dung_list": [
+      "Chữa ho",
+      "giảm đau",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chú ý độc thận"
+    ],
+    "page_start": 751,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 751
+  },
+  {
+    "ten_co_dau": "Bố hồn",
+    "ten_khong_dau": "Bo hon",
+    "ten_anh": "Viola / Pansy herb",
+    "ten_khoa_hoc": "Viola diffusa Ging.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; giải độc",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "giải độc"
+    ],
+    "page_start": 751,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 752
+  },
+  {
+    "ten_co_dau": "Bồi màu",
+    "ten_khong_dau": "Boi mau",
+    "ten_anh": "Adenosma / Indian snapdragon",
+    "ten_khoa_hoc": "Adenosma glutinosum (L.) Druce",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; long đờm",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "long đờm"
+    ],
+    "page_start": 752,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 755
+  },
+  {
+    "ten_co_dau": "Cà dại hoa tím",
+    "ten_khong_dau": "Ca dai hoa tim",
+    "ten_anh": "Purple nightshade",
+    "ten_khoa_hoc": "Solanum indicum L.",
+    "tac_dung": "Long đờm; chữa ho; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 755,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 755
+  },
+  {
+    "ten_co_dau": "Cải cúc",
+    "ten_khong_dau": "Cai cuc",
+    "ten_anh": "Garland chrysanthemum / Tong Ho",
+    "ten_khoa_hoc": "Glebionis coronaria (L.) Spach",
+    "tac_dung": "Long đờm; chữa ho; kháng khuẩn; tiêu viêm; bổ dưỡng",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "bổ dưỡng"
+    ],
+    "page_start": 755,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 756
+  },
+  {
+    "ten_co_dau": "Chùa dù",
+    "ten_khong_dau": "Chua du",
+    "ten_anh": "Talauma / Magnolia variant",
+    "ten_khoa_hoc": "Magnolia liliifera (L.) Baill.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; long đờm",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "long đờm"
+    ],
+    "page_start": 756,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 757
+  },
+  {
+    "ten_co_dau": "Chóc gai",
+    "ten_khong_dau": "Choc gai",
+    "ten_anh": "Typhonium / Sagittate taro",
+    "ten_khoa_hoc": "Typhonium trilobatum (L.) Schott",
+    "tac_dung": "Long đờm; chữa ho; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 757,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 758
+  },
+  {
+    "ten_co_dau": "Hổ vĩ",
+    "ten_khong_dau": "Ho vi",
+    "ten_anh": "Mother-in-law's tongue / Snake plant",
+    "ten_khoa_hoc": "Sansevieria trifasciata Prain",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; lợi tiểu",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "lợi tiểu"
+    ],
+    "page_start": 758,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 759
+  },
+  {
+    "ten_co_dau": "Rau khúc",
+    "ten_khong_dau": "Rau khuc",
+    "ten_anh": "Cudweed / Pseudognaphalium",
+    "ten_khoa_hoc": "Pseudognaphalium affine (D.Don) Anderb.",
+    "tac_dung": "Long đờm; chữa ho; kháng khuẩn; tiêu viêm; hạ huyết áp",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ huyết áp"
+    ],
+    "page_start": 759,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 759
+  },
+  {
+    "ten_co_dau": "Mướp tây",
+    "ten_khong_dau": "Muop tay",
+    "ten_anh": "Sponge gourd variant",
+    "ten_khoa_hoc": "Luffa acutangula (L.) Roxb.",
+    "tac_dung": "Long đờm; chữa ho; thông kinh lạc; lợi tiểu; tiêu viêm",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "thông kinh lạc",
+      "lợi tiểu",
+      "tiêu viêm"
+    ],
+    "page_start": 759,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 760
+  },
+  {
+    "ten_co_dau": "Cây nhót",
+    "ten_khong_dau": "Cay nhot",
+    "ten_anh": "Elaeagnus / Oleaster",
+    "ten_khoa_hoc": "Elaeagnus pungens Thunb.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; bổ dưỡng",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "bổ dưỡng"
+    ],
+    "page_start": 760,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 761
+  },
+  {
+    "ten_co_dau": "Ruột gà",
+    "ten_khong_dau": "Ruot ga",
+    "ten_anh": "Polygonum / Knotweed",
+    "ten_khoa_hoc": "Polygonum aviculare L.",
+    "tac_dung": "Chữa ho; lợi tiểu; kháng khuẩn; tiêu viêm; cầm máu",
+    "tac_dung_list": [
+      "Chữa ho",
+      "lợi tiểu",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "cầm máu"
+    ],
+    "page_start": 761,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 762
+  },
+  {
+    "ten_co_dau": "Sấu",
+    "ten_khong_dau": "Sau",
+    "ten_anh": "Spondias / Mombin",
+    "ten_khoa_hoc": "Dracontomelon duperreanum Pierre",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; thanh nhiệt; bổ dưỡng",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "thanh nhiệt",
+      "bổ dưỡng"
+    ],
+    "page_start": 762,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 762
+  },
+  {
+    "ten_co_dau": "Cây si",
+    "ten_khong_dau": "Cay si",
+    "ten_anh": "Weeping fig / Ficus benjamina",
+    "ten_khoa_hoc": "Ficus benjamina L.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; lợi tiểu",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "lợi tiểu"
+    ],
+    "page_start": 762,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 763
+  },
+  {
+    "ten_co_dau": "Lưỡi ươi",
+    "ten_khong_dau": "Luoi uoi",
+    "ten_anh": "Scaphium / Malva nut",
+    "ten_khoa_hoc": "Scaphium macropodum (Miq.) Beumée ex K.Heyne",
+    "tac_dung": "Chữa ho; long đờm; thanh nhiệt; lợi tiểu; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa ho",
+      "long đờm",
+      "thanh nhiệt",
+      "lợi tiểu",
+      "tiêu viêm"
+    ],
+    "page_start": 763,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 765
+  },
+  {
+    "ten_co_dau": "Cây bã thuốc",
+    "ten_khong_dau": "Cay ba thuoc",
+    "ten_anh": "Cayratia / Wild grape",
+    "ten_khoa_hoc": "Tetrastigma planicaule (Hook.f.) Gagnep.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 765,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 766
+  },
+  {
+    "ten_co_dau": "Chanh",
+    "ten_khong_dau": "Chanh",
+    "ten_anh": "Lime / Lemon",
+    "ten_khoa_hoc": "Citrus limon (L.) Osbeck",
+    "tac_dung": "Chữa ho; kháng khuẩn; chống oxy hóa; vitamin C; hạ sốt; tiêu viêm",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "chống oxy hóa",
+      "vitamin C",
+      "hạ sốt",
+      "tiêu viêm"
+    ],
+    "page_start": 766,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 767
+  },
+  {
+    "ten_co_dau": "Dầu giả xoan",
+    "ten_khong_dau": "Dau gia xoan",
+    "ten_anh": "Cedrela / Toon tree",
+    "ten_khoa_hoc": "Toona sinensis (Juss.) M.Roem.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; hạ đường huyết",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "hạ đường huyết"
+    ],
+    "page_start": 767,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 768
+  },
+  {
+    "ten_co_dau": "Tri mẫu",
+    "ten_khong_dau": "Tri mau",
+    "ten_anh": "Anemarrhena / Zhi Mu",
+    "ten_khoa_hoc": "Anemarrhena asphodeloides Bunge",
+    "tac_dung": "Dưỡng âm; chữa ho khan; hạ đường huyết; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Dưỡng âm",
+      "chữa ho khan",
+      "hạ đường huyết",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 768,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 769
+  },
+  {
+    "ten_co_dau": "Mù mắt",
+    "ten_khong_dau": "Mu mat",
+    "ten_anh": "Excoecaria / Milky mangrove",
+    "ten_khoa_hoc": "Excoecaria agallocha L.",
+    "tac_dung": "Chữa ho; kháng khuẩn; tiêu viêm; chú ý nhựa độc",
+    "tac_dung_list": [
+      "Chữa ho",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chú ý nhựa độc"
+    ],
+    "page_start": 769,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 770
+  },
+  {
+    "ten_co_dau": "Hồng xiêm",
+    "ten_khong_dau": "Hong xiem",
+    "ten_anh": "Sapodilla",
+    "ten_khoa_hoc": "Manilkara zapota (L.) P.Royen",
+    "tac_dung": "Chữa ho; long đờm; bổ dưỡng; kháng khuẩn; cầm tiêu chảy",
+    "tac_dung_list": [
+      "Chữa ho",
+      "long đờm",
+      "bổ dưỡng",
+      "kháng khuẩn",
+      "cầm tiêu chảy"
+    ],
+    "page_start": 770,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 771
+  },
+  {
+    "ten_co_dau": "Thủy tiên",
+    "ten_khong_dau": "Thuy tien",
+    "ten_anh": "Narcissus / Daffodil",
+    "ten_khoa_hoc": "Narcissus tazetta L.",
+    "tac_dung": "An thần; chữa ho; tiêu viêm; chú ý độc tính",
+    "tac_dung_list": [
+      "An thần",
+      "chữa ho",
+      "tiêu viêm",
+      "chú ý độc tính"
+    ],
+    "page_start": 771,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 772
+  },
+  {
+    "ten_co_dau": "Sen can",
+    "ten_khong_dau": "Sen can",
+    "ten_anh": "Lotus stamen",
+    "ten_khoa_hoc": "Nelumbo nucifera Gaertn.",
+    "tac_dung": "Chữa ho; an thần; cầm máu; bổ thận, ích tinh",
+    "tac_dung_list": [
+      "Chữa ho",
+      "an thần",
+      "cầm máu",
+      "bổ thận, ích tinh"
+    ],
+    "page_start": 772,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 773
+  },
+  {
+    "ten_co_dau": "La hán",
+    "ten_khong_dau": "La han",
+    "ten_anh": "Monk fruit / Siraitia",
+    "ten_khoa_hoc": "Siraitia grosvenorii (Swingle) C.Jeffrey ex A.M.Lu & Zhi Y.Zhang",
+    "tac_dung": "Chữa ho khan; long đờm; thanh nhiệt; thay thế đường (ngọt không calori)",
+    "tac_dung_list": [
+      "Chữa ho khan",
+      "long đờm",
+      "thanh nhiệt",
+      "thay thế đường (ngọt không calori)"
+    ],
+    "page_start": 773,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 774
+  },
+  {
+    "ten_co_dau": "Bạch quả",
+    "ten_khong_dau": "Bach qua",
+    "ten_anh": "Ginkgo / Maidenhair tree",
+    "ten_khoa_hoc": "Ginkgo biloba L.",
+    "tac_dung": "Chữa hen suyễn; tăng tuần hoàn não; hạ mỡ máu; chống oxy hóa; cải thiện trí nhớ",
+    "tac_dung_list": [
+      "Chữa hen suyễn",
+      "tăng tuần hoàn não",
+      "hạ mỡ máu",
+      "chống oxy hóa",
+      "cải thiện trí nhớ"
+    ],
+    "page_start": 774,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 776
+  },
+  {
+    "ten_co_dau": "Cây nắp ấm",
+    "ten_khong_dau": "Cay nap am",
+    "ten_anh": "Pitcher plant / Nepenthes",
+    "ten_khoa_hoc": "Nepenthes mirabilis (Lour.) Druce",
+    "tac_dung": "Long đờm; chữa ho; lợi tiểu; tiêu viêm; kháng khuẩn",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho",
+      "lợi tiểu",
+      "tiêu viêm",
+      "kháng khuẩn"
+    ],
+    "page_start": 776,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 777
+  },
+  {
+    "ten_co_dau": "Khoản đông hoa",
+    "ten_khong_dau": "Khoan dong hoa",
+    "ten_anh": "Coltsfoot flower / Kuan Dong Hua",
+    "ten_khoa_hoc": "Tussilago farfara L.",
+    "tac_dung": "Long đờm; chữa ho mãn; bổ phổi; kháng khuẩn; tiêu viêm",
+    "tac_dung_list": [
+      "Long đờm",
+      "chữa ho mãn",
+      "bổ phổi",
+      "kháng khuẩn",
+      "tiêu viêm"
+    ],
+    "page_start": 777,
+    "chuong": "XVIII. Các cây thuốc và vị thuốc chữa ho hen",
+    "page_end": 779
+  },
+  {
+    "ten_co_dau": "Bình vôi",
+    "ten_khong_dau": "Binh voi",
+    "ten_anh": "Stephania rotunda / Round stephania",
+    "ten_khoa_hoc": "Stephania rotunda Lour.",
+    "tac_dung": "An thần mạnh; gây ngủ; giảm đau; kháng khuẩn; hạ sốt; chữa mất ngủ",
+    "tac_dung_list": [
+      "An thần mạnh",
+      "gây ngủ",
+      "giảm đau",
+      "kháng khuẩn",
+      "hạ sốt",
+      "chữa mất ngủ"
+    ],
+    "page_start": 779,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 782
+  },
+  {
+    "ten_co_dau": "Lạc tiên",
+    "ten_khong_dau": "Lac tien",
+    "ten_anh": "Passionflower",
+    "ten_khoa_hoc": "Passiflora foetida L.",
+    "tac_dung": "An thần; gây ngủ; giảm lo âu; kháng khuẩn; tiêu viêm; chữa mất ngủ",
+    "tac_dung_list": [
+      "An thần",
+      "gây ngủ",
+      "giảm lo âu",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa mất ngủ"
+    ],
+    "page_start": 782,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 783
+  },
+  {
+    "ten_co_dau": "Sen",
+    "ten_khong_dau": "Sen",
+    "ten_anh": "Lotus seed",
+    "ten_khoa_hoc": "Nelumbo nucifera Gaertn.",
+    "tac_dung": "Bổ tỳ vị; an thần; cầm tiêu chảy; bổ thận, ích tinh; giảm đau; chống oxy hóa",
+    "tac_dung_list": [
+      "Bổ tỳ vị",
+      "an thần",
+      "cầm tiêu chảy",
+      "bổ thận, ích tinh",
+      "giảm đau",
+      "chống oxy hóa"
+    ],
+    "page_start": 783,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 787
+  },
+  {
+    "ten_co_dau": "Cây vông nem",
+    "ten_khong_dau": "Cay vong nem",
+    "ten_anh": "Indian coral tree / Erythrina",
+    "ten_khoa_hoc": "Erythrina orientalis (L.) Murr.",
+    "tac_dung": "An thần mạnh; giảm đau; kháng khuẩn; chữa mất ngủ, lo âu; trấn kinh",
+    "tac_dung_list": [
+      "An thần mạnh",
+      "giảm đau",
+      "kháng khuẩn",
+      "chữa mất ngủ, lo âu",
+      "trấn kinh"
+    ],
+    "page_start": 787,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 788
+  },
+  {
+    "ten_co_dau": "Táo ta",
+    "ten_khong_dau": "Tao ta",
+    "ten_anh": "Jujube / Chinese date",
+    "ten_khoa_hoc": "Ziziphus jujuba Mill.",
+    "tac_dung": "An thần; dưỡng huyết; tăng miễn dịch; bổ tỳ vị; chữa mất ngủ; chống oxy hóa",
+    "tac_dung_list": [
+      "An thần",
+      "dưỡng huyết",
+      "tăng miễn dịch",
+      "bổ tỳ vị",
+      "chữa mất ngủ",
+      "chống oxy hóa"
+    ],
+    "page_start": 788,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 790
+  },
+  {
+    "ten_co_dau": "Long nhãn",
+    "ten_khong_dau": "Long nhan",
+    "ten_anh": "Longan",
+    "ten_khoa_hoc": "Dimocarpus longan Lour.",
+    "tac_dung": "An thần; dưỡng huyết; bổ tỳ vị; chữa mất ngủ, hay quên; bổ dưỡng; chống oxy hóa",
+    "tac_dung_list": [
+      "An thần",
+      "dưỡng huyết",
+      "bổ tỳ vị",
+      "chữa mất ngủ, hay quên",
+      "bổ dưỡng",
+      "chống oxy hóa"
+    ],
+    "page_start": 790,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 791
+  },
+  {
+    "ten_co_dau": "Cây hoa nhài",
+    "ten_khong_dau": "Cay hoa nhai",
+    "ten_anh": "Jasmine / Jasminum sambac",
+    "ten_khoa_hoc": "Jasminum sambac (L.) Aiton",
+    "tac_dung": "An thần nhẹ; kháng khuẩn; tiêu viêm; thơm hương; chữa lo âu nhẹ",
+    "tac_dung_list": [
+      "An thần nhẹ",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "thơm hương",
+      "chữa lo âu nhẹ"
+    ],
+    "page_start": 791,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 792
+  },
+  {
+    "ten_co_dau": "Si to",
+    "ten_khong_dau": "Si to",
+    "ten_anh": "Large-leaf fig / Ficus variegata",
+    "ten_khoa_hoc": "Ficus variegata Blume",
+    "tac_dung": "An thần nhẹ; kháng khuẩn; tiêu viêm; lợi tiểu",
+    "tac_dung_list": [
+      "An thần nhẹ",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "lợi tiểu"
+    ],
+    "page_start": 792,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 794
+  },
+  {
+    "ten_co_dau": "Cây xấu hổ",
+    "ten_khong_dau": "Cay xau ho",
+    "ten_anh": "Sensitive plant / Mimosa",
+    "ten_khoa_hoc": "Mimosa pudica L.",
+    "tac_dung": "An thần; gây ngủ; kháng khuẩn; tiêu viêm; chữa mất ngủ, ho",
+    "tac_dung_list": [
+      "An thần",
+      "gây ngủ",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "chữa mất ngủ, ho"
+    ],
+    "page_start": 794,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 796
+  },
+  {
+    "ten_co_dau": "Thuyền thuê",
+    "ten_khong_dau": "Thuyen thue",
+    "ten_anh": "Sophora / Japanese pagoda tree",
+    "ten_khoa_hoc": "Sophora japonica L.",
+    "tac_dung": "An thần; hạ huyết áp; cầm máu; kháng khuẩn; tăng bền vững thành mạch",
+    "tac_dung_list": [
+      "An thần",
+      "hạ huyết áp",
+      "cầm máu",
+      "kháng khuẩn",
+      "tăng bền vững thành mạch"
+    ],
+    "page_start": 796,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 797
+  },
+  {
+    "ten_co_dau": "Trân châu",
+    "ten_khong_dau": "Tran chau",
+    "ten_anh": "Pearl / Moti",
+    "ten_khoa_hoc": "Pteria martensii (Dunker) (động vật)",
+    "tac_dung": "An thần; sáng mắt; bổ âm; giảm hồi hộp, mất ngủ; dưỡng da",
+    "tac_dung_list": [
+      "An thần",
+      "sáng mắt",
+      "bổ âm",
+      "giảm hồi hộp, mất ngủ",
+      "dưỡng da"
+    ],
+    "page_start": 797,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 798
+  },
+  {
+    "ten_co_dau": "Ngưu hoàng",
+    "ten_khong_dau": "Nguu hoang",
+    "ten_anh": "Bezoar / Ox gallstone",
+    "ten_khoa_hoc": "Bos taurus L. (động vật)",
+    "tac_dung": "An thần, trấn kinh; giải độc; hạ sốt; chữa co giật, hôn mê; kháng khuẩn",
+    "tac_dung_list": [
+      "An thần, trấn kinh",
+      "giải độc",
+      "hạ sốt",
+      "chữa co giật, hôn mê",
+      "kháng khuẩn"
+    ],
+    "page_start": 798,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 800
+  },
+  {
+    "ten_co_dau": "Thiên trúc hoàng",
+    "ten_khong_dau": "Thien truc hoang",
+    "ten_anh": "Bamboo silica / Tian Zhu Huang",
+    "ten_khoa_hoc": "Bambusa textilis McClure",
+    "tac_dung": "An thần; tiêu đàm; hạ sốt; chữa co giật trẻ em; kháng khuẩn",
+    "tac_dung_list": [
+      "An thần",
+      "tiêu đàm",
+      "hạ sốt",
+      "chữa co giật trẻ em",
+      "kháng khuẩn"
+    ],
+    "page_start": 800,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 801
+  },
+  {
+    "ten_co_dau": "Chỉ cụ",
+    "ten_khong_dau": "Chi cu",
+    "ten_anh": "Tribulus / Caltrop",
+    "ten_khoa_hoc": "Tribulus terrestris L.",
+    "tac_dung": "An thần nhẹ; bổ dương; lợi tiểu; hạ huyết áp; sáng mắt",
+    "tac_dung_list": [
+      "An thần nhẹ",
+      "bổ dương",
+      "lợi tiểu",
+      "hạ huyết áp",
+      "sáng mắt"
+    ],
+    "page_start": 801,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 802
+  },
+  {
+    "ten_co_dau": "Chu sa - Thần sa",
+    "ten_khong_dau": "Chu sa - Than sa",
+    "ten_anh": "Cinnabar / Vermilion",
+    "ten_khoa_hoc": "HgS (khoáng vật - khoáng vật có thủy ngân)",
+    "tac_dung": "An thần mạnh; trấn kinh; giải độc; chú ý độc thủy ngân - dùng cẩn thận",
+    "tac_dung_list": [
+      "An thần mạnh",
+      "trấn kinh",
+      "giải độc",
+      "chú ý độc thủy ngân - dùng cẩn thận"
+    ],
+    "page_start": 802,
+    "chuong": "XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh",
+    "page_end": 804
+  },
+  {
+    "ten_co_dau": "Các loại sâm",
+    "ten_khong_dau": "Cac loai sam",
+    "ten_anh": "Various ginsengs",
+    "ten_khoa_hoc": "Panax species",
+    "tac_dung": "Bổ khí; tăng sức đề kháng; chống mệt mỏi; bổ dưỡng",
+    "tac_dung_list": [
+      "Bổ khí",
+      "tăng sức đề kháng",
+      "chống mệt mỏi",
+      "bổ dưỡng"
+    ],
+    "page_start": 804,
+    "chuong": "XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc",
+    "page_end": 804
+  },
+  {
+    "ten_co_dau": "Nhân sâm",
+    "ten_khong_dau": "Nhan sam",
+    "ten_anh": "Ginseng / Korean ginseng",
+    "ten_khoa_hoc": "Panax ginseng C.A.Mey.",
+    "tac_dung": "Bổ khí mạnh; tăng sinh lý; tăng miễn dịch; chống lão hóa; kháng ung thư (hỗ trợ); phục hồi sức khỏe",
+    "tac_dung_list": [
+      "Bổ khí mạnh",
+      "tăng sinh lý",
+      "tăng miễn dịch",
+      "chống lão hóa",
+      "kháng ung thư (hỗ trợ)",
+      "phục hồi sức khỏe"
+    ],
+    "page_start": 804,
+    "chuong": "XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc",
+    "page_end": 808
+  },
+  {
+    "ten_co_dau": "Nhân sâm Việt Nam",
+    "ten_khong_dau": "Nhan sam Viet Nam",
+    "ten_anh": "Vietnamese ginseng / Ngoc Linh ginseng",
+    "ten_khoa_hoc": "Panax vietnamensis Ha & Grushv.",
+    "tac_dung": "Bổ khí mạnh; tăng miễn dịch; chống lão hóa; tăng sinh lý; quý hiếm, đặc hữu Việt Nam",
+    "tac_dung_list": [
+      "Bổ khí mạnh",
+      "tăng miễn dịch",
+      "chống lão hóa",
+      "tăng sinh lý",
+      "quý hiếm, đặc hữu Việt Nam"
+    ],
+    "page_start": 808,
+    "chuong": "XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc",
+    "page_end": 811
+  },
+  {
+    "ten_co_dau": "Đảng sâm",
+    "ten_khong_dau": "Dang sam",
+    "ten_anh": "Codonopsis / Poor man's ginseng",
+    "ten_khoa_hoc": "Codonopsis pilosula (Franch.) Nannf.",
+    "tac_dung": "Bổ khí bổ huyết; tăng sức đề kháng; bổ tỳ phế; chữa mệt mỏi; thay thế nhân sâm",
+    "tac_dung_list": [
+      "Bổ khí bổ huyết",
+      "tăng sức đề kháng",
+      "bổ tỳ phế",
+      "chữa mệt mỏi",
+      "thay thế nhân sâm"
+    ],
+    "page_start": 811,
+    "chuong": "XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc",
+    "page_end": 813
+  },
+  {
+    "ten_co_dau": "Sâm bố chính",
+    "ten_khong_dau": "Sam bo chinh",
+    "ten_anh": "Abelmoschus / Vietnamese ginseng variant",
+    "ten_khoa_hoc": "Abelmoschus moschatus Medik.",
+    "tac_dung": "Bổ dưỡng; tăng sức đề kháng; chữa mệt mỏi; bổ thận",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "tăng sức đề kháng",
+      "chữa mệt mỏi",
+      "bổ thận"
+    ],
+    "page_start": 813,
+    "chuong": "XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc",
+    "page_end": 815
+  },
+  {
+    "ten_co_dau": "Thổ cao ly sâm",
+    "ten_khong_dau": "Tho cao ly sam",
+    "ten_anh": "Vietnamese codonopsis",
+    "ten_khoa_hoc": "Codonopsis javanica (Blume) Hook.f. & Thomson",
+    "tac_dung": "Bổ khí bổ huyết; tăng sức đề kháng; bổ tỳ vị",
+    "tac_dung_list": [
+      "Bổ khí bổ huyết",
+      "tăng sức đề kháng",
+      "bổ tỳ vị"
+    ],
+    "page_start": 815,
+    "chuong": "XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc",
+    "page_end": 969
+  },
+  {
+    "ten_co_dau": "Dạ minh sa",
+    "ten_khong_dau": "Da minh sa",
+    "ten_anh": "Bat dung / Night bright sand",
+    "ten_khoa_hoc": "Vespertilio superans Thomas (động vật)",
+    "tac_dung": "An thần; sáng mắt; chữa đau mắt, quáng gà",
+    "tac_dung_list": [
+      "An thần",
+      "sáng mắt",
+      "chữa đau mắt, quáng gà"
+    ],
+    "page_start": 969,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 970
+  },
+  {
+    "ten_co_dau": "Con dế",
+    "ten_khong_dau": "Con de",
+    "ten_anh": "Cricket",
+    "ten_khoa_hoc": "Gryllus bimaculatus De Geer (động vật)",
+    "tac_dung": "Lợi tiểu; giảm phù nề; chữa bí tiểu",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "giảm phù nề",
+      "chữa bí tiểu"
+    ],
+    "page_start": 970,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 971
+  },
+  {
+    "ten_co_dau": "Nước bọt",
+    "ten_khong_dau": "Nuoc bot",
+    "ten_anh": "Saliva",
+    "ten_khoa_hoc": "Homo sapiens (người)",
+    "tac_dung": "Chữa vết thương nhỏ (enzyme lysozyme tự nhiên); kháng khuẩn nhẹ",
+    "tac_dung_list": [
+      "Chữa vết thương nhỏ (enzyme lysozyme tự nhiên)",
+      "kháng khuẩn nhẹ"
+    ],
+    "page_start": 971,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 973
+  },
+  {
+    "ten_co_dau": "Nước tiểu",
+    "ten_khong_dau": "Nuoc tieu",
+    "ten_anh": "Human urine",
+    "ten_khoa_hoc": "Homo sapiens (người)",
+    "tac_dung": "Đông y: thanh nhiệt, giải độc; chứa hormone; dùng trong y học dân gian",
+    "tac_dung_list": [
+      "Đông y: thanh nhiệt, giải độc",
+      "chứa hormone",
+      "dùng trong y học dân gian"
+    ],
+    "page_start": 973,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 975
+  },
+  {
+    "ten_co_dau": "Phân người",
+    "ten_khong_dau": "Phan nguoi",
+    "ten_anh": "Human feces / Jin Zhong",
+    "ten_khoa_hoc": "Homo sapiens (người)",
+    "tac_dung": "Đông y: giải độc (phân khô = kim trung); trị ngộ độc; y học hiện đại không khuyến dùng",
+    "tac_dung_list": [
+      "Đông y: giải độc (phân khô = kim trung)",
+      "trị ngộ độc",
+      "y học hiện đại không khuyến dùng"
+    ],
+    "page_start": 975,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 976
+  },
+  {
+    "ten_co_dau": "Giun đất",
+    "ten_khong_dau": "Giun dat",
+    "ten_anh": "Earthworm / Di Long",
+    "ten_khoa_hoc": "Pheretima aspergillum (E. Perrier) (động vật)",
+    "tac_dung": "Hạ nhiệt; an thần; trị co giật; hạ huyết áp; kháng khuẩn; lợi tiểu",
+    "tac_dung_list": [
+      "Hạ nhiệt",
+      "an thần",
+      "trị co giật",
+      "hạ huyết áp",
+      "kháng khuẩn",
+      "lợi tiểu"
+    ],
+    "page_start": 976,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 979
+  },
+  {
+    "ten_co_dau": "Xương hổ",
+    "ten_khong_dau": "Xuong ho",
+    "ten_anh": "Tiger bone",
+    "ten_khoa_hoc": "Panthera tigris L. (động vật - cực kỳ nguy cấp)",
+    "tac_dung": "Trừ phong thấp; chữa đau khớp; bổ gân cốt (Đông y cổ truyền); KHÔNG SỬ DỤNG - loài nguy cấp",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "chữa đau khớp",
+      "bổ gân cốt (Đông y cổ truyền)",
+      "KHÔNG SỬ DỤNG - loài nguy cấp"
+    ],
+    "page_start": 979,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 982
+  },
+  {
+    "ten_co_dau": "Khỉ",
+    "ten_khong_dau": "Khi",
+    "ten_anh": "Monkey",
+    "ten_khoa_hoc": "Macaca mulatta Zimmermann (động vật)",
+    "tac_dung": "Đông y: bổ dưỡng; tăng sức đề kháng (các bộ phận)",
+    "tac_dung_list": [
+      "Đông y: bổ dưỡng",
+      "tăng sức đề kháng (các bộ phận)"
+    ],
+    "page_start": 982,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 983
+  },
+  {
+    "ten_co_dau": "Long duyên hương",
+    "ten_khong_dau": "Long duyen huong",
+    "ten_anh": "Ambergris",
+    "ten_khoa_hoc": "Physeter macrocephalus L. (động vật - cá nhà táng)",
+    "tac_dung": "An thần; tăng hương thơm thuốc; đông y: hành khí; rất quý hiếm",
+    "tac_dung_list": [
+      "An thần",
+      "tăng hương thơm thuốc",
+      "đông y: hành khí",
+      "rất quý hiếm"
+    ],
+    "page_start": 983,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 985
+  },
+  {
+    "ten_co_dau": "Hổ phách",
+    "ten_khong_dau": "Ho phach",
+    "ten_anh": "Amber / Fossilized resin",
+    "ten_khoa_hoc": "Succinum (khoáng hóa thạch)",
+    "tac_dung": "An thần; trấn kinh; lợi tiểu; chữa hồi hộp, mất ngủ; hoạt huyết",
+    "tac_dung_list": [
+      "An thần",
+      "trấn kinh",
+      "lợi tiểu",
+      "chữa hồi hộp, mất ngủ",
+      "hoạt huyết"
+    ],
+    "page_start": 985,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 985
+  },
+  {
+    "ten_co_dau": "Miết giáp",
+    "ten_khong_dau": "Miet giap",
+    "ten_anh": "Soft-shelled turtle shell / Bie Jia",
+    "ten_khoa_hoc": "Pelodiscus sinensis (Wiegmann) (động vật)",
+    "tac_dung": "Bổ âm; hạ hư nhiệt; tiêu tán; chữa sốt âm hư, đổ mồ hôi đêm",
+    "tac_dung_list": [
+      "Bổ âm",
+      "hạ hư nhiệt",
+      "tiêu tán",
+      "chữa sốt âm hư, đổ mồ hôi đêm"
+    ],
+    "page_start": 985,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 986
+  },
+  {
+    "ten_co_dau": "Nhân trung bạch",
+    "ten_khong_dau": "Nhan trung bach",
+    "ten_anh": "Dried human urine residue",
+    "ten_khoa_hoc": "Homo sapiens (người)",
+    "tac_dung": "Đông y: thanh nhiệt giải độc; cầm máu; dùng trong y học cổ truyền",
+    "tac_dung_list": [
+      "Đông y: thanh nhiệt giải độc",
+      "cầm máu",
+      "dùng trong y học cổ truyền"
+    ],
+    "page_start": 986,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 987
+  },
+  {
+    "ten_co_dau": "Nhện",
+    "ten_khong_dau": "Nhen",
+    "ten_anh": "Spider",
+    "ten_khoa_hoc": "Various spider species (động vật)",
+    "tac_dung": "Đông y: giải độc; kháng khuẩn; nghiên cứu chất độc trong y học",
+    "tac_dung_list": [
+      "Đông y: giải độc",
+      "kháng khuẩn",
+      "nghiên cứu chất độc trong y học"
+    ],
+    "page_start": 987,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 988
+  },
+  {
+    "ten_co_dau": "Ngũ linh chi",
+    "ten_khong_dau": "Ngu linh chi",
+    "ten_anh": "Flying squirrel feces / Wu Ling Zhi",
+    "ten_khoa_hoc": "Trogopterus xanthipes Milne-Edwards (động vật)",
+    "tac_dung": "Hoạt huyết; giảm đau; chữa đau bụng kinh, đau dạ dày; tiêu ứ",
+    "tac_dung_list": [
+      "Hoạt huyết",
+      "giảm đau",
+      "chữa đau bụng kinh, đau dạ dày",
+      "tiêu ứ"
+    ],
+    "page_start": 988,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 988
+  },
+  {
+    "ten_co_dau": "Rắn",
+    "ten_khong_dau": "Ran",
+    "ten_anh": "Snake",
+    "ten_khoa_hoc": "Various snake species (động vật)",
+    "tac_dung": "Trừ phong thấp; trấn kinh; giải độc; kháng khuẩn; bổ dưỡng; chữa đau khớp, co giật",
+    "tac_dung_list": [
+      "Trừ phong thấp",
+      "trấn kinh",
+      "giải độc",
+      "kháng khuẩn",
+      "bổ dưỡng",
+      "chữa đau khớp, co giật"
+    ],
+    "page_start": 988,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 995
+  },
+  {
+    "ten_co_dau": "Xạ hương",
+    "ten_khong_dau": "Xa huong",
+    "ten_anh": "Musk",
+    "ten_khoa_hoc": "Moschus moschiferus L. (động vật - nguy cấp)",
+    "tac_dung": "Khai khiếu; an thần; giảm đau; tiêu viêm; KHÔNG SỬ DỤNG - loài nguy cấp; có xạ hương tổng hợp",
+    "tac_dung_list": [
+      "Khai khiếu",
+      "an thần",
+      "giảm đau",
+      "tiêu viêm",
+      "KHÔNG SỬ DỤNG - loài nguy cấp",
+      "có xạ hương tổng hợp"
+    ],
+    "page_start": 995,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1000
+  },
+  {
+    "ten_co_dau": "Quy bản và cao quy bản",
+    "ten_khong_dau": "Quy ban va cao quy ban",
+    "ten_anh": "Tortoise shell / Gui Ban",
+    "ten_khoa_hoc": "Chinemys reevesii (Gray) (động vật)",
+    "tac_dung": "Bổ âm; hạ hư nhiệt; cầm máu; chữa đổ mồ hôi đêm, đau xương; an thần",
+    "tac_dung_list": [
+      "Bổ âm",
+      "hạ hư nhiệt",
+      "cầm máu",
+      "chữa đổ mồ hôi đêm, đau xương",
+      "an thần"
+    ],
+    "page_start": 1000,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1002
+  },
+  {
+    "ten_co_dau": "Tâm sa",
+    "ten_khong_dau": "Tam sa",
+    "ten_anh": "Realgar / Arsenic sulfide",
+    "ten_khoa_hoc": "As₂S₂ (khoáng vật)",
+    "tac_dung": "Giải độc; kháng khuẩn; chữa mụn nhọt; cực độc - chỉ dùng ngoài và dưới giám sát",
+    "tac_dung_list": [
+      "Giải độc",
+      "kháng khuẩn",
+      "chữa mụn nhọt",
+      "cực độc - chỉ dùng ngoài và dưới giám sát"
+    ],
+    "page_start": 1002,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1002
+  },
+  {
+    "ten_co_dau": "Tê giác",
+    "ten_khong_dau": "Te giac",
+    "ten_anh": "Rhinoceros horn",
+    "ten_khoa_hoc": "Rhinoceros species (động vật - cực kỳ nguy cấp)",
+    "tac_dung": "Đông y: hạ sốt cao, giải độc (RHY không được kiểm chứng); KHÔNG SỬ DỤNG - loài nguy cấp",
+    "tac_dung_list": [
+      "Đông y: hạ sốt cao, giải độc (RHY không được kiểm chứng)",
+      "KHÔNG SỬ DỤNG - loài nguy cấp"
+    ],
+    "page_start": 1002,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1005
+  },
+  {
+    "ten_co_dau": "Thạch sùng",
+    "ten_khong_dau": "Thach sung",
+    "ten_anh": "House gecko / Bi Hu",
+    "ten_khoa_hoc": "Gekko gecko L. (động vật)",
+    "tac_dung": "Bổ phổi; chữa ho lâu ngày; kháng khuẩn; tiêu viêm; bổ dưỡng",
+    "tac_dung_list": [
+      "Bổ phổi",
+      "chữa ho lâu ngày",
+      "kháng khuẩn",
+      "tiêu viêm",
+      "bổ dưỡng"
+    ],
+    "page_start": 1005,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1006
+  },
+  {
+    "ten_co_dau": "Tóc rối",
+    "ten_khong_dau": "Toc roi",
+    "ten_anh": "Human hair",
+    "ten_khoa_hoc": "Homo sapiens (người)",
+    "tac_dung": "Cầm máu; tiêu ứ; đốt thành than dùng cầm máu",
+    "tac_dung_list": [
+      "Cầm máu",
+      "tiêu ứ",
+      "đốt thành than dùng cầm máu"
+    ],
+    "page_start": 1006,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1007
+  },
+  {
+    "ten_co_dau": "Da voi",
+    "ten_khong_dau": "Da voi",
+    "ten_anh": "Elephant skin",
+    "ten_khoa_hoc": "Elephas maximus L. (động vật - nguy cấp)",
+    "tac_dung": "Đông y: tiêu viêm; cầm máu; KHÔNG SỬ DỤNG - loài nguy cấp",
+    "tac_dung_list": [
+      "Đông y: tiêu viêm",
+      "cầm máu",
+      "KHÔNG SỬ DỤNG - loài nguy cấp"
+    ],
+    "page_start": 1007,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1008
+  },
+  {
+    "ten_co_dau": "Xuyên sơn giáp",
+    "ten_khong_dau": "Xuyen son giap",
+    "ten_anh": "Pangolin scales / Chuan Shan Jia",
+    "ten_khoa_hoc": "Manis pentadactyla L. (động vật - cực kỳ nguy cấp)",
+    "tac_dung": "Đông y: thông sữa; tiêu viêm; hoạt huyết; KHÔNG SỬ DỤNG - loài nguy cấp",
+    "tac_dung_list": [
+      "Đông y: thông sữa",
+      "tiêu viêm",
+      "hoạt huyết",
+      "KHÔNG SỬ DỤNG - loài nguy cấp"
+    ],
+    "page_start": 1008,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1010
+  },
+  {
+    "ten_co_dau": "Bìm bịp",
+    "ten_khong_dau": "Bim bip",
+    "ten_anh": "Malkoha / Pheasant coucal",
+    "ten_khoa_hoc": "Centropus sinensis (Stephens) (động vật)",
+    "tac_dung": "Đông y: bổ dưỡng; trừ phong thấp; tăng sức đề kháng",
+    "tac_dung_list": [
+      "Đông y: bổ dưỡng",
+      "trừ phong thấp",
+      "tăng sức đề kháng"
+    ],
+    "page_start": 1010,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1011
+  },
+  {
+    "ten_co_dau": "Cá cuống",
+    "ten_khong_dau": "Ca cuong",
+    "ten_anh": "Water scorpion bug / Lethocerus",
+    "ten_khoa_hoc": "Lethocerus indicus (Lepeletier & Serville) (động vật)",
+    "tac_dung": "Bổ dưỡng; tăng hương thơm thức ăn; tiêu hóa",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "tăng hương thơm thức ăn",
+      "tiêu hóa"
+    ],
+    "page_start": 1011,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1012
+  },
+  {
+    "ten_co_dau": "Cá nóc",
+    "ten_khong_dau": "Ca noc",
+    "ten_anh": "Pufferfish / Fugu",
+    "ten_khoa_hoc": "Takifugu obscurus (Abe) (động vật)",
+    "tac_dung": "Giảm đau mạnh (tetrodotoxin); cực độc; nghiên cứu y học; KHÔNG ăn chưa chế biến đúng cách",
+    "tac_dung_list": [
+      "Giảm đau mạnh (tetrodotoxin)",
+      "cực độc",
+      "nghiên cứu y học",
+      "KHÔNG ăn chưa chế biến đúng cách"
+    ],
+    "page_start": 1012,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1013
+  },
+  {
+    "ten_co_dau": "Cá trâm",
+    "ten_khong_dau": "Ca tram",
+    "ten_anh": "Anchovy / Dried fish",
+    "ten_khoa_hoc": "Coilia mystus (L.) (động vật)",
+    "tac_dung": "Bổ dưỡng; cầm máu; tiêu hóa",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "cầm máu",
+      "tiêu hóa"
+    ],
+    "page_start": 1013,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1015
+  },
+  {
+    "ten_co_dau": "Chim sẻ",
+    "ten_khong_dau": "Chim se",
+    "ten_anh": "Sparrow / House sparrow",
+    "ten_khoa_hoc": "Passer montanus (L.) (động vật)",
+    "tac_dung": "Bổ thận, tráng dương; bổ dưỡng; Đông y: tăng sinh lý nam",
+    "tac_dung_list": [
+      "Bổ thận, tráng dương",
+      "bổ dưỡng",
+      "Đông y: tăng sinh lý nam"
+    ],
+    "page_start": 1015,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1017
+  },
+  {
+    "ten_co_dau": "Chó",
+    "ten_khong_dau": "Cho",
+    "ten_anh": "Dog meat",
+    "ten_khoa_hoc": "Canis lupus familiaris L. (động vật)",
+    "tac_dung": "Đông y: bổ thận, ấm bụng; bổ dưỡng; tăng sinh lý (y học dân gian một số nơi)",
+    "tac_dung_list": [
+      "Đông y: bổ thận, ấm bụng",
+      "bổ dưỡng",
+      "tăng sinh lý (y học dân gian một số nơi)"
+    ],
+    "page_start": 1017,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1019
+  },
+  {
+    "ten_co_dau": "Dê",
+    "ten_khong_dau": "De",
+    "ten_anh": "Goat",
+    "ten_khoa_hoc": "Capra hircus L. (động vật)",
+    "tac_dung": "Bổ dưỡng; bổ thận; ấm người; tăng sức đề kháng; thịt và sữa dê giàu dinh dưỡng",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "bổ thận",
+      "ấm người",
+      "tăng sức đề kháng",
+      "thịt và sữa dê giàu dinh dưỡng"
+    ],
+    "page_start": 1019,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1021
+  },
+  {
+    "ten_co_dau": "Đổi mới",
+    "ten_khong_dau": "Doi moi",
+    "ten_anh": "Changeable lizard / Garden lizard",
+    "ten_khoa_hoc": "Calotes versicolor (Daudin) (động vật)",
+    "tac_dung": "Đông y: trừ phong; bổ dưỡng; trị phong thấp",
+    "tac_dung_list": [
+      "Đông y: trừ phong",
+      "bổ dưỡng",
+      "trị phong thấp"
+    ],
+    "page_start": 1021,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1022
+  },
+  {
+    "ten_co_dau": "Kỳ đà",
+    "ten_khong_dau": "Ky da",
+    "ten_anh": "Monitor lizard / Varanus",
+    "ten_khoa_hoc": "Varanus salvator (Laurenti) (động vật)",
+    "tac_dung": "Bổ dưỡng; bổ thận; kháng khuẩn; trị phong thấp",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "bổ thận",
+      "kháng khuẩn",
+      "trị phong thấp"
+    ],
+    "page_start": 1022,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1023
+  },
+  {
+    "ten_co_dau": "Con nhím",
+    "ten_khong_dau": "Con nhim",
+    "ten_anh": "Porcupine",
+    "ten_khoa_hoc": "Hystrix brachyura Linnaeus (động vật)",
+    "tac_dung": "Bổ dưỡng; lợi tiểu; bao tử nhím chữa bệnh dạ dày (y học dân gian)",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "lợi tiểu",
+      "bao tử nhím chữa bệnh dạ dày (y học dân gian)"
+    ],
+    "page_start": 1023,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1024
+  },
+  {
+    "ten_co_dau": "Thằn lằn",
+    "ten_khong_dau": "Than lan",
+    "ten_anh": "Common lizard / Blue-tailed skink",
+    "ten_khoa_hoc": "Eutropis multifasciata (Kuhl) (động vật)",
+    "tac_dung": "Kháng khuẩn; bổ dưỡng; chữa vết thương; trừ phong",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "bổ dưỡng",
+      "chữa vết thương",
+      "trừ phong"
+    ],
+    "page_start": 1024,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1026
+  },
+  {
+    "ten_co_dau": "Trăn",
+    "ten_khong_dau": "Tran",
+    "ten_anh": "Python",
+    "ten_khoa_hoc": "Python reticulatus (Schneider) (động vật)",
+    "tac_dung": "Bổ dưỡng; trừ phong thấp; mỡ trăn dưỡng da, kháng khuẩn",
+    "tac_dung_list": [
+      "Bổ dưỡng",
+      "trừ phong thấp",
+      "mỡ trăn dưỡng da, kháng khuẩn"
+    ],
+    "page_start": 1026,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1027
+  },
+  {
+    "ten_co_dau": "Con ruồi",
+    "ten_khong_dau": "Con ruoi",
+    "ten_anh": "Fly",
+    "ten_khoa_hoc": "Musca domestica L. (động vật)",
+    "tac_dung": "Đông y ít dùng; nghiên cứu enzyme; không có tác dụng y tế được kiểm chứng",
+    "tac_dung_list": [
+      "Đông y ít dùng",
+      "nghiên cứu enzyme",
+      "không có tác dụng y tế được kiểm chứng"
+    ],
+    "page_start": 1027,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1028
+  },
+  {
+    "ten_co_dau": "Con sam",
+    "ten_khong_dau": "Con sam",
+    "ten_anh": "Horseshoe crab",
+    "ten_khoa_hoc": "Tachypleus tridentatus Leach (động vật)",
+    "tac_dung": "Máu sam: xét nghiệm nội độc tố (LAL test); đông y: giải độc nhẹ",
+    "tac_dung_list": [
+      "Máu sam: xét nghiệm nội độc tố (LAL test)",
+      "đông y: giải độc nhẹ"
+    ],
+    "page_start": 1028,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1029
+  },
+  {
+    "ten_co_dau": "Đỉa",
+    "ten_khong_dau": "Dia",
+    "ten_anh": "Leech / Hirudo",
+    "ten_khoa_hoc": "Hirudo medicinalis L. (động vật)",
+    "tac_dung": "Chống đông máu (hirudin); hoạt huyết; chữa huyết khối; y học hiện đại dùng trong phẫu thuật vi phẫu",
+    "tac_dung_list": [
+      "Chống đông máu (hirudin)",
+      "hoạt huyết",
+      "chữa huyết khối",
+      "y học hiện đại dùng trong phẫu thuật vi phẫu"
+    ],
+    "page_start": 1029,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1031
+  },
+  {
+    "ten_co_dau": "Hải sâm",
+    "ten_khong_dau": "Hai sam",
+    "ten_anh": "Sea cucumber / Trepang",
+    "ten_khoa_hoc": "Stichopus japonicus (Selenka) (động vật)",
+    "tac_dung": "Bổ thận; tăng miễn dịch; chống ung thư (hỗ trợ); giàu collagen; bổ dưỡng",
+    "tac_dung_list": [
+      "Bổ thận",
+      "tăng miễn dịch",
+      "chống ung thư (hỗ trợ)",
+      "giàu collagen",
+      "bổ dưỡng"
+    ],
+    "page_start": 1031,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1032
+  },
+  {
+    "ten_co_dau": "Con quỷ",
+    "ten_khong_dau": "Con quy",
+    "ten_anh": "Mylabris / Blister beetle",
+    "ten_khoa_hoc": "Mylabris phalerata Pallas (động vật)",
+    "tac_dung": "Kháng ung thư (cantharidin); kháng khuẩn; dùng ngoài chữa mụn nhọt; cực độc",
+    "tac_dung_list": [
+      "Kháng ung thư (cantharidin)",
+      "kháng khuẩn",
+      "dùng ngoài chữa mụn nhọt",
+      "cực độc"
+    ],
+    "page_start": 1032,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1033
+  },
+  {
+    "ten_co_dau": "Ốc sên",
+    "ten_khong_dau": "Oc sen",
+    "ten_anh": "Garden snail",
+    "ten_khoa_hoc": "Helix pomatia L. (động vật)",
+    "tac_dung": "Đông y: thanh nhiệt; lợi tiểu; chữa viêm; chứa mucin dưỡng da",
+    "tac_dung_list": [
+      "Đông y: thanh nhiệt",
+      "lợi tiểu",
+      "chữa viêm",
+      "chứa mucin dưỡng da"
+    ],
+    "page_start": 1033,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1034
+  },
+  {
+    "ten_co_dau": "Sâu ban miêu",
+    "ten_khong_dau": "Sau ban mieu",
+    "ten_anh": "Blister beetle / Spanish fly",
+    "ten_khoa_hoc": "Mylabris cichorii L. (động vật)",
+    "tac_dung": "Kháng ung thư mạnh (cantharidin); kháng khuẩn; cực độc - chỉ dùng dưới giám sát nghiêm ngặt",
+    "tac_dung_list": [
+      "Kháng ung thư mạnh (cantharidin)",
+      "kháng khuẩn",
+      "cực độc - chỉ dùng dưới giám sát nghiêm ngặt"
+    ],
+    "page_start": 1034,
+    "chuong": "XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật",
+    "page_end": 1037
+  },
+  {
+    "ten_co_dau": "Diêm sinh",
+    "ten_khong_dau": "Diem sinh",
+    "ten_anh": "Sulfur",
+    "ten_khoa_hoc": "S (khoáng vật)",
+    "tac_dung": "Kháng khuẩn, kháng nấm; chữa ghẻ, hắc lào; bổ dương; tiêu đờm; dùng ngoài và trong",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng nấm",
+      "chữa ghẻ, hắc lào",
+      "bổ dương",
+      "tiêu đờm",
+      "dùng ngoài và trong"
+    ],
+    "page_start": 1037,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1038
+  },
+  {
+    "ten_co_dau": "Duyên đơn",
+    "ten_khong_dau": "Duyen don",
+    "ten_anh": "Red lead / Minium",
+    "ten_khoa_hoc": "Pb₃O₄ (khoáng vật - chì)",
+    "tac_dung": "Giải độc ngoài da; kháng khuẩn; chữa mụn nhọt ngoài; độc - chỉ dùng ngoài",
+    "tac_dung_list": [
+      "Giải độc ngoài da",
+      "kháng khuẩn",
+      "chữa mụn nhọt ngoài",
+      "độc - chỉ dùng ngoài"
+    ],
+    "page_start": 1038,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1038
+  },
+  {
+    "ten_co_dau": "Đảm phàn",
+    "ten_khong_dau": "Dam phan",
+    "ten_anh": "Copper sulfate / Blue vitriol",
+    "ten_khoa_hoc": "CuSO₄ (khoáng vật)",
+    "tac_dung": "Kháng khuẩn, kháng nấm mạnh; chữa mắt đau, hắc lào; cẩn thận độc tính",
+    "tac_dung_list": [
+      "Kháng khuẩn, kháng nấm mạnh",
+      "chữa mắt đau, hắc lào",
+      "cẩn thận độc tính"
+    ],
+    "page_start": 1038,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1039
+  },
+  {
+    "ten_co_dau": "Hàn the",
+    "ten_khong_dau": "Han the",
+    "ten_anh": "Borax",
+    "ten_khoa_hoc": "Na₂B₄O₇·10H₂O (khoáng vật)",
+    "tac_dung": "Kháng khuẩn nhẹ; tiêu viêm; chữa viêm miệng, lở loét; dùng ngoài (chú ý độc tính khi uống)",
+    "tac_dung_list": [
+      "Kháng khuẩn nhẹ",
+      "tiêu viêm",
+      "chữa viêm miệng, lở loét",
+      "dùng ngoài (chú ý độc tính khi uống)"
+    ],
+    "page_start": 1039,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1040
+  },
+  {
+    "ten_co_dau": "Hoạt thạch",
+    "ten_khong_dau": "Hoat thach",
+    "ten_anh": "Talc / Soapstone",
+    "ten_khoa_hoc": "Mg₃Si₄O₁₀(OH)₂ (khoáng vật)",
+    "tac_dung": "Lợi tiểu; hấp thụ; chữa sỏi tiết niệu; làm mát da; chữa phù nề",
+    "tac_dung_list": [
+      "Lợi tiểu",
+      "hấp thụ",
+      "chữa sỏi tiết niệu",
+      "làm mát da",
+      "chữa phù nề"
+    ],
+    "page_start": 1040,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1040
+  },
+  {
+    "ten_co_dau": "Hùng hoàng và Thư hoàng",
+    "ten_khong_dau": "Hung hoang va Thu hoang",
+    "ten_anh": "Realgar and Orpiment",
+    "ten_khoa_hoc": "As₂S₂ / As₂S₃ (khoáng vật - thạch tín)",
+    "tac_dung": "Giải độc; kháng khuẩn; chữa mụn nhọt (ngoài); rất độc - dùng ngoài, cẩn thận",
+    "tac_dung_list": [
+      "Giải độc",
+      "kháng khuẩn",
+      "chữa mụn nhọt (ngoài)",
+      "rất độc - dùng ngoài, cẩn thận"
+    ],
+    "page_start": 1040,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1042
+  },
+  {
+    "ten_co_dau": "Khinh phấn",
+    "ten_khong_dau": "Khinh phan",
+    "ten_anh": "Calomel / Mercurous chloride",
+    "ten_khoa_hoc": "Hg₂Cl₂ (khoáng vật - thủy ngân)",
+    "tac_dung": "Kháng khuẩn; chữa giang mai (cổ truyền); tẩy; cực độc - không còn dùng",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "chữa giang mai (cổ truyền)",
+      "tẩy",
+      "cực độc - không còn dùng"
+    ],
+    "page_start": 1042,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1042
+  },
+  {
+    "ten_co_dau": "Long cốt",
+    "ten_khong_dau": "Long cot",
+    "ten_anh": "Dragon bone / Fossil bone",
+    "ten_khoa_hoc": "Fossilia Ossis Mastodi (hóa thạch)",
+    "tac_dung": "An thần; trấn kinh; cầm máu; lợi tiểu; chữa mất ngủ, hồi hộp",
+    "tac_dung_list": [
+      "An thần",
+      "trấn kinh",
+      "cầm máu",
+      "lợi tiểu",
+      "chữa mất ngủ, hồi hộp"
+    ],
+    "page_start": 1042,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1043
+  },
+  {
+    "ten_co_dau": "Lô cam thạch",
+    "ten_khong_dau": "Lo cam thach",
+    "ten_anh": "Smithsonite / Calamine",
+    "ten_khoa_hoc": "ZnCO₃ / ZnO (khoáng vật)",
+    "tac_dung": "Kháng khuẩn nhẹ; làm dịu da; chữa ngứa, ngoài da; hút ẩm",
+    "tac_dung_list": [
+      "Kháng khuẩn nhẹ",
+      "làm dịu da",
+      "chữa ngứa, ngoài da",
+      "hút ẩm"
+    ],
+    "page_start": 1043,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1044
+  },
+  {
+    "ten_co_dau": "Lục phàn",
+    "ten_khong_dau": "Luc phan",
+    "ten_anh": "Green vitriol / Ferrous sulfate",
+    "ten_khoa_hoc": "FeSO₄·7H₂O (khoáng vật)",
+    "tac_dung": "Kháng khuẩn; bổ huyết; chữa thiếu máu; chữa ngoài da",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "bổ huyết",
+      "chữa thiếu máu",
+      "chữa ngoài da"
+    ],
+    "page_start": 1044,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1044
+  },
+  {
+    "ten_co_dau": "Mật đà tăng",
+    "ten_khong_dau": "Mat da tang",
+    "ten_anh": "Litharge / Lead monoxide",
+    "ten_khoa_hoc": "PbO (khoáng vật - chì)",
+    "tac_dung": "Kháng khuẩn; làm lành vết thương ngoài; thu liễm; độc - chỉ dùng ngoài",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "làm lành vết thương ngoài",
+      "thu liễm",
+      "độc - chỉ dùng ngoài"
+    ],
+    "page_start": 1044,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1045
+  },
+  {
+    "ten_co_dau": "Muối ăn",
+    "ten_khong_dau": "Muoi an",
+    "ten_anh": "Table salt / Sodium chloride",
+    "ten_khoa_hoc": "NaCl (khoáng vật)",
+    "tac_dung": "Kháng khuẩn; lợi tiểu; chữa viêm họng; cầm máu; cân bằng điện giải; hỗ trợ tiêu hóa",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "lợi tiểu",
+      "chữa viêm họng",
+      "cầm máu",
+      "cân bằng điện giải",
+      "hỗ trợ tiêu hóa"
+    ],
+    "page_start": 1045,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1046
+  },
+  {
+    "ten_co_dau": "Phèn chua",
+    "ten_khong_dau": "Phen chua",
+    "ten_anh": "Alum / Potassium alum",
+    "ten_khoa_hoc": "KAl(SO₄)₂·12H₂O (khoáng vật)",
+    "tac_dung": "Kháng khuẩn; thu liễm; cầm máu; chữa viêm da, ngứa; dùng ngoài và trong",
+    "tac_dung_list": [
+      "Kháng khuẩn",
+      "thu liễm",
+      "cầm máu",
+      "chữa viêm da, ngứa",
+      "dùng ngoài và trong"
+    ],
+    "page_start": 1046,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1046
+  },
+  {
+    "ten_co_dau": "Phục long can",
+    "ten_khong_dau": "Phuc long can",
+    "ten_anh": "Stove earth / Hearth center clay",
+    "ten_khoa_hoc": "Đất sét nung (vật liệu)",
+    "tac_dung": "Cầm máu; an thần; ấm bụng; chữa nôn mửa, tiêu chảy",
+    "tac_dung_list": [
+      "Cầm máu",
+      "an thần",
+      "ấm bụng",
+      "chữa nôn mửa, tiêu chảy"
+    ],
+    "page_start": 1046,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1047
+  },
+  {
+    "ten_co_dau": "Thạch cao",
+    "ten_khong_dau": "Thach cao",
+    "ten_anh": "Gypsum / Calcium sulfate",
+    "ten_khoa_hoc": "CaSO₄·2H₂O (khoáng vật)",
+    "tac_dung": "Hạ sốt cao; thanh nhiệt; tiêu viêm; chữa sốt cao, khát nước; dùng trong và ngoài",
+    "tac_dung_list": [
+      "Hạ sốt cao",
+      "thanh nhiệt",
+      "tiêu viêm",
+      "chữa sốt cao, khát nước",
+      "dùng trong và ngoài"
+    ],
+    "page_start": 1047,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1048
+  },
+  {
+    "ten_co_dau": "Thạch tín",
+    "ten_khong_dau": "Thach tin",
+    "ten_anh": "Arsenic trioxide / White arsenic",
+    "ten_khoa_hoc": "As₂O₃ (khoáng vật)",
+    "tac_dung": "Kháng ung thư (bạch cầu cấp M3); cực độc; chỉ dùng trong y tế có kiểm soát",
+    "tac_dung_list": [
+      "Kháng ung thư (bạch cầu cấp M3)",
+      "cực độc",
+      "chỉ dùng trong y tế có kiểm soát"
+    ],
+    "page_start": 1048,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1049
+  },
+  {
+    "ten_co_dau": "Thăng dược",
+    "ten_khong_dau": "Thang duoc",
+    "ten_anh": "Mercuric sublimate / Red mercury",
+    "ten_khoa_hoc": "HgO / HgS (khoáng vật - thủy ngân)",
+    "tac_dung": "Kháng khuẩn mạnh; chữa giang mai (cổ truyền); làm lành vết loét; cực độc - không còn dùng",
+    "tac_dung_list": [
+      "Kháng khuẩn mạnh",
+      "chữa giang mai (cổ truyền)",
+      "làm lành vết loét",
+      "cực độc - không còn dùng"
+    ],
+    "page_start": 1049,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1049
+  },
+  {
+    "ten_co_dau": "Thủy ngân",
+    "ten_khong_dau": "Thuy ngan",
+    "ten_anh": "Mercury / Quicksilver",
+    "ten_khoa_hoc": "Hg (khoáng vật)",
+    "tac_dung": "Đông y cổ: giải độc, sát khuẩn; cực độc thần kinh; KHÔNG SỬ DỤNG trong y học hiện đại",
+    "tac_dung_list": [
+      "Đông y cổ: giải độc, sát khuẩn",
+      "cực độc thần kinh",
+      "KHÔNG SỬ DỤNG trong y học hiện đại"
+    ],
+    "page_start": 1049,
+    "chuong": "XXIII. Các vị thuốc nguồn gốc khoáng vật",
+    "page_end": 1049
+  }
+];
