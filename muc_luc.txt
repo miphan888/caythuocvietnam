@@ -1,0 +1,656 @@
+Chương,Tên mục,Trang
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Ích mẫu,30
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Hương phụ,33
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Ngải cứu,36
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Bạch đồng nữ,37
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cây diếp cá,40
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cây hồng hoa,41
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cây gai,42
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cây hoa cứt lợn,43
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Bán hạ,44
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cây bông,47
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Hạt bông,48
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cây ngưu tất,48
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cây tô mộc,50
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cây rau ngót,52
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Đài hái,53
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cỏ đuôi lươn,54
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Đương quy,55
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Huyết giác,59
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Mướp,60
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Nhội,61
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Ổ rô,63
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Thiên lý,64
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Thược dược,65
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Bạch thược,65
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Xích thược,66
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Bo mẩy,67
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Mít,68
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Cửu lý hương,69
+I. Các cây thuốc và vị thuốc chữa bệnh phụ nữ,Duyên hồ sách,70
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bồ công anh,72
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bồ công anh Việt Nam,72
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bồ công anh Trung Quốc,73
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Chỉ thiên,75
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Kim ngân,75
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cây ké đầu ngựa,78
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Hạ khô thảo,79
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cây xà sàng,82
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bưởi bung,83
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cây mã tiền thảo,84
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Con rết,85
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Sài đất,86
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bạch hạc,88
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bạch hoa xà,89
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bảy lá một hoa,90
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bèo cái,92
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bố cu vẽ,93
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bùng bục,94
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cà đại hoa vàng,95
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cào bản,95
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Chó đẻ răng cưa,97
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cúc liên chi đại,98
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Dâm bụt,99
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Ké hoa đào,99
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Ké hoa vàng,100
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Khế,102
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Liên kiều,102
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Máu chó,104
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Lá móng tay,105
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Mù u,106
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Niệt gió,107
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Phù dung,108
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Dầu rái trắng,109
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cây rau má lá rau muống,111
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Rau má ngọ,111
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Tán cửu (Thanh táo),112
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Thanh đại,113
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Thuốc bỏng,116
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Thuốc giấu,117
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Trâu không,118
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Thơm lốm,119
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Đơn buốt,120
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Chè vằng,121
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cây rẩy,122
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Ba chạc,123
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bạc thau,123
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bèo tây,124
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Bứa,125
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Dây đòn gánh,126
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Đại phong tử,126
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Đơn răng cưa,129
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Đơn tướng quân,130
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Găng tu hú,131
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Huyết kiệt,132
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Hương điệp,133
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Keo nước hoa,135
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Khoai nưa,136
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cây la,137
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cà tàu,138
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Lăn tơ uyn,138
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Lu lu đực,140
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Mật quý,141
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Muồng trường,141
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Rong mơ,142
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Sắn thuyền,143
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Thóc lép,144
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Tỏi đỏ,145
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Tùng hương,146
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Vạn niên thanh,148
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Táo rừng,149
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Sáng,150
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Hàn the,151
+II. Các cây thuốc và vị thuốc chữa mụn nhọt mẩn ngứa,Cà chua,151
+III. Các cây thuốc và vị thuốc trị giun sán,Cây dầu giun,153
+III. Các cây thuốc và vị thuốc trị giun sán,Sử quân tử,156
+III. Các cây thuốc và vị thuốc trị giun sán,Cây keo đậu,158
+III. Các cây thuốc và vị thuốc trị giun sán,Cây bách bộ,160
+III. Các cây thuốc và vị thuốc trị giun sán,Xoan,161
+III. Các cây thuốc và vị thuốc trị giun sán,Cây thùn mùn,167
+III. Các cây thuốc và vị thuốc trị giun sán,Hạt bí ngô,168
+III. Các cây thuốc và vị thuốc trị giun sán,Cây chân hẩu,169
+III. Các cây thuốc và vị thuốc trị giun sán,Cây thạch lựu,170
+III. Các cây thuốc và vị thuốc trị giun sán,Cây cau,172
+III. Các cây thuốc và vị thuốc trị giun sán,Cây rùm nao,174
+III. Các cây thuốc và vị thuốc trị giun sán,Quán chúng,175
+III. Các cây thuốc và vị thuốc trị giun sán,Mặc nưa,177
+IV. Các cây thuốc và vị thuốc chữa lỵ - A. Chữa lỵ amip,Cây sầu đâu rừng,179
+IV. Các cây thuốc và vị thuốc chữa lỵ - A. Chữa lỵ amip,Tỏi,181
+IV. Các cây thuốc và vị thuốc chữa lỵ - A. Chữa lỵ amip,Mộc hoa trắng,182
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Rau sam,184
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Mơ tam thể,186
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Cây chè,187
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Vô lựu,188
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Hoàng liên,189
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Hoàng liên gai,191
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Hoàng liên ô rô,192
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Hoàng đằng,193
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Hoàng đằng chân vịt,194
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Vàng đắng,195
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Thổ hoàng liên,195
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Hoàng đằng loong trơn,197
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Hoàng bá,197
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Cỏ sữa nhỏ lá,199
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Ba chẽ,200
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Bàng,201
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Cẩm xà lạc,202
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Điều nhuộm,203
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Đơn đỏ,204
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Đơn trắng (Hé mọ),205
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Mộc nhĩ,206
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Phượng nhỡn thảo,206
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Sun sư cỏ,207
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Seo gà,208
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Vọng cách,209
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Đậu rựa,210
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Gừng đại,211
+IV. Các cây thuốc và vị thuốc chữa lỵ - B. Chữa lỵ trực trùng,Sảng lẻ,212
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Mã đề,215
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây trạch tả,217
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Đại phục bì,218
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cỏ chỉ,218
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cỏ tranh,219
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây râu mèo,219
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Rau ngổ,220
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây áctisô,221
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Phục linh,222
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Bắc đen,223
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây thông thảo,224
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Dành dành,225
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Nghề,227
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Mật động vật - Đởm,230
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Mật lợn mật bò,230
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Bòn bọt,232
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Chỉ thiên,233
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Dưa chuột,235
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Chua me đất hoa vàng,236
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây chua me lá me,237
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cỏ bợ,238
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cỏ may,238
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Đậu đen,239
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Hoa hiên,240
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Lồi tiền,241
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Mộc tặc,242
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Mộc thông,243
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Sỏi,246
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Tai chuột,248
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Thạch vĩ,249
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Lưỡi rắn,250
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Dây chạc chìu,251
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Thông bong,252
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Mần tươi,252
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cà dái dê tím,254
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây cam xúng,254
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Chanh trường,255
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cối z,255
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Còn bọ,256
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây cơm cháy,257
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Rau dừa nước,258
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Dứa,259
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Dứa đại,261
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây đa,261
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Đậu chiều,262
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Đậu đỏ nhỏ,263
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Gừng,264
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây xương sáo,265
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Thối nốt,265
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Mía,266
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Kim tiền thảo,267
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Rau ơm,268
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Móng lưng rồng,269
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Nàng nàng,270
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Rau đắng,271
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cây lá tiết dê,272
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Khế rừng,273
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Mã thầy,274
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Mùi tây,275
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Thương lục,276
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Cỏ thiên thảo,277
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Dừa bà,278
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Lục lạc ba lá tròn,280
+V. Các cây thuốc và vị thuốc thông tiểu tiện và thông mật,Rau muống,281
+VI. Các cây thuốc và vị thuốc cầm máu,Cỏ nhọ nồi,282
+VI. Các cây thuốc và vị thuốc cầm máu,Cây nghệ,283
+VI. Các cây thuốc và vị thuốc cầm máu,Cỏ nến,284
+VI. Các cây thuốc và vị thuốc cầm máu,Long nhã thảo,285
+VI. Các cây thuốc và vị thuốc cầm máu,Cây huyết dụ,287
+VI. Các cây thuốc và vị thuốc cầm máu,Cây trắc bách diệp,287
+VI. Các cây thuốc và vị thuốc cầm máu,Cây tam thất,289
+VI. Các cây thuốc và vị thuốc cầm máu,Cây mào gà trắng,291
+VI. Các cây thuốc và vị thuốc cầm máu,Cây mào gà đỏ,292
+VI. Các cây thuốc và vị thuốc cầm máu,Bách thảo sương,293
+VI. Các cây thuốc và vị thuốc cầm máu,Rau ngổ,293
+VI. Các cây thuốc và vị thuốc cầm máu,Thiên thảo,294
+VI. Các cây thuốc và vị thuốc cầm máu,Vạn tuế,295
+VI. Các cây thuốc và vị thuốc cầm máu,Địa du,297
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Cây hoa hòe,298
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Mạch ba góc,300
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Cây ba gạc,301
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Cây ba gạc Ấn Độ,302
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Cây ba kích,303
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Cây câu đằng,305
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Cây nhàu,306
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Cây dừa cạn,307
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Đỗ trọng,309
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Hoàng cầm,311
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Hồi đầu thảo,314
+VII. Các cây thuốc và vị thuốc hạ huyết áp,Rau cần tây,314
+VIII. Các cây và vị thuốc có chất độc,Cây chẹo,316
+VIII. Các cây và vị thuốc có chất độc,Cây củ đậu,316
+VIII. Các cây và vị thuốc có chất độc,Cây hột mát,318
+VIII. Các cây và vị thuốc có chất độc,Cây lá ngón,318
+VIII. Các cây và vị thuốc có chất độc,Cây sui,321
+VIII. Các cây và vị thuốc có chất độc,Thàn mát,322
+VIII. Các cây và vị thuốc có chất độc,Hồi núi,323
+VIII. Các cây và vị thuốc có chất độc,Hương bài,324
+VIII. Các cây và vị thuốc có chất độc,Hương lau,325
+VIII. Các cây và vị thuốc có chất độc,Cỏ giải,326
+VIII. Các cây và vị thuốc có chất độc,Cúc trừ sâu,327
+VIII. Các cây và vị thuốc có chất độc,Tỏi độc,331
+VIII. Các cây và vị thuốc có chất độc,Cây ngọt nghẹo,334
+VIII. Các cây và vị thuốc có chất độc,Cây cho curaro,336
+VIII. Các cây và vị thuốc có chất độc,Sở,338
+VIII. Các cây và vị thuốc có chất độc,Trẩu,340
+VIII. Các cây và vị thuốc có chất độc,Cây lim,341
+VIII. Các cây và vị thuốc có chất độc,Mắc kẹn,343
+VIII. Các cây và vị thuốc có chất độc,Thuốc lá,344
+VIII. Các cây và vị thuốc có chất độc,Gai dầu,346
+VIII. Các cây và vị thuốc có chất độc,Cây sơn,350
+VIII. Các cây và vị thuốc có chất độc,Dây thuốc cá,351
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Sơn tra,355
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Mạch nha,357
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Thần khúc,358
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Đu đủ,360
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Kê nội kim,363
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Chỉ thực,363
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Địa liền,365
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Gừng,366
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Gừng gió,368
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Hạt sen,369
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Hạt tiêu,370
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Hậu phác,372
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Hoắc hương,374
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Long đởm thảo,375
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Nga truật,377
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Ngô thù du,378
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Ngũ gia bì,379
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Ớt,382
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Quít - Trần bì,384
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Riềng,385
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Xương bồ,387
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Bạch biển đậu,389
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Bạch truật,391
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Thương truật,392
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Đơn lá đỏ,394
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Dùm dùm,395
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Màm xôi,395
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Mộc hương,396
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Rau dây,398
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Sa nhân - Đậu khấu,400
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Dương xuân sa,400
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Sa nhân,401
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Đậu khấu,402
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Thảo đậu khấu,404
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Hồng đậu khấu,404
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Ích trí nhân,405
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Nhục đậu khấu,406
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Thành ngạnh,408
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Thảo quả,409
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Thị,410
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Bách bệnh,412
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Hublông,413
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Cây dung,415
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Hoa tiên,416
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Màng tang,416
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Rau mùi,417
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Nấm hương,418
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Thiên đầu thống,420
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Tai chua,421
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Thìa là,422
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Vối,423
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Cây lá men,423
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Sổ,424
+IX. Các cây thuốc và vị thuốc chữa bệnh ở bộ máy tiêu hóa,Thanh ngâm,425
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Kha tử,427
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Măng cụt,428
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Ngũ bội tử,429
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Cây ổi,431
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Ô dược,432
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Sim,434
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Trầm hương,435
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Kiến kỳ nam,436
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Cà rốt,437
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Preah phneou,439
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Củ nâu,439
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Vải,441
+X. Các cây thuốc và vị thuốc chữa đi lỏng - đau bụng,Khoai riềng,443
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Khiên ngưu,444
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Khoai lang,446
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Cây đại,447
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Mang tiêu,448
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Ba đậu,449
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Thầu dầu,451
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Chút chít,453
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Đại hoàng,455
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Lô hội,458
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Muồng trâu,460
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Phan tả diệp,461
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Thảo quyết minh,463
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Vọng giang nam,464
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Rau móng tơi,466
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Thạch,467
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Cây hoa phấn,469
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Ba đậu tây,470
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Đàng hoàng,471
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Đậu cọc rào,472
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Cây lại,473
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Lộc mại,474
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Me,475
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Lạc,476
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Tục tùy tử,478
+XI. Các cây thuốc và vị thuốc nhuận tràng và tẩy,Thanh long,479
+XII. Các cây thuốc và vị thuốc chữa đau dạ dày,Cây khôi,481
+XII. Các cây thuốc và vị thuốc chữa đau dạ dày,Cây dạ cẩm,482
+XII. Các cây thuốc và vị thuốc chữa đau dạ dày,Mẫu lệ,483
+XII. Các cây thuốc và vị thuốc chữa đau dạ dày,Mai mực,485
+XII. Các cây thuốc và vị thuốc chữa đau dạ dày,Thạch quyết minh,486
+XII. Các cây thuốc và vị thuốc chữa đau dạ dày,Cải bắp,487
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Câu tích,490
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Cốt toái bổ,491
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Dây đau xương,492
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Cây hàm ếch,493
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Hy thiêm,494
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Cây sung,495
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Thiên niên kiện,496
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Thổ phục linh,498
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Cây xả xị,499
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Tỳ giải,500
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Cây vòi voi,502
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Mắt gấu,503
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Chia vôi,505
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Củ cốt khí,506
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Độc hoạt,507
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Náng hoa trắng,509
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Trinh nữ hoàng cung,511
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Phòng kỷ,512
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Phấn phòng kỷ,512
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Quảng phòng kỷ,514
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Mộc phòng kỷ,515
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Các loại phòng kỷ dùng ở Việt Nam,515
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Tắm dượt,515
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Lá lốt,516
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Lậu,517
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Trứng cuốc,518
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Châu thụ,519
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Dây toàn,520
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Cây đến,521
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Gối hạc,522
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Hoàng nàn,522
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Hồi,524
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Khoai tây,525
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Kim sương,526
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Long não,527
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Mã tiền,529
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Mộc qua,531
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Vuốt hùm,532
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Bướm bạc,533
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Chạy,533
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Rung rúc,534
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Giổi,535
+XIII. Các cây thuốc và vị thuốc chữa tê thấp đau nhức,Chia vôi,536
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Cây ban,538
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Bồi lời nhớt,539
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Bông báo,540
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Cây mô quả,541
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Cà đại hoa trắng,542
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Bông ổi,542
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Tơ mành,543
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Bát giác liên,544
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Bông gạo,545
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Cà gai leo,546
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Rau răm,547
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Vòng vàng,548
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Lá dong,549
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Sơn từ cô,549
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Phèn đen,550
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Ngô đồng,551
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Cỏ bạc đầu,552
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Đào lộn hột,553
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Xoan nhừ,554
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Bóng nước,556
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Cây mẫm,557
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Rau tàu bay,558
+XIV. Các cây thuốc và vị thuốc đắp vết thương rắn rết cắn,Cây kim vàng,559
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Cốc tinh thảo,560
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Mật mông hoa,561
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Cúc áo,562
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Xương khô,564
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Xương rồng,565
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Tế tân,566
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Đơn chân châu,568
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Mía dò,568
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Xoài,569
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Nhân hương,571
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Tật lê,573
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Ruối,574
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Củ gió,575
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Sao đen,576
+XV. Các cây thuốc và vị thuốc chữa bệnh mắt tai mũi răng họng,Tất bát,577
+XVI. Các cây thuốc và vị thuốc chữa bệnh tim,Cây mướp sát,579
+XVI. Các cây thuốc và vị thuốc chữa bệnh tim,Cây sừng dê,580
+XVI. Các cây thuốc và vị thuốc chữa bệnh tim,Cây thông thiên,583
+XVI. Các cây thuốc và vị thuốc chữa bệnh tim,Cây trúc đào,586
+XVI. Các cây thuốc và vị thuốc chữa bệnh tim,Vạn niên thanh,589
+XVI. Các cây thuốc và vị thuốc chữa bệnh tim,Hành biển,591
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Bạc hà,595
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Bạch chỉ,598
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cây cối xay,601
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cây cúc bách nhật,602
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cúc hoa,604
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Đại bi,605
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Đam trúc diệp,608
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Hành,609
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Kinh giới,611
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Dây kỳ ninh,613
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Ma hoàng,614
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Màn kinh tử,618
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cỏ mán trầu,619
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Mẫu đơn bí,620
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Muống biển,622
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Na,622
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Ngưu bàng,624
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Nhân trần,625
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Qua lâu nhân,629
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cây rau má,631
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Sài hồ,633
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Sắn dây,635
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Tế thái,636
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Thạch hộc,638
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Thanh cao hoa vàng,640
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Thanh cao,642
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cây chổi xể,643
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Thường sơn,644
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Tía tô,648
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Tiền hồ,650
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Trúc như,651
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Xa can,653
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Xuyên khung,654
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Bầu đất,657
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Dương,658
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Húng quế,659
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Trà tiên,661
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Gắm,662
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Hương nhu,662
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Khương hoạt,664
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Niềng,665
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Phòng phong,666
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Dây quai bị,668
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Thăng ma,669
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Canh châu,670
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cánh kiến đỏ,671
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Đinh hương,674
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Ngấu,675
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Bàm bàm,676
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Bụng báng,677
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cánh ki na,678
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Củ khỉ,684
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cúc mốc,685
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Cúc tản,685
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Đậu sị,686
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Rau mùi tàu,687
+XVII. Các cây thuốc và vị thuốc chữa cảm sốt,Sì,688
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Xương sông,689
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Bông nổ,690
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Bưởi,691
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Củ ấu,692
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,So đũa,692
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây gáo,693
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây me rừng,695
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Móc mèo núi,696
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây cổ hình,697
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Tía tô đại,698
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây thuốc phiện,699
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây cà độc dược,700
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Thiên tiên tử,702
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Mơ,703
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Đào,706
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cỏ trói gà,707
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Húng chanh,708
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Ráng trắc,709
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cải canh,710
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Củ cải,712
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Thiên môn đông,713
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Mạch môn đông,715
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cát cánh,716
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây nhót tây,717
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây bông bồng,718
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Bách hợp,719
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây dâu,720
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây bo mấm,723
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Hẹ,724
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Núc nác,726
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Tổ hợp hương,728
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cánh kiến trắng,729
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Viễn chí,730
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Bồ kết,732
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Mướp đắng,734
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Trám,735
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Thị đế,737
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Từ uyển,738
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Tràm và khuynh diệp,740
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Tràm và tinh dầu tràm,740
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Bạch đàn và tinh dầu bạch đàn,742
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây một lá,744
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Hồng bì,746
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cóc mẳn,746
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Phật thủ,748
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Gai tầm xoong,749
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Bạch cập,749
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Biến hóa,751
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Bố hồn,751
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Bồi màu,752
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cà dại hoa tím,755
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cải cúc,755
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Chùa dù,756
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Chóc gai,757
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Hổ vĩ,758
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Rau khúc,759
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Mướp tây,759
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây nhót,760
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Ruột gà,761
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Sấu,762
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây si,762
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Lưỡi ươi,763
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây bã thuốc,765
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Chanh,766
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Dầu giả xoan,767
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Tri mẫu,768
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Mù mắt,769
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Hồng xiêm,770
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Thủy tiên,771
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Sen can,772
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,La hán,773
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Bạch quả,774
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Cây nắp ấm,776
+XVIII. Các cây thuốc và vị thuốc chữa ho hen,Khoản đông hoa,777
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Bình vôi,779
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Lạc tiên,782
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Sen,783
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Cây vông nem,787
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Táo ta,788
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Long nhãn,790
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Cây hoa nhài,791
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Si to,792
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Cây xấu hổ,794
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Thuyền thuê,796
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Trân châu,797
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Ngưu hoàng,798
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Thiên trúc hoàng,800
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Chỉ cụ,801
+XIX. Các cây thuốc và vị thuốc ngủ an thần trấn kinh,Chu sa - Thần sa,802
+XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc,Các loại sâm,804
+XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc,Nhân sâm,804
+XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc,Nhân sâm Việt Nam,808
+XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc,Đảng sâm,811
+XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc,Sâm bố chính,813
+XX. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc thảo mộc,Thổ cao ly sâm,815
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Dạ minh sa,969
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Con dế,970
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Nước bọt,971
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Nước tiểu,973
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Phân người,975
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Giun đất,976
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Xương hổ,979
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Khỉ,982
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Long duyên hương,983
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Hổ phách,985
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Miết giáp,985
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Nhân trung bạch,986
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Nhện,987
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Ngũ linh chi,988
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Rắn,988
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Xạ hương,995
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Quy bản và cao quy bản,1000
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Tâm sa,1002
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Tê giác,1002
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Thạch sùng,1005
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Tóc rối,1006
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Da voi,1007
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Xuyên sơn giáp,1008
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Bìm bịp,1010
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Cá cuống,1011
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Cá nóc,1012
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Cá trâm,1013
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Chim sẻ,1015
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Chó,1017
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Dê,1019
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Đổi mới,1021
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Kỳ đà,1022
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Con nhím,1023
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Thằn lằn,1024
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Trăn,1026
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Con ruồi,1027
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Con sam,1028
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Đỉa,1029
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Hải sâm,1031
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Con quỷ,1032
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Ốc sên,1033
+XXI. Các vị thuốc bổ thuốc bồi dưỡng nguồn gốc động vật,Sâu ban miêu,1034
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Diêm sinh,1037
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Duyên đơn,1038
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Đảm phàn,1038
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Hàn the,1039
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Hoạt thạch,1040
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Hùng hoàng và Thư hoàng,1040
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Khinh phấn,1042
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Long cốt,1042
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Lô cam thạch,1043
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Lục phàn,1044
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Mật đà tăng,1044
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Muối ăn,1045
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Phèn chua,1046
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Phục long can,1046
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Thạch cao,1047
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Thạch tín,1048
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Thăng dược,1049
+XXIII. Các vị thuốc nguồn gốc khoáng vật,Thủy ngân,1049

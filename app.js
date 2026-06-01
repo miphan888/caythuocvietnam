@@ -20,6 +20,7 @@ const STATE = {
   wikiImageCache: {},        // { plantKey: [imageUrls] }
 };
 
+
 // ===================== HELPERS =====================
 function fmt(n) { return String(n).padStart(3, '0'); }
 function imgPath(page) { return `images/page_0${fmt(page)}.jpeg`; }
@@ -32,7 +33,6 @@ function chapterShort(ch) {
   return ch.replace(/^([IVXLC]+\.\s*)/, '').trim();
 }
 
-// Get unique chapters
 const CHAPTERS = (() => {
   const seen = new Set();
   const list = [];
@@ -47,7 +47,6 @@ async function fetchWikiImages(plant, maxImages = 4) {
   const cacheKey = plant.ten_khong_dau;
   if (STATE.wikiImageCache[cacheKey]) return STATE.wikiImageCache[cacheKey];
 
-  // Try English name first, fall back to scientific name
   const queries = [];
   if (plant.ten_anh) queries.push(plant.ten_anh.split('/')[0].trim());
   if (plant.ten_khoa_hoc) {
@@ -69,13 +68,11 @@ async function fetchWikiImages(plant, maxImages = 4) {
       const page = pages[pageId];
       const images = [];
 
-      // Main page thumbnail
       if (page.thumbnail?.source) images.push({
         src: page.thumbnail.source,
         caption: page.title
       });
 
-      // Try to get more from images list
       if (page.images && images.length < maxImages) {
         const imageNames = page.images
           .filter(i => /\.(jpg|jpeg|png|webp)$/i.test(i.title))
@@ -131,6 +128,9 @@ function navigate(page, data = {}) {
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
+  const floatBtn = document.getElementById('floating-wiki-btn');
+  if (floatBtn && page !== 'detail') floatBtn.classList.remove('visible');
+
   if (page === 'home') renderHome();
   else if (page === 'catalog') { STATE.catalogCurrentPage = 1; renderCatalog(); }
   else if (page === 'disease') renderDiseasePage();
@@ -165,6 +165,10 @@ function renderHome() {
 
   document.getElementById('hero-total').textContent = total;
   document.getElementById('hero-chapters').textContent = CHAPTERS.length;
+
+  clearInterval(dyAutoTimer);
+  dyCurrentIndex = 0;
+  initDanhYSlider();
 }
 
 // ===================== CATALOG PAGE =====================
@@ -233,7 +237,6 @@ function renderCatalog() {
   pagePlants.forEach(plant => {
     const card = createPlantCard(plant);
     list.appendChild(card);
-    // Async load wiki thumb
     loadThumbForCard(plant, card);
   });
 
@@ -296,31 +299,68 @@ async function loadThumbForCard(plant, card) {
 
 // ===================== DISEASE SEARCH PAGE =====================
 const QUICK_FILTERS = [
-  'kháng khuẩn', 'tiêu viêm', 'hạ sốt', 'ho', 'đau dạ dày',
-  'huyết áp', 'tiểu đường', 'an thần', 'phong thấp', 'cầm máu',
-  'lợi tiểu', 'bổ dưỡng', 'giảm đau', 'ung thư', 'gan mật'
+  'ho', 'hen suyễn', 'viêm phế quản', 'viêm phổi', 'viêm họng', 'cảm cúm', 'hắt hơi',
+  'đau dạ dày', 'viêm loét dạ dày', 'tiêu chảy', 'táo bón', 'đầy hơi', 'buồn nôn', 'nôn mửa', 'trĩ', 'kiết lỵ',
+  'huyết áp cao', 'huyết áp thấp', 'xơ vữa động mạch', 'tim hồi hộp', 'hạ mỡ máu',
+  'an thần', 'mất ngủ', 'đau đầu', 'căng thẳng', 'chóng mặt', 'tê liệt',
+  'phong thấp', 'đau lưng', 'đau khớp', 'viêm khớp', 'gout', 'thoái hóa khớp',
+  'mụn nhọt', 'eczema', 'nấm da', 'ghẻ', 'vảy nến', 'viêm da',
+  'gan mật', 'viêm gan', 'vàng da', 'sỏi thận', 'lợi tiểu', 'viêm đường tiết niệu',
+  'tiểu đường', 'béo phì', 'tuyến giáp', 'suy nhược',
+  'kháng khuẩn', 'tiêu viêm', 'ung thư', 'giải độc', 'tăng cường miễn dịch',
+  'kinh nguyệt', 'đau bụng kinh', 'bạch đới', 'sau sinh',
+  'hạ sốt', 'cầm máu', 'giảm đau', 'bổ dưỡng', 'bổ thận', 'bổ khí huyết',
+  'viêm mắt', 'viêm tai', 'viêm xoang',
 ];
 
-function renderDiseasePage() {
-  const qfContainer = document.getElementById('quick-filter-buttons');
-  qfContainer.innerHTML = QUICK_FILTERS.map(f =>
-    `<button class="quick-filter-btn" data-kw="${f}">${f}</button>`
-  ).join('');
-  qfContainer.querySelectorAll('.quick-filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.getElementById('disease-input').value = btn.dataset.kw;
-      searchDisease(btn.dataset.kw);
-    });
-  });
-}
+// ===================== ENHANCED DISEASE MAPPING (AI + 30 năm kinh nghiệm thuốc Nam) =====================
+// Bản đồ bệnh → từ khóa bổ sung để tìm cây thuốc phù hợp trong data
+const DISEASE_EXTRA_KEYWORDS = {
+  'gout': ['lợi tiểu', 'thải độc', 'tiêu viêm', 'kháng viêm', 'chống viêm', 'giảm acid uric', 'phong thấp', 'đau khớp', 'thanh nhiệt', 'giải độc', 'sưng khớp'],
+  'cảm cúm': ['hạ sốt', 'giải cảm', 'kháng khuẩn', 'kháng virus', 'ra mồ hôi', 'thông mũi', 'viêm họng', 'tăng cường miễn dịch', 'ho', 'cảm'],
+  'hắt hơi': ['viêm mũi', 'thông mũi', 'dị ứng', 'viêm xoang', 'giải cảm', 'kháng histamin', 'cảm cúm'],
+  'viêm loét dạ dày': ['đau dạ dày', 'viêm dạ dày', 'loét dạ dày', 'ợ chua', 'trung hòa acid', 'bảo vệ niêm mạc', 'kháng khuẩn h.pylori', 'tiêu hóa', 'chữa loét'],
+  'trĩ': ['cầm máu', 'tiêu viêm', 'co mạch', 'táo bón', 'chữa trĩ', 'làm se', 'kháng khuẩn', 'thanh nhiệt', 'giảm đau'],
+  'kiết lỵ': ['tiêu chảy', 'kháng khuẩn', 'kháng amíp', 'cầm tiêu chảy', 'tiêu viêm đường ruột', 'kiết lị', 'kháng khuẩn đường ruột', 'đau bụng'],
+  'huyết áp cao': ['hạ áp', 'hạ huyết áp', 'giãn mạch', 'lợi tiểu', 'hạ mỡ máu', 'xơ vữa động mạch', 'tim mạch', 'an thần', 'thông huyết'],
+  'huyết áp thấp': ['bổ khí', 'bổ huyết', 'tăng cường sinh lực', 'bổ dưỡng', 'kích thích tuần hoàn', 'bổ khí huyết', 'hồi sức'],
+  'ho': ['ho', 'long đờm', 'giảm ho', 'viêm phế quản', 'hen suyễn', 'kháng khuẩn phổi', 'thông phổi'],
+  'viêm phế quản': ['ho', 'viêm phế quản', 'long đờm', 'kháng khuẩn', 'thông phổi', 'giảm ho', 'hen suyễn'],
+  'tiêu chảy': ['tiêu chảy', 'cầm tiêu chảy', 'kháng khuẩn đường ruột', 'săn ruột', 'kiết lị', 'đau bụng'],
+  'táo bón': ['táo bón', 'nhuận tràng', 'thông tiện', 'kích thích tiêu hóa'],
+  'mất ngủ': ['an thần', 'mất ngủ', 'dưỡng tâm', 'hạ huyết áp', 'căng thẳng', 'lo âu', 'thần kinh'],
+  'đau đầu': ['đau đầu', 'giảm đau', 'hạ sốt', 'an thần', 'hạ huyết áp', 'chóng mặt'],
+  'tiểu đường': ['tiểu đường', 'hạ đường huyết', 'insulin thảo dược', 'giảm đường máu', 'bổ thận'],
+  'viêm gan': ['viêm gan', 'gan mật', 'bảo vệ gan', 'giải độc gan', 'vàng da', 'thanh nhiệt giải độc'],
+  'sỏi thận': ['sỏi thận', 'lợi tiểu', 'thông tiểu', 'tan sỏi', 'viêm đường tiết niệu'],
+  'phong thấp': ['phong thấp', 'đau khớp', 'viêm khớp', 'trừ thấp', 'khu phong', 'hoạt huyết', 'giảm đau xương khớp'],
+  'mụn nhọt': ['mụn nhọt', 'kháng khuẩn', 'tiêu độc', 'thanh nhiệt giải độc', 'mụn', 'tiêu viêm da'],
+  'sốt': ['hạ sốt', 'giải cảm', 'thanh nhiệt', 'ra mồ hôi', 'kháng khuẩn'],
+  'kinh nguyệt': ['kinh nguyệt', 'điều kinh', 'hoạt huyết', 'đau bụng kinh', 'thông kinh'],
+  'đau lưng': ['đau lưng', 'bổ thận', 'trừ thấp', 'phong thấp', 'hoạt huyết', 'giảm đau'],
+  'eczema': ['eczema', 'viêm da', 'dị ứng da', 'ngứa da', 'kháng khuẩn da', 'thanh nhiệt giải độc'],
+  'vảy nến': ['vảy nến', 'viêm da', 'kháng khuẩn da', 'thanh nhiệt', 'giải độc', 'ngứa'],
+  'đau dạ dày': ['đau dạ dày', 'viêm dạ dày', 'tiêu hóa', 'chống co thắt', 'ợ chua', 'đầy bụng'],
+};
 
 function searchDisease(keyword) {
   if (!keyword.trim()) return;
   const kw = keyword.trim().toLowerCase();
 
+  // Tìm từ khóa mở rộng dựa trên kiến thức y học cổ truyền
+  const extraKws = DISEASE_EXTRA_KEYWORDS[kw] || [];
+  const allKws = [kw, ...extraKws];
+
   const results = CAY_THUOC_DATA.filter(plant => {
     const combined = (plant.tac_dung + ' ' + (plant.tac_dung_list || []).join(' ')).toLowerCase();
-    return combined.includes(kw);
+    return allKws.some(k => combined.includes(k));
+  });
+
+  // Sắp xếp: ưu tiên kết quả khớp trực tiếp với từ khóa chính
+  results.sort((a, b) => {
+    const aMain = (a.tac_dung + ' ' + (a.tac_dung_list || []).join(' ')).toLowerCase().includes(kw) ? 0 : 1;
+    const bMain = (b.tac_dung + ' ' + (b.tac_dung_list || []).join(' ')).toLowerCase().includes(kw) ? 0 : 1;
+    return aMain - bMain;
   });
 
   STATE.diseasePlantsResults = results;
@@ -341,20 +381,32 @@ function searchDisease(keyword) {
 
   list.innerHTML = '';
   results.forEach(plant => {
-    const card = createDiseaseCard(plant, kw);
+    const card = createDiseaseCard(plant, kw, allKws);
     list.appendChild(card);
     loadDiseaseCardImage(plant, card);
   });
 }
 
-function createDiseaseCard(plant, kw) {
+function renderDiseasePage() {
+  const qfContainer = document.getElementById('quick-filter-buttons');
+  qfContainer.innerHTML = QUICK_FILTERS.map(f =>
+    `<button class="quick-filter-btn" data-kw="${f}">${f}</button>`
+  ).join('');
+  qfContainer.querySelectorAll('.quick-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('disease-input').value = btn.dataset.kw;
+      searchDisease(btn.dataset.kw);
+    });
+  });
+}
+
+function createDiseaseCard(plant, kw, allKws = [kw]) {
   const card = document.createElement('div');
   card.className = 'disease-plant-card fade-in';
 
-  // Matched effects
   const matched = (plant.tac_dung_list || [])
-    .filter(t => t.toLowerCase().includes(kw))
-    .slice(0, 3);
+    .filter(t => allKws.some(k => t.toLowerCase().includes(k)))
+    .slice(0, 4);
   const matchedTags = matched.map(t => `<span class="matched-effect-tag">✓ ${t}</span>`).join('');
 
   card.innerHTML = `
@@ -391,21 +443,18 @@ function renderDetail(plant) {
   STATE.detailBookPage = 0;
 
   const el = document.getElementById('page-detail');
-  el.innerHTML = ''; // Reset
+  el.innerHTML = '';
 
-  // Back button
   const back = document.createElement('button');
   back.className = 'detail-back';
   back.innerHTML = '← Quay lại';
   back.addEventListener('click', () => history.back() || navigate('catalog'));
   el.appendChild(back);
 
-  // Layout
   const layout = document.createElement('div');
   layout.className = 'detail-layout';
   el.appendChild(layout);
 
-  // Main column
   const main = document.createElement('div');
   main.className = 'detail-main';
   main.innerHTML = `
@@ -431,7 +480,6 @@ function renderDetail(plant) {
   `;
   layout.appendChild(main);
 
-  // Sidebar
   const sidebar = document.createElement('div');
   sidebar.className = 'detail-sidebar';
   sidebar.innerHTML = `
@@ -448,19 +496,14 @@ function renderDetail(plant) {
   `;
   layout.appendChild(sidebar);
 
-  // Render book pages navigator
   renderBookPages(plant, document.getElementById('page-navigator-container'));
-
-  // Load wiki images
   loadSidebarWikiImages(plant);
 
-  // Load related plants
   const related = CAY_THUOC_DATA
     .filter(p => p.chuong === plant.chuong && p.ten_co_dau !== plant.ten_co_dau)
     .slice(0, 6);
   renderRelatedPlants(related);
 
-  // Show floating wiki btn
   const floatBtn = document.getElementById('floating-wiki-btn');
   floatBtn.classList.add('visible');
   floatBtn.onclick = () => openWikiLightbox(plant);
@@ -498,7 +541,6 @@ function renderBookPages(plant, container) {
       });
     }
 
-    // Render floating image on book page
     loadFloatingImg(STATE.detailPlant, document.getElementById('page-floating-img-container'));
   }
 
@@ -608,7 +650,6 @@ function renderLightboxSlide() {
   document.getElementById('lb-prev').disabled = idx === 0;
   document.getElementById('lb-next').disabled = idx === imgs.length - 1;
 
-  // Dots
   const dotsContainer = document.getElementById('lb-dots');
   dotsContainer.innerHTML = imgs.map((_, i) =>
     `<div class="lb-dot ${i === idx ? 'active' : ''}" data-i="${i}"></div>`
@@ -737,9 +778,396 @@ function showToast(msg, duration = 2500) {
   setTimeout(() => t.classList.remove('show'), duration);
 }
 
+// ===================== VIETNAMESE IME SUPPORT =====================
+const TELEX_MAP = {
+  aa: 'â', ee: 'ê', oo: 'ô', ow: 'ơ', uw: 'ư', aw: 'ă',
+  dd: 'đ',
+  as: 'á', af: 'à', ar: 'ả', ax: 'ã', aj: 'ạ',
+  âs: 'ấ', âf: 'ầ', âr: 'ẩ', âx: 'ẫ', âj: 'ậ',
+  ăs: 'ắ', ăf: 'ằ', ăr: 'ẳ', ăx: 'ẵ', ăj: 'ặ',
+  es: 'é', ef: 'è', er: 'ẻ', ex: 'ẽ', ej: 'ẹ',
+  ês: 'ế', êf: 'ề', êr: 'ể', êx: 'ễ', êj: 'ệ',
+  is: 'í', if: 'ì', ir: 'ỉ', ix: 'ĩ', ij: 'ị',
+  os: 'ó', of: 'ò', or: 'ỏ', ox: 'õ', oj: 'ọ',
+  ôs: 'ố', ôf: 'ồ', ôr: 'ổ', ôx: 'ỗ', ôj: 'ộ',
+  ơs: 'ớ', ơf: 'ờ', ơr: 'ở', ơx: 'ỡ', ơj: 'ợ',
+  us: 'ú', uf: 'ù', ur: 'ủ', ux: 'ũ', uj: 'ụ',
+  ưs: 'ứ', ưf: 'ừ', ưr: 'ử', ưx: 'ữ', ưj: 'ự',
+  ys: 'ý', yf: 'ỳ', yr: 'ỷ', yx: 'ỹ', yj: 'ỵ',
+};
+
+function applyTelex(input) {
+  const val = input.value;
+  const cursor = input.selectionStart;
+  if (cursor < 2) return;
+  const twoChar = val.slice(cursor - 2, cursor).toLowerCase();
+  if (TELEX_MAP[twoChar]) {
+    const replacement = TELEX_MAP[twoChar];
+    const newVal = val.slice(0, cursor - 2) + replacement + val.slice(cursor);
+    input.value = newVal;
+    const newPos = cursor - 2 + replacement.length;
+    input.setSelectionRange(newPos, newPos);
+  }
+}
+
+function enableVietnameseInput(inputEl) {
+  inputEl.addEventListener('keyup', e => {
+    const skip = ['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Backspace','Delete','Tab','Enter','Escape'];
+    if (!skip.includes(e.key)) applyTelex(inputEl);
+  });
+}
+
+// ===================== DANH Y SLIDER (v2 — ảnh thật + nhiều câu nói) =====================
+// Hàm lấy đường dẫn ảnh từ thư mục danh_y/
+function dyPhoto(filename) {
+  return `danh_y/${filename}`;
+}
+
+const DANH_Y_DATA = [
+  // ═══════════════════════════════════════════════
+  // HẢI THƯỢNG LÃN ÔNG — nhiều câu nói
+  // ═══════════════════════════════════════════════
+  {
+    alias: 'Hải Thượng Lãn Ông',
+    realname: 'Lê Hữu Trác · 1720–1791',
+    role: 'Tổ ngành Y học cổ truyền Việt Nam',
+    photo: dyPhoto('hai_thuong_lan_ong.jpg'),
+    quoteTitle: '"Tám chữ vàng nghề y"',
+    quoteBody: 'Nhân – Minh – Đức – Trí – Lượng – Thành – Khiêm – Cần. Tám đức tính người làm thuốc phải tu dưỡng suốt đời. Thầy thuốc giỏi phải có cả tài lẫn đức, xem bệnh nhân như người thân.',
+    gradStart: '#8B0000', gradEnd: '#4a2000', hanzi: '海上懶翁',
+  },
+  {
+    alias: 'Hải Thượng Lãn Ông',
+    realname: 'Lê Hữu Trác · 1720–1791',
+    role: 'Tổ ngành Y học cổ truyền Việt Nam',
+    photo: dyPhoto('hai_thuong_lan_ong.jpg'),
+    quoteTitle: '"Thầy thuốc như mẹ hiền"',
+    quoteBody: 'Người thầy thuốc phải yêu thương bệnh nhân như yêu thương bản thân mình. Khi ngồi trước người bệnh, phải tập trung toàn tâm, không được xao lãng bởi bất kỳ điều gì khác.',
+    gradStart: '#8B0000', gradEnd: '#4a2000', hanzi: '海上懶翁',
+  },
+  {
+    alias: 'Hải Thượng Lãn Ông',
+    realname: 'Lê Hữu Trác · 1720–1791',
+    role: 'Tổ ngành Y học cổ truyền Việt Nam',
+    photo: dyPhoto('hai_thuong_lan_ong.jpg'),
+    quoteTitle: '"Học y là học đạo làm người"',
+    quoteBody: 'Nghề y không chỉ là nghề kiếm sống mà là đạo làm người. Ai học y mà chỉ lo tư lợi thì chẳng khác kẻ cướp đoạt tính mạng người bệnh. Hãy lấy lương tâm làm kim chỉ nam.',
+    gradStart: '#8B0000', gradEnd: '#4a2000', hanzi: '海上懶翁',
+  },
+  {
+    alias: 'Hải Thượng Lãn Ông',
+    realname: 'Lê Hữu Trác · 1720–1791',
+    role: 'Tổ ngành Y học cổ truyền Việt Nam',
+    photo: dyPhoto('hai_thuong_lan_ong.jpg'),
+    quoteTitle: '"Thuốc Nam — kho báu của đất Việt"',
+    quoteBody: 'Trên dải đất này, trời đã ban cho muôn loài cỏ cây chứa đựng sức mạnh chữa lành. Người thầy thuốc Việt nếu không biết dùng thuốc Nam thì chưa xứng gọi là thầy thuốc Việt.',
+    gradStart: '#8B0000', gradEnd: '#4a2000', hanzi: '海上懶翁',
+  },
+
+  // ═══════════════════════════════════════════════
+  // TUỆ TĨNH — nhiều câu nói
+  // ═══════════════════════════════════════════════
+  {
+    alias: 'Tuệ Tĩnh',
+    realname: 'Nguyễn Bá Tĩnh · Thế kỷ XIV',
+    role: 'Ông tổ ngành thuốc Nam Việt Nam',
+    photo: dyPhoto('tue_tinh.jpg'),
+    quoteTitle: '"Nam dược trị Nam nhân"',
+    quoteBody: 'Thuốc Nam chữa bệnh cho người Nam. Đất nước ta có sẵn cỏ cây, không cần lệ thuộc thuốc ngoại. Hãy tin vào những gì thiên nhiên ban tặng trên chính mảnh đất mình sống.',
+    gradStart: '#1a4a2e', gradEnd: '#0a1a0e', hanzi: '慧靜',
+  },
+  {
+    alias: 'Tuệ Tĩnh',
+    realname: 'Nguyễn Bá Tĩnh · Thế kỷ XIV',
+    role: 'Ông tổ ngành thuốc Nam Việt Nam',
+    photo: dyPhoto('tue_tinh.jpg'),
+    quoteTitle: '"Ăn uống là gốc của sức khỏe"',
+    quoteBody: 'Bổ bằng thức ăn hơn bổ bằng thuốc. Người biết ăn uống đúng cách thì ít bệnh. Ngũ cốc, rau quả hàng ngày chính là vị thuốc trường sinh mà trời đất đã sắp sẵn.',
+    gradStart: '#1a4a2e', gradEnd: '#0a1a0e', hanzi: '慧靜',
+  },
+  {
+    alias: 'Tuệ Tĩnh',
+    realname: 'Nguyễn Bá Tĩnh · Thế kỷ XIV',
+    role: 'Ông tổ ngành thuốc Nam Việt Nam',
+    photo: dyPhoto('tue_tinh.jpg'),
+    quoteTitle: '"Phòng bệnh từ lối sống"',
+    quoteBody: 'Bốn mùa thay đổi, con người phải thuận theo. Mùa hè tránh nóng, mùa đông tránh lạnh, tránh no quá đói quá. Giữ được sự điều hòa thì thân thể ít ốm đau.',
+    gradStart: '#1a4a2e', gradEnd: '#0a1a0e', hanzi: '慧靜',
+  },
+  {
+    alias: 'Tuệ Tĩnh',
+    realname: 'Nguyễn Bá Tĩnh · Thế kỷ XIV',
+    role: 'Ông tổ ngành thuốc Nam Việt Nam',
+    photo: dyPhoto('tue_tinh.jpg'),
+    quoteTitle: '"Vị thuốc quý ngay trước cửa"',
+    quoteBody: 'Sài đất chữa ho, gừng chữa lạnh, tía tô giải cảm, nghệ lành vết thương. Kho thuốc quý nhất chính là vườn rau trước sân nhà — hãy biết dùng trước khi tìm đến nơi xa.',
+    gradStart: '#1a4a2e', gradEnd: '#0a1a0e', hanzi: '慧靜',
+  },
+
+  // ═══════════════════════════════════════════════
+  // HIPPOCRATES — nhiều câu nói
+  // ═══════════════════════════════════════════════
+  {
+    alias: 'Hippocrates',
+    realname: 'Hippocrates · 460–370 TCN',
+    role: 'Cha đẻ của Y học phương Tây',
+    photo: dyPhoto('Hippocrates.jpg'),
+    quoteTitle: '"Primum non nocere"',
+    quoteBody: 'Trước hết, đừng gây hại. Bổn phận đầu tiên của người thầy thuốc không phải chữa bệnh, mà là không làm tình trạng người bệnh trở nên tệ hơn.',
+    gradStart: '#1a2a5e', gradEnd: '#0a0a2e', hanzi: 'Ἱπποκράτης', latinScript: true,
+  },
+  {
+    alias: 'Hippocrates',
+    realname: 'Hippocrates · 460–370 TCN',
+    role: 'Cha đẻ của Y học phương Tây',
+    photo: dyPhoto('Hippocrates.jpg'),
+    quoteTitle: '"Thức ăn là thuốc của bạn"',
+    quoteBody: 'Hãy để thức ăn là thuốc của bạn và thuốc là thức ăn của bạn. Thiên nhiên chữa lành, thầy thuốc chỉ là người dẫn đường. Cơ thể con người vốn dĩ có khả năng tự hồi phục kỳ diệu.',
+    gradStart: '#1a2a5e', gradEnd: '#0a0a2e', hanzi: 'Ἱπποκράτης', latinScript: true,
+  },
+  {
+    alias: 'Hippocrates',
+    realname: 'Hippocrates · 460–370 TCN',
+    role: 'Cha đẻ của Y học phương Tây',
+    photo: dyPhoto('Hippocrates.jpg'),
+    quoteTitle: '"Biết bệnh để chữa bệnh"',
+    quoteBody: 'Không có bệnh, chỉ có người bệnh. Mỗi người là một cơ thể khác nhau — thầy thuốc giỏi không chữa bệnh mà chữa người. Hãy quan sát kỹ trước khi phán xét.',
+    gradStart: '#1a2a5e', gradEnd: '#0a0a2e', hanzi: 'Ἱπποκράτης', latinScript: true,
+  },
+  {
+    alias: 'Hippocrates',
+    realname: 'Hippocrates · 460–370 TCN',
+    role: 'Cha đẻ của Y học phương Tây',
+    photo: dyPhoto('Hippocrates.jpg'),
+    quoteTitle: '"Đi bộ là thuốc tốt nhất"',
+    quoteBody: 'Đi bộ là bài thuốc tốt nhất của con người. Vận động điều độ, hít thở không khí trong lành và ngủ đủ giấc — ba điều này còn quý hơn mọi thứ thuốc trên đời.',
+    gradStart: '#1a2a5e', gradEnd: '#0a0a2e', hanzi: 'Ἱπποκράτης', latinScript: true,
+  },
+
+  // ═══════════════════════════════════════════════
+  // HOA ĐÀ — nhiều câu nói
+  // ═══════════════════════════════════════════════
+  {
+    alias: 'Hoa Đà',
+    realname: 'Hoa Đà · 140–208',
+    role: 'Thần y Trung Hoa, người phát minh gây mê',
+    photo: dyPhoto('Hoa_Da.jpg'),
+    quoteTitle: '"Thượng y trị quốc"',
+    quoteBody: 'Thượng y trị quốc, trung y trị nhân, hạ y trị bệnh. Thầy thuốc giỏi nhất không chữa bệnh có sẵn mà ngăn bệnh chưa sinh ra — đó mới là đỉnh cao của y thuật.',
+    gradStart: '#3a1a5e', gradEnd: '#1a0a2e', hanzi: '華佗',
+  },
+  {
+    alias: 'Hoa Đà',
+    realname: 'Hoa Đà · 140–208',
+    role: 'Thần y Trung Hoa, người phát minh gây mê',
+    photo: dyPhoto('Hoa_Da.jpg'),
+    quoteTitle: '"Vận động — bí quyết trường thọ"',
+    quoteBody: 'Cây cối nhờ có gió lay mà không mục ruỗng, người nhờ có vận động mà khí huyết lưu thông. Ngũ cầm hí — năm động tác bắt chước thú vật — chính là liều thuốc trường sinh ta trao lại hậu thế.',
+    gradStart: '#3a1a5e', gradEnd: '#1a0a2e', hanzi: '華佗',
+  },
+  {
+    alias: 'Hoa Đà',
+    realname: 'Hoa Đà · 140–208',
+    role: 'Thần y Trung Hoa, người phát minh gây mê',
+    photo: dyPhoto('Hoa_Da.jpg'),
+    quoteTitle: '"Phẫu thuật là biện pháp cuối cùng"',
+    quoteBody: 'Khi kim châm và thuốc thang không còn hiệu lực, dao mổ mới là giải pháp. Nhưng trước khi dùng dao, hãy thử hết mọi cách khác — bởi mỗi vết cắt đều để lại dấu vết mà không thể xóa nhòa.',
+    gradStart: '#3a1a5e', gradEnd: '#1a0a2e', hanzi: '華佗',
+  },
+  {
+    alias: 'Hoa Đà',
+    realname: 'Hoa Đà · 140–208',
+    role: 'Thần y Trung Hoa, người phát minh gây mê',
+    photo: dyPhoto('Hoa_Da.jpg'),
+    quoteTitle: '"Quan sát thiên nhiên để học y thuật"',
+    quoteBody: 'Ta học y từ rừng xanh, từ loài thú, từ mùa hạn và mùa lũ. Thiên nhiên là người thầy vĩ đại nhất — cỏ cây vô tri vô giác mà chứa đựng sức mạnh chữa lành vô biên.',
+    gradStart: '#3a1a5e', gradEnd: '#1a0a2e', hanzi: '華佗',
+  },
+
+  // ═══════════════════════════════════════════════
+  // BIỂN THƯỚC — nhiều câu nói
+  // ═══════════════════════════════════════════════
+  {
+    alias: 'Biển Thước',
+    realname: 'Tần Việt Nhân · 407–310 TCN',
+    role: 'Thần y huyền thoại thời Chiến Quốc',
+    photo: dyPhoto('bien_thuoc.jpg'),
+    quoteTitle: '"Phòng bệnh hơn chữa bệnh"',
+    quoteBody: 'Bệnh chưa sinh mà đã trị được mới là thầy thuốc giỏi nhất. Anh ta của ta chữa bệnh trước khi có triệu chứng, nên không ai biết tài năng của anh — đó mới là bậc thần y.',
+    gradStart: '#5e4a1a', gradEnd: '#2e1a0a', hanzi: '扁鵲',
+  },
+  {
+    alias: 'Biển Thước',
+    realname: 'Tần Việt Nhân · 407–310 TCN',
+    role: 'Thần y huyền thoại thời Chiến Quốc',
+    photo: dyPhoto('bien_thuoc.jpg'),
+    quoteTitle: '"Sáu trường hợp không chữa được"',
+    quoteBody: 'Người kiêu ngạo không nghe lời thầy thuốc; kẻ tham tiền hơn thân thể; người ăn uống không điều độ; khí huyết đã loạn; người quá suy kiệt; người tin thầy cúng hơn thầy thuốc — sáu loại này ta không thể chữa.',
+    gradStart: '#5e4a1a', gradEnd: '#2e1a0a', hanzi: '扁鵲',
+  },
+  {
+    alias: 'Biển Thước',
+    realname: 'Tần Việt Nhân · 407–310 TCN',
+    role: 'Thần y huyền thoại thời Chiến Quốc',
+    photo: dyPhoto('bien_thuoc.jpg'),
+    quoteTitle: '"Vọng – Văn – Vấn – Thiết"',
+    quoteBody: 'Nhìn sắc mặt, nghe âm thanh, hỏi bệnh sử, bắt mạch — bốn phép chẩn đoán này là nền tảng của y thuật. Thầy thuốc dùng đủ bốn phép sẽ không bao giờ đi sai đường.',
+    gradStart: '#5e4a1a', gradEnd: '#2e1a0a', hanzi: '扁鵲',
+  },
+  {
+    alias: 'Biển Thước',
+    realname: 'Tần Việt Nhân · 407–310 TCN',
+    role: 'Thần y huyền thoại thời Chiến Quốc',
+    photo: dyPhoto('bien_thuoc.jpg'),
+    quoteTitle: '"Bệnh nằm ở tâm"',
+    quoteBody: 'Nhiều căn bệnh khởi nguồn từ tâm trí trước khi lan ra thân xác. Lo âu sinh nhiệt, giận dữ tổn can, sợ hãi thương thận. Chữa được tâm bệnh thì thân bệnh tự khỏi phân nửa.',
+    gradStart: '#5e4a1a', gradEnd: '#2e1a0a', hanzi: '扁鵲',
+  },
+];
+
+const DY_DURATION = 6000;
+let dyCurrentIndex = 0;
+let dyAutoTimer = null;
+
+// Build avatar: ưu tiên dùng ảnh thật, fallback về SVG minh họa
+function buildDanyAvatar(person, personIndex) {
+  if (person.photo) {
+    return `<img src="${person.photo}" alt="${person.alias}"
+      style="width:100%;height:100%;object-fit:cover;border-radius:50%;"
+      onerror="this.parentElement.innerHTML=buildDanyAvatarSVG_fallback(${personIndex})">`;
+  }
+  return buildDanyAvatarSVG(person, personIndex);
+}
+
+function buildDanyAvatarSVG(person, personIndex) {
+  const isLatin = person.latinScript;
+  const fontSize = isLatin ? '10' : '22';
+  const uid = `dy_${personIndex}_${Date.now()}`;
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="dyg${uid}" cx="40%" cy="35%" r="65%">
+        <stop offset="0%" stop-color="${person.gradStart}"/>
+        <stop offset="100%" stop-color="${person.gradEnd}"/>
+      </radialGradient>
+      <clipPath id="dyc${uid}"><circle cx="50" cy="50" r="50"/></clipPath>
+    </defs>
+    <circle cx="50" cy="50" r="50" fill="url(#dyg${uid})"/>
+    <ellipse cx="50" cy="82" rx="28" ry="22" fill="rgba(255,255,255,0.07)"/>
+    <ellipse cx="50" cy="44" rx="16" ry="18" fill="rgba(255,255,255,0.12)"/>
+    <ellipse cx="50" cy="28" rx="22" ry="6" fill="rgba(255,255,255,0.10)"/>
+    <rect x="38" y="22" width="24" height="8" rx="2" fill="rgba(255,255,255,0.09)"/>
+    <path d="M44 60 Q50 68 56 60" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none"/>
+    <text x="50" y="53" text-anchor="middle" dominant-baseline="middle"
+      font-family="'Playfair Display', serif" font-size="${fontSize}"
+      fill="rgba(255,255,255,0.45)" font-style="italic">${person.hanzi}</text>
+    <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(232,184,75,0.2)" stroke-width="1"/>
+  </svg>`;
+}
+
+// Không có cột danh sách bên phải nữa — đã bỏ theo yêu cầu
+function dyRenderDots() {
+  const dots = document.getElementById('dy-dots');
+  if (!dots) return;
+  // Nhóm dot theo người (alias), không theo slide
+  const aliases = [...new Set(DANH_Y_DATA.map(p => p.alias))];
+  const currentAlias = DANH_Y_DATA[dyCurrentIndex].alias;
+  dots.innerHTML = aliases.map((alias, i) => {
+    const firstIdx = DANH_Y_DATA.findIndex(p => p.alias === alias);
+    const isActive = alias === currentAlias;
+    return `<div class="dy-dot ${isActive ? 'active' : ''}" data-dy-i="${firstIdx}"
+      title="${alias}" style="--dy-duration:${DY_DURATION}ms"></div>`;
+  }).join('');
+  dots.querySelectorAll('.dy-dot').forEach(d => {
+    d.addEventListener('click', () => dyGoTo(parseInt(d.dataset.dyI)));
+  });
+}
+
+function dyUpdate(animate = true) {
+  const person = DANH_Y_DATA[dyCurrentIndex];
+
+  const label = document.getElementById('dy-label');
+  if (label) label.textContent = `SLIDE ${String(dyCurrentIndex + 1).padStart(2,'0')} / ${DANH_Y_DATA.length}`;
+
+  const slideInner = document.getElementById('dy-slide-inner');
+  if (slideInner) {
+    if (animate) {
+      slideInner.classList.add('fade-out');
+      setTimeout(() => {
+        document.getElementById('dy-quote-title').textContent = person.quoteTitle;
+        document.getElementById('dy-quote-body').textContent = person.quoteBody;
+        slideInner.classList.remove('fade-out');
+      }, 300);
+    } else {
+      document.getElementById('dy-quote-title').textContent = person.quoteTitle;
+      document.getElementById('dy-quote-body').textContent = person.quoteBody;
+    }
+  }
+
+  const avatarWrap = document.getElementById('dy-avatar-wrap');
+  const personInfo = document.getElementById('dy-person-info');
+  if (avatarWrap && animate) {
+    avatarWrap.style.opacity = '0';
+    personInfo.style.opacity = '0';
+    setTimeout(() => {
+      document.getElementById('dy-avatar').innerHTML = buildDanyAvatar(person, dyCurrentIndex);
+      document.getElementById('dy-alias').textContent = person.alias;
+      document.getElementById('dy-realname').textContent = person.realname;
+      document.getElementById('dy-role').textContent = person.role;
+      avatarWrap.style.transition = 'opacity 0.5s ease';
+      personInfo.style.transition = 'opacity 0.5s ease';
+      avatarWrap.style.opacity = '1';
+      personInfo.style.opacity = '1';
+    }, 250);
+  } else if (avatarWrap) {
+    document.getElementById('dy-avatar').innerHTML = buildDanyAvatar(person, dyCurrentIndex);
+    document.getElementById('dy-alias').textContent = person.alias;
+    document.getElementById('dy-realname').textContent = person.realname;
+    document.getElementById('dy-role').textContent = person.role;
+  }
+
+  dyRenderDots();
+  // Bỏ render cột danh sách bên phải
+}
+
+function dyGoTo(idx) {
+  dyCurrentIndex = idx;
+  dyUpdate(true);
+  dyRestartTimer();
+}
+
+function dyRestartTimer() {
+  clearInterval(dyAutoTimer);
+  dyAutoTimer = setInterval(() => {
+    dyCurrentIndex = (dyCurrentIndex + 1) % DANH_Y_DATA.length;
+    dyUpdate(true);
+  }, DY_DURATION);
+}
+
+function initDanhYSlider() {
+  const section = document.getElementById('danh-y-section');
+  if (!section) return;
+
+  // Ẩn cột danh sách bên phải
+  const listCol = document.getElementById('dy-list-col');
+  if (listCol) listCol.style.display = 'none';
+
+  dyUpdate(false);
+  dyRestartTimer();
+
+  // Swipe support (mobile)
+  let touchStartX = 0;
+  section.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  section.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 50) {
+      if (dx < 0) dyGoTo((dyCurrentIndex + 1) % DANH_Y_DATA.length);
+      else dyGoTo((dyCurrentIndex - 1 + DANH_Y_DATA.length) % DANH_Y_DATA.length);
+    }
+  }, { passive: true });
+}
+
 // ===================== INIT =====================
 document.addEventListener('DOMContentLoaded', () => {
-  // Nav tabs
   document.querySelectorAll('.nav-tab').forEach(tab => {
     tab.addEventListener('click', () => {
       const p = tab.dataset.page;
@@ -747,8 +1175,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Header search
   const searchInput = document.getElementById('header-search');
+  enableVietnameseInput(searchInput);
   searchInput.addEventListener('input', e => handleSearchInput(e.target.value));
   searchInput.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
@@ -765,15 +1193,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Close search suggestions on outside click
   document.addEventListener('click', e => {
     if (!e.target.closest('.header-search')) {
       document.getElementById('search-suggestions').classList.remove('open');
     }
   });
 
-  // Disease search
   const diseaseInput = document.getElementById('disease-input');
+  enableVietnameseInput(diseaseInput);
   diseaseInput.addEventListener('keydown', e => {
     if (e.key === 'Enter') searchDisease(e.target.value);
   });
@@ -781,7 +1208,6 @@ document.addEventListener('DOMContentLoaded', () => {
     searchDisease(diseaseInput.value);
   });
 
-  // Lightbox controls
   document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
   document.getElementById('lightbox-overlay').addEventListener('click', e => {
     if (e.target === e.currentTarget) closeLightbox();
@@ -795,7 +1221,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Keyboard for lightbox
   document.addEventListener('keydown', e => {
     const overlay = document.getElementById('lightbox-overlay');
     if (!overlay.classList.contains('open')) return;
@@ -804,9 +1229,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'ArrowRight' && STATE.lightboxIndex < STATE.lightboxImages.length - 1) { STATE.lightboxIndex++; renderLightboxSlide(); }
   });
 
-  // Floating wiki button hidden when not on detail
-  // (managed per navigate)
-
-  // Initial render
   navigate('home');
 });
